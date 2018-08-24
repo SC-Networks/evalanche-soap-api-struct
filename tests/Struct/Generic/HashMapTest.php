@@ -37,9 +37,9 @@ class HashMapTest extends StructTestCase
     public function testSetItemsCanSetArrayOfHashMapItem()
     {
         $hashMapItems = [
-            $this->getMockBuilder(HashMapItemInterface::class),
-            $this->getMockBuilder(HashMapItemInterface::class),
-            $this->getMockBuilder(HashMapItemInterface::class),
+            $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
+            $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
+            $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
         ];
 
         $this->assertContainsOnlyInstancesOf(
