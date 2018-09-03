@@ -34,35 +34,35 @@ class ResourceInformation implements ResourceInformationInterface
     /**
      * @var int
      */
-    private $categoryId;
+    private $folderId;
 
     /**
      * @var int
      */
-    private $customerId;
+    private $mandatorId;
 
     /**
      * @param int $id
      * @param string $name
      * @param string $url
      * @param int $typeId
-     * @param int $categoryId
-     * @param int $customerId
+     * @param int $folderId
+     * @param int $mandatorId
      */
     public function __construct(
         int $id = null,
         string $name = null,
         string $url = null,
         int $typeId = null,
-        int $categoryId = null,
-        int $customerId = null
+        int $folderId = null,
+        int $mandatorId = null
     ) {
         $this->id = $id;
         $this->name = $name;
         $this->url = $url;
         $this->typeId = $typeId;
-        $this->categoryId = $categoryId;
-        $this->customerId = $customerId;
+        $this->folderId = $folderId;
+        $this->mandatorId = $mandatorId;
     }
 
     /**
@@ -100,16 +100,16 @@ class ResourceInformation implements ResourceInformationInterface
     /**
      * @return int
      */
-    public function getCategoryId(): int
+    public function getFolderId(): int
     {
-        return $this->categoryId;
+        return $this->folderId;
     }
 
     /**
      * @return int
      */
-    public function getCustomerId(): int
+    public function getMandatorId(): int
     {
-        return $this->customerId;
+        return $this->mandatorId;
     }
 }

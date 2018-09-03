@@ -59,9 +59,9 @@ class WorkflowDetailTest extends StructTestCase
         $this->assertSame('some external id', $this->subject->getExternalId());
     }
 
-    public function testGetCategoryIdCanReturnInt()
+    public function testGetFolderIdCanReturnInt()
     {
-        $this->assertSame(4545, $this->subject->getCategoryId());
+        $this->assertSame(4545, $this->subject->getFolderId());
     }
 
     public function testGetDescriptionCanReturnString()

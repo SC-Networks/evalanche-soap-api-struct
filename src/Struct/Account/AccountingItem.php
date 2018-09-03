@@ -17,7 +17,7 @@ class AccountingItem implements AccountingItemInterface
     /**
      * @var int
      */
-    private $customerId;
+    private $mandatorId;
 
     /**
      * @var string
@@ -31,18 +31,18 @@ class AccountingItem implements AccountingItemInterface
 
     /**
      * @param string $description
-     * @param int $customerId
+     * @param int $mandatorId
      * @param string $accountingDate
      * @param int $chargeCount
      */
     public function __construct(
         string $description = null,
-        int $customerId = null,
+        int $mandatorId = null,
         string $accountingDate = null,
         int $chargeCount = null
     ) {
         $this->description = $description;
-        $this->customerId = $customerId;
+        $this->mandatorId = $mandatorId;
         $this->accountingDate = $accountingDate;
         $this->chargeCount = $chargeCount;
     }
@@ -58,9 +58,9 @@ class AccountingItem implements AccountingItemInterface
     /**
      * @return int
      */
-    public function getCustomerId(): int
+    public function getMandatorId(): int
     {
-        return $this->customerId;
+        return $this->mandatorId;
     }
 
     /**

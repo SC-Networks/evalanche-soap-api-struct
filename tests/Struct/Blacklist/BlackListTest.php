@@ -27,9 +27,9 @@ class BlackListTest extends StructTestCase
         );
     }
 
-    public function testGetCustomerIdCanReturnInteger()
+    public function testGetMandatorIdCanReturnInteger()
     {
-        $this->assertSame(123, $this->subject->getCustomerId());
+        $this->assertSame(123, $this->subject->getMandatorId());
     }
 
     public function testGetItemsCanReturnArrayOfBlackListItem()

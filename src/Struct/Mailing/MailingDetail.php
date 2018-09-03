@@ -34,12 +34,12 @@ class MailingDetail implements MailingDetailInterface
     /**
      * @var int
      */
-    private $categoryId;
+    private $folderId;
 
     /**
      * @var int
      */
-    private $customerId;
+    private $mandatorId;
 
     /**
      * @var int
@@ -96,8 +96,8 @@ class MailingDetail implements MailingDetailInterface
      * @param string $name
      * @param string $url
      * @param int $typeId
-     * @param int $categoryId
-     * @param int $customerId
+     * @param int $folderId
+     * @param int $mandatorId
      * @param int $timestamp
      * @param int $recipients
      * @param bool $sent
@@ -114,8 +114,8 @@ class MailingDetail implements MailingDetailInterface
         string $name = null,
         string $url = null,
         int $typeId = null,
-        int $categoryId = null,
-        int $customerId = null,
+        int $folderId = null,
+        int $mandatorId = null,
         int $timestamp = null,
         int $recipients = null,
         bool $sent = null,
@@ -131,8 +131,8 @@ class MailingDetail implements MailingDetailInterface
         $this->name = $name;
         $this->url = $url;
         $this->typeId = $typeId;
-        $this->categoryId = $categoryId;
-        $this->customerId = $customerId;
+        $this->folderId = $folderId;
+        $this->mandatorId = $mandatorId;
         $this->timestamp = $timestamp;
         $this->recipients = $recipients;
         $this->sent = $sent;
@@ -180,17 +180,17 @@ class MailingDetail implements MailingDetailInterface
     /**
      * @return int
      */
-    public function getCategoryId(): int
+    public function getFolderId(): int
     {
-        return $this->categoryId;
+        return $this->folderId;
     }
 
     /**
      * @return int
      */
-    public function getCustomerId(): int
+    public function getMandatorId(): int
     {
-        return $this->customerId;
+        return $this->mandatorId;
     }
 
     /**

@@ -39,7 +39,7 @@ class WorkflowDetail implements WorkflowDetailInterface
     /**
      * @var int
      */
-    private $categoryId;
+    private $folderId;
 
     /**
      * @var string
@@ -62,7 +62,7 @@ class WorkflowDetail implements WorkflowDetailInterface
      * @param int $dateStart
      * @param int $dateEnd
      * @param string $externalId
-     * @param int $categoryId
+     * @param int $folderId
      * @param string $description
      * @param int $state
      * @param int $profileCount
@@ -73,7 +73,7 @@ class WorkflowDetail implements WorkflowDetailInterface
         int $dateStart = null,
         int $dateEnd = null,
         string $externalId = null,
-        int $categoryId = null,
+        int $folderId = null,
         string $description = null,
         int $state = null,
         int $profileCount = null
@@ -83,7 +83,7 @@ class WorkflowDetail implements WorkflowDetailInterface
         $this->dateStart = $dateStart;
         $this->dateEnd = $dateEnd;
         $this->externalId = $externalId;
-        $this->categoryId = $categoryId;
+        $this->folderId = $folderId;
         $this->description = $description;
         $this->state = $state;
         $this->profileCount = $profileCount;
@@ -132,9 +132,9 @@ class WorkflowDetail implements WorkflowDetailInterface
     /**
      * @return int
      */
-    public function getCategoryId(): int
+    public function getFolderId(): int
     {
-        return $this->categoryId;
+        return $this->folderId;
     }
 
     /**

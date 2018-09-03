@@ -19,7 +19,7 @@ interface AccountingItemInterface extends StructInterface
     /**
      * @return int
      */
-    public function getCustomerId(): int;
+    public function getMandatorId(): int;
 
     /**
      * @return string
