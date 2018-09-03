@@ -58,14 +58,14 @@ class MailingDetailTest extends StructTestCase
         $this->assertSame(4, $this->subject->getTypeId());
     }
 
-    public function testGetCategoryIdCanReturnInt()
+    public function testGetFolderIdCanReturnInt()
     {
-        $this->assertSame(5, $this->subject->getCategoryId());
+        $this->assertSame(5, $this->subject->getFolderId());
     }
 
-    public function testGetCustomerIdCanReturnInt()
+    public function testGetMandatorIdCanReturnInt()
     {
-        $this->assertSame(6, $this->subject->getCustomerId());
+        $this->assertSame(6, $this->subject->getMandatorId());
     }
 
     public function testGetTimestampCanReturnInt()

@@ -37,10 +37,10 @@ interface ResourceInformationInterface extends StructInterface
     /**
      * @return int
      */
-    public function getCategoryId(): int;
+    public function getFolderId(): int;
 
     /**
      * @return int
      */
-    public function getCustomerId(): int;
+    public function getMandatorId(): int;
 }

@@ -31,9 +31,9 @@ class AccountingItemTest extends StructTestCase
         $this->assertSame('some description', $this->subject->getDescription());
     }
 
-    public function testGetCustomerIdCanReturnInteger()
+    public function testGetMandatorIdCanReturnInteger()
     {
-        $this->assertSame(435, $this->subject->getCustomerId());
+        $this->assertSame(435, $this->subject->getMandatorId());
     }
 
     public function testGetAccountingDateCanReturnString()

@@ -55,14 +55,14 @@ class FormStatisticTest extends StructTestCase
         $this->assertSame(123, $this->subject->getTypeId());
     }
 
-    public function testGetCategoryIdCanReturnInt()
+    public function testGetFolderIdCanReturnInt()
     {
-        $this->assertSame(45, $this->subject->getCategoryId());
+        $this->assertSame(45, $this->subject->getFolderId());
     }
 
-    public function testGetCustomerIdCanReturnInt()
+    public function testGetMandatorIdCanReturnInt()
     {
-        $this->assertSame(23, $this->subject->getCustomerId());
+        $this->assertSame(23, $this->subject->getMandatorId());
     }
 
     public function testIsAliasCanReturnBool()

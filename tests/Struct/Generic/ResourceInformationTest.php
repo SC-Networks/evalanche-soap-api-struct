@@ -48,13 +48,13 @@ class ResourceInformationTest extends StructTestCase
         $this->assertSame(5, $this->subject->getTypeId());
     }
 
-    public function testGetCategoryIdCanReturnInt()
+    public function testGetFolderIdCanReturnInt()
     {
-        $this->assertSame(9, $this->subject->getCategoryId());
+        $this->assertSame(9, $this->subject->getFolderId());
     }
 
-    public function testGetCustomerIdCanReturnInt()
+    public function testGetMandatorIdCanReturnInt()
     {
-        $this->assertSame(989, $this->subject->getCustomerId());
+        $this->assertSame(989, $this->subject->getMandatorId());
     }
 }

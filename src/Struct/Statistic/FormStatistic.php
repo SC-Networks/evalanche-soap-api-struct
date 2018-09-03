@@ -34,12 +34,12 @@ class FormStatistic implements FormStatisticInterface
     /**
      * @var int
      */
-    private $categoryId;
+    private $folderId;
 
     /**
      * @var int
      */
-    private $customerId;
+    private $mandatorId;
 
     /**
      *
@@ -82,8 +82,8 @@ class FormStatistic implements FormStatisticInterface
      * @param string $name
      * @param string $url
      * @param int $typeId
-     * @param int $categoryId
-     * @param int $customerId
+     * @param int $folderId
+     * @param int $mandatorId
      * @param bool $isAlias
      * @param int $impressions
      * @param int $succeeded
@@ -97,8 +97,8 @@ class FormStatistic implements FormStatisticInterface
         string $name = null,
         string $url = null,
         int $typeId = null,
-        int $categoryId = null,
-        int $customerId = null,
+        int $folderId = null,
+        int $mandatorId = null,
         bool $isAlias = null,
         int $impressions = null,
         int $succeeded = null,
@@ -111,8 +111,8 @@ class FormStatistic implements FormStatisticInterface
         $this->name = $name;
         $this->url = $url;
         $this->typeId = $typeId;
-        $this->categoryId = $categoryId;
-        $this->customerId = $customerId;
+        $this->folderId = $folderId;
+        $this->mandatorId = $mandatorId;
         $this->isAlias = $isAlias;
         $this->impressions = $impressions;
         $this->succeeded = $succeeded;
@@ -157,17 +157,17 @@ class FormStatistic implements FormStatisticInterface
     /**
      * @return int
      */
-    public function getCategoryId(): int
+    public function getFolderId(): int
     {
-        return $this->categoryId;
+        return $this->folderId;
     }
 
     /**
      * @return int
      */
-    public function getCustomerId(): int
+    public function getMandatorId(): int
     {
-        return $this->customerId;
+        return $this->mandatorId;
     }
 
     /**

@@ -14,7 +14,7 @@ class BlackList implements BlackListInterface
     /**
      * @var int
      */
-    private $customerId;
+    private $mandatorId;
 
     /**
      * @var BlackListItemInterface[]
@@ -22,21 +22,21 @@ class BlackList implements BlackListInterface
     private $items;
 
     /**
-     * @param int $customerId
+     * @param int $mandatorId
      * @param array $items
      */
-    public function __construct(int $customerId = null, array $items = null)
+    public function __construct(int $mandatorId = null, array $items = null)
     {
-        $this->customerId = $customerId;
+        $this->mandatorId = $mandatorId;
         $this->items = $items;
     }
 
     /**
      * @return int
      */
-    public function getCustomerId(): int
+    public function getMandatorId(): int
     {
-        return $this->customerId;
+        return $this->mandatorId;
     }
 
     /**
