@@ -5,20 +5,20 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 use Scn\EvalancheSoapStruct\StructTestCase;
 
 /**
- * Class CategoryInformationTest
+ * Class FolderInformationTest
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */
-class CategoryInformationTest extends StructTestCase
+class FolderInformationTest extends StructTestCase
 {
     /**
-     * @var CategoryInformation
+     * @var FolderInformation
      */
     private $subject;
 
     public function setUp()
     {
-        $this->subject = new CategoryInformation(
+        $this->subject = new FolderInformation(
             777,
             'some name'
         );

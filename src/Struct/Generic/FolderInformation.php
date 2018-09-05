@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class CategoryInformation
+ * Class FolderInformation
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */
-class CategoryInformation implements CategoryInformationInterface
+class FolderInformation implements FolderInformationInterface
 {
     /**
      * @var int
