@@ -7,11 +7,11 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
 
 /**
- * Interface CategoryInformationInterface
+ * Interface FolderInformationInterface
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */
-interface CategoryInformationInterface extends StructInterface
+interface FolderInformationInterface extends StructInterface
 {
     /**
      * @return int
