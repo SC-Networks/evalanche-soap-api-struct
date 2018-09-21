@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class FolderInformation
+ * Standard folder of an object class
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

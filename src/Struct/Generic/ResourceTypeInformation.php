@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class ResourceTypeInformation
+ * Type Ids of an object class
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */
