@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class MailClientStatisticItem
+ * Represents a statistic about the used mail clients.
+ * Contains information about the description of the mail client as well as the number.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

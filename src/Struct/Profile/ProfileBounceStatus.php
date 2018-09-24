@@ -8,7 +8,8 @@ use Scn\EvalancheSoapStruct\Struct\Generic\HashMap;
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
 
 /**
- * Class ProfileBounceStatus
+ * Represents a profile bounce status element.
+ * Contains information about the mailing id, time, status, and profile information.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Profile
  */

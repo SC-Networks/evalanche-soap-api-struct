@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class MailingStatistic
+ * Represents a statistic about a Mailing.
+ * Contains Information about Profile- Count, Duplicate- Count, Blacklists Count, Hard and Softbounces, Impressions.
+ * Also includes MediaStatisticItems, ArticleStatisticItems, and LinkStatisticItems.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

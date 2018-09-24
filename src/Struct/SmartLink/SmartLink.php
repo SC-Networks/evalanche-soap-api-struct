@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\SmartLink;
 
 /**
- * Class SmartLink
+ * Represents a smart link element.
+ * Contains information about its id, name and tracking url.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Smartlink
  */

@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class FormStatistic
+ * Displays statistics about a form element.
+ * Contains information about its id, name, url, number of representations, number of successful transmissions,
+ * number of errors e.g. due to duplicates, validations.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

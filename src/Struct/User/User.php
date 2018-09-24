@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\User;
 
 /**
- * Class User
+ * Represents a user in Evalanche.
+ * Contains basic information about the user's name, e-mail, mandator assignment,
+ * current status, roles, and any security policies used.
  *
  * @package Scn\EvalancheSoapStruct\Struct\User
  */

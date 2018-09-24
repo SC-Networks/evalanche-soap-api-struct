@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class MediaStatisticItem
+ * Represents a statistic about a media element.
+ * Contains information about its name, the number of all clicks and the number of unique clicks.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

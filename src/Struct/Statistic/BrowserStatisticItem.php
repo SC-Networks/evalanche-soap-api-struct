@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class BrowserStatisticItem
+ * Displays statistics about a browser.
+ * Contains information about the version, as well as the number of its usage.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

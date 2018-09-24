@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\TargetGroup;
 
 /**
- * Class TargetGroupMemberShip
+ * Represents the assignment of profiles in TargetGroup.
+ * Contains information about the assignment of a profile to a TargetGroup.
  *
  * @package Scn\EvalancheSoapStruct\Struct\TargetGroup
  */

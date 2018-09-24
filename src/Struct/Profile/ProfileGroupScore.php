@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
 /**
- * Class ProfileGroupScore
+ * Represents a profile group score element.
+ * Contains information about the group id, name, activity score and profile score.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Profile
  */
