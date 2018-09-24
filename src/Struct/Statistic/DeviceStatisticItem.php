@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class DeviceStatisticItem
+ * Represents a statistic of the devices used.
+ * Contains information about the description of the devices and the Count.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

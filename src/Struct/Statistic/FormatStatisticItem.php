@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class FormatStatisticItem
+ * Represents a generic format statistic element. Contains information about the number of clicks,
+ * the number of unique clicks, click rate as well as relative click rate,
+ * multiple click rate as well as relative multiple click rate.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

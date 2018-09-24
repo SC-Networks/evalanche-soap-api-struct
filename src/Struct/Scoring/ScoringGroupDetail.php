@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Scoring;
 
 /**
- * Class ScoringGroupDetail
+ * Represents a scoring group detail element.
+ * Contains information about its Id, name, and the client.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Scoring
  */

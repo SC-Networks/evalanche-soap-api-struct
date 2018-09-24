@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class LinkStatisticItem
+ * Represents a statistic about links.
+ * Contains information about the id, url and name as well as the number of all clicks and the number of unique clicks.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

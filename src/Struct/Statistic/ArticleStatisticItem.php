@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class ArticleStatisticItem
+ * Represents a statistic about an article element.
+ * Contains information about the name, the number of all clicks and the number of unique clicks.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

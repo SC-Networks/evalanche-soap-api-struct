@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
 /**
- * Class ProfileActivityScore
+ * Provides a profile activity score. Contains information about the Scoring Group Id, Scoring Type Id, Time and Score.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Profile
  */

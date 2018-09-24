@@ -31,6 +31,7 @@ final class ReadmeGenerator
             'Profile',
             'Scoring',
             'SmartLink',
+            'Statistic',
             'TargetGroup',
             'User',
             'Workflow'

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 /**
- * Class ClientStatistic
+ * Represents a client statistic.
+ * Contains Information about Mail Client Statistic Items, Browser Statistic Items and Device Statistic Items.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Statistic
  */

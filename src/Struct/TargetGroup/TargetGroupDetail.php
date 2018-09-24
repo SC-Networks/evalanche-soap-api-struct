@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\TargetGroup;
 
 /**
- * Class TargetGroupDetail
+ * Represents a target group detail information.
+ * Contains information about the target group name as well as the number of profiles contained.
  *
  * @package Scn\EvalancheSoapStruct\Struct\TargetGroup
  */

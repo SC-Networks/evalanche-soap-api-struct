@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Workflow;
 
 /**
- * Class WorkflowDetail
+ * Represents a workflow, in Evalanche called a campaign.
+ * Contains information about its id, name, description, start and end times, number of profiles, and current status.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Workflow
  */
