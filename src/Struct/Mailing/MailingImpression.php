@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
 /**
- * Class MailingImpression
+ * Represents an impression (opening) of a specific mailing.
+ * Contains information about the profile which performed the action, as well as the timestamp.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Mailing
  */

@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class MassUpdateResult
+ * Result of a mass profile update.
+ * \<updated> and \<created> are HashMaps:
+ * Key: id of the updated or created profile, value: value of the field "key_attribute_name"
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

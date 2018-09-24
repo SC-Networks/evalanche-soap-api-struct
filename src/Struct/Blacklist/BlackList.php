@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
 
 /**
- * Class BlackList
+ * Represents a list of BlackListItems for one specific mandator.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Blacklist
  */

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class ServiceStatus
+ * Availability of a particular service
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

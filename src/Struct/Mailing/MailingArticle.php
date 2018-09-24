@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
 /**
- * Class MailingArticle
+ * Reference to an article in a mailing
  *
  * @package Scn\EvalancheSoapStruct\Struct\Mailing
  */

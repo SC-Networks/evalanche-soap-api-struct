@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class HashMap
+ * List of HashMapItems
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

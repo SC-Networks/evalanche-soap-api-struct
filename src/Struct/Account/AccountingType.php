@@ -3,7 +3,9 @@
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
 /**
- * Class AccountingType
+ * Represents a specific type of accountings.
+ * Contains information of the type id, amount, price and currency,
+ * as well as a list of AccountingItems.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Account
  */

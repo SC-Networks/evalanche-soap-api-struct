@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class JobResult
+ * Represents the result of a background job.
+ * Contains information about state, method, result and the amount of result items.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

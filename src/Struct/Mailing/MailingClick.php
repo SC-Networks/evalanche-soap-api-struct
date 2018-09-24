@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
 /**
- * Class MailingClick
+ * Represents one click on a link.
+ * Contains information about the link type (link to landing page, pdf version, etc.), link id, time and profile.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Mailing
  */

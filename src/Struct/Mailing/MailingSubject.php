@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
 /**
- * Class MailingSubject
+ * Represents a combination of a specific TargetGroup id and a specific subject text.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Mailing
  */

@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
 /**
- * Class Discount
+ * Represents one discount.
+ * Contains information about price and discount in percent.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Account
  */

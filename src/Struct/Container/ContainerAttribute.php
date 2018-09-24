@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Container;
 
 /**
- * Class ContainerAttribute
+ * Represents one attribute of a container.
+ * Contains information about name, label, type, mandatoriness, visibility, etc.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Container
  */

@@ -3,7 +3,8 @@
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
 /**
- * Class AccountingItem
+ * Represents an Accountingitem.
+ * Contains information about the concerned mandator id, date and amount of charges.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Account
  */
