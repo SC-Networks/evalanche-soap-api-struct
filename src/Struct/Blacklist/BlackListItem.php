@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
 
 /**
- * Class BlackListItem
+ * Represents one blacklisted e-mail address with description
  *
  * @package Scn\EvalancheSoapStruct\Struct\Blacklist
  */

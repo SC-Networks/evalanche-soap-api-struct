@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
 /**
- * Class Account
+ * Represents one account.
+ * Contains information about the given discount, as well as a list of AccountingTypes.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Account
  */

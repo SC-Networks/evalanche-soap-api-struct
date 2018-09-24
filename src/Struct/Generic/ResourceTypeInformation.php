@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Type Ids of an object class
+ * Id and description of an Evalanche object's type
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

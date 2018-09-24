@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Pool;
 
 /**
- * Class PoolAttributeOption
+ * Represents one option of a PoolAttribute.
+ * Contains id and value.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Pool
  */

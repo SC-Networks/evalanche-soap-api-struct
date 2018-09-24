@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class ResourceInformation
+ * Evalanche object like mailing, image, template, etc.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
-use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
-
 /**
- * Class MailingStatus
+ * Contains profile data and sendout state for a specific mailing and a specific profile.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Mailing
  */
@@ -39,7 +37,7 @@ class MailingStatus implements MailingStatusInterface
     private $previewUrl;
 
     /**
-     * @var HashMap[]
+     * @var \Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface[]
      */
     private $profileData;
 
@@ -49,7 +47,7 @@ class MailingStatus implements MailingStatusInterface
      * @param int $lastStatusChange
      * @param int $status
      * @param string $previewUrl
-     * @param HashMapInterface[] $profileData
+     * @param \Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface[] $profileData
      */
     public function __construct(
         int $profileId = null,
@@ -108,7 +106,7 @@ class MailingStatus implements MailingStatusInterface
     }
 
     /**
-     * @return HashMapInterface[]
+     * @return \Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface[]
      */
     public function getProfileData(): array
     {

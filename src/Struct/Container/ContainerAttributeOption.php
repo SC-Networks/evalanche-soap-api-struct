@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Container;
 
 /**
- * Class ContainerAttributeOption
+ * Represents one option for ContainerAttributes.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

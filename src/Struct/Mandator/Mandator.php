@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Mandator;
 
 /**
- * Class Mandator
+ * Represents an Evalanche Mandator with id, name and domain.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Mandator
  */

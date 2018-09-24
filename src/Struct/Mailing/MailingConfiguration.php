@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
 /**
- * Class MailingConfiguration
+ * Contains information about the configuration of a specific mailing
+ * like campaign id, individual salutations, reply address, input fields, etc.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Mailing
  */

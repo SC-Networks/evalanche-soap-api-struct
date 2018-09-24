@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Container;
 
 /**
- * Class ContainerAttributeRoleType
+ * Represents a role type for ContainerAttributes
  *
  * @package Scn\EvalancheSoapStruct\Struct\Container
  */

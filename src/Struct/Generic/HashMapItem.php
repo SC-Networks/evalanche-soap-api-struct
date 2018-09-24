@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class HashMapItem
+ * Holds an alphanumeric value by an alphanumeric key
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

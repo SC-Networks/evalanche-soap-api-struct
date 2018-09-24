@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
 /**
- * Class MailingDetail
+ * Contains detailed informations about a specific mailing
+ * like timestamp, amount of recipients, subject, sendout time, etc.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Mailing
  */

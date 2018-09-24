@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
- * Class JobHandle
+ * Representates a background job.
+ * Contains information about state, method, resource and amount of chunks in the result.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */
