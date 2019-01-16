@@ -412,6 +412,26 @@ ProfileGroupScore(
     int <profileScore>
 )
 ```
+##### ProfileTrackingHistory
+Represents a profile tracking history element.<br>
+  Contains information about tracking id, resource id, resource name, resource type id, sub resource id,<br>
+  sub resource name, sub resource type id, sub url, profile id, type id, timestamp and referrer domain.<br>
+ ```
+ProfileTrackingHistory(
+    int <id>
+    int <resourceId>
+    string <resourceName>
+    int <resourceTypeId>
+    int <subResourceId>
+    string <subResourceName>
+    int <subResourceTypeId>
+    string <subUrl>
+    int <profileId>
+    int <type>
+    int <timestamp>
+    string <referrerDomain>
+)
+```
 ### Scoring
 ##### ScoringGroupDetail
 Represents a scoring group detail element.<br>
