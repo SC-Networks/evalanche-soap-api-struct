@@ -642,6 +642,25 @@ User(
 )
 ```
 ### Workflow
+##### WorkflowConfiguration
+Represents the configuration of a workflow, in Evalanche called a campaign.<br>
+  Contains information about its states and connections.<br>
+ ```
+WorkflowConfiguration(
+    array <states>
+    array <connections>
+)
+```
+##### WorkflowConnectionItem
+Represents a connection of two workflow states.<br>
+  Contains information about its source and target node ids and its type.<br>
+ ```
+WorkflowConnectionItem(
+    string <source>
+    string <target>
+    string <type>
+)
+```
 ##### WorkflowDetail
 Represents a workflow, in Evalanche called a campaign.<br>
   Contains information about its id, name, description, start and end times, number of profiles, and current status.<br>
@@ -656,5 +675,24 @@ WorkflowDetail(
     string <description>
     int <state>
     int <profileCount>
+)
+```
+##### WorkflowStateItem
+Represents one state of a workflow, also known as a node.<br>
+  Contains information about its id, type and coordinates.<br>
+ ```
+WorkflowStateItem(
+    string <id>
+    int <type>
+    Scn\EvalancheSoapStruct\Struct\Workflow\WorkflowStateUiItemInterface <ui>
+)
+```
+##### WorkflowStateUiItem
+Represents the ui coordinates of a workflow's state.<br>
+  Contains information about its x and y coordinates.<br>
+ ```
+WorkflowStateUiItem(
+    int <x>
+    int <y>
 )
 ```
