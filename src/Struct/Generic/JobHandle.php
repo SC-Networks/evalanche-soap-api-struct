@@ -127,6 +127,6 @@ class JobHandle implements JobHandleInterface
      */
     public function getResultChunks(): int
     {
-        return $this->resultChunks;
+        return intval($this->resultChunks);
     }
 }
