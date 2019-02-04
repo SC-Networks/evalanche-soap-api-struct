@@ -33,6 +33,7 @@
     }
   },
   "scripts": {
-    "tests": "vendor/bin/phpunit -c phpunit.xml.dist"
+    "tests": "vendor/bin/phpunit -c phpunit.xml.dist",
+    "documentation": "php contrib/ReadmeGenerator.php > docs/index.md"
   }
 }
