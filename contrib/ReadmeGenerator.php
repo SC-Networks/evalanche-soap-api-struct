@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Usage: Open a terminal, navigate to project root, execute: php contrib/ReadmeGenerator.php > README.md
+ * Usage: Open a terminal, navigate to project root, execute: composer documentation
  */
 
 require __DIR__.'/../vendor/autoload.php';
@@ -64,13 +64,8 @@ final class ReadmeGenerator
 
     public function generateMarkdown()
     {
-        echo "# EVALANCHE SOAP API STRUCT
-
-[![Monthly Downloads](https://poser.pugx.org/scn/evalanche-soap-api-struct/d/monthly)](https://packagist.org/packages/scn/evalanche-soap-api-struct)
-[![License](https://poser.pugx.org/scn/evalanche-soap-api-struct/license)](LICENSE)
-[![Build Status](https://travis-ci.org/SC-Networks/evalanche-soap-api-struct.svg?branch=master)](https://travis-ci.org/SC-Networks/evalanche-soap-api-struct)
-
-## Models
+        echo "## Models
+        
 ";
 
         foreach ($this->generateClassmap() as $folder => $classes) {
