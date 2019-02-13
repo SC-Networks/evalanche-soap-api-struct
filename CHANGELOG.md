@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.1] - 2019-02-13
+### Fixed
+- Fix Readme formatting issues
+
 ## [1.2.0] - 2019-02-13
 ### Added
 - Added StructFactory
