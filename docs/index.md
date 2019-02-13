@@ -1,5 +1,21 @@
+## Factorys
+### Factory
+##### StructFactory
+Struct Factory, creates Instances of StructInterfaceCreates a Instance of HashMap<br>
+     <br>
+      [<br>
+       'field_name' => 'field_value',<br>
+       'field_name_next' => 'field_value_next',<br>
+      ]<br>
+     <br>
+      Field names can be found in your pool configuration.<br>
+     ```
+createHashMap(
+    array <items>
+)
+```
+<br>
 ## Models
-        
 ### Account
 ##### Account
 Represents one account.<br>
@@ -653,3 +669,4 @@ WorkflowDetail(
     int <profileCount>
 )
 ```
+<br>

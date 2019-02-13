@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.0] - 2019-02-13
+### Added
+- Added StructFactory
+
 ## [1.1.0] - 2019-01-16
 ### Added
 - Added ProfileTrackingHistory model
