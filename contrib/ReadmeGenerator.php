@@ -67,6 +67,7 @@ final class ReadmeGenerator
                     $short_name = $class->getShortName();
                     echo self::MARKUP_H5 . $short_name . PHP_EOL;
                     echo $this->parseComment($class);
+                    echo PHP_EOL;
 
                     if ($readmeDocument->getDocConstructor()) {
                         echo $this->parseParam($class->getConstructor(), $short_name);
@@ -77,14 +78,13 @@ final class ReadmeGenerator
 
                         foreach ($methods as $method) {
                             echo $this->parseComment($method);
+                            echo PHP_EOL;
                             echo $this->parseParam($method, $method->getName());
                         }
                     }
                 }
             }
         }
-
-        echo '<br>' . PHP_EOL;
 
         return $this;
     }

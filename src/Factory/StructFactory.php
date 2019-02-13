@@ -8,6 +8,8 @@ use Scn\EvalancheSoapStruct\Struct\Generic\HashMapItem;
 
 /**
  * Struct Factory, creates Instances of StructInterface
+ *
+ * @package Scn\EvalancheSoapStruct\Factory\StructFactory
  */
 final class StructFactory implements StructFactoryInterface
 {

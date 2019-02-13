@@ -1,7 +1,9 @@
 ## Factorys
 ### Factory
 ##### StructFactory
-Struct Factory, creates Instances of StructInterfaceCreates a Instance of HashMap<br>
+Struct Factory, creates Instances of StructInterface<br>
+ 
+Creates a Instance of HashMap<br>
      <br>
       [<br>
        'field_name' => 'field_value',<br>
@@ -9,18 +11,19 @@ Struct Factory, creates Instances of StructInterfaceCreates a Instance of HashMa
       ]<br>
      <br>
       Field names can be found in your pool configuration.<br>
-     ```
+     
+```
 createHashMap(
     array <items>
 )
 ```
-<br>
 ## Models
 ### Account
 ##### Account
 Represents one account.<br>
   Contains information about the given discount, as well as a list of AccountingTypes.<br>
- ```
+ 
+```
 Account(
     array(AccountingTypeInterface) <accountingTypes>
     Scn\EvalancheSoapStruct\Struct\Account\DiscountInterface <discount>
@@ -29,7 +32,8 @@ Account(
 ##### AccountingItem
 Represents an Accountingitem.<br>
   Contains information about the concerned mandator id, date and amount of charges.<br>
- ```
+ 
+```
 AccountingItem(
     string <description>
     int <mandatorId>
@@ -41,7 +45,8 @@ AccountingItem(
 Represents a specific type of accountings.<br>
   Contains information of the type id, amount, price and currency,<br>
   as well as a list of AccountingItems.<br>
- ```
+ 
+```
 AccountingType(
     int <typeId>
     int <amount>
@@ -53,7 +58,8 @@ AccountingType(
 ##### Discount
 Represents one discount.<br>
   Contains information about price and discount in percent.<br>
- ```
+ 
+```
 Discount(
     string <description>
     float <percent>
@@ -63,7 +69,8 @@ Discount(
 ### Blacklist
 ##### BlackList
 Represents a list of BlackListItems for one specific mandator.<br>
- ```
+ 
+```
 BlackList(
     int <mandatorId>
     array <items>
@@ -71,7 +78,8 @@ BlackList(
 ```
 ##### BlackListItem
 Represents one blacklisted e-mail address with description<br>
- ```
+ 
+```
 BlackListItem(
     string <email>
     string <description>
@@ -81,7 +89,8 @@ BlackListItem(
 ##### ContainerAttribute
 Represents one attribute of a container.<br>
   Contains information about name, label, type, mandatoriness, visibility, etc.<br>
- ```
+ 
+```
 ContainerAttribute(
     int <id>
     string <name>
@@ -98,7 +107,8 @@ ContainerAttribute(
 ```
 ##### ContainerAttributeGroup
 Represents a group for ContainerAttributes.<br>
- ```
+ 
+```
 ContainerAttributeGroup(
     int <id>
     string <name>
@@ -107,7 +117,8 @@ ContainerAttributeGroup(
 ```
 ##### ContainerAttributeOption
 Represents one option for ContainerAttributes.<br>
- ```
+ 
+```
 ContainerAttributeOption(
     int <id>
     string <name>
@@ -117,7 +128,8 @@ ContainerAttributeOption(
 ```
 ##### ContainerAttributeRoleType
 Represents a role type for ContainerAttributes<br>
- ```
+ 
+```
 ContainerAttributeRoleType(
     int <id>
     string <name>
@@ -126,7 +138,8 @@ ContainerAttributeRoleType(
 ### Generic
 ##### FolderInformation
 Standard folder of an object class<br>
- ```
+ 
+```
 FolderInformation(
     int <id>
     string <name>
@@ -134,14 +147,16 @@ FolderInformation(
 ```
 ##### HashMap
 List of HashMapItems<br>
- ```
+ 
+```
 HashMap(
     array(HashMapItemInterface) <items>
 )
 ```
 ##### HashMapItem
 Holds an alphanumeric value by an alphanumeric key<br>
- ```
+ 
+```
 HashMapItem(
     string <key>
     string <value>
@@ -150,7 +165,8 @@ HashMapItem(
 ##### JobHandle
 Representates a background job.<br>
   Contains information about state, method, resource and amount of chunks in the result.<br>
- ```
+ 
+```
 JobHandle(
     string <id>
     int <status>
@@ -164,7 +180,8 @@ JobHandle(
 ##### JobResult
 Represents the result of a background job.<br>
   Contains information about state, method, result and the amount of result items.<br>
- ```
+ 
+```
 JobResult(
     string <id>
     int <status>
@@ -182,7 +199,8 @@ JobResult(
 Result of a mass profile update.<br>
   \<updated> and \<created> are HashMaps:<br>
   Key: id of the updated or created profile, value: value of the field "key_attribute_name"<br>
- ```
+ 
+```
 MassUpdateResult(
     Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface <updated>
     Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface <created>
@@ -192,7 +210,8 @@ MassUpdateResult(
 ```
 ##### ResourceInformation
 Evalanche object like mailing, image, template, etc.<br>
- ```
+ 
+```
 ResourceInformation(
     int <id>
     string <name>
@@ -204,7 +223,8 @@ ResourceInformation(
 ```
 ##### ResourceTypeInformation
 Id and description of an Evalanche object's type<br>
- ```
+ 
+```
 ResourceTypeInformation(
     int <id>
     string <description>
@@ -212,7 +232,8 @@ ResourceTypeInformation(
 ```
 ##### ServiceStatus
 Availability of a particular service<br>
- ```
+ 
+```
 ServiceStatus(
     string <status>
     string <randomMessage>
@@ -221,7 +242,8 @@ ServiceStatus(
 ### Mailing
 ##### MailingArticle
 Reference to an article in a mailing<br>
- ```
+ 
+```
 MailingArticle(
     int <id>
     int <articleId>
@@ -238,7 +260,8 @@ MailingArticle(
 ##### MailingClick
 Represents one click on a link.<br>
   Contains information about the link type (link to landing page, pdf version, etc.), link id, time and profile.<br>
- ```
+ 
+```
 MailingClick(
     int <id>
     int <profileId>
@@ -251,7 +274,8 @@ MailingClick(
 ##### MailingConfiguration
 Contains information about the configuration of a specific mailing<br>
   like campaign id, individual salutations, reply address, input fields, etc.<br>
- ```
+ 
+```
 MailingConfiguration(
     string <externalTrackingCode>
     string <campaignId>
@@ -302,7 +326,8 @@ MailingConfiguration(
 ##### MailingDetail
 Contains detailed informations about a specific mailing<br>
   like timestamp, amount of recipients, subject, sendout time, etc.<br>
- ```
+ 
+```
 MailingDetail(
     int <id>
     string <name>
@@ -325,7 +350,8 @@ MailingDetail(
 ##### MailingImpression
 Represents an impression (opening) of a specific mailing.<br>
   Contains information about the profile which performed the action, as well as the timestamp.<br>
- ```
+ 
+```
 MailingImpression(
     int <id>
     int <profileId>
@@ -334,7 +360,8 @@ MailingImpression(
 ```
 ##### MailingStatus
 Contains profile data and sendout state for a specific mailing and a specific profile.<br>
- ```
+ 
+```
 MailingStatus(
     int <profileId>
     int <newsletterId>
@@ -346,7 +373,8 @@ MailingStatus(
 ```
 ##### MailingSubject
 Represents a combination of a specific TargetGroup id and a specific subject text.<br>
- ```
+ 
+```
 MailingSubject(
     int <targetGroupId>
     string <subject>
@@ -355,7 +383,8 @@ MailingSubject(
 ### Mandator
 ##### Mandator
 Represents an Evalanche Mandator with id, name and domain.<br>
- ```
+ 
+```
 Mandator(
     int <id>
     string <name>
@@ -366,7 +395,8 @@ Mandator(
 ##### PoolAttribute
 Represents a PoolAttribute.<br>
   Contains information about type, name, label and options.<br>
- ```
+ 
+```
 PoolAttribute(
     int <id>
     int <typeId>
@@ -380,7 +410,8 @@ PoolAttribute(
 ##### PoolAttributeOption
 Represents one option of a PoolAttribute.<br>
   Contains id and value.<br>
- ```
+ 
+```
 PoolAttributeOption(
     int <id>
     string <value>
@@ -389,7 +420,8 @@ PoolAttributeOption(
 ### Profile
 ##### ProfileActivityScore
 Provides a profile activity score. Contains information about the Scoring Group Id, Scoring Type Id, Time and Score.<br>
- ```
+ 
+```
 ProfileActivityScore(
     int <id>
     int <scoringGroupId>
@@ -402,7 +434,8 @@ ProfileActivityScore(
 ##### ProfileBounceStatus
 Represents a profile bounce status element.<br>
   Contains information about the mailing id, time, status, and profile information.<br>
- ```
+ 
+```
 ProfileBounceStatus(
     int <profileId>
     int <mailingId>
@@ -414,7 +447,8 @@ ProfileBounceStatus(
 ##### ProfileGroupScore
 Represents a profile group score element.<br>
   Contains information about the group id, name, activity score and profile score.<br>
- ```
+ 
+```
 ProfileGroupScore(
     int <profileId>
     int <groupId>
@@ -427,7 +461,8 @@ ProfileGroupScore(
 Represents a profile tracking history element.<br>
   Contains information about tracking id, resource id, resource name, resource type id, sub resource id,<br>
   sub resource name, sub resource type id, sub url, profile id, type id, timestamp and referrer domain.<br>
- ```
+ 
+```
 ProfileTrackingHistory(
     int <id>
     int <resourceId>
@@ -447,7 +482,8 @@ ProfileTrackingHistory(
 ##### ScoringGroupDetail
 Represents a scoring group detail element.<br>
   Contains information about its Id, name, and the client.<br>
- ```
+ 
+```
 ScoringGroupDetail(
     int <id>
     string <name>
@@ -458,7 +494,8 @@ ScoringGroupDetail(
 ##### SmartLink
 Represents a smart link element.<br>
   Contains information about its id, name and tracking url.<br>
- ```
+ 
+```
 SmartLink(
     int <id>
     string <name>
@@ -470,7 +507,8 @@ SmartLink(
 Represents a article statistic. Contains information his name, as well as statistics about articles of all<br>
   output formats, Landinpage click statistics, PDF and Print click statistics,<br>
   Voice click statistics, Share to Social click statistics.<br>
- ```
+ 
+```
 ArticleStatistic(
     int <id>
     int <referenceId>
@@ -486,7 +524,8 @@ ArticleStatistic(
 ##### ArticleStatisticItem
 Represents a statistic about an article element.<br>
   Contains information about the name, the number of all clicks and the number of unique clicks.<br>
- ```
+ 
+```
 ArticleStatisticItem(
     int <id>
     string <name>
@@ -497,7 +536,8 @@ ArticleStatisticItem(
 ##### BrowserStatisticItem
 Displays statistics about a browser.<br>
   Contains information about the version, as well as the number of its usage.<br>
- ```
+ 
+```
 BrowserStatisticItem(
     string <description>
     string <version>
@@ -507,7 +547,8 @@ BrowserStatisticItem(
 ##### ClientStatistic
 Represents a client statistic.<br>
   Contains Information about Mail Client Statistic Items, Browser Statistic Items and Device Statistic Items.<br>
- ```
+ 
+```
 ClientStatistic(
     array(MailClientStatisticItemInterface) <clients>
     array(MailClientStatisticItemInterface) <browsers>
@@ -517,7 +558,8 @@ ClientStatistic(
 ##### DeviceStatisticItem
 Represents a statistic of the devices used.<br>
   Contains information about the description of the devices and the Count.<br>
- ```
+ 
+```
 DeviceStatisticItem(
     string <description>
     int <count>
@@ -527,7 +569,8 @@ DeviceStatisticItem(
 Displays statistics about a form element.<br>
   Contains information about its id, name, url, number of representations, number of successful transmissions,<br>
   number of errors e.g. due to duplicates, validations.<br>
- ```
+ 
+```
 FormStatistic(
     int <id>
     string <name>
@@ -548,7 +591,8 @@ FormStatistic(
 Represents a generic format statistic element. Contains information about the number of clicks,<br>
   the number of unique clicks, click rate as well as relative click rate,<br>
   multiple click rate as well as relative multiple click rate.<br>
- ```
+ 
+```
 FormatStatisticItem(
     int <clickCount>
     int <uniqueClickCount>
@@ -561,7 +605,8 @@ FormatStatisticItem(
 ##### LinkStatisticItem
 Represents a statistic about links.<br>
   Contains information about the id, url and name as well as the number of all clicks and the number of unique clicks.<br>
- ```
+ 
+```
 LinkStatisticItem(
     int <id>
     string <url>
@@ -573,7 +618,8 @@ LinkStatisticItem(
 ##### MailClientStatisticItem
 Represents a statistic about the used mail clients.<br>
   Contains information about the description of the mail client as well as the number.<br>
- ```
+ 
+```
 MailClientStatisticItem(
     string <description>
     int <count>
@@ -583,7 +629,8 @@ MailClientStatisticItem(
 Represents a statistic about a Mailing.<br>
   Contains Information about Profile- Count, Duplicate- Count, Blacklists Count, Hard and Softbounces, Impressions.<br>
   Also includes MediaStatisticItems, ArticleStatisticItems, and LinkStatisticItems.<br>
- ```
+ 
+```
 MailingStatistic(
     int <addresses>
     int <recipients>
@@ -605,7 +652,8 @@ MailingStatistic(
 ##### MediaStatisticItem
 Represents a statistic about a media element.<br>
   Contains information about its name, the number of all clicks and the number of unique clicks.<br>
- ```
+ 
+```
 MediaStatisticItem(
     string <name>
     int <clickCount>
@@ -616,7 +664,8 @@ MediaStatisticItem(
 ##### TargetGroupDetail
 Represents a target group detail information.<br>
   Contains information about the target group name as well as the number of profiles contained.<br>
- ```
+ 
+```
 TargetGroupDetail(
     string <name>
     int <profileCount>
@@ -625,7 +674,8 @@ TargetGroupDetail(
 ##### TargetGroupMemberShip
 Represents the assignment of profiles in TargetGroup.<br>
   Contains information about the assignment of a profile to a TargetGroup.<br>
- ```
+ 
+```
 TargetGroupMemberShip(
     int <profileId>
     int <targetGroupId>
@@ -636,7 +686,8 @@ TargetGroupMemberShip(
 Represents a user in Evalanche.<br>
   Contains basic information about the user's name, e-mail, mandator assignment,<br>
   current status, roles, and any security policies used.<br>
- ```
+ 
+```
 User(
     int <id>
     int <mandatorId>
@@ -656,7 +707,8 @@ User(
 ##### WorkflowDetail
 Represents a workflow, in Evalanche called a campaign.<br>
   Contains information about its id, name, description, start and end times, number of profiles, and current status.<br>
- ```
+ 
+```
 WorkflowDetail(
     int <id>
     string <name>
@@ -669,4 +721,3 @@ WorkflowDetail(
     int <profileCount>
 )
 ```
-<br>
