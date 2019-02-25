@@ -16,7 +16,7 @@ class UserTest extends StructTestCase
      */
     private $subject;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new User(
             1234,

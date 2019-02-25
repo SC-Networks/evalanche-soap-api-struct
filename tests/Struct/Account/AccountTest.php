@@ -16,7 +16,7 @@ class AccountTest extends StructTestCase
      */
     private $subject;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new Account(
             [$this->getMockBuilder(AccountingTypeInterface::class)->getMock()],

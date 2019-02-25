@@ -17,7 +17,7 @@ class ProfileGroupScoreTest extends StructTestCase
      */
     private $subject;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new ProfileGroupScore(
             123,

@@ -23,7 +23,7 @@ class ProfileBounceStatusTest extends StructTestCase
      */
     private $hashMap;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->hashMap = $this->getMockBuilder(HashMapInterface::class)->getMock();
 

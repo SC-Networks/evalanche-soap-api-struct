@@ -16,7 +16,7 @@ class ContainerAttributeRoleTypeTest extends StructTestCase
      */
     private $subject;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new ContainerAttributeRoleType(
             1234,
