@@ -16,7 +16,7 @@ class HashMapItemTest extends StructTestCase
      */
     private $subject;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new HashMapItem(
             'some string',

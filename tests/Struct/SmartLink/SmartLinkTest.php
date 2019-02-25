@@ -16,7 +16,7 @@ class SmartLinkTest extends StructTestCase
      */
     private $subject;
 
-    public function setUp()/* The :void return type declaration that should be here would cause a BC issue */
+    public function setUp(): void
     {
         $this->subject = new SmartLink(
             234,

@@ -16,7 +16,7 @@ class BlackListItemTest extends StructTestCase
      */
     private $subject;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new BlackListItem(
             'some@email.de',

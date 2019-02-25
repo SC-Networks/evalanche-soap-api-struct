@@ -16,7 +16,7 @@ class ArticleStatisticItemTest extends StructTestCase
      */
     private $subject;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new ArticleStatisticItem(
             777,

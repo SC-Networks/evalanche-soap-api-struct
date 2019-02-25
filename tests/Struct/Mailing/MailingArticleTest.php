@@ -16,7 +16,7 @@ class MailingArticleTest extends StructTestCase
      */
     private $subject;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->subject = new MailingArticle(
             1,
