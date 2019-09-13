@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Scn\EvalancheSoapStruct\Struct\Scoring;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;

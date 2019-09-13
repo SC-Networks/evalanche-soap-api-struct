@@ -63,5 +63,4 @@ class JobHandleTest extends StructTestCase
     {
         $this->assertSame(76, $this->subject->getResultChunks());
     }
-
 }

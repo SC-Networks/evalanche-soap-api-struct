@@ -56,6 +56,5 @@ class FormatStatisticItemTest extends StructTestCase
     public function testGetMultipleClickRateRelativeCanReturnFloat()
     {
         $this->assertSame(1.0, $this->subject->getMultipleClickRateRelative());
-
     }
 }

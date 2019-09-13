@@ -166,7 +166,9 @@ class UserTest extends StructTestCase
 
     public function testSetFirstNameCanSetString()
     {
-        $this->assertSame('some other first name',
-            $this->subject->setFirstName('some other first name')->getFirstName());
+        $this->assertSame(
+            'some other first name',
+            $this->subject->setFirstName('some other first name')->getFirstName()
+        );
     }
 }

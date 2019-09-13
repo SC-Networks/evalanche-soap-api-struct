@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;

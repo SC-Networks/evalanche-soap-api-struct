@@ -20,9 +20,9 @@ class AccountingItemTest extends StructTestCase
     {
         $this->subject = new AccountingItem(
             'some description',
-        435,
-        'some string',
-        5
+            435,
+            'some string',
+            5
         );
     }
 

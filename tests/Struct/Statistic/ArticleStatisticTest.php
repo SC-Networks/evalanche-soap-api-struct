@@ -2,7 +2,6 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
-
 use Scn\EvalancheSoapStruct\StructTestCase;
 
 class ArticleStatisticTest extends StructTestCase

@@ -11,5 +11,4 @@ use PHPUnit\Framework\TestCase;
  */
 class StructTestCase extends TestCase
 {
-
 }
