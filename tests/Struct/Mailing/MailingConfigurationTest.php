@@ -226,63 +226,72 @@ class MailingConfigurationTest extends StructTestCase
         $this->assertSame(
             'some textarea 1',
             $this->subject->setTextarea1('some textarea 1')->GetTextArea1()
-        );    }
+        );
+    }
 
     public function testGetTextArea2CanReturnString()
     {
         $this->assertSame(
             'some textarea 2',
             $this->subject->setTextarea2('some textarea 2')->GetTextArea2()
-        );    }
+        );
+    }
 
     public function testGetTextArea3CanReturnString()
     {
         $this->assertSame(
             'some textarea 3',
             $this->subject->setTextarea3('some textarea 3')->GetTextArea3()
-        );    }
+        );
+    }
 
     public function testGetTextArea4CanReturnString()
     {
         $this->assertSame(
             'some textarea 4',
             $this->subject->setTextarea4('some textarea 4')->GetTextArea4()
-        );    }
+        );
+    }
 
     public function testGetTextArea5CanReturnString()
     {
         $this->assertSame(
             'some textarea 5',
             $this->subject->setTextarea5('some textarea 5')->GetTextArea5()
-        );    }
+        );
+    }
 
     public function testGetTextArea6CanReturnString()
     {
         $this->assertSame(
             'some textarea 6',
             $this->subject->setTextarea6('some textarea 6')->GetTextArea6()
-        );    }
+        );
+    }
 
     public function testGetTextArea7CanReturnString()
     {
         $this->assertSame(
             'some textarea 7',
             $this->subject->setTextarea7('some textarea 7')->GetTextArea7()
-        );    }
+        );
+    }
 
     public function testGetTextArea8CanReturnString()
     {
         $this->assertSame(
             'some textarea 8',
             $this->subject->setTextarea8('some textarea 8')->GetTextArea8()
-        );    }
+        );
+    }
 
     public function testGetTextArea9CanReturnString()
     {
         $this->assertSame(
             'some textarea 9',
             $this->subject->setTextarea9('some textarea 9')->GetTextArea9()
-        );    }
+        );
+    }
 
     public function testGetHtmlArea0CanReturnString()
     {

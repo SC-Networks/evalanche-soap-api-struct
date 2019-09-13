@@ -81,5 +81,4 @@ class MailingArticleTest extends StructTestCase
     {
         $this->assertSame(10, $this->subject->getSlot());
     }
-
 }

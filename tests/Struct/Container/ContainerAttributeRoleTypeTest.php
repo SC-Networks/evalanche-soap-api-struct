@@ -33,5 +33,4 @@ class ContainerAttributeRoleTypeTest extends StructTestCase
     {
         $this->assertSame('some name', $this->subject->getName());
     }
-
 }

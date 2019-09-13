@@ -33,5 +33,4 @@ class TargetGroupDetailTest extends StructTestCase
     {
         $this->assertSame(55, $this->subject->getProfileCount());
     }
-
 }

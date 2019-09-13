@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Factory;
 
@@ -26,7 +28,8 @@ final class StructFactory implements StructFactoryInterface
      * @param array $items
      * @return HashMapInterface
      */
-    public static function createHashMap(array $items): HashMapInterface {
+    public static function createHashMap(array $items): HashMapInterface
+    {
         $hashMapItems = [];
 
         foreach ($items as $itemKey => $itemValue) {

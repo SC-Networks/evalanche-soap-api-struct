@@ -39,5 +39,4 @@ class AccountTest extends StructTestCase
             $this->subject->getDiscount()
         );
     }
-
 }

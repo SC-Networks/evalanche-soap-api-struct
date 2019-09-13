@@ -8,7 +8,6 @@ require __DIR__ . '/../vendor/autoload.php';
 
 final class ReadmeDocument
 {
-
     private $namespace;
 
     private $title;

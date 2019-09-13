@@ -39,5 +39,4 @@ class MailingImpressionTest extends StructTestCase
     {
         $this->assertSame(1531398079, $this->subject->getTimestamp());
     }
-
 }

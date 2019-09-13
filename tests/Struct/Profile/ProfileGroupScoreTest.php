@@ -2,7 +2,6 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
-
 use Scn\EvalancheSoapStruct\StructTestCase;
 
 /**
