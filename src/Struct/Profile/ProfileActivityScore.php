@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Provides a profile activity score. Contains information about the Scoring Group Id, Scoring Type Id, Time and Score.
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Profile;
  */
 class ProfileActivityScore implements ProfileActivityScoreInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -111,13 +115,5 @@ class ProfileActivityScore implements ProfileActivityScoreInterface
     public function getResourceId(): int
     {
         return $this->resourceId;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

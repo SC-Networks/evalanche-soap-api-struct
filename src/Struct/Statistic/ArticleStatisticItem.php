@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a statistic about an article element.
  * Contains information about the name, the number of all clicks and the number of unique clicks.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class ArticleStatisticItem implements ArticleStatisticItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -80,13 +84,5 @@ class ArticleStatisticItem implements ArticleStatisticItemInterface
     public function getUniqueClickCount(): int
     {
         return $this->uniqueClickCount;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

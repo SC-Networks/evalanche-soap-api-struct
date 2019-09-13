@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Pool;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a PoolAttribute.
  * Contains information about type, name, label and options.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Pool;
  */
 class PoolAttribute implements PoolAttributeInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -128,13 +132,5 @@ class PoolAttribute implements PoolAttributeInterface
     public function addOptions(): bool
     {
         return $this->addOptions;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

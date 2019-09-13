@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a statistic about a media element.
  * Contains information about its name, the number of all clicks and the number of unique clicks.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class MediaStatisticItem implements MediaStatisticItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */
@@ -61,13 +65,5 @@ class MediaStatisticItem implements MediaStatisticItemInterface
     public function getUniqueClickCount(): int
     {
         return $this->uniqueClickCount;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

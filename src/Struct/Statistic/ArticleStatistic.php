@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a article statistic. Contains information his name, as well as statistics about articles of all
  * output formats, Landinpage click statistics, PDF and Print click statistics,
@@ -13,6 +15,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class ArticleStatistic implements ArticleStatisticInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -161,13 +165,5 @@ class ArticleStatistic implements ArticleStatisticInterface
     public function getLinks(): array
     {
         return $this->links;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

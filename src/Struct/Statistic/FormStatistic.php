@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Displays statistics about a form element.
  * Contains information about its id, name, url, number of representations, number of successful transmissions,
@@ -13,6 +15,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class FormStatistic implements FormStatisticInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -226,13 +230,5 @@ class FormStatistic implements FormStatisticInterface
     public function getMandatoryErrorCount(): int
     {
         return $this->mandatoryErrorCount;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Container;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a role type for ContainerAttributes
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Container;
  */
 class ContainerAttributeRoleType implements ContainerAttributeRoleTypeInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -45,13 +49,5 @@ class ContainerAttributeRoleType implements ContainerAttributeRoleTypeInterface
     public function getName(): string
     {
         return $this->name;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

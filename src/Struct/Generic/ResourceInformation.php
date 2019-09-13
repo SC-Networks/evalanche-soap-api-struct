@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Evalanche object like mailing, image, template, etc.
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class ResourceInformation implements ResourceInformationInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -111,13 +115,5 @@ class ResourceInformation implements ResourceInformationInterface
     public function getMandatorId(): int
     {
         return $this->mandatorId;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

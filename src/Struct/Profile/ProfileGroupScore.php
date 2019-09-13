@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a profile group score element.
  * Contains information about the group id, name, activity score and profile score.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Profile;
  */
 class ProfileGroupScore implements ProfileGroupScoreInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -96,13 +100,5 @@ class ProfileGroupScore implements ProfileGroupScoreInterface
     public function getProfileScore(): int
     {
         return $this->profileScore;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

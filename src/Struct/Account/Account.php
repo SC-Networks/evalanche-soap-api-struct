@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents one account.
  * Contains information about the given discount, as well as a list of AccountingTypes.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Account;
  */
 class Account implements AccountInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var AccountingTypeInterface[]
      */
@@ -46,13 +50,5 @@ class Account implements AccountInterface
     public function getDiscount(): DiscountInterface
     {
         return $this->discount;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

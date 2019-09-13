@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Standard folder of an object class
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class FolderInformation implements FolderInformationInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -45,13 +49,5 @@ class FolderInformation implements FolderInformationInterface
     public function getName(): string
     {
         return $this->name;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

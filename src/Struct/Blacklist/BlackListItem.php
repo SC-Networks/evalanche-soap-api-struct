@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents one blacklisted e-mail address with description
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
  */
 class BlackListItem implements BlackListItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */
@@ -45,13 +49,5 @@ class BlackListItem implements BlackListItemInterface
     public function getDescription(): string
     {
         return $this->description;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents the result of a background job.
  * Contains information about state, method, result and the amount of result items.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class JobResult implements JobResultInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */
@@ -176,13 +180,5 @@ class JobResult implements JobResultInterface
     public function getResultSize(): int
     {
         return $this->resultSize;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

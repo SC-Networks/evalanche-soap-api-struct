@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\TargetGroup;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents the assignment of profiles in TargetGroup.
  * Contains information about the assignment of a profile to a TargetGroup.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\TargetGroup;
  */
 class TargetGroupMemberShip implements TargetGroupMemberShipInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -46,13 +50,5 @@ class TargetGroupMemberShip implements TargetGroupMemberShipInterface
     public function getTargetGroupId(): int
     {
         return $this->targetGroupId;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

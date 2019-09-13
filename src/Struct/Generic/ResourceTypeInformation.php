@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Id and description of an Evalanche object's type
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class ResourceTypeInformation implements ResourceTypeInformationInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -45,13 +49,5 @@ class ResourceTypeInformation implements ResourceTypeInformationInterface
     public function getDescription(): string
     {
         return $this->description;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

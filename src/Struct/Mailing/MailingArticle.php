@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Reference to an article in a mailing
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingArticle implements MailingArticleInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -175,13 +179,5 @@ class MailingArticle implements MailingArticleInterface
     public function getSlot(): int
     {
         return $this->slot;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

@@ -2,6 +2,8 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a specific type of accountings.
  * Contains information of the type id, amount, price and currency,
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Account;
  */
 class AccountingType implements AccountingTypeInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -95,13 +99,5 @@ class AccountingType implements AccountingTypeInterface
     public function getAccountingItems(): array
     {
         return $this->accountingItems;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

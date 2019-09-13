@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a generic format statistic element. Contains information about the number of clicks,
  * the number of unique clicks, click rate as well as relative click rate,
@@ -13,6 +15,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class FormatStatisticItem implements FormatStatisticItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -113,13 +117,5 @@ class FormatStatisticItem implements FormatStatisticItemInterface
     public function getMultipleClickRateRelative(): float
     {
         return $this->multipleClickRateRelative;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

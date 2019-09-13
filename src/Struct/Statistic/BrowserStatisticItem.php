@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Displays statistics about a browser.
  * Contains information about the version, as well as the number of its usage.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class BrowserStatisticItem implements BrowserStatisticItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */
@@ -61,13 +65,5 @@ class BrowserStatisticItem implements BrowserStatisticItemInterface
     public function getCount(): int
     {
         return $this->count;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

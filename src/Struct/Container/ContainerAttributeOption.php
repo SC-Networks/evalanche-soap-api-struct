@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Container;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents one option for ContainerAttributes.
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Container;
  */
 class ContainerAttributeOption implements ContainerAttributeOptionInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -75,13 +79,5 @@ class ContainerAttributeOption implements ContainerAttributeOptionInterface
     public function getOrder(): int
     {
         return $this->order;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

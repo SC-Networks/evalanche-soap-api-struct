@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents one discount.
  * Contains information about price and discount in percent.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Account;
  */
 class Discount implements DiscountInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */
@@ -61,13 +65,5 @@ class Discount implements DiscountInterface
     public function getPrice(): float
     {
         return $this->price;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

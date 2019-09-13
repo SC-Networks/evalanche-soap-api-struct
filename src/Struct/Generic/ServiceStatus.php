@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Availability of a particular service
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class ServiceStatus implements ServiceStatusInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */
@@ -45,13 +49,5 @@ class ServiceStatus implements ServiceStatusInterface
     public function getRandomMessage(): string
     {
         return $this->randomMessage;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

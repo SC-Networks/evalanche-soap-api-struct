@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a combination of a specific TargetGroup id and a specific subject text.
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingSubject implements MailingSubjectInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -45,14 +49,5 @@ class MailingSubject implements MailingSubjectInterface
     public function getSubject(): string
     {
         return $this->subject;
-    }
-
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

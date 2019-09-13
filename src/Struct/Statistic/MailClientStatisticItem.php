@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a statistic about the used mail clients.
  * Contains information about the description of the mail client as well as the number.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class MailClientStatisticItem implements MailClientStatisticItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */
@@ -46,13 +50,5 @@ class MailClientStatisticItem implements MailClientStatisticItemInterface
     public function getCount(): int
     {
         return $this->count;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents one click on a link.
  * Contains information about the link type (link to landing page, pdf version, etc.), link id, time and profile.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingClick implements MailingClickInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -112,13 +116,5 @@ class MailingClick implements MailingClickInterface
     public function getParentId(): int
     {
         return $this->parentId;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

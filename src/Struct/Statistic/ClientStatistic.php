@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a client statistic.
  * Contains Information about Mail Client Statistic Items, Browser Statistic Items and Device Statistic Items.
@@ -12,6 +14,9 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class ClientStatistic implements ClientStatisticInterface
 {
+
+    use StructJsonSerializeTrait;
+
     /**
      * @var MailClientStatisticItem[]
      */
@@ -61,13 +66,5 @@ class ClientStatistic implements ClientStatisticInterface
     public function getDevices(): array
     {
         return $this->devices;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

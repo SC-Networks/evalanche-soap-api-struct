@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Scoring;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a scoring group detail element.
  * Contains information about its Id, name, and the client.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Scoring;
  */
 class ScoringGroupDetail implements ScoringGroupDetailInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -61,13 +65,5 @@ class ScoringGroupDetail implements ScoringGroupDetailInterface
     public function getMandatorId(): int
     {
         return $this->mandatorId;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

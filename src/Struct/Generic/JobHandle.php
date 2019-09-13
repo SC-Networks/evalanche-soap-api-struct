@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Representates a background job.
  * Contains information about state, method, resource and amount of chunks in the result.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class JobHandle implements JobHandleInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */
@@ -128,13 +132,5 @@ class JobHandle implements JobHandleInterface
     public function getResultChunks(): int
     {
         return $this->resultChunks;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

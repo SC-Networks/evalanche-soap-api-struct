@@ -6,6 +6,7 @@ namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMap;
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
 
 /**
  * Represents a profile bounce status element.
@@ -15,6 +16,8 @@ use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
  */
 class ProfileBounceStatus implements ProfileBounceStatusInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -99,13 +102,5 @@ class ProfileBounceStatus implements ProfileBounceStatusInterface
     public function getProfileData(): HashMapInterface
     {
         return $this->profileData;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

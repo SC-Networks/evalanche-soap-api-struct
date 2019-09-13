@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * List of HashMapItems
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class HashMap implements HashMapInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var HashMapItemInterface[]
      */
@@ -41,13 +45,5 @@ class HashMap implements HashMapInterface
     {
         $this->items = $items;
         return $this;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

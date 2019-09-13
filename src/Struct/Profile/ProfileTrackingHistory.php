@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a profile tracking history element.
  * Contains information about tracking id, resource id, resource name, resource type id, sub resource id,
@@ -13,6 +15,7 @@ namespace Scn\EvalancheSoapStruct\Struct\Profile;
  */
 class ProfileTrackingHistory implements ProfileTrackingHistoryInterface
 {
+    use StructJsonSerializeTrait;
 
     /**
      * @var int
@@ -210,13 +213,5 @@ class ProfileTrackingHistory implements ProfileTrackingHistoryInterface
     public function getReferrerDomain(): string
     {
         return $this->referrerDomain;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }

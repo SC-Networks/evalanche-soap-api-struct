@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a statistic about links.
  * Contains information about the id, url and name as well as the number of all clicks and the number of unique clicks.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class LinkStatisticItem implements LinkStatisticItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
@@ -96,13 +100,5 @@ class LinkStatisticItem implements LinkStatisticItemInterface
     public function getUniqueClickCount(): int
     {
         return $this->uniqueClickCount;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize(): array
-    {
-        return get_object_vars($this);
     }
 }
