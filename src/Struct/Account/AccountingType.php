@@ -96,4 +96,12 @@ class AccountingType implements AccountingTypeInterface
     {
         return $this->accountingItems;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

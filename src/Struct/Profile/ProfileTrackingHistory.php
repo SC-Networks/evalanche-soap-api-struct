@@ -211,4 +211,12 @@ class ProfileTrackingHistory implements ProfileTrackingHistoryInterface
     {
         return $this->referrerDomain;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

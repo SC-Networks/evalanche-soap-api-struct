@@ -112,4 +112,13 @@ class MailingStatus implements MailingStatusInterface
     {
         return $this->profileData;
     }
+
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

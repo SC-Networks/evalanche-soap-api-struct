@@ -112,4 +112,12 @@ class ProfileActivityScore implements ProfileActivityScoreInterface
     {
         return $this->resourceId;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

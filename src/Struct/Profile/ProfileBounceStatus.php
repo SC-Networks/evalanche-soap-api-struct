@@ -100,4 +100,12 @@ class ProfileBounceStatus implements ProfileBounceStatusInterface
     {
         return $this->profileData;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

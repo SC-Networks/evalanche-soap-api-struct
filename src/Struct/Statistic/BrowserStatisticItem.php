@@ -62,4 +62,12 @@ class BrowserStatisticItem implements BrowserStatisticItemInterface
     {
         return $this->count;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

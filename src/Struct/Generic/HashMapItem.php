@@ -57,4 +57,12 @@ class HashMapItem implements HashMapItemInterface
         $this->value = $value;
         return $this;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

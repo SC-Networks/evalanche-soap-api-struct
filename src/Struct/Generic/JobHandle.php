@@ -129,4 +129,12 @@ class JobHandle implements JobHandleInterface
     {
         return $this->resultChunks;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

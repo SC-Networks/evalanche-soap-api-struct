@@ -162,4 +162,12 @@ class ArticleStatistic implements ArticleStatisticInterface
     {
         return $this->links;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

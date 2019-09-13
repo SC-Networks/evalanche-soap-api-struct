@@ -42,4 +42,12 @@ class HashMap implements HashMapInterface
         $this->items = $items;
         return $this;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

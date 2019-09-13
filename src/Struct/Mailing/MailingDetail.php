@@ -273,4 +273,13 @@ class MailingDetail implements MailingDetailInterface
     {
         return $this->sendEndTime;
     }
+
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

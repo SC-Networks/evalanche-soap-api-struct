@@ -177,4 +177,12 @@ class JobResult implements JobResultInterface
     {
         return $this->resultSize;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

@@ -113,4 +113,12 @@ class MailingClick implements MailingClickInterface
     {
         return $this->parentId;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

@@ -46,4 +46,12 @@ class ServiceStatus implements ServiceStatusInterface
     {
         return $this->randomMessage;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

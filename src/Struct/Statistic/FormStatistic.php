@@ -227,4 +227,12 @@ class FormStatistic implements FormStatisticInterface
     {
         return $this->mandatoryErrorCount;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

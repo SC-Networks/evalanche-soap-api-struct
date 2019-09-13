@@ -46,4 +46,13 @@ class MailingSubject implements MailingSubjectInterface
     {
         return $this->subject;
     }
+
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

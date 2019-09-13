@@ -82,4 +82,12 @@ class MassUpdateResult implements MassUpdateResultInterface
     {
         return $this->error;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

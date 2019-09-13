@@ -47,4 +47,12 @@ class TargetGroupMemberShip implements TargetGroupMemberShipInterface
     {
         return $this->targetGroupId;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

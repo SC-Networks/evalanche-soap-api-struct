@@ -343,4 +343,12 @@ class User implements UserInterface
         $this->password = $password;
         return $this;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

@@ -62,4 +62,12 @@ class ClientStatistic implements ClientStatisticInterface
     {
         return $this->devices;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

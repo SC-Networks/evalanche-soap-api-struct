@@ -258,4 +258,12 @@ class MailingStatistic implements MailingStatisticInterface
     {
         return $this->links;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

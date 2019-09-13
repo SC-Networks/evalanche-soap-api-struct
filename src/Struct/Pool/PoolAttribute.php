@@ -129,4 +129,12 @@ class PoolAttribute implements PoolAttributeInterface
     {
         return $this->addOptions;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

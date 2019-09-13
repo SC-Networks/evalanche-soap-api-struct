@@ -64,4 +64,12 @@ class Mandator implements MandatorInterface
     {
         return $this->domain;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

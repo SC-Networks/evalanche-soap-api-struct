@@ -62,4 +62,13 @@ class MailingImpression implements MailingImpressionInterface
     {
         return $this->timestamp;
     }
+
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

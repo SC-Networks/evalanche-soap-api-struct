@@ -79,4 +79,12 @@ class AccountingItem implements AccountingItemInterface
     {
         return $this->chargeCount;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

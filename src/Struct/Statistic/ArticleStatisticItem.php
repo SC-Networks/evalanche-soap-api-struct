@@ -81,4 +81,12 @@ class ArticleStatisticItem implements ArticleStatisticItemInterface
     {
         return $this->uniqueClickCount;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

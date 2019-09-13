@@ -62,4 +62,12 @@ class Discount implements DiscountInterface
     {
         return $this->price;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

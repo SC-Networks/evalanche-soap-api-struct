@@ -47,4 +47,12 @@ class Account implements AccountInterface
     {
         return $this->discount;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

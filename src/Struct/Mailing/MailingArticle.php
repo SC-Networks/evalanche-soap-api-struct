@@ -176,4 +176,12 @@ class MailingArticle implements MailingArticleInterface
     {
         return $this->slot;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

@@ -46,4 +46,12 @@ class BlackListItem implements BlackListItemInterface
     {
         return $this->description;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

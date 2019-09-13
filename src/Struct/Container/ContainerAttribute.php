@@ -193,4 +193,12 @@ class ContainerAttribute implements ContainerAttributeInterface
     {
         return $this->allowOptions;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

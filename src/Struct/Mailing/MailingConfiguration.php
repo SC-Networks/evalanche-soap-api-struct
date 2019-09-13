@@ -1205,4 +1205,12 @@ class MailingConfiguration implements MailingConfigurationInterface
         $this->htmlarea9 = $htmlarea9;
         return $this;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

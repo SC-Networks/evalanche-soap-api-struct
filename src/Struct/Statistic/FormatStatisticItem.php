@@ -114,4 +114,12 @@ class FormatStatisticItem implements FormatStatisticItemInterface
     {
         return $this->multipleClickRateRelative;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

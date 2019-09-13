@@ -161,4 +161,12 @@ class WorkflowDetail implements WorkflowDetailInterface
     {
         return $this->profileCount;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }

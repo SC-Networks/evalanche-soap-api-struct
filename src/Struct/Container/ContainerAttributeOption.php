@@ -76,4 +76,12 @@ class ContainerAttributeOption implements ContainerAttributeOptionInterface
     {
         return $this->order;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
+    }
 }
