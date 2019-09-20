@@ -6,7 +6,7 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
  * Represents a Language in Evalanche.
- * Contains information the Language Id and Text.
+ * Contains information the Language Id and json encoded Text.
  *
  * @package Scn\EvalancheSoapStruct\Struct\Generic
  */

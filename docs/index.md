@@ -197,7 +197,7 @@ JobResult(
 ```
 ##### Language
 Represents a Language in Evalanche.<br>
-  Contains information the Language Id and Text.<br>
+  Contains information the Language Id and json encoded Text.<br>
  
 ```
 Language(
