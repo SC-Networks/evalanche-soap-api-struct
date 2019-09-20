@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.0] - 2019-09-20
+### Added
+- Marketplace Language Model
+- Marketplace Category Model
+- Marketplace Product Model
+
 ## [1.2.1] - 2019-02-13
 ### Fixed
 - Fix Readme formatting issues
