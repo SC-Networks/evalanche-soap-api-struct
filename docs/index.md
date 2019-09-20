@@ -195,6 +195,16 @@ JobResult(
     int <resultSize>
 )
 ```
+##### Language
+Represents a Language in Evalanche.<br>
+  Contains information the Language Id and Text.<br>
+ 
+```
+Language(
+    int <id>
+    string <text>
+)
+```
 ##### MassUpdateResult
 Result of a mass profile update.<br>
   \<updated> and \<created> are HashMaps:<br>
@@ -389,6 +399,26 @@ Mandator(
     int <id>
     string <name>
     string <domain>
+)
+```
+### Marketplace
+##### Category
+Represents an Evalanche Marketplace Category<br>
+ 
+```
+Category(
+    int <id>
+    array(LanguageInterface) <text>
+)
+```
+##### Product
+Represents an Evalanche Marketplace Product<br>
+ 
+```
+Product(
+    string <id>
+    int <price>
+    array(LanguageInterface) <text>
 )
 ```
 ### Pool

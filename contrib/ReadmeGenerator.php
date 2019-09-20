@@ -154,6 +154,7 @@ $readmeDocumentStruct = new ReadmeDocument(
         'Scn\EvalancheSoapStruct\Struct\Generic',
         'Scn\EvalancheSoapStruct\Struct\Mailing',
         'Scn\EvalancheSoapStruct\Struct\Mandator',
+        'Scn\EvalancheSoapStruct\Struct\Marketplace',
         'Scn\EvalancheSoapStruct\Struct\Pool',
         'Scn\EvalancheSoapStruct\Struct\Profile',
         'Scn\EvalancheSoapStruct\Struct\Scoring',
