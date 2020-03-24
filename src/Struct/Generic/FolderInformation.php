@@ -22,13 +22,19 @@ class FolderInformation implements FolderInformationInterface
     private $name;
 
     /**
+     * @var int
+     */
+    private $parentId;
+
+    /**
      * @param int $id
      * @param string $name
      */
-    public function __construct(int $id = null, string $name = null)
+    public function __construct(int $id = null, string $name = null, int $parentId = null)
     {
         $this->id = $id;
         $this->name = $name;
+        $this->parentId = $parentId;
     }
 
     /**
@@ -45,5 +51,13 @@ class FolderInformation implements FolderInformationInterface
     public function getName(): string
     {
         return $this->name;
+    }
+
+    /**
+     * @return int
+     */
+    public function getParentId(): int
+    {
+        return $this->parentId;
     }
 }
