@@ -143,6 +143,7 @@ Standard folder of an object class<br>
 FolderInformation(
     int <id>
     string <name>
+    int <parentId>
 )
 ```
 ##### HashMap

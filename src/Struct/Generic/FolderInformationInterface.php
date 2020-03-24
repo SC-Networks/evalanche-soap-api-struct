@@ -20,4 +20,9 @@ interface FolderInformationInterface extends StructInterface
      * @return string
      */
     public function getName(): string;
+
+    /**
+     * @return int
+     */
+    public function getParentId(): int;
 }

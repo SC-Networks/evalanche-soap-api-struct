@@ -20,7 +20,8 @@ class FolderInformationTest extends StructTestCase
     {
         $this->subject = new FolderInformation(
             777,
-            'some name'
+            'some name',
+            9999
         );
     }
 
@@ -33,4 +34,10 @@ class FolderInformationTest extends StructTestCase
     {
         $this->assertSame('some name', $this->subject->getName());
     }
+
+    public function testGetParentIdCanReturnInt()
+    {
+        $this->assertSame(9999, $this->subject->getParentId());
+    }
+
 }
