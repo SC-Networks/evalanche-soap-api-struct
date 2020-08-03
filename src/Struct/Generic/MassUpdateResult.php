@@ -68,6 +68,8 @@ class MassUpdateResult implements MassUpdateResultInterface
     }
 
     /**
+     * Returns the list of profile ids which have been ignored
+     * 
      * @return string[]
      */
     public function getIgnored(): array
@@ -76,6 +78,8 @@ class MassUpdateResult implements MassUpdateResultInterface
     }
 
     /**
+     * Returns the list of profile ids which caused errors
+     * 
      * @return int[]
      */
     public function getError(): array
