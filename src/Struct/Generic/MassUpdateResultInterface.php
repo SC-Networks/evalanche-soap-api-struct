@@ -22,11 +22,15 @@ interface MassUpdateResultInterface extends StructInterface
     public function getCreated(): HashMapInterface;
 
     /**
+     * Returns the list of profile ids which have been ignored
+     * 
      * @return string[]
      */
     public function getIgnored(): array;
 
     /**
+     * Returns the list of profile ids which caused errors
+     *
      * @return int[]
      */
     public function getError(): array;
