@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Marketplace;
 
-use Scn\EvalancheSoapStruct\Struct\Generic\LanguageInterface;
-
 /**
  * Represents an Evalanche Marketplace Category
  *
@@ -19,17 +17,17 @@ class Category implements CategoryInterface
     private $id;
 
     /**
-     * @var \Scn\EvalancheSoapStruct\Struct\Generic\LanguageInterface[]
+     * @var string
      */
     private $text;
 
     /**
      * @param int $id
-     * @param LanguageInterface[] $text
+     * @param string $text
      */
     public function __construct(
         int $id = null,
-        array $text = null
+        string $text = null
     ) {
         $this->id = $id;
         $this->text = $text;
@@ -44,9 +42,9 @@ class Category implements CategoryInterface
     }
 
     /**
-     * @return LanguageInterface[]
+     * @return string
      */
-    public function getText(): array
+    public function getText(): string
     {
         return $this->text;
     }

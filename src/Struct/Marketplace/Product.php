@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Marketplace;
 
-use Scn\EvalancheSoapStruct\Struct\Generic\LanguageInterface;
-
 /**
  * Represents an Evalanche Marketplace Product
  *
@@ -19,29 +17,37 @@ class Product implements ProductInterface
     private $id;
 
     /**
+     * @var string
+     */
+    private $title;
+
+    /**
+     * @var string
+     */
+    private $text;
+
+    /**
      * @var int
      */
     private $price;
 
     /**
-     * @var LanguageInterface[]
-     */
-    private $text;
-
-    /**
      * Product constructor.
      * @param string $id
+     * @param string $title
+     * @param string $text
      * @param int $price
-     * @param LanguageInterface[] $text
      */
     public function __construct(
         string $id = null,
-        int $price = null,
-        array $text = null
+        string $title = null,
+        string $text = null,
+        int $price = null
     ) {
         $this->id = $id;
-        $this->price = $price;
+        $this->title = $title;
         $this->text = $text;
+        $this->price = $price;
     }
 
     /**
@@ -52,19 +58,24 @@ class Product implements ProductInterface
         return $this->id;
     }
 
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    /**
+     * @return string
+     */
+    public function getText(): string
+    {
+        return $this->text;
+    }
+
     /**
      * @return int
      */
     public function getPrice(): int
     {
         return $this->price;
-    }
-
-    /**
-     * @return LanguageInterface[]
-     */
-    public function getText(): array
-    {
-        return $this->text;
     }
 }

@@ -10,5 +10,7 @@ interface ProductInterface extends StructInterface
 
     public function getPrice(): int;
 
-    public function getText(): array;
+    public function getTitle(): string;
+
+    public function getText(): string;
 }
