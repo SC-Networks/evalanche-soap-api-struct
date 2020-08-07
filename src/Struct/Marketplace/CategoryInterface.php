@@ -8,5 +8,5 @@ interface CategoryInterface extends StructInterface
 {
     public function getId(): int;
 
-    public function getText(): array;
+    public function getText(): string;
 }

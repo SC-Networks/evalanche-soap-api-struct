@@ -2,7 +2,6 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Marketplace;
 
-use Scn\EvalancheSoapStruct\Struct\Generic\LanguageInterface;
 use Scn\EvalancheSoapStruct\StructTestCase;
 
 class ProductTest extends StructTestCase
@@ -16,11 +15,9 @@ class ProductTest extends StructTestCase
     {
         $this->subject = new Product(
             'some-fancy-uuid',
-            700,
-            [
-                $this->getMockBuilder(LanguageInterface::class)->getMock(),
-                $this->getMockBuilder(LanguageInterface::class)->getMock(),
-            ]
+            'some title',
+            'some text',
+            700
         );
     }
 
@@ -40,12 +37,13 @@ class ProductTest extends StructTestCase
         );
     }
 
-    public function testGetTextCanReturnArrayOfLanguageInterface()
+    public function testGetTextCanReturnString()
     {
-        $this->assertCount(2, $this->subject->getText());
-        $this->assertContainsOnlyInstancesOf(
-            LanguageInterface::class,
-            $this->subject->getText()
-        );
+        $this->assertSame('some text', $this->subject->getText());
+    }
+
+    public function testGetTitleCanReturnString()
+    {
+        $this->assertSame('some title', $this->subject->getTitle());
     }
 }
