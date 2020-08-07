@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.4.1] - 2020-08-07
+### Changed
+- Correct issues in the Marketplace models
+
 ## [1.4.0] - 2020-03-25
 ### Added
 - ParentId for Folder Model
