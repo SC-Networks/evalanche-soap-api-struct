@@ -15,222 +15,222 @@ class MailingConfiguration implements MailingConfigurationInterface
     /**
      * @var string
      */
-    private $externalTrackingCode;
+    protected $externalTrackingCode;
 
     /**
      * @var string
      */
-    private $campaignId;
+    protected $campaignId;
 
     /**
      * @var string
      */
-    private $externalXmlUrl;
+    protected $externalXmlUrl;
 
     /**
      * @var string
      */
-    private $salutationFemale;
+    protected $salutationFemale;
 
     /**
      * @var string
      */
-    private $salutationMale;
+    protected $salutationMale;
 
     /**
      * @var string
      */
-    private $salutationCompany;
+    protected $salutationCompany;
 
     /**
      * @var string
      */
-    private $salutationFamily;
+    protected $salutationFamily;
 
     /**
      * @var string
      */
-    private $salutationOther;
+    protected $salutationOther;
 
     /**
      * @var string
      */
-    private $senderEmail;
+    protected $senderEmail;
 
     /**
      * @var string
      */
-    private $senderName;
+    protected $senderName;
 
     /**
      * @var string
      */
-    private $replyName;
+    protected $replyName;
 
     /**
      * @var string
      */
-    private $replyEmail;
+    protected $replyEmail;
 
     /**
      * @var string
      */
-    private $grantUrl;
+    protected $grantUrl;
 
     /**
      * @var string
      */
-    private $revokeUrl;
+    protected $revokeUrl;
 
     /**
      * @var string
      */
-    private $inputfield0;
+    protected $inputfield0;
 
     /**
      * @var string
      */
-    private $inputfield1;
+    protected $inputfield1;
 
     /**
      * @var string
      */
-    private $inputfield2;
+    protected $inputfield2;
 
     /**
      * @var string
      */
-    private $inputfield3;
+    protected $inputfield3;
 
     /**
      * @var string
      */
-    private $inputfield4;
+    protected $inputfield4;
 
     /**
      * @var string
      */
-    private $inputfield5;
+    protected $inputfield5;
 
     /**
      * @var string
      */
-    private $inputfield6;
+    protected $inputfield6;
 
     /**
      * @var string
      */
-    private $inputfield7;
+    protected $inputfield7;
 
     /**
      * @var string
      */
-    private $inputfield8;
+    protected $inputfield8;
 
     /**
      * @var string
      */
-    private $inputfield9;
+    protected $inputfield9;
 
     /**
      * @var string
      */
-    private $textarea0;
+    protected $textarea0;
 
     /**
      * @var string
      */
-    private $textarea1;
+    protected $textarea1;
 
     /**
      * @var string
      */
-    private $textarea2;
+    protected $textarea2;
 
     /**
      * @var string
      */
-    private $textarea3;
+    protected $textarea3;
 
     /**
      * @var string
      */
-    private $textarea4;
+    protected $textarea4;
 
     /**
      * @var string
      */
-    private $textarea5;
+    protected $textarea5;
 
     /**
      * @var string
      */
-    private $textarea6;
+    protected $textarea6;
 
     /**
      * @var string
      */
-    private $textarea7;
+    protected $textarea7;
 
     /**
      * @var string
      */
-    private $textarea8;
+    protected $textarea8;
 
     /**
      * @var string
      */
-    private $textarea9;
+    protected $textarea9;
 
     /**
      * @var string
      */
-    private $htmlarea0;
+    protected $htmlarea0;
 
     /**
      * @var string
      */
-    private $htmlarea1;
+    protected $htmlarea1;
 
     /**
      * @var string
      */
-    private $htmlarea2;
+    protected $htmlarea2;
 
     /**
      * @var string
      */
-    private $htmlarea3;
+    protected $htmlarea3;
 
     /**
      * @var string
      */
-    private $htmlarea4;
+    protected $htmlarea4;
 
     /**
      * @var string
      */
-    private $htmlarea5;
+    protected $htmlarea5;
 
     /**
      * @var string
      */
-    private $htmlarea6;
+    protected $htmlarea6;
 
     /**
      * @var string
      */
-    private $htmlarea7;
+    protected $htmlarea7;
 
     /**
      * @var string
      */
-    private $htmlarea8;
+    protected $htmlarea8;
 
     /**
      * @var string
      */
-    private $htmlarea9;
+    protected $htmlarea9;
 
     /**
      * @param string $externalTrackingCode
