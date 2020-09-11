@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.5.0] - 2020-09-11
+### Added
+- Struct for MailingTemplateConfiguration
+
 ## [1.4.1] - 2020-08-07
 ### Changed
 - Correct issues in the Marketplace models
