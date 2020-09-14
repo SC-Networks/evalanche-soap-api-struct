@@ -14,7 +14,11 @@
     {
       "name": "Sascha Nützel",
       "homepage": "https://www.sc-networks.com"
-    }
+    },
+	{
+	  "name": "Daniel Jakob",
+	  "homepage": "https://www.sc-networks.com"
+	}
   ],
   "require": {
     "php": ">=7.2"
