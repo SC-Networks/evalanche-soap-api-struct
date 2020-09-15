@@ -11,9 +11,11 @@ abstract class GenericSetterGetterTestCase extends StructTestCase
      * @dataProvider methodDataProvider
      */
     public function testSetterAndGetter(
-        string $method
+        string $method,
+        string $testDatatype
     ): void {
-        $value = 'some-value';
+        $value = $this->getTestData($testDatatype);
+        
         $subject = $this->getSubject();
 
         call_user_func_array([$subject, 'set'.$method], [$value]);
@@ -22,6 +24,19 @@ abstract class GenericSetterGetterTestCase extends StructTestCase
             $value,
             call_user_func_array([$subject, 'get'.$method], [])
         );
+    }
+    
+    private function getTestData(string $testDataType)
+    {
+        switch ($testDataType) {
+            case 'int':
+                return 666;
+            case 'array':
+                return ['some-data'];
+            case 'string':
+            default:
+                return 'some-value';
+        }
     }
 
     abstract public function methodDataProvider(): array;

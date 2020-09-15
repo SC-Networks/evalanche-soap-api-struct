@@ -20,11 +20,11 @@ class MailingTemplatesSourcesTest extends GenericSetterGetterTestCase
     public function methodDataProvider(): array
     {
         return [
-            ['TemplateEmail'],
-            ['TemplateText'],
-            ['TemplateWeb'],
-            ['TemplatePdf'],
-            ['TemplateLandingpage']
+            ['TemplateEmail', 'string'],
+            ['TemplateText', 'string'],
+            ['TemplateWeb', 'string'],
+            ['TemplatePdf', 'string'],
+            ['TemplateLandingpage', 'string']
         ];
     }
     
