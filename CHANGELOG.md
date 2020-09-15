@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.7.0] - 2020-09-15
+### Added
+- Structs for MailingSlotConfigs
+
 ## [1.6.0] - 2020-09-14
 ### Added
 - Struct for MailingTemplateSources
