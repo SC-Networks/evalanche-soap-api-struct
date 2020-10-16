@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.8.0] - 2020-10-16
+### Added
+- Struct for CouponList profile coupon
+
 ## [1.7.0] - 2020-09-15
 ### Added
 - Structs for MailingSlotConfigs
