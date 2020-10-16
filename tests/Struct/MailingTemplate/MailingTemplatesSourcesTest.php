@@ -27,7 +27,7 @@ class MailingTemplatesSourcesTest extends GenericSetterGetterTestCase
             ['TemplateLandingpage', 'string']
         ];
     }
-    
+
     protected function getSubject()
     {
         return $this->subject;
