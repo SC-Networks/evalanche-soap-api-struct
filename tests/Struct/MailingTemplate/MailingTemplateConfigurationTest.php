@@ -368,4 +368,12 @@ class MailingTemplateConfigurationTest extends StructTestCase
             $this->subject->setHtmlarea9('some htmlarea 9')->getHtmlarea9()
         );
     }
+
+    public function testGetContainerTypeCanReturnString()
+    {
+        $this->assertSame(
+            'some container type',
+            $this->subject->setContainerType('some container type')->getContainerType()
+        );
+    }
 }
