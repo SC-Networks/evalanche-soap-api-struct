@@ -538,16 +538,4 @@ interface MailingConfigurationInterface extends StructInterface
      * @return MailingConfiguration
      */
     public function setHtmlarea9(string $htmlarea9): MailingConfiguration;
-
-    /**
-     * @return string
-     */
-    public function getContainerType(): string;
-
-    /**
-     * @param string $containerType
-     *
-     * @return $this
-     */
-    public function setContainerType(string $containerType): MailingConfiguration;
 }

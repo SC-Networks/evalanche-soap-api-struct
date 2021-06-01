@@ -233,11 +233,6 @@ class MailingConfiguration implements MailingConfigurationInterface
     protected $htmlarea9;
 
     /**
-     * @var string
-     */
-    protected $containerType;
-
-    /**
      * @param string $externalTrackingCode
      * @param string $campaignId
      * @param string $externalXmlUrl
@@ -282,7 +277,6 @@ class MailingConfiguration implements MailingConfigurationInterface
      * @param string $htmlarea7
      * @param string $htmlarea8
      * @param string $htmlarea9
-     * @param string $containerType
      */
     public function __construct(
         string $externalTrackingCode = null,
@@ -328,8 +322,7 @@ class MailingConfiguration implements MailingConfigurationInterface
         string $htmlarea6 = null,
         string $htmlarea7 = null,
         string $htmlarea8 = null,
-        string $htmlarea9 = null,
-        string $containerType = null
+        string $htmlarea9 = null
     ) {
         $this->externalTrackingCode = $externalTrackingCode;
         $this->campaignId = $campaignId;
@@ -375,7 +368,6 @@ class MailingConfiguration implements MailingConfigurationInterface
         $this->htmlarea7 = $htmlarea7;
         $this->htmlarea8 = $htmlarea8;
         $this->htmlarea9 = $htmlarea9;
-        $this->containerType = $containerType;
     }
 
     /**
@@ -1211,25 +1203,6 @@ class MailingConfiguration implements MailingConfigurationInterface
     public function setHtmlarea9(string $htmlarea9): MailingConfiguration
     {
         $this->htmlarea9 = $htmlarea9;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getContainerType(): string
-    {
-        return $this->containerType;
-    }
-
-    /**
-     * @param string $containerType
-     *
-     * @return $this
-     */
-    public function setContainerType(string $containerType): MailingConfiguration
-    {
-        $this->containerType = $containerType;
         return $this;
     }
 }
