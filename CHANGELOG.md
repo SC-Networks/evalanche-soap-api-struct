@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.9.0] - 2ß21-06-07
+### Added
+- ContainerType to MailingTemplateConfiguration
+
 ## [1.8.0] - 2020-10-16
 ### Added
 - Struct for CouponList profile coupon
