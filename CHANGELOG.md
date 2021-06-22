@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.10.0] - 2ß21-06-22
+### Added
+- Structs to support upcoming workflow methods
+
 ## [1.9.0] - 2ß21-06-07
 ### Added
 - ContainerType to MailingTemplateConfiguration
