@@ -1,6 +1,10 @@
 # Changelog
 
-## [1.10.0] - 2ß21-06-22
+## [1.11.0] - 2021-06-24
+### Added
+- Structs to support form configurations
+
+## [1.10.0] - 2021-06-22
 ### Added
 - Structs to support upcoming workflow methods
 
