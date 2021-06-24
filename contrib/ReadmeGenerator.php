@@ -102,6 +102,7 @@ final class ReadmeGenerator
             });
             return implode('<br>' . PHP_EOL, $descriptionLines);
         }
+        return null;
     }
 
     private function parseParam(Reflector $reflector, string $title): string
@@ -151,6 +152,7 @@ $readmeDocumentStruct = new ReadmeDocument(
         'Scn\EvalancheSoapStruct\Struct\Account',
         'Scn\EvalancheSoapStruct\Struct\Blacklist',
         'Scn\EvalancheSoapStruct\Struct\Container',
+        'Scn\EvalancheSoapStruct\Struct\Form',
         'Scn\EvalancheSoapStruct\Struct\Generic',
         'Scn\EvalancheSoapStruct\Struct\Mailing',
         'Scn\EvalancheSoapStruct\Struct\Mandator',
