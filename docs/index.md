@@ -135,6 +135,37 @@ ContainerAttributeRoleType(
     string <name>
 )
 ```
+### Form
+##### FormConfiguration
+Contains information about the configuration of a specific form<br>
+  like campaign id, individual salutations, reply address, input fields, etc.<br>
+ 
+```
+FormConfiguration(
+    string <uniqueEntryCriteriaId>
+    string <blockDuplicates>
+    string <doNotResetUnsubscription>
+    string <permissionMode>
+    string <enablePostAddressValidation>
+    string <successUrl>
+    string <emailingId>
+    string <emailingTargetgroupId>
+    string <newsletterBccRecipientEmail>
+    string <inquiryEmailingId>
+    string <inquirySendOnChange>
+    string <inquiryRecipientEmails>
+    string <formLanguage>
+    string <enableAutomatedEntryProtection>
+    string <reCaptchaActivated>
+    string <isMobileOptimized>
+    string <isAutoSubmitForm>
+    string <validationFormId>
+    string <autoFormActionActivated>
+    string <formApiState>
+    string <formApiCorsDomains>
+    string <externalTrackingcode>
+)
+```
 ### Generic
 ##### FolderInformation
 Standard folder of an object class<br>
@@ -194,16 +225,6 @@ JobResult(
     array(HashMapInterface) <result>
     int <chunksLeft>
     int <resultSize>
-)
-```
-##### Language
-Represents a Language in Evalanche.<br>
-  Contains information the Language Id and json encoded Text.<br>
- 
-```
-Language(
-    int <id>
-    string <text>
 )
 ```
 ##### MassUpdateResult
@@ -369,6 +390,37 @@ MailingImpression(
     int <timestamp>
 )
 ```
+##### MailingSlot
+Represents the configuration of a slot in a mailing
+```
+MailingSlot(
+    int <id>
+    string <name>
+    int <slotNumber>
+    int <sortTypeId>
+    int <sortTypeValue>
+    array <items>
+)
+```
+##### MailingSlotConfiguration
+
+```
+MailingSlotConfiguration(
+    array <items>
+)
+```
+##### MailingSlotItem
+Represents the article template configuration for a certain article type in a slot
+```
+MailingSlotItem(
+    int <articleTypeId>
+    int <emailArticleTemplateId>
+    int <textArticleTemplateId>
+    int <landingpageArticleTemplateId>
+    int <pdfArticleTemplateId>
+    int <webArticleTemplateId>
+)
+```
 ##### MailingStatus
 Contains profile data and sendout state for a specific mailing and a specific profile.<br>
  
@@ -409,7 +461,7 @@ Represents an Evalanche Marketplace Category<br>
 ```
 Category(
     int <id>
-    array(LanguageInterface) <text>
+    string <text>
 )
 ```
 ##### Product
@@ -418,8 +470,9 @@ Represents an Evalanche Marketplace Product<br>
 ```
 Product(
     string <id>
+    string <title>
+    string <text>
     int <price>
-    array(LanguageInterface) <text>
 )
 ```
 ### Pool
@@ -735,6 +788,23 @@ User(
 )
 ```
 ### Workflow
+##### WorkflowConfigVersion
+Represents a config version item
+```
+WorkflowConfigVersion(
+    string <configVersion>
+    int <createDate>
+    bool <latest>
+)
+```
+##### WorkflowConfiguration
+Represents the result of a workflows getConfiguration call
+```
+WorkflowConfiguration(
+    string <configVersion>
+    string <configuration>
+)
+```
 ##### WorkflowDetail
 Represents a workflow, in Evalanche called a campaign.<br>
   Contains information about its id, name, description, start and end times, number of profiles, and current status.<br>
@@ -750,5 +820,22 @@ WorkflowDetail(
     string <description>
     int <state>
     int <profileCount>
+)
+```
+##### WorkflowStateChangeResult
+Represents a state change result
+```
+WorkflowStateChangeResult(
+    bool <stateChangeSuccessful>
+    array <errorList>
+)
+```
+##### WorkflowStateChangeResultError
+Represents an error item which can occur in state change requests
+```
+WorkflowStateChangeResultError(
+    string <type>
+    string <node>
+    string <param>
 )
 ```
