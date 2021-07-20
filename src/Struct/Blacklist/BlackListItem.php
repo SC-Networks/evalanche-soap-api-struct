@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents one blacklisted e-mail address with description
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
  */
 class BlackListItem implements BlackListItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */

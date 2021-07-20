@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Workflow;
+use \Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
 
 /**
  * Represents a workflow, in Evalanche called a campaign.
@@ -12,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Workflow;
  */
 class WorkflowDetail implements WorkflowDetailInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

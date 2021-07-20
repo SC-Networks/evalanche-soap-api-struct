@@ -2,6 +2,8 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents an Accountingitem.
  * Contains information about the concerned mandator id, date and amount of charges.
@@ -10,6 +12,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Account;
  */
 class AccountingItem implements AccountingItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */

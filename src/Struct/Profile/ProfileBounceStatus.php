@@ -6,6 +6,7 @@ namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMap;
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
 
 /**
  * Represents a profile bounce status element.
@@ -15,6 +16,8 @@ use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
  */
 class ProfileBounceStatus implements ProfileBounceStatusInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

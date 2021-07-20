@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents an impression (opening) of a specific mailing.
  * Contains information about the profile which performed the action, as well as the timestamp.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingImpression implements MailingImpressionInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

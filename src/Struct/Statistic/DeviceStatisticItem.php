@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a statistic of the devices used.
  * Contains information about the description of the devices and the Count.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class DeviceStatisticItem implements DeviceStatisticItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */

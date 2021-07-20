@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\SmartLink;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a smart link element.
  * Contains information about its id, name and tracking url.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\SmartLink;
  */
 class SmartLink implements SmartLinkInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

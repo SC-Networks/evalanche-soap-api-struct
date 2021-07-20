@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a statistic about a Mailing.
  * Contains Information about Profile- Count, Duplicate- Count, Blacklists Count, Hard and Softbounces, Impressions.
@@ -13,6 +15,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class MailingStatistic implements MailingStatisticInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

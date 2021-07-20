@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Container;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents one attribute of a container.
  * Contains information about name, label, type, mandatoriness, visibility, etc.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Container;
  */
 class ContainerAttribute implements ContainerAttributeInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

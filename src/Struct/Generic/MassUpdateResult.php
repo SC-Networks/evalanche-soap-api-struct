@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Result of a mass profile update.
  * \<updated> and \<created> are HashMaps:
@@ -13,6 +15,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class MassUpdateResult implements MassUpdateResultInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var HashMap
      */
