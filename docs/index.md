@@ -586,6 +586,24 @@ SmartLink(
     string <trackingUrl>
 )
 ```
+##### SmartLinkConfiguration
+Represents a smart link configuration element.<br>
+
+```
+SmartLinkConfiguration(
+    int <id>
+    string <targetUrl>
+    bool <individualScoringConfig>
+    int restrictionTargetGroupId
+    array restrictionUserAgents
+    int milestoneId
+    bool activateRedirect
+    bool activateProfileUpdate
+    bool activateTracking
+    array(SmartLinkScoringConfiguration) scoringConfigs
+    array(SmartLinkPoolConfiguration) poolAttributes
+)
+```
 ### Statistic
 ##### ArticleStatistic
 Represents a article statistic. Contains information his name, as well as statistics about articles of all<br>
