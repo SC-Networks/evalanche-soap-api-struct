@@ -7,7 +7,7 @@ namespace Scn\EvalancheSoapStruct\Struct\SmartLink;
 /**
  * Represents a smart link configuration element.
  *
- * @package Scn\EvalancheSoapStruct\Struct\SmartlinkLinkConfiguration
+ * @package Scn\EvalancheSoapStruct\Struct\SmartLink
  */
 class SmartLinkConfiguration implements SmartLinkConfigurationInterface
 {
