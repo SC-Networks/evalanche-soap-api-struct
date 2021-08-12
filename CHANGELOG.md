@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.12.0] - 2021-08-12
+### Added
+- Structs to support smart link configurations
+
 ## [1.11.0] - 2021-06-24
 ### Added
 - Structs to support form configurations
