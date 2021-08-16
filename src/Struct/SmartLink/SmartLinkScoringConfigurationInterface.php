@@ -2,12 +2,14 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\SmartLink;
 
+use Scn\EvalancheSoapStruct\Struct\StructInterface;
+
 /**
  * Represents a smart link scoring configuration element.
  *
  * @package Scn\EvalancheSoapStruct\Struct\SmartLink
  */
-interface SmartLinkScoringConfigurationInterface
+interface SmartLinkScoringConfigurationInterface extends StructInterface
 {
     /**
      * @return int

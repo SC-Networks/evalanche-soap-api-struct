@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.12.1] - 2021-08-16
+### Fixed
+- Add missing struct interface to smart link configuration interfaces
+
 ## [1.12.0] - 2021-08-12
 ### Added
 - Structs to support smart link configurations
@@ -12,7 +16,7 @@
 ### Added
 - Structs to support upcoming workflow methods
 
-## [1.9.0] - 2ß21-06-07
+## [1.9.0] - 2021-06-07
 ### Added
 - ContainerType to MailingTemplateConfiguration
 

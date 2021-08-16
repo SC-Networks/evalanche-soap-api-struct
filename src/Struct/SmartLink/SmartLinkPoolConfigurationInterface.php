@@ -2,13 +2,14 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\SmartLink;
 
+use Scn\EvalancheSoapStruct\Struct\StructInterface;
 
 /**
  * Represents a smart link pool configuration element.
  *
  * @package Scn\EvalancheSoapStruct\Struct\SmartLink
  */
-interface SmartLinkPoolConfigurationInterface
+interface SmartLinkPoolConfigurationInterface extends StructInterface
 {
     /**
      * @return int
