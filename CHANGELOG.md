@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.13.0] - 2022-07-04
+### ADDED
+- new Salutation
+
 ## [1.12.1] - 2021-08-16
 ### Fixed
 - Add missing struct interface to smart link configuration interfaces
