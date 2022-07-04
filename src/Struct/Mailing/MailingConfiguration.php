@@ -55,6 +55,11 @@ class MailingConfiguration implements MailingConfigurationInterface
     /**
      * @var string
      */
+    protected $salutationDivers;
+
+    /**
+     * @var string
+     */
     protected $senderEmail;
 
     /**
@@ -241,6 +246,7 @@ class MailingConfiguration implements MailingConfigurationInterface
      * @param string $salutationCompany
      * @param string $salutationFamily
      * @param string $salutationOther
+     * @param string $salutationDivers
      * @param string $senderEmail
      * @param string $senderName
      * @param string $replyName
@@ -287,6 +293,7 @@ class MailingConfiguration implements MailingConfigurationInterface
         string $salutationCompany = null,
         string $salutationFamily = null,
         string $salutationOther = null,
+        string $salutationDivers = null,
         string $senderEmail = null,
         string $senderName = null,
         string $replyName = null,
@@ -332,6 +339,7 @@ class MailingConfiguration implements MailingConfigurationInterface
         $this->salutationCompany = $salutationCompany;
         $this->salutationFamily = $salutationFamily;
         $this->salutationOther = $salutationOther;
+        $this->salutationDivers = $salutationDivers;
         $this->senderEmail = $senderEmail;
         $this->senderName = $senderName;
         $this->replyName = $replyName;
@@ -517,6 +525,25 @@ class MailingConfiguration implements MailingConfigurationInterface
      * @return MailingConfiguration
      */
     public function setSalutationOther(string $salutationOther): MailingConfiguration
+    {
+        $this->salutationOther = $salutationOther;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSalutationDivers(): string
+    {
+        return $this->salutationOther;
+    }
+
+    /**
+     * @param string $salutationOther
+     *
+     * @return MailingConfiguration
+     */
+    public function setSalutationDivers(string $salutationOther): MailingConfiguration
     {
         $this->salutationOther = $salutationOther;
         return $this;

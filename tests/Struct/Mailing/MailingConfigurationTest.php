@@ -85,6 +85,14 @@ class MailingConfigurationTest extends StructTestCase
         );
     }
 
+    public function testGetSalutationDiversCanReturnString()
+    {
+        $this->assertSame(
+            'divers',
+            $this->subject->setSalutationDivers('divers')->getSalutationDivers()
+        );
+    }
+
     public function testGetSenderEmailCanReturnString()
     {
         $this->assertSame(
