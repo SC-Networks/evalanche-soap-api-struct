@@ -23,21 +23,29 @@ interface FormStatisticInterface extends StructInterface
 
     /**
      * @return string
+     *
+     * @deprecated Not supported in specialized method, please use `getById`
      */
     public function getUrl(): string;
 
     /**
      * @return int
+     *
+     * @deprecated Not supported in specialized method, please use `getById`
      */
     public function getTypeId(): int;
 
     /**
      * @return int
+     *
+     * @deprecated Not supported in specialized method, please use `getById`
      */
     public function getFolderId(): int;
 
     /**
      * @return int
+     *
+     * @deprecated Not supported in specialized method, please use `getById`
      */
     public function getMandatorId(): int;
 
