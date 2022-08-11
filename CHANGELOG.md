@@ -4,7 +4,7 @@
 ### Changed
 - Deprecate the following methods of `FormStatistic`: `getTypeId`,
   `getFolderId`, `getUrl`, `getMandatorId`. Those methods did not work anyway
-  and are not suppoed to be implemented in this struct.
+  and are not supposed to be implemented in this struct.
 
 ### Fixed
 - Let `FormStatistic`: `getTypeId`,  `getFolderId`, `getUrl`, `getMandatorId`
