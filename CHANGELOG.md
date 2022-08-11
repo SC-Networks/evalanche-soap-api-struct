@@ -1,7 +1,17 @@
 # Changelog
 
+## [1.13.1] - 2022-08-11
+### Changed
+- Deprecate the following methods of `FormStatistic`: `getTypeId`,
+  `getFolderId`, `getUrl`, `getMandatorId`. Those methods did not work anyway
+  and are not suppoed to be implemented in this struct.
+
+### Fixed
+- Let `FormStatistic`: `getTypeId`,  `getFolderId`, `getUrl`, `getMandatorId`
+  return valid default values
+
 ## [1.13.0] - 2022-07-04
-### ADDED
+### Added
 - new Salutation
 
 ## [1.12.1] - 2021-08-16
