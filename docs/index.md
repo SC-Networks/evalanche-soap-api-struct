@@ -317,6 +317,7 @@ MailingConfiguration(
     string <salutationCompany>
     string <salutationFamily>
     string <salutationOther>
+    string <salutationDivers>
     string <senderEmail>
     string <senderName>
     string <replyName>
@@ -588,20 +589,45 @@ SmartLink(
 ```
 ##### SmartLinkConfiguration
 Represents a smart link configuration element.<br>
-
+ 
 ```
 SmartLinkConfiguration(
     int <id>
     string <targetUrl>
     bool <individualScoringConfig>
-    int restrictionTargetGroupId
-    array restrictionUserAgents
-    int milestoneId
-    bool activateRedirect
-    bool activateProfileUpdate
-    bool activateTracking
-    array(SmartLinkScoringConfiguration) scoringConfigs
-    array(SmartLinkPoolConfiguration) poolAttributes
+    int <restrictionTargetGroupId>
+    array <restrictionUserAgents>
+    int <milestoneId>
+    bool <activateRedirect>
+    bool <activateProfileUpdate>
+    bool <activateTracking>
+    array <scoringConfigs>
+    array <poolAttributes>
+)
+```
+##### SmartLinkPoolConfiguration
+Represents a smart link pool configuration element.<br>
+ 
+```
+SmartLinkPoolConfiguration(
+    int <id>
+    int <poolId>
+    int <poolAttributeId>
+    string <value>
+    bool <isMerge>
+)
+```
+##### SmartLinkScoringConfiguration
+Represents a smart link scoring configuration element.<br>
+ 
+```
+SmartLinkScoringConfiguration(
+    int <id>
+    string <name>
+    int <value>
+    int <multipleScoreTimeThreshold>
+    int <scoringGroupId>
+    int <type>
 )
 ```
 ### Statistic

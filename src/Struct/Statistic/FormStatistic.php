@@ -142,34 +142,42 @@ class FormStatistic implements FormStatisticInterface
 
     /**
      * @return string
+     *
+     * @deprecated Not supported in specialized method, please use `getById`
      */
     public function getUrl(): string
     {
-        return $this->url;
+        return (string) $this->url;
     }
 
     /**
      * @return int
+     *
+     * @deprecated Not supported in specialized method, please use `getById`
      */
     public function getTypeId(): int
     {
-        return $this->typeId;
+        return (int) $this->typeId;
     }
 
     /**
      * @return int
+     *
+     * @deprecated Not supported in specialized method, please use `getById`
      */
     public function getFolderId(): int
     {
-        return $this->folderId;
+        return (int) $this->folderId;
     }
 
     /**
      * @return int
+     *
+     * @deprecated Not supported in specialized method, please use `getById`
      */
     public function getMandatorId(): int
     {
-        return $this->mandatorId;
+        return (int) $this->mandatorId;
     }
 
     /**
