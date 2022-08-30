@@ -63,6 +63,11 @@ class MailingTemplateConfiguration extends MailingConfiguration implements Maili
      * @param string $htmlarea8
      * @param string $htmlarea9
      * @param string $containerType
+     * @param string $salutationDivers
+     * @param string $grantTrackingUrl
+     * @param string $revokeTrackingUrl
+     * @param string $revokeConfirmationUrl
+     * @param bool $revokeConfirmationActive
      */
     public function __construct(
         string $externalTrackingCode = null,
@@ -109,7 +114,12 @@ class MailingTemplateConfiguration extends MailingConfiguration implements Maili
         string $htmlarea7 = null,
         string $htmlarea8 = null,
         string $htmlarea9 = null,
-        string $containerType = null
+        string $containerType = null,
+        string $salutationDivers = null,
+        string $revokeTrackingUrl = null,
+        string $grantTrackingUrl = null,
+        string $revokeConfirmationUrl = null,
+        bool $revokeConfirmationActive = false
     ) {
         parent::__construct(
             $externalTrackingCode,
@@ -120,6 +130,7 @@ class MailingTemplateConfiguration extends MailingConfiguration implements Maili
             $salutationCompany,
             $salutationFamily,
             $salutationOther,
+            $salutationDivers,
             $senderEmail,
             $senderName,
             $replyName,
@@ -155,7 +166,11 @@ class MailingTemplateConfiguration extends MailingConfiguration implements Maili
             $htmlarea6,
             $htmlarea7,
             $htmlarea8,
-            $htmlarea9
+            $htmlarea9,
+            $revokeTrackingUrl,
+            $grantTrackingUrl,
+            $revokeConfirmationUrl,
+            $revokeConfirmationActive
         );
         $this->containerType = $containerType;
     }

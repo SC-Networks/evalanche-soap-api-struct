@@ -82,6 +82,18 @@ class MailingConfiguration implements MailingConfigurationInterface
      */
     protected $grantUrl;
 
+    /** @var string */
+    protected $grantTrackingUrl;
+
+    /** @var string */
+    protected $revokeTrackingUrl;
+
+    /** @var string */
+    protected $revokeConfirmationUrl;
+
+    /** @var bool */
+    protected $revokeConfirmationActive;
+
     /**
      * @var string
      */
@@ -283,6 +295,10 @@ class MailingConfiguration implements MailingConfigurationInterface
      * @param string $htmlarea7
      * @param string $htmlarea8
      * @param string $htmlarea9
+     * @param string $grantTrackingUrl
+     * @param string $revokeTrackingUrl
+     * @param string $revokeConfirmationUrl
+     * @param bool $revokeConfirmationActive
      */
     public function __construct(
         string $externalTrackingCode = null,
@@ -329,7 +345,11 @@ class MailingConfiguration implements MailingConfigurationInterface
         string $htmlarea6 = null,
         string $htmlarea7 = null,
         string $htmlarea8 = null,
-        string $htmlarea9 = null
+        string $htmlarea9 = null,
+        string $revokeTrackingUrl = null,
+        string $grantTrackingUrl = null,
+        string $revokeConfirmationUrl = null,
+        bool $revokeConfirmationActive = false
     ) {
         $this->externalTrackingCode = $externalTrackingCode;
         $this->campaignId = $campaignId;
@@ -376,6 +396,10 @@ class MailingConfiguration implements MailingConfigurationInterface
         $this->htmlarea7 = $htmlarea7;
         $this->htmlarea8 = $htmlarea8;
         $this->htmlarea9 = $htmlarea9;
+        $this->grantTrackingUrl = $grantTrackingUrl;
+        $this->revokeTrackingUrl = $revokeTrackingUrl;
+        $this->revokeConfirmationUrl = $revokeConfirmationUrl;
+        $this->revokeConfirmationActive = $revokeConfirmationActive;
     }
 
     /**
@@ -660,6 +684,82 @@ class MailingConfiguration implements MailingConfigurationInterface
     public function setRevokeUrl(string $revokeUrl): MailingConfiguration
     {
         $this->revokeUrl = $revokeUrl;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGrantTrackingUrl(): string
+    {
+        return $this->grantTrackingUrl;
+    }
+
+    /**
+     * @param string $grantTrackingUrl
+     *
+     * @return MailingConfiguration
+     */
+    public function setGrantTrackingUrl(string $grantTrackingUrl): MailingConfiguration
+    {
+        $this->grantTrackingUrl = $grantTrackingUrl;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRevokeTrackingUrl(): string
+    {
+        return $this->revokeTrackingUrl;
+    }
+
+    /**
+     * @param string $revokeTrackingUrl
+     *
+     * @return MailingConfiguration
+     */
+    public function setRevokeTrackingUrl(string $revokeTrackingUrl): MailingConfiguration
+    {
+        $this->revokeTrackingUrl = $revokeTrackingUrl;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRevokeConfirmationUrl(): string
+    {
+        return $this->revokeConfirmationUrl;
+    }
+
+    /**
+     * @param string $revokeConfirmationUrl
+     *
+     * @return MailingConfiguration
+     */
+    public function setRevokeConfirmationUrl(string $revokeConfirmationUrl): MailingConfiguration
+    {
+        $this->revokeConfirmationUrl = $revokeConfirmationUrl;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getRevokeConfirmationActive(): bool
+    {
+        return $this->revokeConfirmationActive;
+    }
+
+    /**
+     * @param bool $revokeConfirmationActive
+     *
+     * @return MailingConfiguration
+     */
+    public function setRevokeConfirmationActive(bool $revokeConfirmationActive): MailingConfiguration
+    {
+        $this->revokeConfirmationActive = $revokeConfirmationActive;
         return $this;
     }
 

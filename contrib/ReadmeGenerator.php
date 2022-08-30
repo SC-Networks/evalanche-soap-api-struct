@@ -111,7 +111,8 @@ final class ReadmeGenerator
         $lines .= $title . '(' . PHP_EOL;
         foreach ($reflector->getParameters() as $param) {
             $lines .= "    " . $param->getType()->getName();
-            if ($param->isArray()) {
+            /** @var ReflectionParameter $param */
+            if ($param->getType()->getName() === 'array') {
                 $docBlock = $reflector->getDocComment();
                 $matches = [];
                 if (preg_match('/@param ([a-z]*)\[\] \$/i', $docBlock, $matches)) {
@@ -155,6 +156,7 @@ $readmeDocumentStruct = new ReadmeDocument(
         'Scn\EvalancheSoapStruct\Struct\Form',
         'Scn\EvalancheSoapStruct\Struct\Generic',
         'Scn\EvalancheSoapStruct\Struct\Mailing',
+        'Scn\EvalancheSoapStruct\Struct\MailingTemplate',
         'Scn\EvalancheSoapStruct\Struct\Mandator',
         'Scn\EvalancheSoapStruct\Struct\Marketplace',
         'Scn\EvalancheSoapStruct\Struct\Pool',

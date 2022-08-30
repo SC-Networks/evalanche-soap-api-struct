@@ -182,6 +182,54 @@ interface MailingConfigurationInterface extends StructInterface
     /**
      * @return string
      */
+    public function getGrantTrackingUrl(): string;
+
+    /**
+     * @param string $grantTrackingUrl
+     *
+     * @return MailingConfiguration
+     */
+    public function setGrantTrackingUrl(string $grantTrackingUrl): MailingConfiguration;
+
+    /**
+     * @return string
+     */
+    public function getRevokeTrackingUrl(): string;
+
+    /**
+     * @param string $revokeTrackingUrl
+     *
+     * @return MailingConfiguration
+     */
+    public function setRevokeTrackingUrl(string $revokeTrackingUrl): MailingConfiguration;
+
+    /**
+     * @return string
+     */
+    public function getRevokeConfirmationUrl(): string;
+
+    /**
+     * @param string $revokeConfirmationUrl
+     *
+     * @return MailingConfiguration
+     */
+    public function setRevokeConfirmationUrl(string $revokeConfirmationUrl): MailingConfiguration;
+
+    /**
+     * @return bool
+     */
+    public function getRevokeConfirmationActive(): bool;
+
+    /**
+     * @param bool $revokeConfirmationActive
+     *
+     * @return MailingConfiguration
+     */
+    public function setRevokeConfirmationActive(bool $revokeConfirmationActive): MailingConfiguration;
+
+    /**
+     * @return string
+     */
     public function getInputfield0(): string;
 
     /**
