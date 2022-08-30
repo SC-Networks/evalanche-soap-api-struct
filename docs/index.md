@@ -354,6 +354,10 @@ MailingConfiguration(
     string <htmlarea7>
     string <htmlarea8>
     string <htmlarea9>
+    string <revokeTrackingUrl>
+    string <grantTrackingUrl>
+    string <revokeConfirmationUrl>
+    bool <revokeConfirmationActive>
 )
 ```
 ##### MailingDetail
@@ -442,6 +446,75 @@ Represents a combination of a specific TargetGroup id and a specific subject tex
 MailingSubject(
     int <targetGroupId>
     string <subject>
+)
+```
+### MailingTemplate
+##### MailingTemplateConfiguration
+Contains information about the configuration of a specific mailing template<br>
+  like campaign id, individual salutations, reply address, input fields, etc.
+```
+MailingTemplateConfiguration(
+    string <externalTrackingCode>
+    string <campaignId>
+    string <externalXmlUrl>
+    string <salutationFemale>
+    string <salutationMale>
+    string <salutationCompany>
+    string <salutationFamily>
+    string <salutationOther>
+    string <senderEmail>
+    string <senderName>
+    string <replyName>
+    string <replyEmail>
+    string <grantUrl>
+    string <revokeUrl>
+    string <inputfield0>
+    string <inputfield1>
+    string <inputfield2>
+    string <inputfield3>
+    string <inputfield4>
+    string <inputfield5>
+    string <inputfield6>
+    string <inputfield7>
+    string <inputfield8>
+    string <inputfield9>
+    string <textarea0>
+    string <textarea1>
+    string <textarea2>
+    string <textarea3>
+    string <textarea4>
+    string <textarea5>
+    string <textarea6>
+    string <textarea7>
+    string <textarea8>
+    string <textarea9>
+    string <htmlarea0>
+    string <htmlarea1>
+    string <htmlarea2>
+    string <htmlarea3>
+    string <htmlarea4>
+    string <htmlarea5>
+    string <htmlarea6>
+    string <htmlarea7>
+    string <htmlarea8>
+    string <htmlarea9>
+    string <containerType>
+    string <salutationDivers>
+    string <revokeTrackingUrl>
+    string <grantTrackingUrl>
+    string <revokeConfirmationUrl>
+    bool <revokeConfirmationActive>
+)
+```
+##### MailingTemplatesSources
+Contains the source code of the mailing views
+```
+MailingTemplatesSources(
+    string <templateEmail>
+    string <templateText>
+    string <templateWeb>
+    string <templatePdf>
+    string <templateLandingpage>
 )
 ```
 ### Mandator

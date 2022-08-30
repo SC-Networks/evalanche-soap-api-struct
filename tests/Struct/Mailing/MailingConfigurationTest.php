@@ -141,6 +141,37 @@ class MailingConfigurationTest extends StructTestCase
         );
     }
 
+    public function testGetGrantTrackingUrlCanReturnString(): void
+    {
+        $this->assertSame(
+            'some grant tracking url',
+            $this->subject->setGrantTrackingUrl('some grant tracking url')->getGrantTrackingUrl()
+        );
+    }
+
+    public function testGetRevokeTrackingUrlCanReturnString(): void
+    {
+        $this->assertSame(
+            'some revoke tracking url',
+            $this->subject->setRevokeTrackingUrl('some revoke tracking url')->getRevokeTrackingUrl()
+        );
+    }
+
+    public function testGetRevokeConfirmationUrlCanReturnString(): void
+    {
+        $this->assertSame(
+            'some revoke confirmation url',
+            $this->subject->setRevokeConfirmationUrl('some revoke confirmation url')->getRevokeConfirmationUrl()
+        );
+    }
+
+    public function testGetRevokeConfirmationActiveReturnsValue(): void
+    {
+        $this->assertTrue(
+            $this->subject->setRevokeConfirmationActive(true)->getRevokeConfirmationActive()
+        );
+    }
+
     public function testGetInputfield0CanReturnString()
     {
         $this->assertSame(
