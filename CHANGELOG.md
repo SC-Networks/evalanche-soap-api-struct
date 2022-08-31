@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.14.0] - 2022-08-31
+### Added
+- New MailingConfiguration properties `grantTrackingUrl`, `revokeTrackingUrl`,
+  `revokeConfirmationUrl`, `revokeConfirmationActive`
+
+### Fixed
+- Correct `divers` salutation usage in MailingTemplateConfiguration
+
 ## [1.13.1] - 2022-08-11
 ### Changed
 - Deprecate the following methods of `FormStatistic`: `getTypeId`,
