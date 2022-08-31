@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.14.0] - 2022-08-31
+## [1.14.0] - 2022-09-09
 ### Added
 - New MailingConfiguration properties `grantTrackingUrl`, `revokeTrackingUrl`,
   `revokeConfirmationUrl`, `revokeConfirmationActive`
