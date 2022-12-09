@@ -1,15 +1,15 @@
 <?php
 
-namespace Scn\EvalancheSoapStruct\Struct\Generic;
+namespace Scn\EvalancheSoapStruct\Struct\Article;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
 
 /**
- * Class ResourceInformationInterface
+ * Class ArticleDetailInterface
  *
- * @package Scn\EvalancheSoapStruct\Struct\Generic
+ * @package Scn\EvalancheSoapStruct\Struct\Article
  */
-interface ResourceInformationInterface extends StructInterface
+interface ArticleDetailInterface extends StructInterface
 {
     /**
      * @return int
@@ -40,4 +40,9 @@ interface ResourceInformationInterface extends StructInterface
      * @return int
      */
     public function getMandatorId(): int;
+
+    /**
+     * @return int
+     */
+    public function getArticleTypeId(): int;
 }
