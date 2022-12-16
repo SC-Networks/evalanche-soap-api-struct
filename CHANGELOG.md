@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.15.0] - 2022-12-16
+### ADDED
+- Struct for ArticleDetail
+- Structs for ContainerDetail
+
 ## [1.14.0] - 2022-09-09
 ### Added
 - New MailingConfiguration properties `grantTrackingUrl`, `revokeTrackingUrl`,
