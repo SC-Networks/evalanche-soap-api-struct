@@ -66,6 +66,21 @@ Discount(
     float <price>
 )
 ```
+### Article
+##### ArticleDetail
+Contains detailed information about a specific article<br>
+ 
+```
+ArticleDetail(
+    int <id>
+    string <name>
+    string <url>
+    int <typeId>
+    int <folderId>
+    int <mandatorId>
+    int <articleTypeId>
+)
+```
 ### Blacklist
 ##### BlackList
 Represents a list of BlackListItems for one specific mandator.<br>
@@ -133,6 +148,20 @@ Represents a role type for ContainerAttributes<br>
 ContainerAttributeRoleType(
     int <id>
     string <name>
+)
+```
+##### ContainerDetail
+Contains detailed information about a specific container<br>
+ 
+```
+ContainerDetail(
+    int <id>
+    string <name>
+    string <url>
+    int <typeId>
+    int <folderId>
+    int <mandatorId>
+    int <containerTypeId>
 )
 ```
 ### Form

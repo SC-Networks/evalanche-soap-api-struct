@@ -151,6 +151,7 @@ $readmeDocumentFactory = new ReadmeDocument(
 $readmeDocumentStruct = new ReadmeDocument(
     [
         'Scn\EvalancheSoapStruct\Struct\Account',
+        'Scn\EvalancheSoapStruct\Struct\Article',
         'Scn\EvalancheSoapStruct\Struct\Blacklist',
         'Scn\EvalancheSoapStruct\Struct\Container',
         'Scn\EvalancheSoapStruct\Struct\Form',
