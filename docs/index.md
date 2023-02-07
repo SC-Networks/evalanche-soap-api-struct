@@ -81,6 +81,22 @@ ArticleDetail(
     int <articleTypeId>
 )
 ```
+##### ArticleIndividualization
+Represtens the article individualization configuration
+```
+ArticleIndividualization(
+    bool <hasFallback>
+    array <individualizationItems>
+)
+```
+##### ArticleIndividualizationItem
+
+```
+ArticleIndividualizationItem(
+    int <targetgroupId>
+    int <articleId>
+)
+```
 ### Blacklist
 ##### BlackList
 Represents a list of BlackListItems for one specific mandator.<br>
