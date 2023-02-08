@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.16.0] - 2023-02-08
+### ADDED
+- Struct for ArticleIndividualization
+
 ## [1.15.0] - 2022-12-16
 ### ADDED
 - Struct for ArticleDetail
