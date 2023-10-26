@@ -26,14 +26,30 @@ class MailingSlotItem implements MailingSlotItemInterface
 
     /** @var int */
     private $webArticleTemplateId;
-    
+
+    /** @var int[] */
+    private $emailAllowedArticleTemplateIds;
+
+    /** @var int[] */
+    private $textAllowedArticleTemplateIds;
+
+    /** @var int[] */
+    private $landingpageAllowedArticleTemplateIds;
+
+    /** @var int[] */
+    private $webAllowedArticleTemplateIds;
+
     public function __construct(
         int $articleTypeId = null,
         int $emailArticleTemplateId = null,
         int $textArticleTemplateId = null,
         int $landingpageArticleTemplateId = null,
         int $pdfArticleTemplateId = null,
-        int $webArticleTemplateId = null
+        int $webArticleTemplateId = null,
+        array $emailAllowedArticleTemplateIds = null,
+        array $textAllowedArticleTemplateIds = null,
+        array $landingpageAllowedArticleTemplateIds = null,
+        array $webAllowedArticleTemplateIds = null
     ) {
         $this->articleTypeId = $articleTypeId;
         $this->emailArticleTemplateId = $emailArticleTemplateId;
@@ -41,6 +57,10 @@ class MailingSlotItem implements MailingSlotItemInterface
         $this->landingpageArticleTemplateId = $landingpageArticleTemplateId;
         $this->pdfArticleTemplateId = $pdfArticleTemplateId;
         $this->webArticleTemplateId = $webArticleTemplateId;
+        $this->emailAllowedArticleTemplateIds = $emailAllowedArticleTemplateIds;
+        $this->textAllowedArticleTemplateIds = $textAllowedArticleTemplateIds;
+        $this->landingpageAllowedArticleTemplateIds = $landingpageAllowedArticleTemplateIds;
+        $this->webAllowedArticleTemplateIds = $webAllowedArticleTemplateIds;
     }
 
     public function getArticleTypeId(): int
@@ -106,6 +126,74 @@ class MailingSlotItem implements MailingSlotItemInterface
     public function setWebArticleTemplateId(int $webArticleTemplateId): MailingSlotItemInterface
     {
         $this->webArticleTemplateId = $webArticleTemplateId;
+        return $this;
+    }
+
+    /**
+     * @return int[]
+     */
+    public function getEmailAllowedArticleTemplateIds(): array
+    {
+        return $this->emailAllowedArticleTemplateIds;
+    }
+
+    /**
+     * @param int[] $emailAllowedArticleTemplateIds
+     */
+    public function setEmailAllowedArticleTemplateIds(array $emailAllowedArticleTemplateIds): MailingSlotItemInterface
+    {
+        $this->emailAllowedArticleTemplateIds = $emailAllowedArticleTemplateIds;
+        return $this;
+    }
+
+    /**
+     * @return int[]
+     */
+    public function getTextAllowedArticleTemplateIds(): array
+    {
+        return $this->textAllowedArticleTemplateIds;
+    }
+
+    /**
+     * @param int[] $textAllowedArticleTemplateIds
+     */
+    public function setTextAllowedArticleTemplateIds(array $textAllowedArticleTemplateIds): MailingSlotItemInterface
+    {
+        $this->textAllowedArticleTemplateIds = $textAllowedArticleTemplateIds;
+        return $this;
+    }
+
+    /**
+     * @return int[]
+     */
+    public function getLandingpageAllowedArticleTemplateIds(): array
+    {
+        return $this->landingpageAllowedArticleTemplateIds;
+    }
+
+    /**
+     * @param int[] $landingpageAllowedArticleTemplateIds
+     */
+    public function setLandingpageAllowedArticleTemplateIds(array $landingpageAllowedArticleTemplateIds): MailingSlotItemInterface
+    {
+        $this->landingpageAllowedArticleTemplateIds = $landingpageAllowedArticleTemplateIds;
+        return $this;
+    }
+
+    /**
+     * @return int[]
+     */
+    public function getWebAllowedArticleTemplateIds(): array
+    {
+        return $this->webAllowedArticleTemplateIds;
+    }
+
+    /**
+     * @param int[] $webAllowedArticleTemplateIds
+     */
+    public function setWebAllowedArticleTemplateIds(array $webAllowedArticleTemplateIds): MailingSlotItemInterface
+    {
+        $this->webAllowedArticleTemplateIds = $webAllowedArticleTemplateIds;
         return $this;
     }
 }

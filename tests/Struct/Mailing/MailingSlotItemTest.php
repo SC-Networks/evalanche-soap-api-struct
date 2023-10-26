@@ -20,9 +20,13 @@ class MailingSlotItemTest extends GenericSetterGetterTestCase
             ['ArticleTypeId', 'int'],
             ['EmailArticleTemplateId', 'int'],
             ['TextArticleTemplateId', 'int'],
-            ['WebArticleTemplateId', 'int'],
-            ['PdfArticleTemplateId', 'int'],
             ['LandingpageArticleTemplateId', 'int'],
+            ['PdfArticleTemplateId', 'int'],
+            ['WebArticleTemplateId', 'int'],
+            ['EmailAllowedArticleTemplateIds', 'array'],
+            ['TextAllowedArticleTemplateIds', 'array'],
+            ['LandingpageAllowedArticleTemplateIds', 'array'],
+            ['WebAllowedArticleTemplateIds', 'array'],
         ];
     }
 

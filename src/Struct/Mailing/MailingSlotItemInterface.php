@@ -33,4 +33,44 @@ interface MailingSlotItemInterface extends StructInterface
     public function getWebArticleTemplateId(): int;
 
     public function setWebArticleTemplateId(int $webArticleTemplateId): MailingSlotItemInterface;
+
+    /**
+     * @return int[]
+     */
+    public function getEmailAllowedArticleTemplateIds(): array;
+
+    /**
+     * @param int[] $emailAllowedArticleTemplateIds
+     */
+    public function setEmailAllowedArticleTemplateIds(array $emailAllowedArticleTemplateIds): MailingSlotItemInterface;
+
+    /**
+     * @return int[]
+     */
+    public function getTextAllowedArticleTemplateIds(): array;
+
+    /**
+     * @param int[] $textAllowedArticleTemplateIds
+     */
+    public function setTextAllowedArticleTemplateIds(array $textAllowedArticleTemplateIds): MailingSlotItemInterface;
+
+    /**
+     * @return int[]
+     */
+    public function getLandingpageAllowedArticleTemplateIds(): array;
+
+    /**
+     * @param int[] $landingpageAllowedArticleTemplateIds
+     */
+    public function setLandingpageAllowedArticleTemplateIds(array $landingpageAllowedArticleTemplateIds): MailingSlotItemInterface;
+
+    /**
+     * @return int[]
+     */
+    public function getWebAllowedArticleTemplateIds(): array;
+
+    /**
+     * @param int[] $webAllowedArticleTemplateIds
+     */
+    public function setWebAllowedArticleTemplateIds(array $webAllowedArticleTemplateIds): MailingSlotItemInterface;
 }
