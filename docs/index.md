@@ -469,6 +469,10 @@ MailingSlotItem(
     int <landingpageArticleTemplateId>
     int <pdfArticleTemplateId>
     int <webArticleTemplateId>
+    array <emailAllowedArticleTemplateIds>
+    array <textAllowedArticleTemplateIds>
+    array <landingpageAllowedArticleTemplateIds>
+    array <webAllowedArticleTemplateIds>
 )
 ```
 ##### MailingStatus
@@ -494,6 +498,14 @@ MailingSubject(
 )
 ```
 ### MailingTemplate
+##### MailingTemplateAllowedTemplates
+Contains the source code of the allowed templates
+```
+MailingTemplateAllowedTemplates(
+    int <templateType>
+    array(int) <templateIds>
+)
+```
 ##### MailingTemplateConfiguration
 Contains information about the configuration of a specific mailing template<br>
   like campaign id, individual salutations, reply address, input fields, etc.
