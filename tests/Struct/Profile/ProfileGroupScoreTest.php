@@ -27,28 +27,28 @@ class ProfileGroupScoreTest extends StructTestCase
         );
     }
 
-    public function testGetProfileIdCanReturnInt()
+    public function testGetProfileIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getProfileId());
+        self::assertSame(123, $this->subject->getProfileId());
     }
 
-    public function testGetGroupIdCanReturnInt()
+    public function testGetGroupIdCanReturnInt(): void
     {
-        $this->assertSame(567, $this->subject->getGroupId());
+        self::assertSame(567, $this->subject->getGroupId());
     }
 
-    public function testGetGroupNameCanReturnString()
+    public function testGetGroupNameCanReturnString(): void
     {
-        $this->assertSame('some group name', $this->subject->getGroupName());
+        self::assertSame('some group name', $this->subject->getGroupName());
     }
 
-    public function testGetActivityScoreCanReturnInt()
+    public function testGetActivityScoreCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getActivityScore());
+        self::assertSame(123, $this->subject->getActivityScore());
     }
 
-    public function testGetProfileScoreCanReturnInt()
+    public function testGetProfileScoreCanReturnInt(): void
     {
-        $this->assertSame(3456, $this->subject->getProfileScore());
+        self::assertSame(3456, $this->subject->getProfileScore());
     }
 }

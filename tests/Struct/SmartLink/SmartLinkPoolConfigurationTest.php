@@ -27,28 +27,28 @@ class SmartLinkPoolConfigurationTest extends StructTestCase
         );
     }
 
-    public function testGetId()
+    public function testGetId(): void
     {
-        $this->assertSame(123, $this->subject->getId());
+        self::assertSame(123, $this->subject->getId());
     }
 
-    public function testGetPoolId()
+    public function testGetPoolId(): void
     {
-        $this->assertSame(234, $this->subject->getPoolId());
+        self::assertSame(234, $this->subject->getPoolId());
     }
 
-    public function testGetPoolAttributeId()
+    public function testGetPoolAttributeId(): void
     {
-        $this->assertSame(345, $this->subject->getPoolAttributeId());
+        self::assertSame(345, $this->subject->getPoolAttributeId());
     }
 
-    public function testGetValue()
+    public function testGetValue(): void
     {
-        $this->assertSame('some value', $this->subject->getValue());
+        self::assertSame('some value', $this->subject->getValue());
     }
 
-    public function testGetIsMerge()
+    public function testGetIsMerge(): void
     {
-        $this->assertSame(true, $this->subject->getIsMerge());
+        self::assertSame(true, $this->subject->getIsMerge());
     }
 }

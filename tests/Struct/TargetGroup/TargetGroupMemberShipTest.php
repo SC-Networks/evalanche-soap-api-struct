@@ -24,13 +24,13 @@ class TargetGroupMemberShipTest extends StructTestCase
         );
     }
 
-    public function testGetProfileIdCanReturnInt()
+    public function testGetProfileIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getProfileId());
+        self::assertSame(123, $this->subject->getProfileId());
     }
 
-    public function testGetTargetGroupIdReturnInt()
+    public function testGetTargetGroupIdReturnInt(): void
     {
-        $this->assertSame(55, $this->subject->getTargetGroupId());
+        self::assertSame(55, $this->subject->getTargetGroupId());
     }
 }

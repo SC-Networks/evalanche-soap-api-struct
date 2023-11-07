@@ -25,18 +25,18 @@ class BrowserStatisticItemTest extends StructTestCase
         );
     }
 
-    public function testGetDescriptionCanReturnString()
+    public function testGetDescriptionCanReturnString(): void
     {
-        $this->assertSame('some description', $this->subject->getDescription());
+        self::assertSame('some description', $this->subject->getDescription());
     }
 
-    public function testGetVersionCanReturnString()
+    public function testGetVersionCanReturnString(): void
     {
-        $this->assertSame('some version', $this->subject->getVersion());
+        self::assertSame('some version', $this->subject->getVersion());
     }
 
-    public function testGetCountCanReturnInt()
+    public function testGetCountCanReturnInt(): void
     {
-        $this->assertSame(234, $this->subject->getCount());
+        self::assertSame(234, $this->subject->getCount());
     }
 }

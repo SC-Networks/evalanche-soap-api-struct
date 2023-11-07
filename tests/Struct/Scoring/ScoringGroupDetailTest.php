@@ -25,18 +25,18 @@ class ScoringGroupDetailTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(1, $this->subject->getId());
+        self::assertSame(1, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetMandatorIdCanReturnInt()
+    public function testGetMandatorIdCanReturnInt(): void
     {
-        $this->assertSame(3, $this->subject->getMandatorId());
+        self::assertSame(3, $this->subject->getMandatorId());
     }
 }

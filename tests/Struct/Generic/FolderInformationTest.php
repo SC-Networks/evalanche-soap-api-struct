@@ -25,19 +25,19 @@ class FolderInformationTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(777, $this->subject->getId());
+        self::assertSame(777, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetParentIdCanReturnInt()
+    public function testGetParentIdCanReturnInt(): void
     {
-        $this->assertSame(9999, $this->subject->getParentId());
+        self::assertSame(9999, $this->subject->getParentId());
     }
 
 }

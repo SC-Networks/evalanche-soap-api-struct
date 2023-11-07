@@ -28,33 +28,33 @@ class FormatStatisticItemTest extends StructTestCase
         );
     }
 
-    public function testGetClickCountCanReturnInt()
+    public function testGetClickCountCanReturnInt(): void
     {
-        $this->assertSame(5, $this->subject->getClickCount());
+        self::assertSame(5, $this->subject->getClickCount());
     }
 
-    public function testGetUniqueClickCountCanReturnInt()
+    public function testGetUniqueClickCountCanReturnInt(): void
     {
-        $this->assertSame(6, $this->subject->getUniqueClickCount());
+        self::assertSame(6, $this->subject->getUniqueClickCount());
     }
 
-    public function testGetClickRateCanReturnFloat()
+    public function testGetClickRateCanReturnFloat(): void
     {
-        $this->assertSame(7.4, $this->subject->getClickRate());
+        self::assertSame(7.4, $this->subject->getClickRate());
     }
 
-    public function testGetClickRateRelativeCanReturnFloat()
+    public function testGetClickRateRelativeCanReturnFloat(): void
     {
-        $this->assertSame(3.5, $this->subject->getClickRateRelative());
+        self::assertSame(3.5, $this->subject->getClickRateRelative());
     }
 
-    public function testGetMultipleClickRateCanReturnFloat()
+    public function testGetMultipleClickRateCanReturnFloat(): void
     {
-        $this->assertSame(4.9, $this->subject->getMultipleClickRate());
+        self::assertSame(4.9, $this->subject->getMultipleClickRate());
     }
 
-    public function testGetMultipleClickRateRelativeCanReturnFloat()
+    public function testGetMultipleClickRateRelativeCanReturnFloat(): void
     {
-        $this->assertSame(1.0, $this->subject->getMultipleClickRateRelative());
+        self::assertSame(1.0, $this->subject->getMultipleClickRateRelative());
     }
 }

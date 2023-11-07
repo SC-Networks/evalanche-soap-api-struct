@@ -34,87 +34,87 @@ class MailingDetailTest extends StructTestCase
             'some subject',
             4,
             123123,
-            34534534
+            34_534_534
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(1, $this->subject->getId());
+        self::assertSame(1, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetUrlCanReturnString()
+    public function testGetUrlCanReturnString(): void
     {
-        $this->assertSame('some url', $this->subject->getUrl());
+        self::assertSame('some url', $this->subject->getUrl());
     }
 
-    public function testGetTypeIdCanReturnInt()
+    public function testGetTypeIdCanReturnInt(): void
     {
-        $this->assertSame(4, $this->subject->getTypeId());
+        self::assertSame(4, $this->subject->getTypeId());
     }
 
-    public function testGetFolderIdCanReturnInt()
+    public function testGetFolderIdCanReturnInt(): void
     {
-        $this->assertSame(5, $this->subject->getFolderId());
+        self::assertSame(5, $this->subject->getFolderId());
     }
 
-    public function testGetMandatorIdCanReturnInt()
+    public function testGetMandatorIdCanReturnInt(): void
     {
-        $this->assertSame(6, $this->subject->getMandatorId());
+        self::assertSame(6, $this->subject->getMandatorId());
     }
 
-    public function testGetTimestampCanReturnInt()
+    public function testGetTimestampCanReturnInt(): void
     {
-        $this->assertSame(7, $this->subject->getTimestamp());
+        self::assertSame(7, $this->subject->getTimestamp());
     }
 
-    public function testGetRecipientsCanReturnInt()
+    public function testGetRecipientsCanReturnInt(): void
     {
-        $this->assertSame(8, $this->subject->getRecipients());
+        self::assertSame(8, $this->subject->getRecipients());
     }
 
-    public function testGetSentCanReturnBool()
+    public function testGetSentCanReturnBool(): void
     {
-        $this->assertTrue($this->subject->getSent());
+        self::assertTrue($this->subject->getSent());
     }
 
-    public function testGetPreviewUrlCanReturnString()
+    public function testGetPreviewUrlCanReturnString(): void
     {
-        $this->assertSame('some preview url', $this->subject->getPreviewUrl());
+        self::assertSame('some preview url', $this->subject->getPreviewUrl());
     }
 
-    public function testGetReportUrlCanReturnString()
+    public function testGetReportUrlCanReturnString(): void
     {
-        $this->assertSame('some report url', $this->subject->getReportUrl());
+        self::assertSame('some report url', $this->subject->getReportUrl());
     }
 
-    public function testGetAdminUrlCanReturnString()
+    public function testGetAdminUrlCanReturnString(): void
     {
-        $this->assertSame('some admin url', $this->subject->getAdminUrl());
+        self::assertSame('some admin url', $this->subject->getAdminUrl());
     }
 
-    public function testGetSubjectCanReturnString()
+    public function testGetSubjectCanReturnString(): void
     {
-        $this->assertSame('some subject', $this->subject->getSubject());
+        self::assertSame('some subject', $this->subject->getSubject());
     }
 
-    public function testGetTargetGroupIdCanReturnInt()
+    public function testGetTargetGroupIdCanReturnInt(): void
     {
-        $this->assertSame(4, $this->subject->getTargetGroupId());
+        self::assertSame(4, $this->subject->getTargetGroupId());
     }
 
-    public function testGetSendStartTimeCanReturnInt()
+    public function testGetSendStartTimeCanReturnInt(): void
     {
-        $this->assertSame(123123, $this->subject->getSendStartTime());
+        self::assertSame(123123, $this->subject->getSendStartTime());
     }
 
-    public function testGetSendEndTimeCanReturnInt()
+    public function testGetSendEndTimeCanReturnInt(): void
     {
-        $this->assertSame(34534534, $this->subject->getSendEndTime());
+        self::assertSame(34_534_534, $this->subject->getSendEndTime());
     }
 }

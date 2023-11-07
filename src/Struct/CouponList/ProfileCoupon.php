@@ -9,22 +9,22 @@ namespace Scn\EvalancheSoapStruct\Struct\CouponList;
  */
 class ProfileCoupon implements ProfileCouponInterface
 {
-	/** @var int internal id (readonly) */
-	public $id = 0;
+    /** @var int internal id (readonly) */
+    public $id = 0;
 
-	/** @var string The actual coupon code */
-	public $code;
+    /** @var string The actual coupon code */
+    public $code;
 
-	/** @var int The associated profile id */
-	public $profileId;
+    /** @var int The associated profile id */
+    public $profileId;
 
-	/** @var int The creation date */
-	public $creationDate;
+    /** @var int The creation date */
+    public $creationDate;
 
-	/** @var int The expiration date (readonly) */
-	public $validTo = 0;
+    /** @var int The expiration date (readonly) */
+    public $validTo = 0;
 
-	public function __construct(
+    public function __construct(
         string $code = '',
         int $profileId = 0,
         int $creationDate = 0

@@ -4,7 +4,7 @@ namespace Scn\EvalancheSoapStruct\Struct\Workflow;
 
 use Scn\EvalancheSoapStruct\StructTestCase;
 
-class WorkflowConfigurationTest extends StructTestCase 
+class WorkflowConfigurationTest extends StructTestCase
 {
     private $configVersion = 'some-config-version';
     
@@ -23,17 +23,11 @@ class WorkflowConfigurationTest extends StructTestCase
     
     public function testGetConfigVersionReturnsValue(): void
     {
-        $this->assertSame(
-            $this->configVersion,
-            $this->subject->getConfigVersion()
-        );
+        self::assertSame($this->configVersion, $this->subject->getConfigVersion());
     }
 
     public function testGetConfigurationReturnsValus(): void
     {
-        $this->assertSame(
-            $this->configuration,
-            $this->subject->getConfiguration()
-        );
+        self::assertSame($this->configuration, $this->subject->getConfiguration());
     }
 }

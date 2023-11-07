@@ -91,8 +91,7 @@ class SmartLinkConfiguration implements SmartLinkConfigurationInterface
         bool $activateTracking = null,
         array $scoringConfigs = null,
         array $poolAttributes = null
-    )
-    {
+    ) {
         $this->id = $id;
         $this->targetUrl = $targetUrl;
         $this->individualScoringConfig = $individualScoringConfig;

@@ -22,39 +22,39 @@ class ProfileActivityScoreTest extends StructTestCase
             444,
             555,
             666,
-            1531382666,
+            1_531_382_666,
             95959,
             123
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(444, $this->subject->getId());
+        self::assertSame(444, $this->subject->getId());
     }
 
-    public function testGetScoringGroupIdCanReturnInt()
+    public function testGetScoringGroupIdCanReturnInt(): void
     {
-        $this->assertSame(555, $this->subject->getScoringGroupId());
+        self::assertSame(555, $this->subject->getScoringGroupId());
     }
 
-    public function testGetScoringTypeIdCanReturnInt()
+    public function testGetScoringTypeIdCanReturnInt(): void
     {
-        $this->assertSame(666, $this->subject->getScoringTypeId());
+        self::assertSame(666, $this->subject->getScoringTypeId());
     }
 
-    public function testGetTimestampCanReturnInt()
+    public function testGetTimestampCanReturnInt(): void
     {
-        $this->assertSame(1531382666, $this->subject->getTimestamp());
+        self::assertSame(1_531_382_666, $this->subject->getTimestamp());
     }
 
-    public function testGetScoreCanReturnInt()
+    public function testGetScoreCanReturnInt(): void
     {
-        $this->assertSame(95959, $this->subject->getScore());
+        self::assertSame(95959, $this->subject->getScore());
     }
 
-    public function testGetResourceIdCanReturnInt()
+    public function testGetResourceIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getResourceId());
+        self::assertSame(123, $this->subject->getResourceId());
     }
 }

@@ -21,22 +21,22 @@ class MailingImpressionTest extends StructTestCase
         $this->subject = new MailingImpression(
             123,
             456,
-            1531398079
+            1_531_398_079
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getId());
+        self::assertSame(123, $this->subject->getId());
     }
 
-    public function testGetProfileIdCanReturnInt()
+    public function testGetProfileIdCanReturnInt(): void
     {
-        $this->assertSame(456, $this->subject->getProfileId());
+        self::assertSame(456, $this->subject->getProfileId());
     }
 
-    public function testGetTimestampCanReturnInt()
+    public function testGetTimestampCanReturnInt(): void
     {
-        $this->assertSame(1531398079, $this->subject->getTimestamp());
+        self::assertSame(1_531_398_079, $this->subject->getTimestamp());
     }
 }

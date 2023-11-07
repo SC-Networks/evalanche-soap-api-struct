@@ -21,11 +21,14 @@
 	}
   ],
   "require": {
-    "php": ">=7.2"
+    "php": ">=8.2"
   },
   "require-dev": {
-    "phpunit/phpunit": "^8",
-    "haydenpierce/class-finder": "^0.2.0"
+    "phpunit/phpunit": "^11.1",
+    "friendsofphp/php-cs-fixer": "^3.53",
+    "phpstan/phpstan": "^1.10",
+    "phpstan/phpstan-strict-rules": "^1.5",
+    "rector/rector": "^1.0"
   },
   "autoload": {
     "psr-4": {
@@ -39,6 +42,9 @@
   },
   "scripts": {
     "tests": "vendor/bin/phpunit -c phpunit.xml.dist",
-    "documentation": "php contrib/ReadmeGenerator.php > docs/index.md"
+    "stan": "vendor/bin/phpstan",
+    "check-cs": "vendor/bin/php-cs-fixer fix --dry-run --diff",
+    "fix-cs": "vendor/bin/php-cs-fixer fix",
+    "qa": "composer check-cs && composer test && composer stan"
   }
 }

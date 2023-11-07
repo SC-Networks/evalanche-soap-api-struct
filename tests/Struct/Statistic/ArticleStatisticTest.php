@@ -30,67 +30,49 @@ class ArticleStatisticTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getId());
+        self::assertSame(123, $this->subject->getId());
     }
 
-    public function testGetReferenceIdCanReturnInt()
+    public function testGetReferenceIdCanReturnInt(): void
     {
-        $this->assertSame(34, $this->subject->getReferenceId());
+        self::assertSame(34, $this->subject->getReferenceId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetOverallCanReturnInstanceOfFormatStatisticItemInterface()
+    public function testGetOverallCanReturnInstanceOfFormatStatisticItemInterface(): void
     {
-        $this->assertInstanceOf(
-            FormatStatisticItemInterface::class,
-            $this->subject->getOverall()
-        );
+        self::assertInstanceOf(FormatStatisticItemInterface::class, $this->subject->getOverall());
     }
 
-    public function testGetLandingpageCanReturnInstanceOfFormatStatisticItemInterface()
+    public function testGetLandingpageCanReturnInstanceOfFormatStatisticItemInterface(): void
     {
-        $this->assertInstanceOf(
-            FormatStatisticItemInterface::class,
-            $this->subject->getLandingPage()
-        );
+        self::assertInstanceOf(FormatStatisticItemInterface::class, $this->subject->getLandingPage());
     }
 
-    public function testGetPrintCanReturnInstanceOfFormatStatisticItemInterface()
+    public function testGetPrintCanReturnInstanceOfFormatStatisticItemInterface(): void
     {
-        $this->assertInstanceOf(
-            FormatStatisticItemInterface::class,
-            $this->subject->getPrint()
-        );
+        self::assertInstanceOf(FormatStatisticItemInterface::class, $this->subject->getPrint());
     }
 
-    public function testGetGetVoiceCanReturnInstanceOfFormatStatisticItemInterface()
+    public function testGetGetVoiceCanReturnInstanceOfFormatStatisticItemInterface(): void
     {
-        $this->assertInstanceOf(
-            FormatStatisticItemInterface::class,
-            $this->subject->getVoice()
-        );
+        self::assertInstanceOf(FormatStatisticItemInterface::class, $this->subject->getVoice());
     }
 
-    public function testGetSocialSharingCanReturnInstanceOfFormatStatisticItemInterface()
+    public function testGetSocialSharingCanReturnInstanceOfFormatStatisticItemInterface(): void
     {
-        $this->assertInstanceOf(
-            FormatStatisticItemInterface::class,
-            $this->subject->getSocialSharing()
-        );
+        self::assertInstanceOf(FormatStatisticItemInterface::class, $this->subject->getSocialSharing());
     }
 
-    public function testGetLinksCanReturnArrayOfLinkStatisticItem()
+    public function testGetLinksCanReturnArrayOfLinkStatisticItem(): void
     {
-        $this->assertCount(3, $this->subject->getLinks());
-        $this->assertContainsOnlyInstancesOf(
-            LinkStatisticItemInterface::class,
-            $this->subject->getLinks()
-        );
+        self::assertCount(3, $this->subject->getLinks());
+        self::assertContainsOnlyInstancesOf(LinkStatisticItemInterface::class, $this->subject->getLinks());
     }
 }

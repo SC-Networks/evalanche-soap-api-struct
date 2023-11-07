@@ -12,7 +12,7 @@ class WorkflowConfigVersionTest extends StructTestCase
     private $configVersion = 'some-config-version';
     
     /** @var int */
-    private $createDate = 1234567;
+    private $createDate = 1_234_567;
     
     /** @var bool */
     private $latest = true;
@@ -31,24 +31,16 @@ class WorkflowConfigVersionTest extends StructTestCase
     
     public function testGetConfigVersionReturnsValue(): void
     {
-        $this->assertSame(
-            $this->configVersion,
-            $this->subject->getConfigVersion()
-        );
+        self::assertSame($this->configVersion, $this->subject->getConfigVersion());
     }
     
     public function testGetCreateDateReturnsValue(): void
     {
-        $this->assertSame(
-            $this->createDate,
-            $this->subject->getCreateDate()
-        );
+        self::assertSame($this->createDate, $this->subject->getCreateDate());
     }
     
     public function testGetLatestReturnsTrue(): void
     {
-        $this->assertTrue(
-            $this->subject->getLatest()
-        );
+        self::assertTrue($this->subject->getLatest());
     }
 }

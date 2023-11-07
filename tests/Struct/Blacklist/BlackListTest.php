@@ -27,17 +27,14 @@ class BlackListTest extends StructTestCase
         );
     }
 
-    public function testGetMandatorIdCanReturnInteger()
+    public function testGetMandatorIdCanReturnInteger(): void
     {
-        $this->assertSame(123, $this->subject->getMandatorId());
+        self::assertSame(123, $this->subject->getMandatorId());
     }
 
-    public function testGetItemsCanReturnArrayOfBlackListItem()
+    public function testGetItemsCanReturnArrayOfBlackListItem(): void
     {
-        $this->assertCount(2, $this->subject->getItems());
-        $this->assertContainsOnlyInstancesOf(
-            BlackListItemInterface::class,
-            $this->subject->getItems()
-        );
+        self::assertCount(2, $this->subject->getItems());
+        self::assertContainsOnlyInstancesOf(BlackListItemInterface::class, $this->subject->getItems());
     }
 }

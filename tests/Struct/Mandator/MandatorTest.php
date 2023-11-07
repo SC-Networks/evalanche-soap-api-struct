@@ -25,18 +25,18 @@ class MandatorTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnId()
+    public function testGetIdCanReturnId(): void
     {
-        $this->assertSame(55, $this->subject->getId());
+        self::assertSame(55, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnName()
+    public function testGetNameCanReturnName(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetDomainCanReturnDomain()
+    public function testGetDomainCanReturnDomain(): void
     {
-        $this->assertSame('some domain', $this->subject->getDomain());
+        self::assertSame('some domain', $this->subject->getDomain());
     }
 }

@@ -29,38 +29,38 @@ class JobHandleTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnString()
+    public function testGetIdCanReturnString(): void
     {
-        $this->assertSame('some id', $this->subject->getId());
+        self::assertSame('some id', $this->subject->getId());
     }
 
-    public function testGetStatusCanReturnInt()
+    public function testGetStatusCanReturnInt(): void
     {
-        $this->assertSame(4, $this->subject->getStatus());
+        self::assertSame(4, $this->subject->getStatus());
     }
 
-    public function testGetStatusDescriptionCanReturnString()
+    public function testGetStatusDescriptionCanReturnString(): void
     {
-        $this->assertSame('some description', $this->subject->getStatusDescription());
+        self::assertSame('some description', $this->subject->getStatusDescription());
     }
 
-    public function testGetNamespaceCanReturnString()
+    public function testGetNamespaceCanReturnString(): void
     {
-        $this->assertSame('some namespace', $this->subject->getNamespace());
+        self::assertSame('some namespace', $this->subject->getNamespace());
     }
 
-    public function testGetMethodCanReturnString()
+    public function testGetMethodCanReturnString(): void
     {
-        $this->assertSame('some method', $this->subject->getMethod());
+        self::assertSame('some method', $this->subject->getMethod());
     }
 
-    public function testGetResourceIdCanReturnInt()
+    public function testGetResourceIdCanReturnInt(): void
     {
-        $this->assertSame(4, $this->subject->getResourceId());
+        self::assertSame(4, $this->subject->getResourceId());
     }
 
-    public function testGetResultChunksCanReturnInt()
+    public function testGetResultChunksCanReturnInt(): void
     {
-        $this->assertSame(76, $this->subject->getResultChunks());
+        self::assertSame(76, $this->subject->getResultChunks());
     }
 }

@@ -29,68 +29,68 @@ class ProfileTrackingHistoryTest extends StructTestCase
             'sub url',
             345,
             444,
-            13090526,
+            13_090_526,
             'referrer domain'
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(111, $this->subject->getId());
+        self::assertSame(111, $this->subject->getId());
     }
 
-    public function testGetResourceIdCanReturnInt()
+    public function testGetResourceIdCanReturnInt(): void
     {
-        $this->assertSame(222, $this->subject->getResourceId());
+        self::assertSame(222, $this->subject->getResourceId());
     }
 
-    public function testGetResourceNameCanReturnString()
+    public function testGetResourceNameCanReturnString(): void
     {
-        $this->assertSame('resource name', $this->subject->getResourceName());
+        self::assertSame('resource name', $this->subject->getResourceName());
     }
 
-    public function testGetResourceTypeIdCanReturnInt()
+    public function testGetResourceTypeIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getResourceTypeId());
+        self::assertSame(123, $this->subject->getResourceTypeId());
     }
 
-    public function testGetSubResourceIdCanReturnInt()
+    public function testGetSubResourceIdCanReturnInt(): void
     {
-        $this->assertSame(333, $this->subject->getSubResourceId());
+        self::assertSame(333, $this->subject->getSubResourceId());
     }
 
-    public function testGetSubResourceNameCanReturnString()
+    public function testGetSubResourceNameCanReturnString(): void
     {
-        $this->assertSame('sub resource name', $this->subject->getSubResourceName());
+        self::assertSame('sub resource name', $this->subject->getSubResourceName());
     }
 
-    public function testGetSubResourceTypeIdCanReturnInt()
+    public function testGetSubResourceTypeIdCanReturnInt(): void
     {
-        $this->assertSame(234, $this->subject->getSubResourceTypeId());
+        self::assertSame(234, $this->subject->getSubResourceTypeId());
     }
 
-    public function testGetSubUrlCanReturnString()
+    public function testGetSubUrlCanReturnString(): void
     {
-        $this->assertSame('sub url', $this->subject->getSubUrl());
+        self::assertSame('sub url', $this->subject->getSubUrl());
     }
 
-    public function testGetProfileIdCanReturnInt()
+    public function testGetProfileIdCanReturnInt(): void
     {
-        $this->assertSame(345, $this->subject->getProfileId());
+        self::assertSame(345, $this->subject->getProfileId());
     }
 
-    public function testGetTypeCanReturnInt()
+    public function testGetTypeCanReturnInt(): void
     {
-        $this->assertSame(444, $this->subject->getType());
+        self::assertSame(444, $this->subject->getType());
     }
 
-    public function testGetTimestampCanReturnInt()
+    public function testGetTimestampCanReturnInt(): void
     {
-        $this->assertSame(13090526, $this->subject->getTimestamp());
+        self::assertSame(13_090_526, $this->subject->getTimestamp());
     }
 
-    public function testGetReferrerDomainCanReturnString()
+    public function testGetReferrerDomainCanReturnString(): void
     {
-        $this->assertSame('referrer domain', $this->subject->getReferrerDomain());
+        self::assertSame('referrer domain', $this->subject->getReferrerDomain());
     }
 }

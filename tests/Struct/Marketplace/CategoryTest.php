@@ -19,16 +19,13 @@ class CategoryTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInteger()
+    public function testGetIdCanReturnInteger(): void
     {
-        $this->assertSame(
-            55,
-            $this->subject->getId()
-        );
+        self::assertSame(55, $this->subject->getId());
     }
 
-    public function testGetTextCanReturnString()
+    public function testGetTextCanReturnString(): void
     {
-        $this->assertSame('some text', $this->subject->getText());
+        self::assertSame('some text', $this->subject->getText());
     }
 }

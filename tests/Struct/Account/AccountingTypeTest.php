@@ -30,31 +30,28 @@ class AccountingTypeTest extends StructTestCase
         );
     }
 
-    public function testGetTypeIdCanReturnInteger()
+    public function testGetTypeIdCanReturnInteger(): void
     {
-        $this->assertSame(123, $this->subject->getTypeId());
+        self::assertSame(123, $this->subject->getTypeId());
     }
 
-    public function testGetAmountCanReturnInteger()
+    public function testGetAmountCanReturnInteger(): void
     {
-        $this->assertSame(23, $this->subject->getAmount());
+        self::assertSame(23, $this->subject->getAmount());
     }
 
-    public function testGetPriceCanReturnFloat()
+    public function testGetPriceCanReturnFloat(): void
     {
-        $this->assertSame(1.45, $this->subject->getPrice());
+        self::assertSame(1.45, $this->subject->getPrice());
     }
 
-    public function testGetCurrencyCanReturnString()
+    public function testGetCurrencyCanReturnString(): void
     {
-        $this->assertSame('EUR', $this->subject->getCurrency());
+        self::assertSame('EUR', $this->subject->getCurrency());
     }
 
-    public function testGetAccountingItemsCanReturnArrayOfAccountingItemInterface()
+    public function testGetAccountingItemsCanReturnArrayOfAccountingItemInterface(): void
     {
-        $this->assertContainsOnlyInstancesOf(
-            AccountingItemInterface::class,
-            $this->subject->getAccountingItems()
-        );
+        self::assertContainsOnlyInstancesOf(AccountingItemInterface::class, $this->subject->getAccountingItems());
     }
 }

@@ -16,7 +16,7 @@ class MailingSlotConfigurationTest extends GenericSetterGetterTestCase
         $this->subject = new MailingSlotConfiguration();
     }
 
-    public function methodDataProvider(): array
+    public static function methodDataProvider(): array
     {
         return [
             ['Items', 'array'],

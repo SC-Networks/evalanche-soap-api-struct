@@ -21,8 +21,8 @@ class WorkflowDetailTest extends StructTestCase
         $this->subject = new WorkflowDetail(
             56456,
             'some name',
-            1531216185,
-            1531216186,
+            1_531_216_185,
+            1_531_216_186,
             'some external id',
             4545,
             'some description',
@@ -31,51 +31,48 @@ class WorkflowDetailTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(
-            56456,
-            $this->subject->getId()
-        );
+        self::assertSame(56456, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetDateStartCanReturnInt()
+    public function testGetDateStartCanReturnInt(): void
     {
-        $this->assertSame(1531216185, $this->subject->getDateStart());
+        self::assertSame(1_531_216_185, $this->subject->getDateStart());
     }
 
-    public function testgetDateEndCanReturnInt()
+    public function testgetDateEndCanReturnInt(): void
     {
-        $this->assertSame(1531216186, $this->subject->getDateEnd());
+        self::assertSame(1_531_216_186, $this->subject->getDateEnd());
     }
 
-    public function testGetExternalIdCanReturnString()
+    public function testGetExternalIdCanReturnString(): void
     {
-        $this->assertSame('some external id', $this->subject->getExternalId());
+        self::assertSame('some external id', $this->subject->getExternalId());
     }
 
-    public function testGetFolderIdCanReturnInt()
+    public function testGetFolderIdCanReturnInt(): void
     {
-        $this->assertSame(4545, $this->subject->getFolderId());
+        self::assertSame(4545, $this->subject->getFolderId());
     }
 
-    public function testGetDescriptionCanReturnString()
+    public function testGetDescriptionCanReturnString(): void
     {
-        $this->assertSame('some description', $this->subject->getDescription());
+        self::assertSame('some description', $this->subject->getDescription());
     }
 
-    public function testGetStateCanReturnInt()
+    public function testGetStateCanReturnInt(): void
     {
-        $this->assertSame(1, $this->subject->getState());
+        self::assertSame(1, $this->subject->getState());
     }
 
-    public function testGetProfileCountCanReturnInt()
+    public function testGetProfileCountCanReturnInt(): void
     {
-        $this->assertSame(200, $this->subject->getProfileCount());
+        self::assertSame(200, $this->subject->getProfileCount());
     }
 }

@@ -6,7 +6,7 @@ namespace Scn\EvalancheSoapStruct\Struct\MailingTemplate;
 
 use Scn\EvalancheSoapStruct\GenericSetterGetterTestCase;
 
-class MailingTemplatesSourcesTest extends GenericSetterGetterTestCase 
+class MailingTemplatesSourcesTest extends GenericSetterGetterTestCase
 {
 
     /** @var MailingTemplatesSources|null */
@@ -17,7 +17,7 @@ class MailingTemplatesSourcesTest extends GenericSetterGetterTestCase
         $this->subject = new MailingTemplatesSources();
     }
     
-    public function methodDataProvider(): array
+    public static function methodDataProvider(): array
     {
         return [
             ['TemplateEmail', 'string'],

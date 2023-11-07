@@ -24,18 +24,18 @@ class HashMapItemTest extends StructTestCase
         );
     }
 
-    public function testGetKeyCanReturnString()
+    public function testGetKeyCanReturnString(): void
     {
-        $this->assertSame('some string', $this->subject->getKey());
+        self::assertSame('some string', $this->subject->getKey());
     }
 
-    public function testGetValueCanReturnString()
+    public function testGetValueCanReturnString(): void
     {
-        $this->assertSame('some value', $this->subject->getValue());
+        self::assertSame('some value', $this->subject->getValue());
     }
 
-    public function testSetValueCanSetStringAndReturnSelf()
+    public function testSetValueCanSetStringAndReturnSelf(): void
     {
-        $this->assertSame('some other value', $this->subject->setValue('some other value')->getValue());
+        self::assertSame('some other value', $this->subject->setValue('some other value')->getValue());
     }
 }

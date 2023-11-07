@@ -34,30 +34,21 @@ class ClientStatisticTest extends StructTestCase
         );
     }
 
-    public function testGetClientsCanReturnArrayOfMailClientStatisticItem()
+    public function testGetClientsCanReturnArrayOfMailClientStatisticItem(): void
     {
-        $this->assertCount(2, $this->subject->getClients());
-        $this->assertContainsOnlyInstancesOf(
-            MailClientStatisticItemInterface::class,
-            $this->subject->getClients()
-        );
+        self::assertCount(2, $this->subject->getClients());
+        self::assertContainsOnlyInstancesOf(MailClientStatisticItemInterface::class, $this->subject->getClients());
     }
 
-    public function testGetBrowsersCanReturnArrayOfBrowserStatisticItem()
+    public function testGetBrowsersCanReturnArrayOfBrowserStatisticItem(): void
     {
-        $this->assertCount(2, $this->subject->getBrowsers());
-        $this->assertContainsOnlyInstancesOf(
-            BrowserStatisticItemInterface::class,
-            $this->subject->getBrowsers()
-        );
+        self::assertCount(2, $this->subject->getBrowsers());
+        self::assertContainsOnlyInstancesOf(BrowserStatisticItemInterface::class, $this->subject->getBrowsers());
     }
 
-    public function testGetClientsCanReturnArrayOfDevicesStatisticItem()
+    public function testGetClientsCanReturnArrayOfDevicesStatisticItem(): void
     {
-        $this->assertCount(2, $this->subject->getDevices());
-        $this->assertContainsOnlyInstancesOf(
-            DeviceStatisticItemInterface::class,
-            $this->subject->getDevices()
-        );
+        self::assertCount(2, $this->subject->getDevices());
+        self::assertContainsOnlyInstancesOf(DeviceStatisticItemInterface::class, $this->subject->getDevices());
     }
 }

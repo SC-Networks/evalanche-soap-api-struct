@@ -24,13 +24,13 @@ class MailingSubjectTest extends StructTestCase
         );
     }
 
-    public function testGetTargetGroupIdCanReturnInt()
+    public function testGetTargetGroupIdCanReturnInt(): void
     {
-        $this->assertSame(45, $this->subject->getTargetGroupId());
+        self::assertSame(45, $this->subject->getTargetGroupId());
     }
 
-    public function testGetSubjectCanReturnString()
+    public function testGetSubjectCanReturnString(): void
     {
-        $this->assertSame('some subject', $this->subject->getSubject());
+        self::assertSame('some subject', $this->subject->getSubject());
     }
 }

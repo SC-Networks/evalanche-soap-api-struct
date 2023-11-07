@@ -50,91 +50,82 @@ class MailingStatisticTest extends StructTestCase
         );
     }
 
-    public function testGetLinksCanReturnArrayOfLinkStatistic()
+    public function testGetLinksCanReturnArrayOfLinkStatistic(): void
     {
-        $this->assertCount(4, $this->subject->getLinks());
-        $this->assertContainsOnlyInstancesOf(
-            LinkStatisticItemInterface::class,
-            $this->subject->getLinks()
-        );
+        self::assertCount(4, $this->subject->getLinks());
+        self::assertContainsOnlyInstancesOf(LinkStatisticItemInterface::class, $this->subject->getLinks());
     }
 
-    public function testGetArticlesCanReturnArrayOfArticleStatisticItem()
+    public function testGetArticlesCanReturnArrayOfArticleStatisticItem(): void
     {
-        $this->assertCount(4, $this->subject->getArticles());
-        $this->assertContainsOnlyInstancesOf(
-            ArticleStatisticItemInterface::class,
-            $this->subject->getArticles()
-        );
+        self::assertCount(4, $this->subject->getArticles());
+        self::assertContainsOnlyInstancesOf(ArticleStatisticItemInterface::class, $this->subject->getArticles());
     }
 
-    public function testGetMediaCanReturnArrayOfMediaStatisticItem()
+    public function testGetMediaCanReturnArrayOfMediaStatisticItem(): void
     {
-        $this->assertCount(2, $this->subject->getMedia());
-        $this->assertContainsOnlyInstancesOf(
-            MediaStatisticItemInterface::class,
-            $this->subject->getMedia()
-        );
+        self::assertCount(2, $this->subject->getMedia());
+        self::assertContainsOnlyInstancesOf(MediaStatisticItemInterface::class, $this->subject->getMedia());
     }
 
-    public function testGetUniqueClickCountCanReturnInt()
+    public function testGetUniqueClickCountCanReturnInt(): void
     {
-        $this->assertSame(12, $this->subject->getUniqueClickCount());
+        self::assertSame(12, $this->subject->getUniqueClickCount());
     }
 
-    public function testGetClickCountCanReturnInt()
+    public function testGetClickCountCanReturnInt(): void
     {
-        $this->assertSame(44, $this->subject->getClickCount());
+        self::assertSame(44, $this->subject->getClickCount());
     }
 
-    public function testGetUniqueImpressionCountCanReturnInt()
+    public function testGetUniqueImpressionCountCanReturnInt(): void
     {
-        $this->assertSame(55, $this->subject->getUniqueImpressionCount());
+        self::assertSame(55, $this->subject->getUniqueImpressionCount());
     }
 
-    public function testGetImpressionCountCanReturnInt()
+    public function testGetImpressionCountCanReturnInt(): void
     {
-        $this->assertSame(55, $this->subject->getImpressionCount());
+        self::assertSame(55, $this->subject->getImpressionCount());
     }
 
-    public function testGetUnsubscribeCountCanReturnInt()
+    public function testGetUnsubscribeCountCanReturnInt(): void
     {
-        $this->assertSame(456, $this->subject->getUnSubscribeCount());
+        self::assertSame(456, $this->subject->getUnSubscribeCount());
     }
 
-    public function testGetSoftBounceCountCanReturnInt()
+    public function testGetSoftBounceCountCanReturnInt(): void
     {
-        $this->assertSame(56, $this->subject->getSoftBounceCount());
+        self::assertSame(56, $this->subject->getSoftBounceCount());
     }
 
 
-    public function testGetAddressesCanReturnInt()
+    public function testGetAddressesCanReturnInt(): void
     {
-        $this->assertSame(5, $this->subject->getAddresses());
+        self::assertSame(5, $this->subject->getAddresses());
     }
 
-    public function testGetRecipientsCanReturnInt()
+    public function testGetRecipientsCanReturnInt(): void
     {
-        $this->assertSame(9, $this->subject->getRecipients());
+        self::assertSame(9, $this->subject->getRecipients());
     }
 
-    public function testGetDuplicateCountCanReturnInt()
+    public function testGetDuplicateCountCanReturnInt(): void
     {
-        $this->assertSame(23, $this->subject->getDuplicateCount());
+        self::assertSame(23, $this->subject->getDuplicateCount());
     }
 
-    public function testGetBlackListedCountCanReturnInt()
+    public function testGetBlackListedCountCanReturnInt(): void
     {
-        $this->assertSame(55, $this->subject->getBlackListedCount());
+        self::assertSame(55, $this->subject->getBlackListedCount());
     }
 
-    public function testGetRobinsonListedCountCanReturnInt()
+    public function testGetRobinsonListedCountCanReturnInt(): void
     {
-        $this->assertSame(456, $this->subject->getRobinsonListedCount());
+        self::assertSame(456, $this->subject->getRobinsonListedCount());
     }
 
-    public function testGetHardBounceCountCanReturnInt()
+    public function testGetHardBounceCountCanReturnInt(): void
     {
-        $this->assertSame(1456, $this->subject->getHardBounceCount());
+        self::assertSame(1456, $this->subject->getHardBounceCount());
     }
 }

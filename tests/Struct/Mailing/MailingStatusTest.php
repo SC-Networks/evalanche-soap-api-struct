@@ -33,34 +33,34 @@ class MailingStatusTest extends StructTestCase
         );
     }
 
-    public function testGetProfileIdCanReturnInt()
+    public function testGetProfileIdCanReturnInt(): void
     {
-        $this->assertSame(23, $this->subject->getProfileId());
+        self::assertSame(23, $this->subject->getProfileId());
     }
 
-    public function testGetNewsletterIdCanReturnInt()
+    public function testGetNewsletterIdCanReturnInt(): void
     {
-        $this->assertSame(35, $this->subject->getNewsletterId());
+        self::assertSame(35, $this->subject->getNewsletterId());
     }
 
-    public function testGetLastStatusChangeCanReturnInt()
+    public function testGetLastStatusChangeCanReturnInt(): void
     {
-        $this->assertSame(555, $this->subject->getLastStatusChange());
+        self::assertSame(555, $this->subject->getLastStatusChange());
     }
 
-    public function testGetStatusCanReturnInt()
+    public function testGetStatusCanReturnInt(): void
     {
-        $this->assertSame(333, $this->subject->getStatus());
+        self::assertSame(333, $this->subject->getStatus());
     }
 
-    public function testGetPreviewUrlCanReturnString()
+    public function testGetPreviewUrlCanReturnString(): void
     {
-        $this->assertSame('some preview url', $this->subject->getPreviewUrl());
+        self::assertSame('some preview url', $this->subject->getPreviewUrl());
     }
 
-    public function testGetProfileDataCanReturnArrayOfHashMap()
+    public function testGetProfileDataCanReturnArrayOfHashMap(): void
     {
-        $this->assertCount(3, $this->subject->getProfileData());
-        $this->assertContainsOnlyInstancesOf(HashMapInterface::class, $this->subject->getProfileData());
+        self::assertCount(3, $this->subject->getProfileData());
+        self::assertContainsOnlyInstancesOf(HashMapInterface::class, $this->subject->getProfileData());
     }
 }

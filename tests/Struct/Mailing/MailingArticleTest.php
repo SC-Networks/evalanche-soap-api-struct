@@ -32,53 +32,53 @@ class MailingArticleTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(1, $this->subject->getId());
+        self::assertSame(1, $this->subject->getId());
     }
 
-    public function testGetArticleIdCanReturnInt()
+    public function testGetArticleIdCanReturnInt(): void
     {
-        $this->assertSame(2, $this->subject->getArticleId());
+        self::assertSame(2, $this->subject->getArticleId());
     }
 
-    public function testGetTargetGroupIdCanReturnInt()
+    public function testGetTargetGroupIdCanReturnInt(): void
     {
-        $this->assertSame(3, $this->subject->getTargetGroupId());
+        self::assertSame(3, $this->subject->getTargetGroupId());
     }
 
-    public function testGetHtmlPresetIdCanReturnInt()
+    public function testGetHtmlPresetIdCanReturnInt(): void
     {
-        $this->assertSame(4, $this->subject->getHtmlPresetId());
+        self::assertSame(4, $this->subject->getHtmlPresetId());
     }
 
-    public function testGetTextPresetIdCanReturnInt()
+    public function testGetTextPresetIdCanReturnInt(): void
     {
-        $this->assertSame(5, $this->subject->getTextPresetId());
+        self::assertSame(5, $this->subject->getTextPresetId());
     }
 
-    public function testLandingPagePresetIdCanReturnInt()
+    public function testLandingPagePresetIdCanReturnInt(): void
     {
-        $this->assertSame(6, $this->subject->getLandingpagePresetId());
+        self::assertSame(6, $this->subject->getLandingpagePresetId());
     }
 
-    public function testGetPdfPresetIdCanReturnInt()
+    public function testGetPdfPresetIdCanReturnInt(): void
     {
-        $this->assertSame(7, $this->subject->getPdfPresetId());
+        self::assertSame(7, $this->subject->getPdfPresetId());
     }
 
-    public function testMobilePresetIdCanReturnInt()
+    public function testMobilePresetIdCanReturnInt(): void
     {
-        $this->assertSame(8, $this->subject->getMobilePresetId());
+        self::assertSame(8, $this->subject->getMobilePresetId());
     }
 
-    public function testGetSortPosCanReturnInt()
+    public function testGetSortPosCanReturnInt(): void
     {
-        $this->assertSame(9, $this->subject->getSortPos());
+        self::assertSame(9, $this->subject->getSortPos());
     }
 
-    public function testGetSlotCanReturnInt()
+    public function testGetSlotCanReturnInt(): void
     {
-        $this->assertSame(10, $this->subject->getSlot());
+        self::assertSame(10, $this->subject->getSlot());
     }
 }

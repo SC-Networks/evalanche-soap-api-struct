@@ -24,13 +24,13 @@ class ServiceStatusTest extends StructTestCase
         );
     }
 
-    public function testGetStatusCanReturnString()
+    public function testGetStatusCanReturnString(): void
     {
-        $this->assertSame('some status', $this->subject->getStatus());
+        self::assertSame('some status', $this->subject->getStatus());
     }
 
-    public function testGetRandomMessageCanReturnString()
+    public function testGetRandomMessageCanReturnString(): void
     {
-        $this->assertSame('some random message', $this->subject->getRandomMessage());
+        self::assertSame('some random message', $this->subject->getRandomMessage());
     }
 }

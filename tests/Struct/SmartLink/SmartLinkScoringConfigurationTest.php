@@ -28,33 +28,33 @@ class SmartLinkScoringConfigurationTest extends StructTestCase
         );
     }
 
-    public function testGetId()
+    public function testGetId(): void
     {
-        $this->assertSame(123, $this->subject->getId());
+        self::assertSame(123, $this->subject->getId());
     }
 
-    public function testGetName()
+    public function testGetName(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetValue()
+    public function testGetValue(): void
     {
-        $this->assertSame(234, $this->subject->getValue());
+        self::assertSame(234, $this->subject->getValue());
     }
 
-    public function testGetMultipleScoreTimeThreshold()
+    public function testGetMultipleScoreTimeThreshold(): void
     {
-        $this->assertSame(345, $this->subject->getMultipleScoreTimeThreshold());
+        self::assertSame(345, $this->subject->getMultipleScoreTimeThreshold());
     }
 
-    public function testGetScoringGroupId()
+    public function testGetScoringGroupId(): void
     {
-        $this->assertSame(456, $this->subject->getScoringGroupId());
+        self::assertSame(456, $this->subject->getScoringGroupId());
     }
 
-    public function testGetType()
+    public function testGetType(): void
     {
-        $this->assertSame(567, $this->subject->getType());
+        self::assertSame(567, $this->subject->getType());
     }
 }

@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct;
 
+use PHPUnit\Framework\Attributes\DataProvider;
+
 abstract class GenericSetterGetterTestCase extends StructTestCase
 {
 
-    /**
-     * @dataProvider methodDataProvider
-     */
+    #[DataProvider('methodDataProvider')]
     public function testSetterAndGetter(
         string $method,
         string $testDatatype
@@ -20,26 +20,19 @@ abstract class GenericSetterGetterTestCase extends StructTestCase
 
         call_user_func_array([$subject, 'set'.$method], [$value]);
 
-        $this->assertSame(
-            $value,
-            call_user_func_array([$subject, 'get'.$method], [])
-        );
+        self::assertSame($value, call_user_func_array([$subject, 'get'.$method], []));
     }
     
     private function getTestData(string $testDataType)
     {
-        switch ($testDataType) {
-            case 'int':
-                return 666;
-            case 'array':
-                return ['some-data'];
-            case 'string':
-            default:
-                return 'some-value';
-        }
+        return match ($testDataType) {
+            'int' => 666,
+            'array' => ['some-data'],
+            default => 'some-value',
+        };
     }
 
-    abstract public function methodDataProvider(): array;
+    abstract public static function methodDataProvider(): array;
     
     abstract protected function getSubject();
 }

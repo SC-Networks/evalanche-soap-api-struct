@@ -49,8 +49,7 @@ class SmartLinkPoolConfiguration implements SmartLinkPoolConfigurationInterface
         int $poolAttributeId = null,
         string $value = null,
         bool $isMerge = null
-    )
-    {
+    ) {
         $this->id = $id;
         $this->poolId = $poolId;
         $this->poolAttributeId = $poolAttributeId;

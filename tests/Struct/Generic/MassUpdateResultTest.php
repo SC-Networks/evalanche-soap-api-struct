@@ -32,43 +32,31 @@ class MassUpdateResultTest extends StructTestCase
         );
     }
 
-    public function testGetUpdatedCanReturnInstanceOfHashMap()
+    public function testGetUpdatedCanReturnInstanceOfHashMap(): void
     {
-        $this->assertInstanceOf(
-            HashMapInterface::class,
-            $this->subject->getUpdated()
-        );
+        self::assertInstanceOf(HashMapInterface::class, $this->subject->getUpdated());
     }
 
-    public function testGetCreatedReturnInstanceOfHashMap()
+    public function testGetCreatedReturnInstanceOfHashMap(): void
     {
-        $this->assertInstanceOf(
-            HashMapInterface::class,
-            $this->subject->getCreated()
-        );
+        self::assertInstanceOf(HashMapInterface::class, $this->subject->getCreated());
     }
 
-    public function testGetIgnoredCanReturnArray()
+    public function testGetIgnoredCanReturnArray(): void
     {
-        $this->assertCount(2, $this->subject->getIgnored());
-        $this->assertSame(
-            [
-                'some string',
-                'some other string'
-            ],
-            $this->subject->getIgnored()
-        );
+        self::assertCount(2, $this->subject->getIgnored());
+        self::assertSame([
+            'some string',
+            'some other string'
+        ], $this->subject->getIgnored());
     }
 
-    public function testGetErrorCanReturnArray()
+    public function testGetErrorCanReturnArray(): void
     {
-        $this->assertCount(2, $this->subject->getError());
-        $this->assertSame(
-            [
-                1,
-                4
-            ],
-            $this->subject->getError()
-        );
+        self::assertCount(2, $this->subject->getError());
+        self::assertSame([
+            1,
+            4
+        ], $this->subject->getError());
     }
 }

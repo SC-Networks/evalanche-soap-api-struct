@@ -29,38 +29,38 @@ class ContainerDetailTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(1, $this->subject->getId());
+        self::assertSame(1, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetUrlCanReturnString()
+    public function testGetUrlCanReturnString(): void
     {
-        $this->assertSame('some url', $this->subject->getUrl());
+        self::assertSame('some url', $this->subject->getUrl());
     }
 
-    public function testGetTypeIdCanReturnInt()
+    public function testGetTypeIdCanReturnInt(): void
     {
-        $this->assertSame(4, $this->subject->getTypeId());
+        self::assertSame(4, $this->subject->getTypeId());
     }
 
-    public function testGetFolderIdCanReturnInt()
+    public function testGetFolderIdCanReturnInt(): void
     {
-        $this->assertSame(5, $this->subject->getFolderId());
+        self::assertSame(5, $this->subject->getFolderId());
     }
 
-    public function testGetMandatorIdCanReturnInt()
+    public function testGetMandatorIdCanReturnInt(): void
     {
-        $this->assertSame(6, $this->subject->getMandatorId());
+        self::assertSame(6, $this->subject->getMandatorId());
     }
 
-    public function testGetContainerTypeIdCanReturnInt()
+    public function testGetContainerTypeIdCanReturnInt(): void
     {
-        $this->assertSame(7, $this->subject->getContainerTypeId());
+        self::assertSame(7, $this->subject->getContainerTypeId());
     }
 }

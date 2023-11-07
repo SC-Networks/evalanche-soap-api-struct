@@ -26,15 +26,12 @@ class HashMapTest extends StructTestCase
         );
     }
 
-    public function testGetItemsCanReturnArray()
+    public function testGetItemsCanReturnArray(): void
     {
-        $this->assertContainsOnlyInstancesOf(
-            HashMapItemInterface::class,
-            $this->subject->getItems()
-        );
+        self::assertContainsOnlyInstancesOf(HashMapItemInterface::class, $this->subject->getItems());
     }
 
-    public function testSetItemsCanSetArrayOfHashMapItem()
+    public function testSetItemsCanSetArrayOfHashMapItem(): void
     {
         $hashMapItems = [
             $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
@@ -42,9 +39,6 @@ class HashMapTest extends StructTestCase
             $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
         ];
 
-        $this->assertContainsOnlyInstancesOf(
-            HashMapItemInterface::class,
-            $this->subject->setItems($hashMapItems)->getItems()
-        );
+        self::assertContainsOnlyInstancesOf(HashMapItemInterface::class, $this->subject->setItems($hashMapItems)->getItems());
     }
 }

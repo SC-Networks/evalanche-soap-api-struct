@@ -27,16 +27,11 @@ class WorkflowStateChangeResultTest extends StructTestCase
     
     public function testGetStatChangeResultReturnsValue(): void
     {
-        $this->assertTrue(
-            $this->subject->getStateChangeResultSuccessful()
-        );
+        self::assertTrue($this->subject->getStateChangeResultSuccessful());
     }
     
     public function testGetErrorListReturnsValue(): void
     {
-        $this->assertSame(
-            $this->errorList,
-            $this->subject->getErrorList()
-        );
+        self::assertSame($this->errorList, $this->subject->getErrorList());
     }
 }
