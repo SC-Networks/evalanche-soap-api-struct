@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Container;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a group for ContainerAttributes.
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Container;
  */
 class ContainerAttributeGroup implements ContainerAttributeGroupInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

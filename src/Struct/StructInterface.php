@@ -7,6 +7,6 @@ namespace Scn\EvalancheSoapStruct\Struct;
  *
  * @package Scn\EvalancheSoapStruct\Struct
  */
-interface StructInterface
+interface StructInterface extends \JsonSerializable
 {
 }

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Mandator;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents an Evalanche Mandator with id, name and domain.
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Mandator;
  */
 class Mandator implements MandatorInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

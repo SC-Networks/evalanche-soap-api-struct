@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Contains information about the configuration of a specific mailing
  * like campaign id, individual salutations, reply address, input fields, etc.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingConfiguration implements MailingConfigurationInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */

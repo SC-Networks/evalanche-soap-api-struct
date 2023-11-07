@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Holds an alphanumeric value by an alphanumeric key
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class HashMapItem implements HashMapItemInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var string
      */

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Contains detailed informations about a specific mailing
  * like timestamp, amount of recipients, subject, sendout time, etc.
@@ -12,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingDetail implements MailingDetailInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

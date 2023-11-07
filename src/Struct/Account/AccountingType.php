@@ -2,6 +2,8 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a specific type of accountings.
  * Contains information of the type id, amount, price and currency,
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Account;
  */
 class AccountingType implements AccountingTypeInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Contains profile data and sendout state for a specific mailing and a specific profile.
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingStatus implements MailingStatusInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

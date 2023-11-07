@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
 
+use Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
+
 /**
  * Represents a list of BlackListItems for one specific mandator.
  *
@@ -11,6 +13,8 @@ namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
  */
 class BlackList implements BlackListInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */

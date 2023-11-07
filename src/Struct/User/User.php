@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\User;
+use \Scn\EvalancheSoapStruct\Struct\StructJsonSerializeTrait;
 
 /**
  * Represents a user in Evalanche.
@@ -13,6 +14,8 @@ namespace Scn\EvalancheSoapStruct\Struct\User;
  */
 class User implements UserInterface
 {
+    use StructJsonSerializeTrait;
+
     /**
      * @var int
      */
