@@ -16,7 +16,7 @@ class ProfileCouponTest extends GenericSetterGetterTestCase
         $this->subject = new ProfileCoupon();
     }
 
-    public function methodDataProvider(): array
+    public static function methodDataProvider(): array
     {
         return [
             ['Code', 'string'],
@@ -32,17 +32,11 @@ class ProfileCouponTest extends GenericSetterGetterTestCase
 
     public function testGetValidToReturnsValue(): void
     {
-        $this->assertSame(
-            0,
-            $this->subject->getValidTo()
-        );
+        self::assertSame(0, $this->subject->getValidTo());
     }
     
     public function testGetIdReturnsValue(): void
     {
-        $this->assertSame(
-            0,
-            $this->subject->getId()
-        );
+        self::assertSame(0, $this->subject->getId());
     }
 }

@@ -21,29 +21,23 @@ class ProductTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnString()
+    public function testGetIdCanReturnString(): void
     {
-        $this->assertSame(
-            'some-fancy-uuid',
-            $this->subject->getId()
-        );
+        self::assertSame('some-fancy-uuid', $this->subject->getId());
     }
 
-    public function testGetPriceCanReturnInteger()
+    public function testGetPriceCanReturnInteger(): void
     {
-        $this->assertSame(
-            700,
-            $this->subject->getPrice()
-        );
+        self::assertSame(700, $this->subject->getPrice());
     }
 
-    public function testGetTextCanReturnString()
+    public function testGetTextCanReturnString(): void
     {
-        $this->assertSame('some text', $this->subject->getText());
+        self::assertSame('some text', $this->subject->getText());
     }
 
-    public function testGetTitleCanReturnString()
+    public function testGetTitleCanReturnString(): void
     {
-        $this->assertSame('some title', $this->subject->getTitle());
+        self::assertSame('some title', $this->subject->getTitle());
     }
 }

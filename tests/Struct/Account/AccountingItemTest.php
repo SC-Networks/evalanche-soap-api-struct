@@ -26,23 +26,23 @@ class AccountingItemTest extends StructTestCase
         );
     }
 
-    public function testGetDescriptionCanReturnString()
+    public function testGetDescriptionCanReturnString(): void
     {
-        $this->assertSame('some description', $this->subject->getDescription());
+        self::assertSame('some description', $this->subject->getDescription());
     }
 
-    public function testGetMandatorIdCanReturnInteger()
+    public function testGetMandatorIdCanReturnInteger(): void
     {
-        $this->assertSame(435, $this->subject->getMandatorId());
+        self::assertSame(435, $this->subject->getMandatorId());
     }
 
-    public function testGetAccountingDateCanReturnString()
+    public function testGetAccountingDateCanReturnString(): void
     {
-        $this->assertSame('some string', $this->subject->getAccountingDate());
+        self::assertSame('some string', $this->subject->getAccountingDate());
     }
 
-    public function testGetChargeCountCanReturnInteger()
+    public function testGetChargeCountCanReturnInteger(): void
     {
-        $this->assertSame(5, $this->subject->getChargeCount());
+        self::assertSame(5, $this->subject->getChargeCount());
     }
 }

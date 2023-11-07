@@ -25,18 +25,18 @@ class ContainerAttributeGroupTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getId());
+        self::assertSame(123, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetSortOrderCanReturnInt()
+    public function testGetSortOrderCanReturnInt(): void
     {
-        $this->assertSame(1234, $this->subject->getSortOrder());
+        self::assertSame(1234, $this->subject->getSortOrder());
     }
 }

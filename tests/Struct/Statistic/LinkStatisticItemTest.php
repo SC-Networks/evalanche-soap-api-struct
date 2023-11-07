@@ -27,28 +27,28 @@ class LinkStatisticItemTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getId());
+        self::assertSame(123, $this->subject->getId());
     }
 
-    public function testGetUrlCanReturnString()
+    public function testGetUrlCanReturnString(): void
     {
-        $this->assertSame('some url', $this->subject->getUrl());
+        self::assertSame('some url', $this->subject->getUrl());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetClickCountCanReturnInt()
+    public function testGetClickCountCanReturnInt(): void
     {
-        $this->assertSame(120, $this->subject->getClickCount());
+        self::assertSame(120, $this->subject->getClickCount());
     }
 
-    public function testGetUniqueClickCountCanReturnInt()
+    public function testGetUniqueClickCountCanReturnInt(): void
     {
-        $this->assertSame(555, $this->subject->getUniqueClickCount());
+        self::assertSame(555, $this->subject->getUniqueClickCount());
     }
 }

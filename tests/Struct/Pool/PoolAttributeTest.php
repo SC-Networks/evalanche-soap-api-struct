@@ -32,41 +32,38 @@ class PoolAttributeTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(55, $this->subject->getId());
+        self::assertSame(55, $this->subject->getId());
     }
 
-    public function testGetTypeIdCanReturnInt()
+    public function testGetTypeIdCanReturnInt(): void
     {
-        $this->assertSame(666, $this->subject->getTypeId());
+        self::assertSame(666, $this->subject->getTypeId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetLabelCanReturnString()
+    public function testGetLabelCanReturnString(): void
     {
-        $this->assertSame('some label', $this->subject->getLabel());
+        self::assertSame('some label', $this->subject->getLabel());
     }
 
-    public function testGetOptionsCanReturnArrayOfPoolAttributeOptions()
+    public function testGetOptionsCanReturnArrayOfPoolAttributeOptions(): void
     {
-        $this->assertContainsOnlyInstancesOf(
-            PoolAttributeOptionInterface::class,
-            $this->subject->getOptions()
-        );
+        self::assertContainsOnlyInstancesOf(PoolAttributeOptionInterface::class, $this->subject->getOptions());
     }
 
-    public function testHasOptionsCanReturnBool()
+    public function testHasOptionsCanReturnBool(): void
     {
-        $this->assertTrue($this->subject->hasOptions());
+        self::assertTrue($this->subject->hasOptions());
     }
 
-    public function testAddOptionsCanReturnBool()
+    public function testAddOptionsCanReturnBool(): void
     {
-        $this->assertTrue($this->subject->addOptions());
+        self::assertTrue($this->subject->addOptions());
     }
 }

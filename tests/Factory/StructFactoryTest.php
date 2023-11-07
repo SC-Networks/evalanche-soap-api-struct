@@ -7,7 +7,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
 
 class StructFactoryTest extends StructTestCase
 {
-    public function testCreateHashMapCanReturnInstanceOfHashMapInterface()
+    public function testCreateHashMapCanReturnInstanceOfHashMapInterface(): void
     {
         $sample = [
             'field_name' => 'field_value',
@@ -16,18 +16,12 @@ class StructFactoryTest extends StructTestCase
 
         $hashMap = StructFactory::createHashMap($sample);
 
-        $this->assertInstanceOf(
-            HashMapInterface::class,
-            $hashMap
-        );
+        self::assertInstanceOf(HashMapInterface::class, $hashMap);
 
-        $this->assertCount(
-            2,
-            $hashMap->getItems()
-        );
+        self::assertCount(2, $hashMap->getItems());
 
         foreach ($hashMap->getItems() as $hashMapItem) {
-            $this->assertSame($sample[$hashMapItem->getKey()], $hashMapItem->getValue());
+            self::assertSame($sample[$hashMapItem->getKey()], $hashMapItem->getValue());
         }
     }
 }

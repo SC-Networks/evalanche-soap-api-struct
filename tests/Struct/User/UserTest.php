@@ -38,137 +38,122 @@ class UserTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(1234, $this->subject->getId());
+        self::assertSame(1234, $this->subject->getId());
     }
 
-    public function testSetIdCanSetInt()
+    public function testSetIdCanSetInt(): void
     {
-        $this->assertSame(55, $this->subject->setId(55)->getId());
+        self::assertSame(55, $this->subject->setId(55)->getId());
     }
 
-    public function testGetMandatorIdCanReturnInt()
+    public function testGetMandatorIdCanReturnInt(): void
     {
-        $this->assertSame(324, $this->subject->getMandatorId());
+        self::assertSame(324, $this->subject->getMandatorId());
     }
 
-    public function testSetMandatorIdCanSetInt()
+    public function testSetMandatorIdCanSetInt(): void
     {
-        $this->assertSame(676, $this->subject->setMandatorId(676)->getMandatorId());
+        self::assertSame(676, $this->subject->setMandatorId(676)->getMandatorId());
     }
 
-    public function testGetUsernameCanReturnString()
+    public function testGetUsernameCanReturnString(): void
     {
-        $this->assertSame('some username', $this->subject->getUsername());
+        self::assertSame('some username', $this->subject->getUsername());
     }
 
-    public function testSetUsernameCanSetString()
+    public function testSetUsernameCanSetString(): void
     {
-        $this->assertSame(
-            'some other username',
-            $this->subject->setUsername('some other username')->getUsername()
-        );
+        self::assertSame('some other username', $this->subject->setUsername('some other username')->getUsername());
     }
 
-    public function testGetEmailCanReturnString()
+    public function testGetEmailCanReturnString(): void
     {
-        $this->assertSame('some@mail.de', $this->subject->getEmail());
+        self::assertSame('some@mail.de', $this->subject->getEmail());
     }
 
-    public function testSetEmailCanSetString()
+    public function testSetEmailCanSetString(): void
     {
-        $this->assertSame(
-            'some@otheremail.de',
-            $this->subject->setEmail('some@otheremail.de')->getEmail()
-        );
+        self::assertSame('some@otheremail.de', $this->subject->setEmail('some@otheremail.de')->getEmail());
     }
 
-    public function testGetSalutationCanReturnInt()
+    public function testGetSalutationCanReturnInt(): void
     {
-        $this->assertSame(3, $this->subject->getSalutation());
+        self::assertSame(3, $this->subject->getSalutation());
     }
 
-    public function testSetSalutationIdCanSetInt()
+    public function testSetSalutationIdCanSetInt(): void
     {
-        $this->assertSame(56, $this->subject->setSalutation(56)->getSalutation());
+        self::assertSame(56, $this->subject->setSalutation(56)->getSalutation());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testSetNameCanSetString()
+    public function testSetNameCanSetString(): void
     {
-        $this->assertSame('some other name', $this->subject->setName('some other name')->getName());
+        self::assertSame('some other name', $this->subject->setName('some other name')->getName());
     }
 
-    public function testGetDescriptionCanReturnString()
+    public function testGetDescriptionCanReturnString(): void
     {
-        $this->assertSame('some description', $this->subject->getDescription());
+        self::assertSame('some description', $this->subject->getDescription());
     }
 
-    public function testSetDescriptionCanSetString()
+    public function testSetDescriptionCanSetString(): void
     {
-        $this->assertSame(
-            'some other description',
-            $this->subject->setDescription('some other description')->getDescription()
-        );
+        self::assertSame('some other description', $this->subject->setDescription('some other description')->getDescription());
     }
 
-    public function testGetSecurityGuideLineIdCanReturnInt()
+    public function testGetSecurityGuideLineIdCanReturnInt(): void
     {
-        $this->assertSame(3132, $this->subject->getSecurityGuidelineId());
+        self::assertSame(3132, $this->subject->getSecurityGuidelineId());
     }
 
-    public function testSetSecurityGuideLineIDCanSetInt()
+    public function testSetSecurityGuideLineIDCanSetInt(): void
     {
-        $this->assertSame(333, $this->subject->setSecurityGuidelineId(333)->getSecurityGuidelineId());
+        self::assertSame(333, $this->subject->setSecurityGuidelineId(333)->getSecurityGuidelineId());
     }
 
-    public function testGetRoleIdsCanReturnArray()
+    public function testGetRoleIdsCanReturnArray(): void
     {
-        $this->assertSame(
-            [
-                1,
-                2,
-                4
-            ],
-            $this->subject->getRoleIds()
-        );
+        self::assertSame([
+            1,
+            2,
+            4
+        ], $this->subject->getRoleIds());
     }
 
-    public function testSetRoleIdsCanSetArray()
+    public function testSetRoleIdsCanSetArray(): void
     {
-        $this->assertSame([5, 4], $this->subject->setRoleIds([5, 4])->getRoleIds());
+        self::assertSame([5, 4], $this->subject->setRoleIds([5, 4])->getRoleIds());
     }
 
-    public function testGetDisabledCanReturnBool()
+    public function testGetDisabledCanReturnBool(): void
     {
-        $this->assertTrue($this->subject->getDisabled());
+        self::assertTrue($this->subject->getDisabled());
     }
 
-    public function testSetDisabledCanSetBool()
+    public function testSetDisabledCanSetBool(): void
     {
-        $this->assertFalse($this->subject->setDisabled(false)->getDisabled());
+        self::assertFalse($this->subject->setDisabled(false)->getDisabled());
     }
 
-    public function testGetPasswordCanReturnString()
+    public function testGetPasswordCanReturnString(): void
     {
-        $this->assertSame('some password', $this->subject->getPassword());
+        self::assertSame('some password', $this->subject->getPassword());
     }
 
-    public function testSetPasswordCanSetString()
+    public function testSetPasswordCanSetString(): void
     {
-        $this->assertSame('some other password', $this->subject->setPassword('some other password')->getPassword());
+        self::assertSame('some other password', $this->subject->setPassword('some other password')->getPassword());
     }
 
-    public function testSetFirstNameCanSetString()
+    public function testSetFirstNameCanSetString(): void
     {
-        $this->assertSame(
-            'some other first name',
-            $this->subject->setFirstName('some other first name')->getFirstName()
-        );
+        self::assertSame('some other first name', $this->subject->setFirstName('some other first name')->getFirstName());
     }
 }

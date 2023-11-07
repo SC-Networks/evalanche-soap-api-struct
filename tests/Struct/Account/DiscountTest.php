@@ -25,18 +25,18 @@ class DiscountTest extends StructTestCase
         );
     }
 
-    public function testGetDescriptionCanReturnString()
+    public function testGetDescriptionCanReturnString(): void
     {
-        $this->assertSame('some description', $this->subject->getDescription());
+        self::assertSame('some description', $this->subject->getDescription());
     }
 
-    public function testGetPercentCanReturnFloat()
+    public function testGetPercentCanReturnFloat(): void
     {
-        $this->assertSame(2.00, $this->subject->getPercent());
+        self::assertSame(2.00, $this->subject->getPercent());
     }
 
-    public function testGetPriceCanReturnFloat()
+    public function testGetPriceCanReturnFloat(): void
     {
-        $this->assertSame(1.23, $this->subject->getPrice());
+        self::assertSame(1.23, $this->subject->getPrice());
     }
 }

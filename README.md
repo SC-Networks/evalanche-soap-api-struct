@@ -4,10 +4,6 @@
 [![License](https://poser.pugx.org/scn/evalanche-soap-api-struct/license)](LICENSE)
 [![Tests](https://github.com/SC-Networks/evalanche-soap-api-struct/actions/workflows/php.yml/badge.svg)](https://github.com/SC-Networks/evalanche-soap-api-struct/actions/workflows/php.yml)
 
-## Model Documentation
-
-Can be found [here](/docs/index.md).
-
 ## Testing
 
 ``` bash

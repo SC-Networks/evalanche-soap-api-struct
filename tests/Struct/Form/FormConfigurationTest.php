@@ -16,183 +16,117 @@ class FormConfigurationTest extends StructTestCase
         $this->subject = new FormConfiguration();
     }
 
-    public function testPermissionMode()
+    public function testPermissionMode(): void
     {
-        $this->assertSame(
-            'some permission',
-            $this->subject->setPermissionMode('some permission')->getPermissionMode()
-        );
+        self::assertSame('some permission', $this->subject->setPermissionMode('some permission')->getPermissionMode());
     }
 
-    public function testIsAutoSubmitForm()
+    public function testIsAutoSubmitForm(): void
     {
-        $this->assertSame(
-            'is auto submit form',
-            $this->subject->setIsAutoSubmitForm('is auto submit form')->getIsAutoSubmitForm()
-        );
+        self::assertSame('is auto submit form', $this->subject->setIsAutoSubmitForm('is auto submit form')->getIsAutoSubmitForm());
     }
 
-    public function testBlockDuplicates()
+    public function testBlockDuplicates(): void
     {
-        $this->assertSame(
-            'block duplicates',
-            $this->subject->setBlockDuplicates('block duplicates')->getBlockDuplicates()
-        );
+        self::assertSame('block duplicates', $this->subject->setBlockDuplicates('block duplicates')->getBlockDuplicates());
     }
 
-    public function testUniqueEntryCriteriaId()
+    public function testUniqueEntryCriteriaId(): void
     {
-        $this->assertSame(
-            'unique entry criteria id',
-            $this->subject->setUniqueEntryCriteriaId('unique entry criteria id')->getUniqueEntryCriteriaId()
-        );
+        self::assertSame('unique entry criteria id', $this->subject->setUniqueEntryCriteriaId('unique entry criteria id')->getUniqueEntryCriteriaId());
     }
 
-    public function testNewsletterBccRecipientEmail()
+    public function testNewsletterBccRecipientEmail(): void
     {
-        $this->assertSame(
-            'some email',
-            $this->subject->setNewsletterBccRecipientEmail('some email')->getNewsletterBccRecipientEmail()
-        );
+        self::assertSame('some email', $this->subject->setNewsletterBccRecipientEmail('some email')->getNewsletterBccRecipientEmail());
     }
 
-    public function testReCaptchaActivated()
+    public function testReCaptchaActivated(): void
     {
-        $this->assertSame(
-            'some bool',
-            $this->subject->setReCaptchaActivated('some bool')->getReCaptchaActivated()
-        );
+        self::assertSame('some bool', $this->subject->setReCaptchaActivated('some bool')->getReCaptchaActivated());
     }
 
-    public function testSuccessUrl()
+    public function testSuccessUrl(): void
     {
-        $this->assertSame(
-            'success url',
-            $this->subject->setSuccessUrl('success url')->getSuccessUrl()
-        );
+        self::assertSame('success url', $this->subject->setSuccessUrl('success url')->getSuccessUrl());
     }
 
-    public function testFormLanguage()
+    public function testFormLanguage(): void
     {
-        $this->assertSame(
-            'some language',
-            $this->subject->setFormLanguage('some language')->getFormLanguage()
-        );
+        self::assertSame('some language', $this->subject->setFormLanguage('some language')->getFormLanguage());
     }
 
-    public function testFormApiState()
+    public function testFormApiState(): void
     {
-        $this->assertSame(
-            'some api state',
-            $this->subject->setFormApiState('some api state')->getFormApiState()
-        );
+        self::assertSame('some api state', $this->subject->setFormApiState('some api state')->getFormApiState());
     }
 
-    public function testEmailingId()
+    public function testEmailingId(): void
     {
-        $this->assertSame(
-            'some emailing id',
-            $this->subject->setEmailingId('some emailing id')->getEmailingId()
-        );
+        self::assertSame('some emailing id', $this->subject->setEmailingId('some emailing id')->getEmailingId());
     }
 
-    public function testEmailingTargetgroupId()
+    public function testEmailingTargetgroupId(): void
     {
-        $this->assertSame(
-            'some emailing targetgroup id',
-            $this->subject->setEmailingTargetgroupId('some emailing targetgroup id')->getEmailingTargetgroupId()
-        );
+        self::assertSame('some emailing targetgroup id', $this->subject->setEmailingTargetgroupId('some emailing targetgroup id')->getEmailingTargetgroupId());
     }
 
-    public function testFormApiCorsDomains()
+    public function testFormApiCorsDomains(): void
     {
-        $this->assertSame(
-            'some domains',
-            $this->subject->setFormApiCorsDomains('some domains')->getFormApiCorsDomains()
-        );
+        self::assertSame('some domains', $this->subject->setFormApiCorsDomains('some domains')->getFormApiCorsDomains());
     }
 
-    public function testInquirySendOnChange()
+    public function testInquirySendOnChange(): void
     {
-        $this->assertSame(
-            'some send on change',
-            $this->subject->setInquirySendOnChange('some send on change')->getInquirySendOnChange()
-        );
+        self::assertSame('some send on change', $this->subject->setInquirySendOnChange('some send on change')->getInquirySendOnChange());
     }
 
-    public function testEnableAutomatedEntryProtection()
+    public function testEnableAutomatedEntryProtection(): void
     {
-        $this->assertSame(
-            'some entry protection bool',
-            $this->subject
-                ->setEnableAutomatedEntryProtection('some entry protection bool')
-                ->getEnableAutomatedEntryProtection()
-        );
+        self::assertSame('some entry protection bool', $this->subject
+            ->setEnableAutomatedEntryProtection('some entry protection bool')
+            ->getEnableAutomatedEntryProtection());
     }
 
-    public function testInquiryEmailingId()
+    public function testInquiryEmailingId(): void
     {
-        $this->assertSame(
-            'inquiry emailing id',
-            $this->subject->setInquiryEmailingId('inquiry emailing id')->getInquiryEmailingId()
-        );
+        self::assertSame('inquiry emailing id', $this->subject->setInquiryEmailingId('inquiry emailing id')->getInquiryEmailingId());
     }
 
-    public function testEnablePostAddressValidation()
+    public function testEnablePostAddressValidation(): void
     {
-        $this->assertSame(
-            'post address validation bool',
-            $this->subject
-                ->setEnablePostAddressValidation('post address validation bool')
-                ->getEnablePostAddressValidation()
-        );
+        self::assertSame('post address validation bool', $this->subject
+            ->setEnablePostAddressValidation('post address validation bool')
+            ->getEnablePostAddressValidation());
     }
 
-    public function testExternalTrackingcode()
+    public function testExternalTrackingcode(): void
     {
-        $this->assertSame(
-            'external trackingcode',
-            $this->subject->setExternalTrackingcode('external trackingcode')->getExternalTrackingcode()
-        );
+        self::assertSame('external trackingcode', $this->subject->setExternalTrackingcode('external trackingcode')->getExternalTrackingcode());
     }
 
-    public function testAutoFormActionActivated()
+    public function testAutoFormActionActivated(): void
     {
-        $this->assertSame(
-            'auto form action activated',
-            $this->subject->setAutoFormActionActivated('auto form action activated')->getAutoFormActionActivated()
-        );
+        self::assertSame('auto form action activated', $this->subject->setAutoFormActionActivated('auto form action activated')->getAutoFormActionActivated());
     }
 
-    public function testIsMobileOptimized()
+    public function testIsMobileOptimized(): void
     {
-        $this->assertSame(
-            'is mobile optimized',
-            $this->subject->setIsMobileOptimized('is mobile optimized')->getIsMobileOptimized()
-        );
+        self::assertSame('is mobile optimized', $this->subject->setIsMobileOptimized('is mobile optimized')->getIsMobileOptimized());
     }
 
-    public function testDoNotResetUnsubscription()
+    public function testDoNotResetUnsubscription(): void
     {
-        $this->assertSame(
-            'do not reset unsubscription',
-            $this->subject->setDoNotResetUnsubscription('do not reset unsubscription')->getDoNotResetUnsubscription()
-        );
+        self::assertSame('do not reset unsubscription', $this->subject->setDoNotResetUnsubscription('do not reset unsubscription')->getDoNotResetUnsubscription());
     }
 
-    public function testInquiryRecipientEmails()
+    public function testInquiryRecipientEmails(): void
     {
-        $this->assertSame(
-            'emails',
-            $this->subject->setInquiryRecipientEmails('emails')->getInquiryRecipientEmails()
-        );
+        self::assertSame('emails', $this->subject->setInquiryRecipientEmails('emails')->getInquiryRecipientEmails());
     }
 
-    public function testValidationFormId()
+    public function testValidationFormId(): void
     {
-        $this->assertSame(
-            'validation form id',
-            $this->subject->setValidationFormId('validation form id')->getValidationFormId()
-        );
+        self::assertSame('validation form id', $this->subject->setValidationFormId('validation form id')->getValidationFormId());
     }
 }

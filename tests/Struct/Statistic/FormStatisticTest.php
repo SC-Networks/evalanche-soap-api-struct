@@ -35,68 +35,68 @@ class FormStatisticTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(55, $this->subject->getId());
+        self::assertSame(55, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetUrlCanReturnString()
+    public function testGetUrlCanReturnString(): void
     {
-        $this->assertSame('some url', $this->subject->getUrl());
+        self::assertSame('some url', $this->subject->getUrl());
     }
 
-    public function testGetTypeIdCanReturnInt()
+    public function testGetTypeIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getTypeId());
+        self::assertSame(123, $this->subject->getTypeId());
     }
 
-    public function testGetFolderIdCanReturnInt()
+    public function testGetFolderIdCanReturnInt(): void
     {
-        $this->assertSame(45, $this->subject->getFolderId());
+        self::assertSame(45, $this->subject->getFolderId());
     }
 
-    public function testGetMandatorIdCanReturnInt()
+    public function testGetMandatorIdCanReturnInt(): void
     {
-        $this->assertSame(23, $this->subject->getMandatorId());
+        self::assertSame(23, $this->subject->getMandatorId());
     }
 
-    public function testIsAliasCanReturnBool()
+    public function testIsAliasCanReturnBool(): void
     {
-        $this->assertFalse($this->subject->getIsAlias());
+        self::assertFalse($this->subject->getIsAlias());
     }
 
-    public function testGetImpressionsCanReturnInt()
+    public function testGetImpressionsCanReturnInt(): void
     {
-        $this->assertSame(1234, $this->subject->getImpressions());
+        self::assertSame(1234, $this->subject->getImpressions());
     }
 
-    public function testGetSucceededCanReturnInt()
+    public function testGetSucceededCanReturnInt(): void
     {
-        $this->assertSame(23423, $this->subject->getSucceeded());
+        self::assertSame(23423, $this->subject->getSucceeded());
     }
 
-    public function testGetIdentityErrorCountCanReturnInt()
+    public function testGetIdentityErrorCountCanReturnInt(): void
     {
-        $this->assertSame(34434, $this->subject->getIdentityErrorCount());
+        self::assertSame(34434, $this->subject->getIdentityErrorCount());
     }
 
-    public function testGetDuplicationErrorCountCanReturnInt()
+    public function testGetDuplicationErrorCountCanReturnInt(): void
     {
-        $this->assertSame(34534, $this->subject->getDuplicationErrorCount());
+        self::assertSame(34534, $this->subject->getDuplicationErrorCount());
     }
 
-    public function testGetValidationErrorCountCanReturnInt()
+    public function testGetValidationErrorCountCanReturnInt(): void
     {
-        $this->assertSame(3434, $this->subject->getValidationErrorCount());
+        self::assertSame(3434, $this->subject->getValidationErrorCount());
     }
 
-    public function testGetMandatoryErrorCountCanReturnInt()
+    public function testGetMandatoryErrorCountCanReturnInt(): void
     {
-        $this->assertSame(3434, $this->subject->getMandatoryErrorCount());
+        self::assertSame(3434, $this->subject->getMandatoryErrorCount());
     }
 }

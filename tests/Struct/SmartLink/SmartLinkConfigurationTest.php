@@ -33,58 +33,58 @@ class SmartLinkConfigurationTest extends StructTestCase
         );
     }
 
-    public function testGetId()
+    public function testGetId(): void
     {
-        $this->assertSame(123, $this->subject->getId());
+        self::assertSame(123, $this->subject->getId());
     }
 
-    public function testGetTargetUrl()
+    public function testGetTargetUrl(): void
     {
-        $this->assertSame('target url', $this->subject->getTargetUrl());
+        self::assertSame('target url', $this->subject->getTargetUrl());
     }
 
-    public function testGetIndividualScoringConfig()
+    public function testGetIndividualScoringConfig(): void
     {
-        $this->assertSame(true, $this->subject->getIndividualScoringConfig());
+        self::assertSame(true, $this->subject->getIndividualScoringConfig());
     }
 
-    public function testGetRestrictionTargetGroupId()
+    public function testGetRestrictionTargetGroupId(): void
     {
-        $this->assertSame(234, $this->subject->getRestrictionTargetGroupId());
+        self::assertSame(234, $this->subject->getRestrictionTargetGroupId());
     }
 
-    public function testGetRestrictionUserAgents()
+    public function testGetRestrictionUserAgents(): void
     {
-        $this->assertSame([100, 101], $this->subject->getRestrictionUserAgents());
+        self::assertSame([100, 101], $this->subject->getRestrictionUserAgents());
     }
 
-    public function testGetMilestoneId()
+    public function testGetMilestoneId(): void
     {
-        $this->assertSame(345, $this->subject->getMilestoneId());
+        self::assertSame(345, $this->subject->getMilestoneId());
     }
 
-    public function testGetActivateRedirect()
+    public function testGetActivateRedirect(): void
     {
-        $this->assertSame(true, $this->subject->getActivateRedirect());
+        self::assertSame(true, $this->subject->getActivateRedirect());
     }
 
-    public function testGetActivateProfileUpdate()
+    public function testGetActivateProfileUpdate(): void
     {
-        $this->assertSame(false, $this->subject->getActivateProfileUpdate());
+        self::assertSame(false, $this->subject->getActivateProfileUpdate());
     }
 
-    public function testGetActivateTracking()
+    public function testGetActivateTracking(): void
     {
-        $this->assertSame(true, $this->subject->getActivateTracking());
+        self::assertSame(true, $this->subject->getActivateTracking());
     }
 
-    public function testGetScoringConfigs()
+    public function testGetScoringConfigs(): void
     {
-        $this->assertSame([], $this->subject->getScoringConfigs());
+        self::assertSame([], $this->subject->getScoringConfigs());
     }
 
-    public function testGetPoolAttributes()
+    public function testGetPoolAttributes(): void
     {
-        $this->assertSame([], $this->subject->getPoolAttributes());
+        self::assertSame([], $this->subject->getPoolAttributes());
     }
 }

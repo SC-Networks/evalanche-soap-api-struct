@@ -31,36 +31,33 @@ class ProfileBounceStatusTest extends StructTestCase
             1,
             3,
             66,
-            1531381896,
+            1_531_381_896,
             $this->hashMap
         );
     }
 
-    public function testGetProfileIdCanReturnInt()
+    public function testGetProfileIdCanReturnInt(): void
     {
-        $this->assertSame(1, $this->subject->getProfileId());
+        self::assertSame(1, $this->subject->getProfileId());
     }
 
-    public function testGetMailingIdCanReturnInt()
+    public function testGetMailingIdCanReturnInt(): void
     {
-        $this->assertSame(3, $this->subject->getMailingId());
+        self::assertSame(3, $this->subject->getMailingId());
     }
 
-    public function testGetStatusCanReturnInt()
+    public function testGetStatusCanReturnInt(): void
     {
-        $this->assertSame(66, $this->subject->getStatus());
+        self::assertSame(66, $this->subject->getStatus());
     }
 
-    public function testGetTimestampCanReturnInt()
+    public function testGetTimestampCanReturnInt(): void
     {
-        $this->assertSame(1531381896, $this->subject->getTimestamp());
+        self::assertSame(1_531_381_896, $this->subject->getTimestamp());
     }
 
-    public function testGetProfileDataCanReturnInstanceOfHashMapInterface()
+    public function testGetProfileDataCanReturnInstanceOfHashMapInterface(): void
     {
-        $this->assertInstanceOf(
-            HashMapInterface::class,
-            $this->subject->getProfileData()
-        );
+        self::assertInstanceOf(HashMapInterface::class, $this->subject->getProfileData());
     }
 }

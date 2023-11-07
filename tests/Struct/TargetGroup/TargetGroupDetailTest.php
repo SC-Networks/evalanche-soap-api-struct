@@ -24,13 +24,13 @@ class TargetGroupDetailTest extends StructTestCase
         );
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetProfileCountReturnInt()
+    public function testGetProfileCountReturnInt(): void
     {
-        $this->assertSame(55, $this->subject->getProfileCount());
+        self::assertSame(55, $this->subject->getProfileCount());
     }
 }

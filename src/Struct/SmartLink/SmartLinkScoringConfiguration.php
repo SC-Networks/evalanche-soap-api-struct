@@ -56,8 +56,7 @@ class SmartLinkScoringConfiguration implements SmartLinkScoringConfigurationInte
         int $multipleScoreTimeThreshold = null,
         int $scoringGroupId = null,
         int $type = null
-    )
-    {
+    ) {
         $this->id = $id;
         $this->name = $name;
         $this->value = $value;

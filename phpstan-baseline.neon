@@ -1,0 +1,2146 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Factory\\\\StructFactory\\:\\:createHashMap\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Factory/StructFactory.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Factory\\\\StructFactoryInterface\\:\\:createHashMap\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Factory/StructFactoryInterface.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\Account\\:\\:\\$accountingTypes \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingTypeInterface\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingTypeInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/Account.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\Account\\:\\:\\$discount \\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\DiscountInterface\\) does not accept Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\DiscountInterface\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/Account.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingItem\\:\\:\\$accountingDate \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/AccountingItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingItem\\:\\:\\$chargeCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/AccountingItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingItem\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/AccountingItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingItem\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/AccountingItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingType\\:\\:\\$accountingItems \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingItemInterface\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingItemInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/AccountingType.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingType\\:\\:\\$amount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/AccountingType.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingType\\:\\:\\$currency \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/AccountingType.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingType\\:\\:\\$price \\(float\\) does not accept float\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/AccountingType.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\AccountingType\\:\\:\\$typeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/AccountingType.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\Discount\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/Discount.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\Discount\\:\\:\\$percent \\(float\\) does not accept float\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/Discount.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Account\\\\Discount\\:\\:\\$price \\(float\\) does not accept float\\|null\\.$#"
+			count: 1
+			path: src/Struct/Account/Discount.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Article\\\\ArticleDetail\\:\\:\\$articleTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Article/ArticleDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Article\\\\ArticleDetail\\:\\:\\$folderId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Article/ArticleDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Article\\\\ArticleDetail\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Article/ArticleDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Article\\\\ArticleDetail\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Article/ArticleDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Article\\\\ArticleDetail\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Article/ArticleDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Article\\\\ArticleDetail\\:\\:\\$typeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Article/ArticleDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Article\\\\ArticleDetail\\:\\:\\$url \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Article/ArticleDetail.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Article\\\\ArticleIndividualization\\:\\:__construct\\(\\) has parameter \\$individualizationItems with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Article/ArticleIndividualization.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Blacklist\\\\BlackList\\:\\:__construct\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Blacklist/BlackList.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Blacklist\\\\BlackList\\:\\:\\$items \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Blacklist\\\\BlackListItemInterface\\>\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/Blacklist/BlackList.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Blacklist\\\\BlackList\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Blacklist/BlackList.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Blacklist\\\\BlackListItem\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Blacklist/BlackListItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Blacklist\\\\BlackListItem\\:\\:\\$email \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Blacklist/BlackListItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$allowOptions \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$groupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$helpText \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$inputHelpText \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$label \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$mandatory \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$replacementVariable \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$typeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttribute\\:\\:\\$visible \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttributeGroup\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttributeGroup.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttributeGroup\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttributeGroup.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttributeGroup\\:\\:\\$sortOrder \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttributeGroup.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttributeOption\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttributeOption.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttributeOption\\:\\:\\$label \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttributeOption.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttributeOption\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttributeOption.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttributeOption\\:\\:\\$order \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttributeOption.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttributeRoleType\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttributeRoleType.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerAttributeRoleType\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerAttributeRoleType.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerDetail\\:\\:\\$containerTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerDetail\\:\\:\\$folderId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerDetail\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerDetail\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerDetail\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerDetail\\:\\:\\$typeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Container\\\\ContainerDetail\\:\\:\\$url \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Container/ContainerDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$autoFormActionActivated \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$blockDuplicates \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$doNotResetUnsubscription \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$emailingId \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$emailingTargetgroupId \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$enableAutomatedEntryProtection \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$enablePostAddressValidation \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$externalTrackingcode \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$formApiCorsDomains \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$formApiState \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$formLanguage \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$inquiryEmailingId \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$inquiryRecipientEmails \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$inquirySendOnChange \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$isAutoSubmitForm \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$isMobileOptimized \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$newsletterBccRecipientEmail \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$permissionMode \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$reCaptchaActivated \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$successUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$uniqueEntryCriteriaId \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Form\\\\FormConfiguration\\:\\:\\$validationFormId \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Form/FormConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\FolderInformation\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/FolderInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\FolderInformation\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/FolderInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\FolderInformation\\:\\:\\$parentId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/FolderInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobHandle\\:\\:\\$id \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobHandle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobHandle\\:\\:\\$method \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobHandle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobHandle\\:\\:\\$namespace \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobHandle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobHandle\\:\\:\\$resourceId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobHandle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobHandle\\:\\:\\$resultChunks \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobHandle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobHandle\\:\\:\\$status \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobHandle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobHandle\\:\\:\\$statusDescription \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobHandle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$chunksLeft \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$id \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$method \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$namespace \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$resourceId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$result \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMap\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMapInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$resultChunks \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$resultSize \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$status \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\JobResult\\:\\:\\$statusDescription \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/JobResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\MassUpdateResult\\:\\:\\$created \\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMap\\) does not accept Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMapInterface\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/MassUpdateResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\MassUpdateResult\\:\\:\\$error \\(array\\<int\\>\\) does not accept array\\<int\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/MassUpdateResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\MassUpdateResult\\:\\:\\$ignored \\(array\\<string\\>\\) does not accept array\\<string\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/MassUpdateResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\MassUpdateResult\\:\\:\\$updated \\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMap\\) does not accept Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMapInterface\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/MassUpdateResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$folderId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ResourceInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ResourceInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ResourceInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ResourceInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$typeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ResourceInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$url \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ResourceInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceTypeInformation\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ResourceTypeInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceTypeInformation\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ResourceTypeInformation.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ServiceStatus\\:\\:\\$randomMessage \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ServiceStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ServiceStatus\\:\\:\\$status \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Generic/ServiceStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$articleId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$htmlPresetId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$landingpagePresetId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$mobilePresetId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$pdfPresetId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$slot \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$sortPos \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$targetGroupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$textPresetId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingClick\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingClick.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingClick\\:\\:\\$linkId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingClick.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingClick\\:\\:\\$linkTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingClick.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingClick\\:\\:\\$parentId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingClick.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingClick\\:\\:\\$profileId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingClick.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingClick\\:\\:\\$timestamp \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingClick.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$campaignId \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$externalTrackingCode \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$externalXmlUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$grantTrackingUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$grantUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea0 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea1 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea2 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea3 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea4 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea5 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea6 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea7 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea8 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$htmlarea9 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield0 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield1 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield2 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield3 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield4 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield5 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield6 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield7 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield8 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$inputfield9 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$replyEmail \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$replyName \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$revokeConfirmationUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$revokeTrackingUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$revokeUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$salutationCompany \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$salutationDivers \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$salutationFamily \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$salutationFemale \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$salutationMale \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$salutationOther \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$senderEmail \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$senderName \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea0 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea1 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea2 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea3 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea4 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea5 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea6 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea7 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea8 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingConfiguration\\:\\:\\$textarea9 \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$adminUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$folderId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$previewUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$recipients \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$reportUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$sendEndTime \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$sendStartTime \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$sent \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$subject \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$targetGroupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$timestamp \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$typeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingDetail\\:\\:\\$url \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingImpression\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingImpression.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingImpression\\:\\:\\$profileId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingImpression.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingImpression\\:\\:\\$timestamp \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingImpression.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlot\\:\\:__construct\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlot.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlot\\:\\:setItems\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlot\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlot\\:\\:\\$items \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItemInterface\\>\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlot\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlot\\:\\:\\$slotNumber \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlot\\:\\:\\$sortTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlot\\:\\:\\$sortTypeValue \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlot.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotConfiguration\\:\\:__construct\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotConfiguration\\:\\:\\$items \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotInterface\\>\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotConfiguration.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotInterface\\:\\:setItems\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotInterface.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:__construct\\(\\) has parameter \\$emailAllowedArticleTemplateIds with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:__construct\\(\\) has parameter \\$landingpageAllowedArticleTemplateIds with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:__construct\\(\\) has parameter \\$textAllowedArticleTemplateIds with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:__construct\\(\\) has parameter \\$webAllowedArticleTemplateIds with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$articleTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$emailAllowedArticleTemplateIds \\(array\\<int\\>\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$emailArticleTemplateId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$landingpageAllowedArticleTemplateIds \\(array\\<int\\>\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$landingpageArticleTemplateId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$pdfArticleTemplateId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$textAllowedArticleTemplateIds \\(array\\<int\\>\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$textArticleTemplateId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$webAllowedArticleTemplateIds \\(array\\<int\\>\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSlotItem\\:\\:\\$webArticleTemplateId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingStatus\\:\\:\\$lastStatusChange \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingStatus\\:\\:\\$newsletterId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingStatus\\:\\:\\$previewUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingStatus\\:\\:\\$profileData \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMapInterface\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMapInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingStatus\\:\\:\\$profileId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingStatus\\:\\:\\$status \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSubject\\:\\:\\$subject \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSubject.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingSubject\\:\\:\\$targetGroupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mailing/MailingSubject.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplateAllowedTemplates\\:\\:__construct\\(\\) has parameter \\$templateIds with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplateAllowedTemplates.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplateAllowedTemplates\\:\\:\\$templateIds \\(array\\<int\\>\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplateAllowedTemplates.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplateAllowedTemplates\\:\\:\\$templateType \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplateAllowedTemplates.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplateConfiguration\\:\\:\\$containerType \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplateConfiguration.php
+
+		-
+			message: "#^PHPDoc tag @return with type \\$this\\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplateConfigurationInterface\\) is not subtype of native type Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplateConfiguration\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplateConfigurationInterface.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplatesSources\\:\\:\\$templateEmail \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplatesSources.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplatesSources\\:\\:\\$templateLandingpage \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplatesSources.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplatesSources\\:\\:\\$templatePdf \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplatesSources.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplatesSources\\:\\:\\$templateText \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplatesSources.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\MailingTemplate\\\\MailingTemplatesSources\\:\\:\\$templateWeb \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/MailingTemplate/MailingTemplatesSources.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mandator\\\\Mandator\\:\\:\\$domain \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mandator/Mandator.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mandator\\\\Mandator\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mandator/Mandator.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mandator\\\\Mandator\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Mandator/Mandator.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Marketplace\\\\Category\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Marketplace/Category.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Marketplace\\\\Category\\:\\:\\$text \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Marketplace/Category.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Marketplace\\\\Product\\:\\:\\$id \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Marketplace/Product.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Marketplace\\\\Product\\:\\:\\$price \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Marketplace/Product.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Marketplace\\\\Product\\:\\:\\$text \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Marketplace/Product.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Marketplace\\\\Product\\:\\:\\$title \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Marketplace/Product.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttribute\\:\\:\\$addOptions \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/Pool/PoolAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttribute\\:\\:\\$hasOptions \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/Pool/PoolAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttribute\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Pool/PoolAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttribute\\:\\:\\$label \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Pool/PoolAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttribute\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Pool/PoolAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttribute\\:\\:\\$options \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttributeOption\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttributeOptionInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Pool/PoolAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttribute\\:\\:\\$typeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Pool/PoolAttribute.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttributeOption\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Pool/PoolAttributeOption.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Pool\\\\PoolAttributeOption\\:\\:\\$value \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Pool/PoolAttributeOption.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileActivityScore\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileActivityScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileActivityScore\\:\\:\\$resourceId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileActivityScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileActivityScore\\:\\:\\$score \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileActivityScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileActivityScore\\:\\:\\$scoringGroupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileActivityScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileActivityScore\\:\\:\\$scoringTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileActivityScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileActivityScore\\:\\:\\$timestamp \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileActivityScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileBounceStatus\\:\\:\\$mailingId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileBounceStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileBounceStatus\\:\\:\\$profileData \\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMap\\) does not accept Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\HashMapInterface\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileBounceStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileBounceStatus\\:\\:\\$profileId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileBounceStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileBounceStatus\\:\\:\\$status \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileBounceStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileBounceStatus\\:\\:\\$timestamp \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileBounceStatus.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileGroupScore\\:\\:\\$activityScore \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileGroupScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileGroupScore\\:\\:\\$groupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileGroupScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileGroupScore\\:\\:\\$groupName \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileGroupScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileGroupScore\\:\\:\\$profileId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileGroupScore.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileGroupScore\\:\\:\\$profileScore \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileGroupScore.php
+
+		-
+			message: "#^PHPDoc tag @param for parameter \\$referrerDomain with type int is incompatible with native type string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$profileId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$referrerDomain \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$resourceId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$resourceName \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$resourceTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$subResourceId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$subResourceName \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$subResourceTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$subUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$timestamp \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Profile\\\\ProfileTrackingHistory\\:\\:\\$type \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Profile/ProfileTrackingHistory.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Scoring\\\\ScoringGroupDetail\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Scoring/ScoringGroupDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Scoring\\\\ScoringGroupDetail\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Scoring/ScoringGroupDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Scoring\\\\ScoringGroupDetail\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Scoring/ScoringGroupDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLink\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLink.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLink\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLink.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLink\\:\\:\\$trackingUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLink.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:__construct\\(\\) has parameter \\$poolAttributes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:__construct\\(\\) has parameter \\$restrictionUserAgents with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:__construct\\(\\) has parameter \\$scoringConfigs with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:getPoolAttributes\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:getRestrictionUserAgents\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:getScoringConfigs\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$activateProfileUpdate \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$activateRedirect \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$activateTracking \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$individualScoringConfig \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$milestoneId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$poolAttributes \\(array\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$poolAttributes type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$restrictionTargetGroupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$restrictionUserAgents \\(array\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$restrictionUserAgents type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$scoringConfigs \\(array\\) does not accept array\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$scoringConfigs type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfiguration\\:\\:\\$targetUrl \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfiguration.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfigurationInterface\\:\\:getPoolAttributes\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfigurationInterface.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfigurationInterface\\:\\:getRestrictionUserAgents\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfigurationInterface.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkConfigurationInterface\\:\\:getScoringConfigs\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkConfigurationInterface.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkPoolConfiguration\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkPoolConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkPoolConfiguration\\:\\:\\$isMerge \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkPoolConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkPoolConfiguration\\:\\:\\$poolAttributeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkPoolConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkPoolConfiguration\\:\\:\\$poolId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkPoolConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkPoolConfiguration\\:\\:\\$value \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkPoolConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkScoringConfiguration\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkScoringConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkScoringConfiguration\\:\\:\\$multipleScoreTimeThreshold \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkScoringConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkScoringConfiguration\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkScoringConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkScoringConfiguration\\:\\:\\$scoringGroupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkScoringConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkScoringConfiguration\\:\\:\\$type \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkScoringConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\SmartLink\\\\SmartLinkScoringConfiguration\\:\\:\\$value \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/SmartLink/SmartLinkScoringConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatistic\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatistic\\:\\:\\$landingPage \\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\) does not accept Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItemInterface\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatistic\\:\\:\\$links \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\LinkStatisticItem\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\LinkStatisticItemInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatistic\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatistic\\:\\:\\$overall \\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\) does not accept Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItemInterface\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatistic\\:\\:\\$print \\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\) does not accept Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItemInterface\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatistic\\:\\:\\$referenceId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatistic\\:\\:\\$socialSharing \\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\) does not accept Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItemInterface\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatistic\\:\\:\\$voice \\(Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\) does not accept Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItemInterface\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatisticItem\\:\\:\\$clickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatisticItem\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatisticItem\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatisticItem\\:\\:\\$uniqueClickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ArticleStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\BrowserStatisticItem\\:\\:\\$count \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/BrowserStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\BrowserStatisticItem\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/BrowserStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\BrowserStatisticItem\\:\\:\\$version \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/BrowserStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ClientStatistic\\:\\:\\$browsers \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\BrowserStatisticItem\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\BrowserStatisticItemInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ClientStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ClientStatistic\\:\\:\\$clients \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailClientStatisticItem\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailClientStatisticItemInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ClientStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ClientStatistic\\:\\:\\$devices \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\DeviceStatisticItem\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\DeviceStatisticItemInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/ClientStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\DeviceStatisticItem\\:\\:\\$count \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/DeviceStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\DeviceStatisticItem\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/DeviceStatisticItem.php
+
+		-
+			message: "#^Casting to int something that's already int\\.$#"
+			count: 3
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Casting to string something that's already string\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$duplicationErrorCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$folderId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$identityErrorCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$impressions \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$isAlias \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$mandatoryErrorCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$succeeded \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$typeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$url \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormStatistic\\:\\:\\$validationErrorCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\:\\:\\$clickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormatStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\:\\:\\$clickRate \\(float\\) does not accept float\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormatStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\:\\:\\$clickRateRelative \\(float\\) does not accept float\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormatStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\:\\:\\$multipleClickRate \\(float\\) does not accept float\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormatStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\:\\:\\$multipleClickRateRelative \\(float\\) does not accept float\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormatStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\FormatStatisticItem\\:\\:\\$uniqueClickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/FormatStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\LinkStatisticItem\\:\\:\\$clickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/LinkStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\LinkStatisticItem\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/LinkStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\LinkStatisticItem\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/LinkStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\LinkStatisticItem\\:\\:\\$uniqueClickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/LinkStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\LinkStatisticItem\\:\\:\\$url \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/LinkStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailClientStatisticItem\\:\\:\\$count \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailClientStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailClientStatisticItem\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailClientStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$addresses \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$articles \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatisticItem\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\ArticleStatisticItemInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$blackListedCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$clickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$duplicateCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$hardBounceCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$impressionCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$links \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\LinkStatisticItem\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\LinkStatisticItemInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$media \\(array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MediaStatisticItem\\>\\) does not accept array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MediaStatisticItemInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$recipients \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$robinsonListedCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$softBounceCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$unSubscribeCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$uniqueClickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MailingStatistic\\:\\:\\$uniqueImpressionCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MailingStatistic.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MediaStatisticItem\\:\\:\\$clickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MediaStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MediaStatisticItem\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MediaStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Statistic\\\\MediaStatisticItem\\:\\:\\$uniqueClickCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Statistic/MediaStatisticItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\TargetGroup\\\\TargetGroupDetail\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/TargetGroup/TargetGroupDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\TargetGroup\\\\TargetGroupDetail\\:\\:\\$profileCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/TargetGroup/TargetGroupDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\TargetGroup\\\\TargetGroupMemberShip\\:\\:\\$profileId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/TargetGroup/TargetGroupMemberShip.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\TargetGroup\\\\TargetGroupMemberShip\\:\\:\\$targetGroupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/TargetGroup/TargetGroupMemberShip.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:getRoleIds\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:setRoleIds\\(\\) has parameter \\$roleIds with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$disabled \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$email \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$firstName \\(string\\) does not accept string\\|null\\.$#"
+			count: 2
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$roleIds \\(array\\<int\\>\\) does not accept array\\<int\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$salutation \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$securityGuidelineId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\User\\:\\:\\$username \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/User/User.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\UserInterface\\:\\:getRoleIds\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/User/UserInterface.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\User\\\\UserInterface\\:\\:setRoleIds\\(\\) has parameter \\$roleIds with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Struct/User/UserInterface.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowConfigVersion\\:\\:\\$configVersion \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowConfigVersion.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowConfigVersion\\:\\:\\$createDate \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowConfigVersion.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowConfigVersion\\:\\:\\$latest \\(bool\\) does not accept bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowConfigVersion.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowConfiguration\\:\\:\\$configVersion \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowConfiguration\\:\\:\\$configuration \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowDetail\\:\\:\\$dateEnd \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowDetail\\:\\:\\$dateStart \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowDetail\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowDetail\\:\\:\\$externalId \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowDetail\\:\\:\\$folderId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowDetail\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowDetail\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowDetail\\:\\:\\$profileCount \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowDetail.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowDetail\\:\\:\\$state \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowDetail.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowStateChangeResult\\:\\:getErrorList\\(\\) should return array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowStateChangeResultErrorInterface\\> but returns array\\<Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowStateChangeResultErrorInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowStateChangeResult.php
+
+		-
+			message: "#^Method Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowStateChangeResult\\:\\:getStateChangeResultSuccessful\\(\\) should return bool but returns bool\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowStateChangeResult.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowStateChangeResultError\\:\\:\\$node \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowStateChangeResultError.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowStateChangeResultError\\:\\:\\$param \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowStateChangeResultError.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Workflow\\\\WorkflowStateChangeResultError\\:\\:\\$type \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/Workflow/WorkflowStateChangeResultError.php

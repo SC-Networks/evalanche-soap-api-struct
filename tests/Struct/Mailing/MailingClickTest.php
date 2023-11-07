@@ -21,40 +21,40 @@ class MailingClickTest extends StructTestCase
         $this->subject = new MailingClick(
             1,
             2,
-            1531397860,
+            1_531_397_860,
             3,
             4,
             5
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(1, $this->subject->getId());
+        self::assertSame(1, $this->subject->getId());
     }
 
-    public function testGetProfileIdCanReturnInt()
+    public function testGetProfileIdCanReturnInt(): void
     {
-        $this->assertSame(2, $this->subject->getProfileId());
+        self::assertSame(2, $this->subject->getProfileId());
     }
 
-    public function testGetTimestampCanReturnInt()
+    public function testGetTimestampCanReturnInt(): void
     {
-        $this->assertSame(1531397860, $this->subject->getTimestamp());
+        self::assertSame(1_531_397_860, $this->subject->getTimestamp());
     }
 
-    public function testGetLinkIdCanReturnInt()
+    public function testGetLinkIdCanReturnInt(): void
     {
-        $this->assertSame(3, $this->subject->getLinkId());
+        self::assertSame(3, $this->subject->getLinkId());
     }
 
-    public function testGetLinkTypeIdCanReturnInt()
+    public function testGetLinkTypeIdCanReturnInt(): void
     {
-        $this->assertSame(4, $this->subject->getLinkTypeId());
+        self::assertSame(4, $this->subject->getLinkTypeId());
     }
 
-    public function testGetParentIdCanReturnInt()
+    public function testGetParentIdCanReturnInt(): void
     {
-        $this->assertSame(5, $this->subject->getParentId());
+        self::assertSame(5, $this->subject->getParentId());
     }
 }

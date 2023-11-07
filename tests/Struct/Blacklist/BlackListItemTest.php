@@ -24,13 +24,13 @@ class BlackListItemTest extends StructTestCase
         );
     }
 
-    public function testGetEmailCanReturnString()
+    public function testGetEmailCanReturnString(): void
     {
-        $this->assertSame('some@email.de', $this->subject->getEmail());
+        self::assertSame('some@email.de', $this->subject->getEmail());
     }
 
-    public function testGetDescriptionCanReturnString()
+    public function testGetDescriptionCanReturnString(): void
     {
-        $this->assertSame('some description', $this->subject->getDescription());
+        self::assertSame('some description', $this->subject->getDescription());
     }
 }

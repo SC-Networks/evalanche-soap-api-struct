@@ -24,13 +24,13 @@ class PoolAttributeOptionTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(55, $this->subject->getId());
+        self::assertSame(55, $this->subject->getId());
     }
 
-    public function testGetValueCanReturnString()
+    public function testGetValueCanReturnString(): void
     {
-        $this->assertSame('some value', $this->subject->getValue());
+        self::assertSame('some value', $this->subject->getValue());
     }
 }

@@ -33,58 +33,58 @@ class ContainerAttributeTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getId());
+        self::assertSame(123, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetLabelCanReturnString()
+    public function testGetLabelCanReturnString(): void
     {
-        $this->assertSame('some label', $this->subject->getLabel());
+        self::assertSame('some label', $this->subject->getLabel());
     }
 
-    public function testGetTypeIdCanReturnInt()
+    public function testGetTypeIdCanReturnInt(): void
     {
-        $this->assertSame(456, $this->subject->getTypeId());
+        self::assertSame(456, $this->subject->getTypeId());
     }
 
-    public function testGetGroupIdCanReturnInt()
+    public function testGetGroupIdCanReturnInt(): void
     {
-        $this->assertSame(789, $this->subject->getGroupId());
+        self::assertSame(789, $this->subject->getGroupId());
     }
 
-    public function testGetHelpTextCanReturnString()
+    public function testGetHelpTextCanReturnString(): void
     {
-        $this->assertSame('some help text', $this->subject->getHelpText());
+        self::assertSame('some help text', $this->subject->getHelpText());
     }
 
-    public function testGetInputHelpTextCanReturnString()
+    public function testGetInputHelpTextCanReturnString(): void
     {
-        $this->assertSame('some input help text', $this->subject->getInputHelpText());
+        self::assertSame('some input help text', $this->subject->getInputHelpText());
     }
 
-    public function testGetMandatoryCanReturnBool()
+    public function testGetMandatoryCanReturnBool(): void
     {
-        $this->assertTrue($this->subject->getMandatory());
+        self::assertTrue($this->subject->getMandatory());
     }
 
-    public function testGetVisibleCanReturnBool()
+    public function testGetVisibleCanReturnBool(): void
     {
-        $this->assertFalse($this->subject->getVisible());
+        self::assertFalse($this->subject->getVisible());
     }
 
-    public function testGetReplacementVariableCanReturnString()
+    public function testGetReplacementVariableCanReturnString(): void
     {
-        $this->assertSame('some replacement', $this->subject->getReplacementVariable());
+        self::assertSame('some replacement', $this->subject->getReplacementVariable());
     }
 
-    public function testGetAllowOptionsCanReturnBool()
+    public function testGetAllowOptionsCanReturnBool(): void
     {
-        $this->assertTrue($this->subject->getAllowOptions());
+        self::assertTrue($this->subject->getAllowOptions());
     }
 }

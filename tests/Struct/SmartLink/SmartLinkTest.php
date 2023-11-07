@@ -25,18 +25,18 @@ class SmartLinkTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(234, $this->subject->getId());
+        self::assertSame(234, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetTrackingUrlCanReturnString()
+    public function testGetTrackingUrlCanReturnString(): void
     {
-        $this->assertSame('some tracking url', $this->subject->getTrackingUrl());
+        self::assertSame('some tracking url', $this->subject->getTrackingUrl());
     }
 }

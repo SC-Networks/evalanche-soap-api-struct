@@ -24,13 +24,13 @@ class DeviceStatisticItemTest extends StructTestCase
         );
     }
 
-    public function testGetDescriptionCanReturnString()
+    public function testGetDescriptionCanReturnString(): void
     {
-        $this->assertSame('some description', $this->subject->getDescription());
+        self::assertSame('some description', $this->subject->getDescription());
     }
 
-    public function testGetCountCanReturnInt()
+    public function testGetCountCanReturnInt(): void
     {
-        $this->assertSame(444, $this->subject->getCount());
+        self::assertSame(444, $this->subject->getCount());
     }
 }

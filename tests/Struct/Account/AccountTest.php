@@ -24,19 +24,13 @@ class AccountTest extends StructTestCase
         );
     }
 
-    public function testGetAccountingTypesCanReturnInstanceOfAccountingType()
+    public function testGetAccountingTypesCanReturnInstanceOfAccountingType(): void
     {
-        $this->assertContainsOnlyInstancesOf(
-            AccountingTypeInterface::class,
-            $this->subject->getAccountingTypes()
-        );
+        self::assertContainsOnlyInstancesOf(AccountingTypeInterface::class, $this->subject->getAccountingTypes());
     }
 
-    public function testGetDiscountCanReturnInstanceOfDiscount()
+    public function testGetDiscountCanReturnInstanceOfDiscount(): void
     {
-        $this->assertInstanceOf(
-            DiscountInterface::class,
-            $this->subject->getDiscount()
-        );
+        self::assertInstanceOf(DiscountInterface::class, $this->subject->getDiscount());
     }
 }

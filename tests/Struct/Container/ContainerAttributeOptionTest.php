@@ -26,23 +26,23 @@ class ContainerAttributeOptionTest extends StructTestCase
         );
     }
 
-    public function testGetIdCanReturnInt()
+    public function testGetIdCanReturnInt(): void
     {
-        $this->assertSame(123, $this->subject->getId());
+        self::assertSame(123, $this->subject->getId());
     }
 
-    public function testGetNameCanReturnString()
+    public function testGetNameCanReturnString(): void
     {
-        $this->assertSame('some name', $this->subject->getName());
+        self::assertSame('some name', $this->subject->getName());
     }
 
-    public function testGetLabelCanReturnString()
+    public function testGetLabelCanReturnString(): void
     {
-        $this->assertSame('some label', $this->subject->getLabel());
+        self::assertSame('some label', $this->subject->getLabel());
     }
 
-    public function testGetSortOrderCanReturnInt()
+    public function testGetSortOrderCanReturnInt(): void
     {
-        $this->assertSame(1234, $this->subject->getOrder());
+        self::assertSame(1234, $this->subject->getOrder());
     }
 }

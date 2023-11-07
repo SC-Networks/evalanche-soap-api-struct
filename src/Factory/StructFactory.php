@@ -24,9 +24,6 @@ final class StructFactory implements StructFactoryInterface
      * ]
      *
      * Field names can be found in your pool configuration.
-     *
-     * @param array $items
-     * @return HashMapInterface
      */
     public static function createHashMap(array $items): HashMapInterface
     {

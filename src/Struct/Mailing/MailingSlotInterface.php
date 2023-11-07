@@ -2,7 +2,6 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
-
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
 
 /**

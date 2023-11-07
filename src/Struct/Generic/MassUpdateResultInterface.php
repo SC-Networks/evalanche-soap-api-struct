@@ -23,7 +23,7 @@ interface MassUpdateResultInterface extends StructInterface
 
     /**
      * Returns the list of profile ids which have been ignored
-     * 
+     *
      * @return string[]
      */
     public function getIgnored(): array;
