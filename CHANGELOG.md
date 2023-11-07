@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.0.0] - 2023-11-07
+### ADDED
+- Struct-extension related to allowed article templates in MailingSlotItem #69
+
 ## [1.16.0] - 2023-02-08
 ### ADDED
 - Struct for ArticleIndividualization
