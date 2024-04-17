@@ -4,17 +4,9 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 use Scn\EvalancheSoapStruct\StructTestCase;
 
-/**
- * Class JobHandleTest
- *
- * @package Scn\EvalancheSoapStruct\Struct\Generic
- */
 class JobHandleTest extends StructTestCase
 {
-    /**
-     * @var JobHandle
-     */
-    private $subject;
+    private JobHandle $subject;
 
     public function setUp(): void
     {

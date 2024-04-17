@@ -6,110 +6,52 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 /**
  * Evalanche object like mailing, image, template, etc.
- *
- * @package Scn\EvalancheSoapStruct\Struct\Generic
  */
 class ResourceInformation implements ResourceInformationInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var string
-     */
-    private $url;
-
-    /**
-     * @var int
-     */
-    private $typeId;
-
-    /**
-     * @var int
-     */
-    private $folderId;
-
-    /**
-     * @var int
-     */
-    private $mandatorId;
-
-    /**
-     * @param int $id
-     * @param string $name
-     * @param string $url
-     * @param int $typeId
-     * @param int $folderId
-     * @param int $mandatorId
-     */
     public function __construct(
-        int $id = null,
-        string $name = null,
-        string $url = null,
-        int $typeId = null,
-        int $folderId = null,
-        int $mandatorId = null
+        private readonly int $id,
+        private readonly string $name,
+        private readonly string $url,
+        private readonly int $typeId,
+        private readonly int $folderId,
+        private readonly int $mandatorId,
+        private readonly int $lastModified,
     ) {
-        $this->id = $id;
-        $this->name = $name;
-        $this->url = $url;
-        $this->typeId = $typeId;
-        $this->folderId = $folderId;
-        $this->mandatorId = $mandatorId;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getUrl(): string
     {
         return $this->url;
     }
 
-    /**
-     * @return int
-     */
     public function getTypeId(): int
     {
         return $this->typeId;
     }
 
-    /**
-     * @return int
-     */
     public function getFolderId(): int
     {
         return $this->folderId;
     }
 
-    /**
-     * @return int
-     */
     public function getMandatorId(): int
     {
         return $this->mandatorId;
+    }
+
+    public function getLastModified(): int
+    {
+        return $this->lastModified;
     }
 }

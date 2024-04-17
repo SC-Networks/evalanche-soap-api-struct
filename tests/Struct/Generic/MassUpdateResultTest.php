@@ -4,17 +4,9 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 use Scn\EvalancheSoapStruct\StructTestCase;
 
-/**
- * Class MassUpdateResultTest
- *
- * @package Scn\EvalancheSoapStruct\Struct\Generic
- */
 class MassUpdateResultTest extends StructTestCase
 {
-    /**
-     * @var MassUpdateResult
-     */
-    private $subject;
+    private MassUpdateResult $subject;
 
     public function setUp(): void
     {

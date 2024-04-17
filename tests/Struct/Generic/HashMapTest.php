@@ -4,17 +4,9 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 use Scn\EvalancheSoapStruct\StructTestCase;
 
-/**
- * Class HashMapTest
- *
- * @package Scn\EvalancheSoapStruct\Struct\Generic
- */
 class HashMapTest extends StructTestCase
 {
-    /**
-     * @var HashMap
-     */
-    private $subject;
+    private HashMap $subject;
 
     public function setUp(): void
     {

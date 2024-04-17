@@ -4,17 +4,9 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 use Scn\EvalancheSoapStruct\StructTestCase;
 
-/**
- * Class ResourceTypeInformationTest
- *
- * @package Scn\EvalancheSoapStruct\Struct\Generic
- */
 class ResourceTypeInformationTest extends StructTestCase
 {
-    /**
-     * @var ResourceTypeInformation
-     */
-    private $subject;
+    private ResourceTypeInformation $subject;
 
     public function setUp(): void
     {
