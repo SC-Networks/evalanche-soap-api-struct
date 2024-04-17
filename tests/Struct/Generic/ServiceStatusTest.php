@@ -4,17 +4,9 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 use Scn\EvalancheSoapStruct\StructTestCase;
 
-/**
- * Class ServiceStatusTest
- *
- * @package Scn\EvalancheSoapStruct\Struct\Generic
- */
 class ServiceStatusTest extends StructTestCase
 {
-    /**
-     * @var ServiceStatus
-     */
-    private $subject;
+    private ServiceStatus $subject;
 
     public function setUp(): void
     {

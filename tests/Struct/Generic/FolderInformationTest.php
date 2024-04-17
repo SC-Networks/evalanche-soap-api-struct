@@ -4,17 +4,9 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 use Scn\EvalancheSoapStruct\StructTestCase;
 
-/**
- * Class FolderInformationTest
- *
- * @package Scn\EvalancheSoapStruct\Struct\Generic
- */
 class FolderInformationTest extends StructTestCase
 {
-    /**
-     * @var FolderInformation
-     */
-    private $subject;
+    private FolderInformation $subject;
 
     public function setUp(): void
     {

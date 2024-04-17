@@ -4,17 +4,9 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 use Scn\EvalancheSoapStruct\StructTestCase;
 
-/**
- * Class ResourceInformationTest
- *
- * @package Scn\EvalancheSoapStruct\Struct\Generic
- */
 class ResourceInformationTest extends StructTestCase
 {
-    /**
-     * @var ResourceInformation
-     */
-    private $subject;
+    private ResourceInformation $subject;
 
     public function setUp(): void
     {
@@ -24,7 +16,8 @@ class ResourceInformationTest extends StructTestCase
             'some url',
             5,
             9,
-            989
+            989,
+            44455
         );
     }
 
@@ -56,5 +49,10 @@ class ResourceInformationTest extends StructTestCase
     public function testGetMandatorIdCanReturnInt(): void
     {
         self::assertSame(989, $this->subject->getMandatorId());
+    }
+
+    public function testGetLastModifiedByIdCanReturnInt(): void
+    {
+        self::assertSame(44455, $this->subject->getLastModified());
     }
 }

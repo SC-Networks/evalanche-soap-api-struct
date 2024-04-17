@@ -511,36 +511,6 @@ parameters:
 			path: src/Struct/Generic/MassUpdateResult.php
 
 		-
-			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$folderId \\(int\\) does not accept int\\|null\\.$#"
-			count: 1
-			path: src/Struct/Generic/ResourceInformation.php
-
-		-
-			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
-			count: 1
-			path: src/Struct/Generic/ResourceInformation.php
-
-		-
-			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$mandatorId \\(int\\) does not accept int\\|null\\.$#"
-			count: 1
-			path: src/Struct/Generic/ResourceInformation.php
-
-		-
-			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
-			count: 1
-			path: src/Struct/Generic/ResourceInformation.php
-
-		-
-			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$typeId \\(int\\) does not accept int\\|null\\.$#"
-			count: 1
-			path: src/Struct/Generic/ResourceInformation.php
-
-		-
-			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceInformation\\:\\:\\$url \\(string\\) does not accept string\\|null\\.$#"
-			count: 1
-			path: src/Struct/Generic/ResourceInformation.php
-
-		-
 			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Generic\\\\ResourceTypeInformation\\:\\:\\$description \\(string\\) does not accept string\\|null\\.$#"
 			count: 1
 			path: src/Struct/Generic/ResourceTypeInformation.php
