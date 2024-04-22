@@ -8,17 +8,24 @@ class ResourceInformationTest extends StructTestCase
 {
     private ResourceInformation $subject;
 
+    private array $expectedValues = [
+        'id' => 123,
+        'name' => 'some name',
+        'url' => 'some url',
+        'typeId' => 5,
+        'folderId' => 9,
+        'mandatorId' => 989,
+        'lastModified' => 44455,
+    ];
+
     public function setUp(): void
     {
-        $this->subject = new ResourceInformation(
-            123,
-            'some name',
-            'some url',
-            5,
-            9,
-            989,
-            44455
-        );
+        $this->subject = new ResourceInformation();
+        $reflection = new \ReflectionClass($this->subject);
+
+        foreach ($reflection->getProperties() as $property) {
+            $property->setValue($this->subject, $this->expectedValues[$property->getName()]);
+        }
     }
 
     public function testGetIdCanReturnInt(): void
