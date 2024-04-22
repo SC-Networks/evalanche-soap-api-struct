@@ -2,6 +2,8 @@ parameters:
 	level: 8
 	paths:
 		- src
+	ignoreErrors:
+		- '#Property .+::[\$a-zA-Z]+ is never written, only read\.#'
 includes:
 	- vendor/phpstan/phpstan-strict-rules/rules.neon
 	- phpstan-baseline.neon
