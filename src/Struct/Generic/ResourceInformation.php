@@ -9,13 +9,40 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class ResourceInformation implements ResourceInformationInterface
 {
-    private int $id;
-    private string $name;
-    private string $url;
-    private int $typeId;
-    private int $folderId;
-    private int $mandatorId;
-    private int $lastModified;
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $name;
+
+    /**
+     * @var string
+     */
+    private $url;
+
+    /**
+     * @var int
+     */
+    private $typeId;
+
+    /**
+     * @var int
+     */
+    private $folderId;
+
+    /**
+     * @var int
+     */
+    private $mandatorId;
+
+    /**
+     * @var int
+     */
+    private $lastModified;
 
     public function getId(): int
     {
