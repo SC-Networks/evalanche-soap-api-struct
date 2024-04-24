@@ -21,9 +21,10 @@
 	}
   ],
   "require": {
-    "php": ">=8.2"
+    "php": ">=7.2"
   },
   "require-dev": {
+    "php": ">=8.2",
     "phpunit/phpunit": "^11.1",
     "friendsofphp/php-cs-fixer": "^3.53",
     "phpstan/phpstan": "^1.10",
