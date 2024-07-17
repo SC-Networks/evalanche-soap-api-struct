@@ -9,67 +9,98 @@ namespace Scn\EvalancheSoapStruct\Struct\LeadPage;
  */
 class LeadpageConfiguration implements LeadpageConfigurationInterface
 {
-    protected ?string $macroLibrary;
+    /** @var string|null */
+    protected $macroLibrary;
 
-    protected ?string $inputfield0;
+    /** @var string|null */
+    protected $inputfield0;
 
-    protected ?string $inputfield1;
+    /** @var string|null */
+    protected $inputfield1;
 
-    protected ?string $inputfield2;
-    
-    protected ?string $inputfield3;
-    
-    protected ?string $inputfield4;
-    
-    protected ?string $inputfield5;
-    
-    protected ?string $inputfield6;
+    /** @var string|null */
+    protected $inputfield2;
 
-    protected ?string $inputfield7;
+    /** @var string|null */
+    protected $inputfield3;
 
-    protected ?string $inputfield8;
+    /** @var string|null */
+    protected $inputfield4;
 
-    protected ?string $inputfield9;
+    /** @var string|null */
+    protected $inputfield5;
 
-    protected ?string $textarea0;
+    /** @var string|null */
+    protected $inputfield6;
 
-    protected ?string $textarea1;
+    /** @var string|null */
+    protected $inputfield7;
 
-    protected ?string $textarea2;
+    /** @var string|null */
+    protected $inputfield8;
 
-    protected ?string $textarea3;
+    /** @var string|null */
+    protected $inputfield9;
 
-    protected ?string $textarea4;
+    /** @var string|null */
+    protected $textarea0;
 
-    protected ?string $textarea5;
+    /** @var string|null */
+    protected $textarea1;
 
-    protected ?string $textarea6;
+    /** @var string|null */
+    protected $textarea2;
 
-    protected ?string $textarea7;
+    /** @var string|null */
+    protected $textarea3;
 
-    protected ?string $textarea8;
+    /** @var string|null */
+    protected $textarea4;
 
-    protected ?string $textarea9;
+    /** @var string|null */
+    protected $textarea5;
 
-    protected ?string $htmlarea0;
+    /** @var string|null */
+    protected $textarea6;
 
-    protected ?string $htmlarea1;
+    /** @var string|null */
+    protected $textarea7;
 
-    protected ?string $htmlarea2;
+    /** @var string|null */
+    protected $textarea8;
 
-    protected ?string $htmlarea3;
+    /** @var string|null */
+    protected $textarea9;
 
-    protected ?string $htmlarea4;
+    /** @var string|null */
+    protected $htmlarea0;
 
-    protected ?string $htmlarea5;
+    /** @var string|null */
+    protected $htmlarea1;
 
-    protected ?string $htmlarea6;
+    /** @var string|null */
+    protected $htmlarea2;
 
-    protected ?string $htmlarea7;
+    /** @var string|null */
+    protected $htmlarea3;
 
-    protected ?string $htmlarea8;
+    /** @var string|null */
+    protected $htmlarea4;
 
-    protected ?string $htmlarea9;
+    /** @var string|null */
+    protected $htmlarea5;
+
+    /** @var string|null */
+    protected $htmlarea6;
+
+    /** @var string|null */
+    protected $htmlarea7;
+
+    /** @var string|null */
+    protected $htmlarea8;
+
+    /** @var string|null */
+    protected $htmlarea9;
 
     public function __construct(
         string $macroLibrary = null,
