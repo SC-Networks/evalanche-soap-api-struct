@@ -531,6 +531,41 @@ parameters:
 			path: src/Struct/Generic/ServiceStatus.php
 
 		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageArticle\\:\\:\\$articleId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageArticle\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageArticle\\:\\:\\$landingpagePresetId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageArticle\\:\\:\\$mobilePresetId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageArticle\\:\\:\\$slot \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageArticle\\:\\:\\$sortPos \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageArticle.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageArticle\\:\\:\\$targetGroupId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageArticle.php
+
+		-
 			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$articleId \\(int\\) does not accept int\\|null\\.$#"
 			count: 1
 			path: src/Struct/Mailing/MailingArticle.php
