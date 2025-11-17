@@ -566,6 +566,76 @@ parameters:
 			path: src/Struct/LeadPage/LeadpageArticle.php
 
 		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlot\\:\\:\\$id \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlot\\:\\:\\$items \\(array\\<int, Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotItemInterface\\>\\) does not accept array\\<int, Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotItemInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlot\\:\\:\\$name \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlot\\:\\:\\$slotNumber \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlot\\:\\:\\$sortTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlot\\:\\:\\$sortTypeValue \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlot.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotConfiguration\\:\\:\\$items \\(array\\<int, Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotInterface\\>\\) does not accept array\\<int, Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotInterface\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlotConfiguration.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotItem\\:\\:\\$articleTypeId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotItem\\:\\:\\$landingpageAllowedArticleTemplateIds \\(array\\<int, int\\>\\) does not accept array\\<int, int\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotItem\\:\\:\\$landingpageArticleTemplateId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotItem\\:\\:\\$webAllowedArticleTemplateIds \\(array\\<int, int\\>\\) does not accept array\\<int, int\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPage\\\\LeadpageSlotItem\\:\\:\\$webArticleTemplateId \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPage/LeadpageSlotItem.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPageTemplate\\\\LeadpageTemplateAllowedTemplates\\:\\:\\$templateIds \\(array\\<int, int\\>\\) does not accept array\\<int, int\\>\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPageTemplate/LeadpageTemplateAllowedTemplates.php
+
+		-
+			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\LeadPageTemplate\\\\LeadpageTemplateAllowedTemplates\\:\\:\\$templateType \\(int\\) does not accept int\\|null\\.$#"
+			count: 1
+			path: src/Struct/LeadPageTemplate/LeadpageTemplateAllowedTemplates.php
+
+		-
 			message: "#^Property Scn\\\\EvalancheSoapStruct\\\\Struct\\\\Mailing\\\\MailingArticle\\:\\:\\$articleId \\(int\\) does not accept int\\|null\\.$#"
 			count: 1
 			path: src/Struct/Mailing/MailingArticle.php
