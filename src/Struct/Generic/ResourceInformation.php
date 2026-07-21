@@ -74,6 +74,7 @@ class ResourceInformation implements ResourceInformationInterface
         return $this->mandatorId;
     }
 
+    /** @inheritDoc */
     public function getLastModified(): int
     {
         return $this->lastModified;

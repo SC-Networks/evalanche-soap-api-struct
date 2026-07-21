@@ -17,4 +17,9 @@ interface ResourceInformationInterface extends StructInterface
     public function getFolderId(): int;
 
     public function getMandatorId(): int;
+
+    /**
+     * Returns the unix-timestamp of the last-modification date
+     */
+    public function getLastModified(): int;
 }
