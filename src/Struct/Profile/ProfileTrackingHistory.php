@@ -75,18 +75,18 @@ class ProfileTrackingHistory implements ProfileTrackingHistoryInterface
     private $referrerDomain;
 
     public function __construct(
-        int $id = null,
-        int $resourceId = null,
-        string $resourceName = null,
-        int $resourceTypeId = null,
-        int $subResourceId = null,
-        string $subResourceName = null,
-        int $subResourceTypeId = null,
-        string $subUrl = null,
-        int $profileId = null,
-        int $type = null,
-        int $timestamp = null,
-        string $referrerDomain = null
+        int $id = 0,
+        int $resourceId = 0,
+        string $resourceName = '',
+        int $resourceTypeId = 0,
+        int $subResourceId = 0,
+        string $subResourceName = '',
+        int $subResourceTypeId = 0,
+        string $subUrl = '',
+        int $profileId = 0,
+        int $type = 0,
+        int $timestamp = 0,
+        string $referrerDomain = ''
     ) {
         $this->id = $id;
         $this->resourceId = $resourceId;

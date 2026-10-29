@@ -15,7 +15,30 @@ class FormConfigurationTest extends StructTestCase
 
     public function setUp(): void
     {
-        $this->subject = new FormConfiguration();
+        $this->subject = new FormConfiguration(
+            uniqueEntryCriteriaId: '',
+            blockDuplicates: '',
+            doNotResetUnsubscription: '',
+            permissionMode: '',
+            enablePostAddressValidation: '',
+            successUrl: '',
+            emailingId: '',
+            emailingTargetgroupId: '',
+            newsletterBccRecipientEmail: '',
+            inquiryEmailingId: '',
+            inquirySendOnChange: '',
+            inquiryRecipientEmails: '',
+            formLanguage: '',
+            enableAutomatedEntryProtection: '',
+            reCaptchaActivated: '',
+            isMobileOptimized: '',
+            isAutoSubmitForm: '',
+            validationFormId: '',
+            autoFormActionActivated: '',
+            formApiState: '',
+            formApiCorsDomains: '',
+            externalTrackingcode: '',
+        );
     }
 
     public function testPermissionMode(): void

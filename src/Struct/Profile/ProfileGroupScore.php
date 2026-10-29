@@ -38,11 +38,11 @@ class ProfileGroupScore implements ProfileGroupScoreInterface
     private $profileScore;
 
     public function __construct(
-        int $profileId = null,
-        int $groupId = null,
-        string $groupName = null,
-        int $activityScore = null,
-        int $profileScore = null
+        int $profileId = 0,
+        int $groupId = 0,
+        string $groupName = '',
+        int $activityScore = 0,
+        int $profileScore = 0
     ) {
         $this->profileId = $profileId;
         $this->groupId = $groupId;

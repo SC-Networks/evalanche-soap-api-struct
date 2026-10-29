@@ -42,12 +42,12 @@ class SmartLinkScoringConfiguration implements SmartLinkScoringConfigurationInte
     private $type;
 
     public function __construct(
-        int $id = null,
-        string $name = null,
-        int $value = null,
-        int $multipleScoreTimeThreshold = null,
-        int $scoringGroupId = null,
-        int $type = null
+        int $id = 0,
+        string $name = '',
+        int $value = 0,
+        int $multipleScoreTimeThreshold = 0,
+        int $scoringGroupId = 0,
+        int $type = 0
     ) {
         $this->id = $id;
         $this->name = $name;

@@ -28,11 +28,11 @@ class ProfileBounceStatusTest extends StructTestCase
         $this->hashMap = $this->createStub(HashMapInterface::class);
 
         $this->subject = new ProfileBounceStatus(
+            $this->hashMap,
             1,
             3,
             66,
             1_531_381_896,
-            $this->hashMap
         );
     }
 

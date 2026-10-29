@@ -19,8 +19,8 @@ class AccountTest extends StructTestCase
     public function setUp(): void
     {
         $this->subject = new Account(
+            $this->createStub(DiscountInterface::class),
             [$this->createStub(AccountingTypeInterface::class)],
-            $this->createStub(DiscountInterface::class)
         );
     }
 

@@ -7,18 +7,18 @@ namespace Scn\EvalancheSoapStruct\Struct\Workflow;
  */
 class WorkflowStateChangeResult implements WorkflowStateChangeResultInterface
 {
-    /** @var bool|null */
+    /** @var bool */
     private $stateChangeSuccessful;
     
-    /** @var WorkflowStateChangeResultErrorInterface[]|null */
+    /** @var WorkflowStateChangeResultErrorInterface[] */
     private $errorList;
 
     /**
-     * @param WorkflowStateChangeResultErrorInterface[]|null $errorList
+     * @param WorkflowStateChangeResultErrorInterface[] $errorList
      */
     public function __construct(
-        bool $stateChangeSuccessful = null,
-        array $errorList = null
+        bool $stateChangeSuccessful = false,
+        array $errorList = []
     ) {
         $this->stateChangeSuccessful = $stateChangeSuccessful;
         $this->errorList = $errorList;

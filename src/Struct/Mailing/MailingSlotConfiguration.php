@@ -10,7 +10,7 @@ class MailingSlotConfiguration implements MailingSlotConfigurationInterface
     private $items;
 
     public function __construct(
-        array $items = null
+        array $items = []
     ) {
         $this->items = $items;
     }

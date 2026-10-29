@@ -27,7 +27,7 @@ class Discount implements DiscountInterface
      */
     private $price;
 
-    public function __construct(string $description = null, float $percent = null, float $price = null)
+    public function __construct(string $description = '', float $percent = 0.0, float $price = 0.0)
     {
         $this->description = $description;
         $this->percent = $percent;

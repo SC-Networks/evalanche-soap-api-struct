@@ -9,131 +9,131 @@ namespace Scn\EvalancheSoapStruct\Struct\LeadPage;
  */
 class LeadpageConfiguration implements LeadpageConfigurationInterface
 {
-    /** @var string|null */
+    /** @var string */
     protected $macroLibrary;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield0;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield1;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield2;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield3;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield4;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield5;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield6;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield7;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield8;
 
-    /** @var string|null */
+    /** @var string */
     protected $inputfield9;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea0;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea1;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea2;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea3;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea4;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea5;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea6;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea7;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea8;
 
-    /** @var string|null */
+    /** @var string */
     protected $textarea9;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea0;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea1;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea2;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea3;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea4;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea5;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea6;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea7;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea8;
 
-    /** @var string|null */
+    /** @var string */
     protected $htmlarea9;
 
     public function __construct(
-        string $macroLibrary = null,
-        string $inputfield0 = null,
-        string $inputfield1 = null,
-        string $inputfield2 = null,
-        string $inputfield3 = null,
-        string $inputfield4 = null,
-        string $inputfield5 = null,
-        string $inputfield6 = null,
-        string $inputfield7 = null,
-        string $inputfield8 = null,
-        string $inputfield9 = null,
-        string $textarea0 = null,
-        string $textarea1 = null,
-        string $textarea2 = null,
-        string $textarea3 = null,
-        string $textarea4 = null,
-        string $textarea5 = null,
-        string $textarea6 = null,
-        string $textarea7 = null,
-        string $textarea8 = null,
-        string $textarea9 = null,
-        string $htmlarea0 = null,
-        string $htmlarea1 = null,
-        string $htmlarea2 = null,
-        string $htmlarea3 = null,
-        string $htmlarea4 = null,
-        string $htmlarea5 = null,
-        string $htmlarea6 = null,
-        string $htmlarea7 = null,
-        string $htmlarea8 = null,
-        string $htmlarea9 = null,
+        string $macroLibrary = '',
+        string $inputfield0 = '',
+        string $inputfield1 = '',
+        string $inputfield2 = '',
+        string $inputfield3 = '',
+        string $inputfield4 = '',
+        string $inputfield5 = '',
+        string $inputfield6 = '',
+        string $inputfield7 = '',
+        string $inputfield8 = '',
+        string $inputfield9 = '',
+        string $textarea0 = '',
+        string $textarea1 = '',
+        string $textarea2 = '',
+        string $textarea3 = '',
+        string $textarea4 = '',
+        string $textarea5 = '',
+        string $textarea6 = '',
+        string $textarea7 = '',
+        string $textarea8 = '',
+        string $textarea9 = '',
+        string $htmlarea0 = '',
+        string $htmlarea1 = '',
+        string $htmlarea2 = '',
+        string $htmlarea3 = '',
+        string $htmlarea4 = '',
+        string $htmlarea5 = '',
+        string $htmlarea6 = '',
+        string $htmlarea7 = '',
+        string $htmlarea8 = '',
+        string $htmlarea9 = '',
     ) {
         $this->macroLibrary = $macroLibrary;
         $this->inputfield0 = $inputfield0;
@@ -168,7 +168,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         $this->htmlarea9 = $htmlarea9;
     }
 
-    public function getMacroLibrary(): ?string
+    public function getMacroLibrary(): string
     {
         return $this->macroLibrary;
     }
@@ -179,7 +179,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield0(): ?string
+    public function getInputfield0(): string
     {
         return $this->inputfield0;
     }
@@ -190,7 +190,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield1(): ?string
+    public function getInputfield1(): string
     {
         return $this->inputfield1;
     }
@@ -201,7 +201,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield2(): ?string
+    public function getInputfield2(): string
     {
         return $this->inputfield2;
     }
@@ -212,7 +212,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield3(): ?string
+    public function getInputfield3(): string
     {
         return $this->inputfield3;
     }
@@ -223,7 +223,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield4(): ?string
+    public function getInputfield4(): string
     {
         return $this->inputfield4;
     }
@@ -234,7 +234,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield5(): ?string
+    public function getInputfield5(): string
     {
         return $this->inputfield5;
     }
@@ -245,7 +245,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield6(): ?string
+    public function getInputfield6(): string
     {
         return $this->inputfield6;
     }
@@ -256,7 +256,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield7(): ?string
+    public function getInputfield7(): string
     {
         return $this->inputfield7;
     }
@@ -267,7 +267,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield8(): ?string
+    public function getInputfield8(): string
     {
         return $this->inputfield8;
     }
@@ -278,7 +278,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getInputfield9(): ?string
+    public function getInputfield9(): string
     {
         return $this->inputfield9;
     }
@@ -289,7 +289,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea0(): ?string
+    public function getTextarea0(): string
     {
         return $this->textarea0;
     }
@@ -300,7 +300,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea1(): ?string
+    public function getTextarea1(): string
     {
         return $this->textarea1;
     }
@@ -311,7 +311,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea2(): ?string
+    public function getTextarea2(): string
     {
         return $this->textarea2;
     }
@@ -322,7 +322,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea3(): ?string
+    public function getTextarea3(): string
     {
         return $this->textarea3;
     }
@@ -333,7 +333,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea4(): ?string
+    public function getTextarea4(): string
     {
         return $this->textarea4;
     }
@@ -344,7 +344,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea5(): ?string
+    public function getTextarea5(): string
     {
         return $this->textarea5;
     }
@@ -355,7 +355,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea6(): ?string
+    public function getTextarea6(): string
     {
         return $this->textarea6;
     }
@@ -366,7 +366,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea7(): ?string
+    public function getTextarea7(): string
     {
         return $this->textarea7;
     }
@@ -377,7 +377,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea8(): ?string
+    public function getTextarea8(): string
     {
         return $this->textarea8;
     }
@@ -388,7 +388,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getTextarea9(): ?string
+    public function getTextarea9(): string
     {
         return $this->textarea9;
     }
@@ -399,7 +399,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea0(): ?string
+    public function getHtmlarea0(): string
     {
         return $this->htmlarea0;
     }
@@ -410,7 +410,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea1(): ?string
+    public function getHtmlarea1(): string
     {
         return $this->htmlarea1;
     }
@@ -421,7 +421,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea2(): ?string
+    public function getHtmlarea2(): string
     {
         return $this->htmlarea2;
     }
@@ -432,7 +432,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea3(): ?string
+    public function getHtmlarea3(): string
     {
         return $this->htmlarea3;
     }
@@ -443,7 +443,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea4(): ?string
+    public function getHtmlarea4(): string
     {
         return $this->htmlarea4;
     }
@@ -454,7 +454,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea5(): ?string
+    public function getHtmlarea5(): string
     {
         return $this->htmlarea5;
     }
@@ -465,7 +465,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea6(): ?string
+    public function getHtmlarea6(): string
     {
         return $this->htmlarea6;
     }
@@ -476,7 +476,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea7(): ?string
+    public function getHtmlarea7(): string
     {
         return $this->htmlarea7;
     }
@@ -487,7 +487,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea8(): ?string
+    public function getHtmlarea8(): string
     {
         return $this->htmlarea8;
     }
@@ -498,7 +498,7 @@ class LeadpageConfiguration implements LeadpageConfigurationInterface
         return $this;
     }
 
-    public function getHtmlarea9(): ?string
+    public function getHtmlarea9(): string
     {
         return $this->htmlarea9;
     }

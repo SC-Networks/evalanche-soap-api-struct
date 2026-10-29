@@ -38,10 +38,10 @@ class MassUpdateResult implements MassUpdateResultInterface
      * @param int[] $error
      */
     public function __construct(
-        HashMapInterface $updated = null,
-        HashMapInterface $created = null,
-        array $ignored = null,
-        array $error = null
+        HashMapInterface $updated,
+        HashMapInterface $created,
+        array $ignored = [],
+        array $error = []
     ) {
         $this->updated = $updated;
         $this->created = $created;

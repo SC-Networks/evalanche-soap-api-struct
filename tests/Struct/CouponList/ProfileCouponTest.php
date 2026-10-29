@@ -13,7 +13,11 @@ class ProfileCouponTest extends GenericSetterGetterTestCase
 
     public function setUp(): void
     {
-        $this->subject = new ProfileCoupon();
+        $this->subject = new ProfileCoupon(
+            code: '',
+            profileId: 0,
+            creationDate: 0,
+        );
     }
 
     public static function methodDataProvider(): array

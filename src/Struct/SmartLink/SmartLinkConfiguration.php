@@ -67,17 +67,17 @@ class SmartLinkConfiguration implements SmartLinkConfigurationInterface
     private $poolAttributes;
 
     public function __construct(
-        int $id = null,
-        string $targetUrl = null,
-        bool $individualScoringConfig = null,
-        int $restrictionTargetGroupId = null,
-        array $restrictionUserAgents = null,
-        int $milestoneId = null,
-        bool $activateRedirect = null,
-        bool $activateProfileUpdate = null,
-        bool $activateTracking = null,
-        array $scoringConfigs = null,
-        array $poolAttributes = null
+        int $id = 0,
+        string $targetUrl = '',
+        bool $individualScoringConfig = false,
+        int $restrictionTargetGroupId = 0,
+        array $restrictionUserAgents = [],
+        int $milestoneId = 0,
+        bool $activateRedirect = false,
+        bool $activateProfileUpdate = false,
+        bool $activateTracking = false,
+        array $scoringConfigs = [],
+        array $poolAttributes = []
     ) {
         $this->id = $id;
         $this->targetUrl = $targetUrl;

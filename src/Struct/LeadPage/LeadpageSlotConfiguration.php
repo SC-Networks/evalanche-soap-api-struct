@@ -13,7 +13,7 @@ class LeadpageSlotConfiguration implements LeadpageSlotConfigurationInterface
      * @param list<LeadpageSlotInterface> $items
      */
     public function __construct(
-        array $items = null
+        array $items = []
     ) {
         $this->items = $items;
     }

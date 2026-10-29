@@ -62,15 +62,15 @@ class ArticleStatistic implements ArticleStatisticInterface
      * @param LinkStatisticItemInterface[] $links
      */
     public function __construct(
-        int $id = null,
-        int $referenceId = null,
-        string $name = null,
-        FormatStatisticItemInterface $overall = null,
-        FormatStatisticItemInterface $landingPage = null,
-        FormatStatisticItemInterface $print = null,
-        FormatStatisticItemInterface $voice = null,
-        FormatStatisticItemInterface $socialSharing = null,
-        array $links = null
+        FormatStatisticItemInterface $overall,
+        FormatStatisticItemInterface $landingPage,
+        FormatStatisticItemInterface $print,
+        FormatStatisticItemInterface $voice,
+        FormatStatisticItemInterface $socialSharing,
+        int $id = 0,
+        int $referenceId = 0,
+        string $name = '',
+        array $links = []
     ) {
         $this->id = $id;
         $this->referenceId = $referenceId;

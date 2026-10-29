@@ -13,7 +13,10 @@ class ArticleIndividualizationItemTest extends StructTestCase
 
     protected function setUp(): void
     {
-        $this->subject = new ArticleIndividualizationItem();
+        $this->subject = new ArticleIndividualizationItem(
+            targetgroupId: 0,
+            articleId: 0,
+        );
     }
 
     public function testTargetgroupIdSetGet(): void

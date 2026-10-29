@@ -47,12 +47,12 @@ class MailingStatus implements MailingStatusInterface
      * @param HashMapInterface[] $profileData
      */
     public function __construct(
-        int $profileId = null,
-        int $newsletterId = null,
-        int $lastStatusChange = null,
-        int $status = null,
-        string $previewUrl = null,
-        array $profileData = null
+        int $profileId = 0,
+        int $newsletterId = 0,
+        int $lastStatusChange = 0,
+        int $status = 0,
+        string $previewUrl = '',
+        array $profileData = []
     ) {
         $this->profileId = $profileId;
         $this->newsletterId = $newsletterId;

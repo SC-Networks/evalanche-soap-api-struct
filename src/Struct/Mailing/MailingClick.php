@@ -43,12 +43,12 @@ class MailingClick implements MailingClickInterface
     private $parentId;
 
     public function __construct(
-        int $id = null,
-        int $profileId = null,
-        int $timestamp = null,
-        int $linkId = null,
-        int $linkTypeId = null,
-        int $parentId = null
+        int $id = 0,
+        int $profileId = 0,
+        int $timestamp = 0,
+        int $linkId = 0,
+        int $linkTypeId = 0,
+        int $parentId = 0
     ) {
         $this->id = $id;
         $this->profileId = $profileId;

@@ -17,9 +17,9 @@ class WorkflowConfigVersion implements WorkflowConfigVersionInterface
     private $latest;
     
     public function __construct(
-        string $configVersion = null,
-        int $createDate = null,
-        bool $latest = null
+        string $configVersion = '',
+        int $createDate = 0,
+        bool $latest = false
     ) {
         $this->configVersion = $configVersion;
         $this->createDate = $createDate;

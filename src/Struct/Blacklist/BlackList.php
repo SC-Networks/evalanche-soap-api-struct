@@ -21,7 +21,7 @@ class BlackList implements BlackListInterface
      */
     private $items;
 
-    public function __construct(int $mandatorId = null, array $items = null)
+    public function __construct(int $mandatorId = 0, array $items = [])
     {
         $this->mandatorId = $mandatorId;
         $this->items = $items;

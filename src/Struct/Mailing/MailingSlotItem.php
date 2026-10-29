@@ -40,16 +40,16 @@ class MailingSlotItem implements MailingSlotItemInterface
     private $webAllowedArticleTemplateIds;
 
     public function __construct(
-        int $articleTypeId = null,
-        int $emailArticleTemplateId = null,
-        int $textArticleTemplateId = null,
-        int $landingpageArticleTemplateId = null,
-        int $pdfArticleTemplateId = null,
-        int $webArticleTemplateId = null,
-        array $emailAllowedArticleTemplateIds = null,
-        array $textAllowedArticleTemplateIds = null,
-        array $landingpageAllowedArticleTemplateIds = null,
-        array $webAllowedArticleTemplateIds = null
+        int $articleTypeId = 0,
+        int $emailArticleTemplateId = 0,
+        int $textArticleTemplateId = 0,
+        int $landingpageArticleTemplateId = 0,
+        int $pdfArticleTemplateId = 0,
+        int $webArticleTemplateId = 0,
+        array $emailAllowedArticleTemplateIds = [],
+        array $textAllowedArticleTemplateIds = [],
+        array $landingpageAllowedArticleTemplateIds = [],
+        array $webAllowedArticleTemplateIds = []
     ) {
         $this->articleTypeId = $articleTypeId;
         $this->emailArticleTemplateId = $emailArticleTemplateId;

@@ -22,7 +22,7 @@ class MailClientStatisticItem implements MailClientStatisticItemInterface
      */
     private $count;
 
-    public function __construct(string $description = null, int $count = null)
+    public function __construct(string $description = '', int $count = 0)
     {
         $this->description = $description;
         $this->count = $count;

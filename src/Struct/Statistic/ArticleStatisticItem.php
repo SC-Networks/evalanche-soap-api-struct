@@ -33,10 +33,10 @@ class ArticleStatisticItem implements ArticleStatisticItemInterface
     private $uniqueClickCount;
 
     public function __construct(
-        int $id = null,
-        string $name = null,
-        int $clickCount = null,
-        int $uniqueClickCount = null
+        int $id = 0,
+        string $name = '',
+        int $clickCount = 0,
+        int $uniqueClickCount = 0
     ) {
         $this->id = $id;
         $this->name = $name;

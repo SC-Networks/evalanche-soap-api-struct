@@ -37,11 +37,11 @@ class SmartLinkPoolConfiguration implements SmartLinkPoolConfigurationInterface
     private $isMerge;
 
     public function __construct(
-        int $id = null,
-        int $poolId = null,
-        int $poolAttributeId = null,
-        string $value = null,
-        bool $isMerge = null
+        int $id = 0,
+        int $poolId = 0,
+        int $poolAttributeId = 0,
+        string $value = '',
+        bool $isMerge = false
     ) {
         $this->id = $id;
         $this->poolId = $poolId;

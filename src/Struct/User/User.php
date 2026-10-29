@@ -74,29 +74,27 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @param string|null $firstName
      * @param int[] $roleIds
      */
     public function __construct(
         int $id = 0,
-        int $mandatorId = null,
-        string $username = null,
-        string $email = null,
-        int $salutation = null,
-        string $firstName = null,
-        string $name = null,
-        string $description = null,
-        int $securityGuidelineId = null,
-        array $roleIds = null,
-        bool $disabled = null,
-        string $password = UserInterface::SCRAMBLED_PASS
+        int $mandatorId = 0,
+        string $username = '',
+        string $email = '',
+        int $salutation = 0,
+        string $firstName = '',
+        string $name = '',
+        string $description = '',
+        int $securityGuidelineId = 0,
+        array $roleIds = [],
+        bool $disabled = false,
+        string $password = UserInterface::SCRAMBLED_PASS,
     ) {
         $this->id = $id;
         $this->mandatorId = $mandatorId;
         $this->username = $username;
         $this->email = $email;
         $this->salutation = $salutation;
-        $this->firstName = $firstName;
         $this->name = $name;
         $this->description = $description;
         $this->securityGuidelineId = $securityGuidelineId;

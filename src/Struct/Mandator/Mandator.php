@@ -26,7 +26,7 @@ class Mandator implements MandatorInterface
      */
     private $domain;
 
-    public function __construct(int $id = null, string $name = null, string $domain = null)
+    public function __construct(int $id = 0, string $name = '', string $domain = '')
     {
         $this->id = $id;
         $this->name = $name;

@@ -21,7 +21,7 @@ class ServiceStatus implements ServiceStatusInterface
      */
     private $randomMessage;
 
-    public function __construct(string $status = null, string $randomMessage = null)
+    public function __construct(string $status = '', string $randomMessage = '')
     {
         $this->status = $status;
         $this->randomMessage = $randomMessage;

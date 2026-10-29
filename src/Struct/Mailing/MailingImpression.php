@@ -27,7 +27,7 @@ class MailingImpression implements MailingImpressionInterface
      */
     private $timestamp;
 
-    public function __construct(int $id = null, int $profileId = null, int $timestamp = null)
+    public function __construct(int $id = 0, int $profileId = 0, int $timestamp = 0)
     {
         $this->id = $id;
         $this->profileId = $profileId;

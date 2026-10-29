@@ -93,22 +93,22 @@ class MailingDetail implements MailingDetailInterface
     private $sendEndTime;
 
     public function __construct(
-        int $id = null,
-        string $name = null,
-        string $url = null,
-        int $typeId = null,
-        int $folderId = null,
-        int $mandatorId = null,
-        int $timestamp = null,
-        int $recipients = null,
-        bool $sent = null,
-        string $previewUrl = null,
-        string $reportUrl = null,
-        string $adminUrl = null,
-        string $subject = null,
-        int $targetGroupId = null,
-        int $sendStartTime = null,
-        int $sendEndTime = null
+        int $id = 0,
+        string $name = '',
+        string $url = '',
+        int $typeId = 0,
+        int $folderId = 0,
+        int $mandatorId = 0,
+        int $timestamp = 0,
+        int $recipients = 0,
+        bool $sent = false,
+        string $previewUrl = '',
+        string $reportUrl = '',
+        string $adminUrl = '',
+        string $subject = '',
+        int $targetGroupId = 0,
+        int $sendStartTime = 0,
+        int $sendEndTime = 0
     ) {
         $this->id = $id;
         $this->name = $name;

@@ -94,21 +94,21 @@ class MailingStatistic implements MailingStatisticInterface
      * @param LinkStatisticItemInterface[] $links
      */
     public function __construct(
-        int $addresses = null,
-        int $recipients = null,
-        int $duplicateCount = null,
-        int $blackListedCount = null,
-        int $robinsonListedCount = null,
-        int $hardBounceCount = null,
-        int $softBounceCount = null,
-        int $unSubscribeCount = null,
-        int $impressionCount = null,
-        int $uniqueImpressionCount = null,
-        int $clickCount = null,
-        int $uniqueClickCount = null,
-        array $media = null,
-        array $articles = null,
-        array $links = null
+        int $addresses = 0,
+        int $recipients = 0,
+        int $duplicateCount = 0,
+        int $blackListedCount = 0,
+        int $robinsonListedCount = 0,
+        int $hardBounceCount = 0,
+        int $softBounceCount = 0,
+        int $unSubscribeCount = 0,
+        int $impressionCount = 0,
+        int $uniqueImpressionCount = 0,
+        int $clickCount = 0,
+        int $uniqueClickCount = 0,
+        array $media = [],
+        array $articles = [],
+        array $links = []
     ) {
         $this->addresses = $addresses;
         $this->recipients = $recipients;

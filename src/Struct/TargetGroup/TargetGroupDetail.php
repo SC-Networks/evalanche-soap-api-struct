@@ -22,7 +22,7 @@ class TargetGroupDetail implements TargetGroupDetailInterface
      */
     private $profileCount;
 
-    public function __construct(string $name = null, int $profileCount = null)
+    public function __construct(string $name = '', int $profileCount = 0)
     {
         $this->name = $name;
         $this->profileCount = $profileCount;

@@ -58,15 +58,15 @@ class WorkflowDetail implements WorkflowDetailInterface
     private $profileCount;
 
     public function __construct(
-        int $id = null,
-        string $name = null,
-        int $dateStart = null,
-        int $dateEnd = null,
-        string $externalId = null,
-        int $folderId = null,
-        string $description = null,
-        int $state = null,
-        int $profileCount = null
+        int $id = 0,
+        string $name = '',
+        int $dateStart = 0,
+        int $dateEnd = 0,
+        string $externalId = '',
+        int $folderId = 0,
+        string $description = '',
+        int $state = 0,
+        int $profileCount = 0
     ) {
         $this->id = $id;
         $this->name = $name;

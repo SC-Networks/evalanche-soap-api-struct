@@ -31,7 +31,7 @@ class ContainerAttributeOption implements ContainerAttributeOptionInterface
      */
     private $order;
 
-    public function __construct(int $id = null, string $name = null, string $label = null, int $order = null)
+    public function __construct(int $id = 0, string $name = '', string $label = '', int $order = 0)
     {
         $this->id = $id;
         $this->name = $name;

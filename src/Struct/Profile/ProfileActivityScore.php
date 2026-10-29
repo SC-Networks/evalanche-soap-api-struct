@@ -42,12 +42,12 @@ class ProfileActivityScore implements ProfileActivityScoreInterface
     private $resourceId;
 
     public function __construct(
-        int $id = null,
-        int $scoringGroupId = null,
-        int $scoringTypeId = null,
-        int $timestamp = null,
-        int $score = null,
-        int $resourceId = null
+        int $id = 0,
+        int $scoringGroupId = 0,
+        int $scoringTypeId = 0,
+        int $timestamp = 0,
+        int $score = 0,
+        int $resourceId = 0
     ) {
         $this->id = $id;
         $this->scoringGroupId = $scoringGroupId;

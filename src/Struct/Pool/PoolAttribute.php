@@ -51,13 +51,13 @@ class PoolAttribute implements PoolAttributeInterface
      * @param PoolAttributeOptionInterface[] $options
      */
     public function __construct(
-        int $id = null,
-        int $typeId = null,
-        string $name = null,
-        string $label = null,
-        array $options = null,
-        bool $hasOptions = null,
-        bool $addOptions = null
+        int $id = 0,
+        int $typeId = 0,
+        string $name = '',
+        string $label = '',
+        array $options = [],
+        bool $hasOptions = false,
+        bool $addOptions = false
     ) {
         $this->id = $id;
         $this->typeId = $typeId;

@@ -123,28 +123,28 @@ class FormConfiguration implements FormConfigurationInterface
     protected $externalTrackingcode;
 
     public function __construct(
-        string $uniqueEntryCriteriaId = null,
-        string $blockDuplicates = null,
-        string $doNotResetUnsubscription = null,
-        string $permissionMode = null,
-        string $enablePostAddressValidation = null,
-        string $successUrl = null,
-        string $emailingId = null,
-        string $emailingTargetgroupId = null,
-        string $newsletterBccRecipientEmail = null,
-        string $inquiryEmailingId = null,
-        string $inquirySendOnChange = null,
-        string $inquiryRecipientEmails = null,
-        string $formLanguage = null,
-        string $enableAutomatedEntryProtection = null,
-        string $reCaptchaActivated = null,
-        string $isMobileOptimized = null,
-        string $isAutoSubmitForm = null,
-        string $validationFormId = null,
-        string $autoFormActionActivated = null,
-        string $formApiState = null,
-        string $formApiCorsDomains = null,
-        string $externalTrackingcode = null
+        string $uniqueEntryCriteriaId = '',
+        string $blockDuplicates = '',
+        string $doNotResetUnsubscription = '',
+        string $permissionMode = '',
+        string $enablePostAddressValidation = '',
+        string $successUrl = '',
+        string $emailingId = '',
+        string $emailingTargetgroupId = '',
+        string $newsletterBccRecipientEmail = '',
+        string $inquiryEmailingId = '',
+        string $inquirySendOnChange = '',
+        string $inquiryRecipientEmails = '',
+        string $formLanguage = '',
+        string $enableAutomatedEntryProtection = '',
+        string $reCaptchaActivated = '',
+        string $isMobileOptimized = '',
+        string $isAutoSubmitForm = '',
+        string $validationFormId = '',
+        string $autoFormActionActivated = '',
+        string $formApiState = '',
+        string $formApiCorsDomains = '',
+        string $externalTrackingcode = ''
     ) {
         $this->uniqueEntryCriteriaId = $uniqueEntryCriteriaId;
         $this->blockDuplicates = $blockDuplicates;
@@ -291,10 +291,7 @@ class FormConfiguration implements FormConfigurationInterface
         return $this;
     }
 
-    /**
-     * @return string
-     */
-    public function getInquiryRecipientEmails(): ?string
+    public function getInquiryRecipientEmails(): string
     {
         return $this->inquiryRecipientEmails;
     }

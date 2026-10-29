@@ -44,12 +44,12 @@ class FormatStatisticItem implements FormatStatisticItemInterface
     private $multipleClickRateRelative;
 
     public function __construct(
-        int $clickCount = null,
-        int $uniqueClickCount = null,
-        float $clickRate = null,
-        float $clickRateRelative = null,
-        float $multipleClickRate = null,
-        float $multipleClickRateRelative = null
+        int $clickCount = 0,
+        int $uniqueClickCount = 0,
+        float $clickRate = 0.0,
+        float $clickRateRelative = 0.0,
+        float $multipleClickRate = 0.0,
+        float $multipleClickRateRelative = 0.0
     ) {
         $this->clickCount = $clickCount;
         $this->uniqueClickCount = $uniqueClickCount;

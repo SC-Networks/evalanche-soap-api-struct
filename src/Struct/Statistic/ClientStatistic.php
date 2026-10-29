@@ -32,7 +32,7 @@ class ClientStatistic implements ClientStatisticInterface
      * @param BrowserStatisticItemInterface[] $browsers
      * @param DeviceStatisticItemInterface[] $devices
      */
-    public function __construct(array $clients = null, array $browsers = null, array $devices = null)
+    public function __construct(array $clients = [], array $browsers = [], array $devices = [])
     {
         $this->clients = $clients;
         $this->browsers = $browsers;

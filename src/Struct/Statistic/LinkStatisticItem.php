@@ -38,11 +38,11 @@ class LinkStatisticItem implements LinkStatisticItemInterface
     private $uniqueClickCount;
 
     public function __construct(
-        int $id = null,
-        string $url = null,
-        string $name = null,
-        int $clickCount = null,
-        int $uniqueClickCount = null
+        int $id = 0,
+        string $url = '',
+        string $name = '',
+        int $clickCount = 0,
+        int $uniqueClickCount = 0
     ) {
         $this->id = $id;
         $this->url = $url;

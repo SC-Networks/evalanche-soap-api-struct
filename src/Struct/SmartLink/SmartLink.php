@@ -27,7 +27,7 @@ class SmartLink implements SmartLinkInterface
      */
     private $trackingUrl;
 
-    public function __construct(int $id = null, string $name = null, string $trackingUrl = null)
+    public function __construct(int $id = 0, string $name = '', string $trackingUrl = '')
     {
         $this->id = $id;
         $this->name = $name;

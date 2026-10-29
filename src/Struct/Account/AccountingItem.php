@@ -31,10 +31,10 @@ class AccountingItem implements AccountingItemInterface
     private $chargeCount;
 
     public function __construct(
-        string $description = null,
-        int $mandatorId = null,
-        string $accountingDate = null,
-        int $chargeCount = null
+        string $description = '',
+        int $mandatorId = 0,
+        string $accountingDate = '',
+        int $chargeCount = 0
     ) {
         $this->description = $description;
         $this->mandatorId = $mandatorId;

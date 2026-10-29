@@ -68,17 +68,17 @@ class ContainerAttribute implements ContainerAttributeInterface
     private $allowOptions;
 
     public function __construct(
-        int $id = null,
-        string $name = null,
-        string $label = null,
-        int $typeId = null,
-        int $groupId = null,
-        string $helpText = null,
-        string $inputHelpText = null,
-        bool $mandatory = null,
-        bool $visible = null,
-        string $replacementVariable = null,
-        bool $allowOptions = null
+        int $id = 0,
+        string $name = '',
+        string $label = '',
+        int $typeId = 0,
+        int $groupId = 0,
+        string $helpText = '',
+        string $inputHelpText = '',
+        bool $mandatory = false,
+        bool $visible = false,
+        string $replacementVariable = '',
+        bool $allowOptions = false
     ) {
         $this->id = $id;
         $this->name = $name;

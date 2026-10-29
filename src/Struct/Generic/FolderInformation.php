@@ -26,7 +26,7 @@ class FolderInformation implements FolderInformationInterface
      */
     private $parentId;
 
-    public function __construct(int $id = null, string $name = null, int $parentId = null)
+    public function __construct(int $id = 0, string $name = '', int $parentId = 0)
     {
         $this->id = $id;
         $this->name = $name;

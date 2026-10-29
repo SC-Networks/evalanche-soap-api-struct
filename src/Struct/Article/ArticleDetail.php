@@ -47,13 +47,13 @@ class ArticleDetail implements ArticleDetailInterface
     private $articleTypeId;
 
     public function __construct(
-        int $id = null,
-        string $name = null,
-        string $url = null,
-        int $typeId = null,
-        int $folderId = null,
-        int $mandatorId = null,
-        int $articleTypeId = null
+        int $id = 0,
+        string $name = '',
+        string $url = '',
+        int $typeId = 0,
+        int $folderId = 0,
+        int $mandatorId = 0,
+        int $articleTypeId = 0
     ) {
         $this->id = $id;
         $this->name = $name;
