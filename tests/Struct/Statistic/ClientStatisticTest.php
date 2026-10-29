@@ -20,16 +20,16 @@ class ClientStatisticTest extends StructTestCase
     {
         $this->subject = new ClientStatistic(
             [
-                $this->getMockBuilder(MailClientStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(MailClientStatisticItemInterface::class)->getMock(),
+                $this->createStub(MailClientStatisticItemInterface::class),
+                $this->createStub(MailClientStatisticItemInterface::class),
             ],
             [
-                $this->getMockBuilder(BrowserStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(BrowserStatisticItemInterface::class)->getMock(),
+                $this->createStub(BrowserStatisticItemInterface::class),
+                $this->createStub(BrowserStatisticItemInterface::class),
             ],
             [
-                $this->getMockBuilder(DeviceStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(DeviceStatisticItemInterface::class)->getMock(),
+                $this->createStub(DeviceStatisticItemInterface::class),
+                $this->createStub(DeviceStatisticItemInterface::class),
             ]
         );
     }

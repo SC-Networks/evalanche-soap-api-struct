@@ -19,8 +19,8 @@ class JobResultTest extends StructTestCase
             4,
             76,
             [
-                $this->getMockBuilder(HashMapInterface::class)->getMock(),
-                $this->getMockBuilder(HashMapInterface::class)->getMock()
+                $this->createStub(HashMapInterface::class),
+                $this->createStub(HashMapInterface::class)
             ],
             500,
             1000

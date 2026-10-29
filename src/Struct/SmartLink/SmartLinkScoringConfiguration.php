@@ -41,14 +41,6 @@ class SmartLinkScoringConfiguration implements SmartLinkScoringConfigurationInte
      */
     private $type;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param int $value
-     * @param int $multipleScoreTimeThreshold
-     * @param int $scoringGroupId
-     * @param int $type
-     */
     public function __construct(
         int $id = null,
         string $name = null,
@@ -65,49 +57,31 @@ class SmartLinkScoringConfiguration implements SmartLinkScoringConfigurationInte
         $this->type = $type;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return int
-     */
     public function getValue(): int
     {
         return $this->value;
     }
 
-    /**
-     * @return int
-     */
     public function getMultipleScoreTimeThreshold(): int
     {
         return $this->multipleScoreTimeThreshold;
     }
 
-    /**
-     * @return int
-     */
     public function getScoringGroupId(): int
     {
         return $this->scoringGroupId;
     }
 
-    /**
-     * @return int
-     */
     public function getType(): int
     {
         return $this->type;

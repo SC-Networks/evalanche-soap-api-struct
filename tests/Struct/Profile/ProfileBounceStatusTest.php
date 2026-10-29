@@ -2,7 +2,7 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
-use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\MockObject\Stub;
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
 use Scn\EvalancheSoapStruct\StructTestCase;
 
@@ -19,13 +19,13 @@ class ProfileBounceStatusTest extends StructTestCase
     private $subject;
 
     /**
-     * @var HashMapInterface|MockObject
+     * @var Stub&HashMapInterface
      */
-    private $hashMap;
+    private Stub $hashMap;
 
     public function setUp(): void
     {
-        $this->hashMap = $this->getMockBuilder(HashMapInterface::class)->getMock();
+        $this->hashMap = $this->createStub(HashMapInterface::class);
 
         $this->subject = new ProfileBounceStatus(
             1,

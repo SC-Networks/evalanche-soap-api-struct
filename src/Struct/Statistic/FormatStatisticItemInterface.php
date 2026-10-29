@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -11,33 +13,15 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface FormatStatisticItemInterface extends StructInterface
 {
-    /**
-     * @return int
-     */
     public function getClickCount(): int;
 
-    /**
-     * @return int
-     */
     public function getUniqueClickCount(): int;
 
-    /**
-     * @return float
-     */
     public function getClickRate(): float;
 
-    /**
-     * @return float
-     */
     public function getClickRateRelative(): float;
 
-    /**
-     * @return float
-     */
     public function getMultipleClickRate(): float;
 
-    /**
-     * @return float
-     */
     public function getMultipleClickRateRelative(): float;
 }

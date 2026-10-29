@@ -63,16 +63,7 @@ class JobResult implements JobResultInterface
     private $resultSize;
 
     /**
-     * @param string $id
-     * @param int $status
-     * @param string $statusDescription
-     * @param string $namespace
-     * @param string $method
-     * @param int $resourceId
-     * @param int $resultChunks
      * @param HashMapInterface[] $result
-     * @param int $chunksLeft
-     * @param int $resultSize
      */
     public function __construct(
         string $id = null,
@@ -98,57 +89,36 @@ class JobResult implements JobResultInterface
         $this->resultSize = $resultSize;
     }
 
-    /**
-     * @return string
-     */
     public function getId(): string
     {
         return $this->id;
     }
 
-    /**
-     * @return int
-     */
     public function getStatus(): int
     {
         return $this->status;
     }
 
-    /**
-     * @return string
-     */
     public function getStatusDescription(): string
     {
         return $this->statusDescription;
     }
 
-    /**
-     * @return string
-     */
     public function getNamespace(): string
     {
         return $this->namespace;
     }
 
-    /**
-     * @return string
-     */
     public function getMethod(): string
     {
         return $this->method;
     }
 
-    /**
-     * @return int
-     */
     public function getResourceId(): int
     {
         return $this->resourceId;
     }
 
-    /**
-     * @return int
-     */
     public function getResultChunks(): int
     {
         return $this->resultChunks;
@@ -162,17 +132,11 @@ class JobResult implements JobResultInterface
         return $this->result;
     }
 
-    /**
-     * @return int
-     */
     public function getChunksLeft(): int
     {
         return $this->chunksLeft;
     }
 
-    /**
-     * @return int
-     */
     public function getResultSize(): int
     {
         return $this->resultSize;

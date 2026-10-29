@@ -42,14 +42,6 @@ class MailingClick implements MailingClickInterface
      */
     private $parentId;
 
-    /**
-     * @param int $id
-     * @param int $profileId
-     * @param int $timestamp
-     * @param int $linkId
-     * @param int $linkTypeId
-     * @param int $parentId
-     */
     public function __construct(
         int $id = null,
         int $profileId = null,
@@ -66,49 +58,31 @@ class MailingClick implements MailingClickInterface
         $this->parentId = $parentId;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return int
-     */
     public function getProfileId(): int
     {
         return $this->profileId;
     }
 
-    /**
-     * @return int
-     */
     public function getTimestamp(): int
     {
         return $this->timestamp;
     }
 
-    /**
-     * @return int
-     */
     public function getLinkId(): int
     {
         return $this->linkId;
     }
 
-    /**
-     * @return int
-     */
     public function getLinkTypeId(): int
     {
         return $this->linkTypeId;
     }
 
-    /**
-     * @return int
-     */
     public function getParentId(): int
     {
         return $this->parentId;

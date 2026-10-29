@@ -79,21 +79,6 @@ class FormStatistic implements FormStatisticInterface
      */
     private $mandatoryErrorCount;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param string $url
-     * @param int $typeId
-     * @param int $folderId
-     * @param int $mandatorId
-     * @param bool $isAlias
-     * @param int $impressions
-     * @param int $succeeded
-     * @param int $identityErrorCount
-     * @param int $duplicationErrorCount
-     * @param int $validationErrorCount
-     * @param int $mandatoryErrorCount
-     */
     public function __construct(
         int $id = null,
         string $name = null,
@@ -124,24 +109,17 @@ class FormStatistic implements FormStatisticInterface
         $this->mandatoryErrorCount = $mandatoryErrorCount;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * @return string
      *
      * @deprecated Not supported in specialized method, please use `getById`
      */
@@ -151,7 +129,6 @@ class FormStatistic implements FormStatisticInterface
     }
 
     /**
-     * @return int
      *
      * @deprecated Not supported in specialized method, please use `getById`
      */
@@ -161,7 +138,6 @@ class FormStatistic implements FormStatisticInterface
     }
 
     /**
-     * @return int
      *
      * @deprecated Not supported in specialized method, please use `getById`
      */
@@ -171,7 +147,6 @@ class FormStatistic implements FormStatisticInterface
     }
 
     /**
-     * @return int
      *
      * @deprecated Not supported in specialized method, please use `getById`
      */
@@ -180,57 +155,36 @@ class FormStatistic implements FormStatisticInterface
         return (int) $this->mandatorId;
     }
 
-    /**
-     * @return bool
-     */
     public function getIsAlias(): bool
     {
         return $this->isAlias;
     }
 
-    /**
-     * @return int
-     */
     public function getImpressions(): int
     {
         return $this->impressions;
     }
 
-    /**
-     * @return int
-     */
     public function getSucceeded(): int
     {
         return $this->succeeded;
     }
 
-    /**
-     * @return int
-     */
     public function getIdentityErrorCount(): int
     {
         return $this->identityErrorCount;
     }
 
-    /**
-     * @return int
-     */
     public function getDuplicationErrorCount(): int
     {
         return $this->duplicationErrorCount;
     }
 
-    /**
-     * @return int
-     */
     public function getValidationErrorCount(): int
     {
         return $this->validationErrorCount;
     }
 
-    /**
-     * @return int
-     */
     public function getMandatoryErrorCount(): int
     {
         return $this->mandatoryErrorCount;

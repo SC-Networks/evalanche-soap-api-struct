@@ -47,15 +47,6 @@ class JobHandle implements JobHandleInterface
      */
     private $resultChunks;
 
-    /**
-     * @param string $id
-     * @param int $status
-     * @param string $statusDescription
-     * @param string $namespace
-     * @param string $method
-     * @param int $resourceId
-     * @param int $resultChunks
-     */
     public function __construct(
         string $id = null,
         int $status = null,
@@ -74,57 +65,36 @@ class JobHandle implements JobHandleInterface
         $this->resultChunks = $resultChunks;
     }
 
-    /**
-     * @return string
-     */
     public function getId(): string
     {
         return $this->id;
     }
 
-    /**
-     * @return int
-     */
     public function getStatus(): int
     {
         return $this->status;
     }
 
-    /**
-     * @return string
-     */
     public function getStatusDescription(): string
     {
         return $this->statusDescription;
     }
 
-    /**
-     * @return string
-     */
     public function getNamespace(): string
     {
         return $this->namespace;
     }
 
-    /**
-     * @return string
-     */
     public function getMethod(): string
     {
         return $this->method;
     }
 
-    /**
-     * @return int
-     */
     public function getResourceId(): int
     {
         return $this->resourceId;
     }
 
-    /**
-     * @return int
-     */
     public function getResultChunks(): int
     {
         return $this->resultChunks;

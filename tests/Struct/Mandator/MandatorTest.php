@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Mandator;
 
 use Scn\EvalancheSoapStruct\StructTestCase;

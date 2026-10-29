@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Pool;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -11,13 +13,7 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface PoolAttributeOptionInterface extends StructInterface
 {
-    /**
-     * @return int
-     */
     public function getId(): int;
 
-    /**
-     * @return string
-     */
     public function getValue(): string;
 }

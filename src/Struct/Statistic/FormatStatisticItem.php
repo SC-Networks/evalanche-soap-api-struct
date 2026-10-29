@@ -43,14 +43,6 @@ class FormatStatisticItem implements FormatStatisticItemInterface
      */
     private $multipleClickRateRelative;
 
-    /**
-     * @param int $clickCount
-     * @param int $uniqueClickCount
-     * @param float $clickRate
-     * @param float $clickRateRelative
-     * @param float $multipleClickRate
-     * @param float $multipleClickRateRelative
-     */
     public function __construct(
         int $clickCount = null,
         int $uniqueClickCount = null,
@@ -67,49 +59,31 @@ class FormatStatisticItem implements FormatStatisticItemInterface
         $this->multipleClickRateRelative = $multipleClickRateRelative;
     }
 
-    /**
-     * @return int
-     */
     public function getClickCount(): int
     {
         return $this->clickCount;
     }
 
-    /**
-     * @return int
-     */
     public function getUniqueClickCount(): int
     {
         return $this->uniqueClickCount;
     }
 
-    /**
-     * @return float
-     */
     public function getClickRate(): float
     {
         return $this->clickRate;
     }
 
-    /**
-     * @return float
-     */
     public function getClickRateRelative(): float
     {
         return $this->clickRateRelative;
     }
 
-    /**
-     * @return float
-     */
     public function getMultipleClickRate(): float
     {
         return $this->multipleClickRate;
     }
 
-    /**
-     * @return float
-     */
     public function getMultipleClickRateRelative(): float
     {
         return $this->multipleClickRateRelative;

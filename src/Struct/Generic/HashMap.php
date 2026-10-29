@@ -34,8 +34,6 @@ class HashMap implements HashMapInterface
 
     /**
      * @param HashMapItemInterface[] $items
-     *
-     * @return HashMapInterface
      */
     public function setItems(array $items): HashMapInterface
     {

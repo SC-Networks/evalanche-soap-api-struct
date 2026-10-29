@@ -32,20 +32,20 @@ class MailingStatisticTest extends StructTestCase
             44,
             12,
             [
-                $this->getMockBuilder(MediaStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(MediaStatisticItemInterface::class)->getMock(),
+                $this->createStub(MediaStatisticItemInterface::class),
+                $this->createStub(MediaStatisticItemInterface::class),
             ],
             [
-                $this->getMockBuilder(ArticleStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(ArticleStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(ArticleStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(ArticleStatisticItemInterface::class)->getMock(),
+                $this->createStub(ArticleStatisticItemInterface::class),
+                $this->createStub(ArticleStatisticItemInterface::class),
+                $this->createStub(ArticleStatisticItemInterface::class),
+                $this->createStub(ArticleStatisticItemInterface::class),
             ],
             [
-                $this->getMockBuilder(LinkStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(LinkStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(LinkStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(LinkStatisticItemInterface::class)->getMock(),
+                $this->createStub(LinkStatisticItemInterface::class),
+                $this->createStub(LinkStatisticItemInterface::class),
+                $this->createStub(LinkStatisticItemInterface::class),
+                $this->createStub(LinkStatisticItemInterface::class),
             ]
         );
     }

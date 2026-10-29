@@ -31,12 +31,6 @@ class ContainerAttributeOption implements ContainerAttributeOptionInterface
      */
     private $order;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param string $label
-     * @param int $order
-     */
     public function __construct(int $id = null, string $name = null, string $label = null, int $order = null)
     {
         $this->id = $id;
@@ -45,33 +39,21 @@ class ContainerAttributeOption implements ContainerAttributeOptionInterface
         $this->order = $order;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getLabel(): string
     {
         return $this->label;
     }
 
-    /**
-     * @return int
-     */
     public function getOrder(): int
     {
         return $this->order;

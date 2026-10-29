@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -11,24 +13,12 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface AccountingTypeInterface extends StructInterface
 {
-    /**
-     * @return int
-     */
     public function getTypeId(): int;
 
-    /**
-     * @return int
-     */
     public function getAmount(): int;
 
-    /**
-     * @return float
-     */
     public function getPrice(): float;
 
-    /**
-     * @return string
-     */
     public function getCurrency(): string;
 
     /**

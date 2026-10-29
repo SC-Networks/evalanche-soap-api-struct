@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\TargetGroup;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -12,13 +14,7 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
 interface TargetGroupMemberShipInterface extends StructInterface
 {
 
-    /**
-     * @return int
-     */
     public function getProfileId(): int;
 
-    /**
-     * @return int
-     */
     public function getTargetGroupId(): int;
 }

@@ -35,7 +35,7 @@ class ContentGenerationVariableTest extends TestCase
 
     public function testGetNameReturnsValue(): void
     {
-        static::assertSame(
+        self::assertSame(
             $this->name,
             $this->subject->getName()
         );
@@ -43,7 +43,7 @@ class ContentGenerationVariableTest extends TestCase
 
     public function testGetDefaultValueReturnsValue(): void
     {
-        static::assertSame(
+        self::assertSame(
             $this->default_value,
             $this->subject->getDefaultValue()
         );
@@ -51,7 +51,7 @@ class ContentGenerationVariableTest extends TestCase
 
     public function testGetLabelValueReturnsValue(): void
     {
-        static::assertSame(
+        self::assertSame(
             $this->label,
             $this->subject->getLabel()
         );
@@ -59,7 +59,7 @@ class ContentGenerationVariableTest extends TestCase
 
     public function testGetHelpTextValueReturnsValue(): void
     {
-        static::assertSame(
+        self::assertSame(
             $this->help_text,
             $this->subject->getHelpText()
         );

@@ -21,10 +21,6 @@ class Category implements CategoryInterface
      */
     private $text;
 
-    /**
-     * @param int $id
-     * @param string $text
-     */
     public function __construct(
         int $id = null,
         string $text = null
@@ -33,17 +29,11 @@ class Category implements CategoryInterface
         $this->text = $text;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getText(): string
     {
         return $this->text;

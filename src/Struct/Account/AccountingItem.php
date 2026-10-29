@@ -30,12 +30,6 @@ class AccountingItem implements AccountingItemInterface
      */
     private $chargeCount;
 
-    /**
-     * @param string $description
-     * @param int $mandatorId
-     * @param string $accountingDate
-     * @param int $chargeCount
-     */
     public function __construct(
         string $description = null,
         int $mandatorId = null,
@@ -48,33 +42,21 @@ class AccountingItem implements AccountingItemInterface
         $this->chargeCount = $chargeCount;
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @return int
-     */
     public function getMandatorId(): int
     {
         return $this->mandatorId;
     }
 
-    /**
-     * @return string
-     */
     public function getAccountingDate(): string
     {
         return $this->accountingDate;
     }
 
-    /**
-     * @return int
-     */
     public function getChargeCount(): int
     {
         return $this->chargeCount;

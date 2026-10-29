@@ -46,15 +46,6 @@ class ContainerDetail implements ContainerDetailInterface
      */
     private $containerTypeId;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param string $url
-     * @param int $typeId
-     * @param int $folderId
-     * @param int $mandatorId
-     * @param int $containerTypeId
-     */
     public function __construct(
         int $id = null,
         string $name = null,
@@ -73,57 +64,36 @@ class ContainerDetail implements ContainerDetailInterface
         $this->containerTypeId = $containerTypeId;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getUrl(): string
     {
         return $this->url;
     }
 
-    /**
-     * @return int
-     */
     public function getTypeId(): int
     {
         return $this->typeId;
     }
 
-    /**
-     * @return int
-     */
     public function getFolderId(): int
     {
         return $this->folderId;
     }
 
-    /**
-     * @return int
-     */
     public function getMandatorId(): int
     {
         return $this->mandatorId;
     }
 
-    /**
-     * @return int
-     */
     public function getContainerTypeId(): int
     {
         return $this->containerTypeId;

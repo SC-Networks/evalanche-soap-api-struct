@@ -21,15 +21,15 @@
 	}
   ],
   "require": {
-    "php": ">=7.2"
+    "php": "^8.3||^8.4||^8.5||^8.6"
   },
   "require-dev": {
-    "php": ">=8.2",
-    "phpunit/phpunit": "^11.1",
+    "php": "^8.3||^8.4||^8.5||^8.6",
+    "phpunit/phpunit": "^12",
     "friendsofphp/php-cs-fixer": "^3.53",
-    "phpstan/phpstan": "^1.10",
-    "phpstan/phpstan-strict-rules": "^1.5",
-    "rector/rector": "^1.0"
+    "phpstan/phpstan": "^2.2",
+    "phpstan/phpstan-strict-rules": "^2",
+    "rector/rector": "^2"
   },
   "autoload": {
     "psr-4": {
@@ -46,6 +46,13 @@
     "stan": "vendor/bin/phpstan",
     "check-cs": "vendor/bin/php-cs-fixer fix --dry-run --diff",
     "fix-cs": "vendor/bin/php-cs-fixer fix",
-    "qa": "composer check-cs && composer test && composer stan"
+    "qa": [
+      "@check-cs",
+      "@stan",
+      "@tests",
+      "@rector:dry"
+    ],
+    "rector:dry": "rector -n",
+    "rector:fix": "rector"
   }
 }

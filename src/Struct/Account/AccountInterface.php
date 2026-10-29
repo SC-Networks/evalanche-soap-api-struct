@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -16,8 +18,5 @@ interface AccountInterface extends StructInterface
      */
     public function getAccountingTypes(): array;
 
-    /**
-     * @return DiscountInterface
-     */
     public function getDiscount(): DiscountInterface;
 }

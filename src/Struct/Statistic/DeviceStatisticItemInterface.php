@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -11,13 +13,7 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface DeviceStatisticItemInterface extends StructInterface
 {
-    /**
-     * @return string
-     */
     public function getDescription(): string;
 
-    /**
-     * @return int
-     */
     public function getCount(): int;
 }

@@ -37,13 +37,6 @@ class ProfileGroupScore implements ProfileGroupScoreInterface
      */
     private $profileScore;
 
-    /**
-     * @param int $profileId
-     * @param int $groupId
-     * @param string $groupName
-     * @param int $activityScore
-     * @param int $profileScore
-     */
     public function __construct(
         int $profileId = null,
         int $groupId = null,
@@ -58,41 +51,26 @@ class ProfileGroupScore implements ProfileGroupScoreInterface
         $this->profileScore = $profileScore;
     }
 
-    /**
-     * @return int
-     */
     public function getProfileId(): int
     {
         return $this->profileId;
     }
 
-    /**
-     * @return int
-     */
     public function getGroupId(): int
     {
         return $this->groupId;
     }
 
-    /**
-     * @return string
-     */
     public function getGroupName(): string
     {
         return $this->groupName;
     }
 
-    /**
-     * @return int
-     */
     public function getActivityScore(): int
     {
         return $this->activityScore;
     }
 
-    /**
-     * @return int
-     */
     public function getProfileScore(): int
     {
         return $this->profileScore;

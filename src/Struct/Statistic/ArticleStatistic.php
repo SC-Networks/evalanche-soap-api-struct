@@ -59,14 +59,6 @@ class ArticleStatistic implements ArticleStatisticInterface
     private $links;
 
     /**
-     * @param int $id
-     * @param int $referenceId
-     * @param string $name
-     * @param FormatStatisticItemInterface $overall
-     * @param FormatStatisticItemInterface $landingPage
-     * @param FormatStatisticItemInterface $print
-     * @param FormatStatisticItemInterface $voice
-     * @param FormatStatisticItemInterface $socialSharing
      * @param LinkStatisticItemInterface[] $links
      */
     public function __construct(
@@ -91,65 +83,41 @@ class ArticleStatistic implements ArticleStatisticInterface
         $this->links = $links;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return int
-     */
     public function getReferenceId(): int
     {
         return $this->referenceId;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return FormatStatisticItemInterface
-     */
     public function getOverall(): FormatStatisticItemInterface
     {
         return $this->overall;
     }
 
-    /**
-     * @return FormatStatisticItemInterface
-     */
     public function getLandingPage(): FormatStatisticItemInterface
     {
         return $this->landingPage;
     }
 
-    /**
-     * @return FormatStatisticItemInterface
-     */
     public function getPrint(): FormatStatisticItemInterface
     {
         return $this->print;
     }
 
-    /**
-     * @return FormatStatisticItemInterface
-     */
     public function getVoice(): FormatStatisticItemInterface
     {
         return $this->voice;
     }
 
-    /**
-     * @return FormatStatisticItemInterface
-     */
     public function getSocialSharing(): FormatStatisticItemInterface
     {
         return $this->socialSharing;

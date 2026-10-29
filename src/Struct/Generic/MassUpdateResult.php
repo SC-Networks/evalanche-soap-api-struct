@@ -34,8 +34,6 @@ class MassUpdateResult implements MassUpdateResultInterface
     private $error;
 
     /**
-     * @param HashMapInterface $updated
-     * @param HashMapInterface $created
      * @param string[] $ignored
      * @param int[] $error
      */

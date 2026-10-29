@@ -22,27 +22,17 @@ class DeviceStatisticItem implements DeviceStatisticItemInterface
      */
     private $count;
 
-    /**
-     * @param string $description
-     * @param int $count
-     */
     public function __construct(string $description = null, int $count = null)
     {
         $this->description = $description;
         $this->count = $count;
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @return int
-     */
     public function getCount(): int
     {
         return $this->count;

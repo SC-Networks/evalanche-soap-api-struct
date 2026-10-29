@@ -21,8 +21,8 @@ class BlackListTest extends StructTestCase
         $this->subject = new BlackList(
             123,
             [
-                $this->getMockBuilder(BlackListItemInterface::class)->getMock(),
-                $this->getMockBuilder(BlackListItemInterface::class)->getMock(),
+                $this->createStub(BlackListItemInterface::class),
+                $this->createStub(BlackListItemInterface::class),
             ]
         );
     }

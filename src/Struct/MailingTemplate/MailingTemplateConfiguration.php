@@ -17,58 +17,6 @@ class MailingTemplateConfiguration extends MailingConfiguration implements Maili
      */
     protected $containerType;
 
-    /**
-     * @param string $externalTrackingCode
-     * @param string $campaignId
-     * @param string $externalXmlUrl
-     * @param string $salutationFemale
-     * @param string $salutationMale
-     * @param string $salutationCompany
-     * @param string $salutationFamily
-     * @param string $salutationOther
-     * @param string $senderEmail
-     * @param string $senderName
-     * @param string $replyName
-     * @param string $replyEmail
-     * @param string $grantUrl
-     * @param string $revokeUrl
-     * @param string $inputfield0
-     * @param string $inputfield1
-     * @param string $inputfield2
-     * @param string $inputfield3
-     * @param string $inputfield4
-     * @param string $inputfield5
-     * @param string $inputfield6
-     * @param string $inputfield7
-     * @param string $inputfield8
-     * @param string $inputfield9
-     * @param string $textarea0
-     * @param string $textarea1
-     * @param string $textarea2
-     * @param string $textarea3
-     * @param string $textarea4
-     * @param string $textarea5
-     * @param string $textarea6
-     * @param string $textarea7
-     * @param string $textarea8
-     * @param string $textarea9
-     * @param string $htmlarea0
-     * @param string $htmlarea1
-     * @param string $htmlarea2
-     * @param string $htmlarea3
-     * @param string $htmlarea4
-     * @param string $htmlarea5
-     * @param string $htmlarea6
-     * @param string $htmlarea7
-     * @param string $htmlarea8
-     * @param string $htmlarea9
-     * @param string $containerType
-     * @param string $salutationDivers
-     * @param string $grantTrackingUrl
-     * @param string $revokeTrackingUrl
-     * @param string $revokeConfirmationUrl
-     * @param bool $revokeConfirmationActive
-     */
     public function __construct(
         string $externalTrackingCode = null,
         string $campaignId = null,
@@ -175,19 +123,11 @@ class MailingTemplateConfiguration extends MailingConfiguration implements Maili
         $this->containerType = $containerType;
     }
 
-    /**
-     * @return string
-     */
     public function getContainerType(): string
     {
         return $this->containerType;
     }
 
-    /**
-     * @param string $containerType
-     *
-     * @return $this
-     */
     public function setContainerType(string $containerType): MailingTemplateConfiguration
     {
         $this->containerType = $containerType;

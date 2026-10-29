@@ -33,10 +33,6 @@ class Product implements ProductInterface
 
     /**
      * Product constructor.
-     * @param string $id
-     * @param string $title
-     * @param string $text
-     * @param int $price
      */
     public function __construct(
         string $id = null,
@@ -50,9 +46,6 @@ class Product implements ProductInterface
         $this->price = $price;
     }
 
-    /**
-     * @return string
-     */
     public function getId(): string
     {
         return $this->id;
@@ -63,17 +56,11 @@ class Product implements ProductInterface
         return $this->title;
     }
 
-    /**
-     * @return string
-     */
     public function getText(): string
     {
         return $this->text;
     }
 
-    /**
-     * @return int
-     */
     public function getPrice(): int
     {
         return $this->price;

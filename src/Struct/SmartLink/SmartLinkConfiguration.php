@@ -66,19 +66,6 @@ class SmartLinkConfiguration implements SmartLinkConfigurationInterface
      */
     private $poolAttributes;
 
-    /**
-     * @param int $id
-     * @param string $targetUrl
-     * @param bool $individualScoringConfig
-     * @param int $restrictionTargetGroupId
-     * @param array $restrictionUserAgents
-     * @param int $milestoneId
-     * @param bool $activateRedirect
-     * @param bool $activateProfileUpdate
-     * @param bool $activateTracking
-     * @param array $scoringConfigs
-     * @param array $poolAttributes
-     */
     public function __construct(
         int $id = null,
         string $targetUrl = null,
@@ -105,89 +92,56 @@ class SmartLinkConfiguration implements SmartLinkConfigurationInterface
         $this->poolAttributes = $poolAttributes;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getTargetUrl(): string
     {
         return $this->targetUrl;
     }
 
-    /**
-     * @return bool
-     */
     public function getIndividualScoringConfig(): bool
     {
         return $this->individualScoringConfig;
     }
 
-    /**
-     * @return int
-     */
     public function getRestrictionTargetGroupId(): int
     {
         return $this->restrictionTargetGroupId;
     }
 
-    /**
-     * @return array
-     */
     public function getRestrictionUserAgents(): array
     {
         return $this->restrictionUserAgents;
     }
 
-    /**
-     * @return int
-     */
     public function getMilestoneId(): int
     {
         return $this->milestoneId;
     }
 
-    /**
-     * @return bool
-     */
     public function getActivateRedirect(): bool
     {
         return $this->activateRedirect;
     }
 
-    /**
-     * @return bool
-     */
     public function getActivateProfileUpdate(): bool
     {
         return $this->activateProfileUpdate;
     }
 
-    /**
-     * @return bool
-     */
     public function getActivateTracking(): bool
     {
         return $this->activateTracking;
     }
 
-    /**
-     * @return array
-     */
     public function getScoringConfigs(): array
     {
         return $this->scoringConfigs;
     }
 
-    /**
-     * @return array
-     */
     public function getPoolAttributes(): array
     {
         return $this->poolAttributes;

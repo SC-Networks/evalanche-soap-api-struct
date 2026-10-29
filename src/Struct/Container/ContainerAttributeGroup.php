@@ -26,11 +26,6 @@ class ContainerAttributeGroup implements ContainerAttributeGroupInterface
      */
     private $sortOrder;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param int $sortOrder
-     */
     public function __construct(int $id = null, string $name = null, int $sortOrder = null)
     {
         $this->id = $id;
@@ -38,25 +33,16 @@ class ContainerAttributeGroup implements ContainerAttributeGroupInterface
         $this->sortOrder = $sortOrder;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return int
-     */
     public function getSortOrder(): int
     {
         return $this->sortOrder;

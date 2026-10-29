@@ -92,24 +92,6 @@ class MailingDetail implements MailingDetailInterface
      */
     private $sendEndTime;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param string $url
-     * @param int $typeId
-     * @param int $folderId
-     * @param int $mandatorId
-     * @param int $timestamp
-     * @param int $recipients
-     * @param bool $sent
-     * @param string $previewUrl
-     * @param string $reportUrl
-     * @param string $adminUrl
-     * @param string $subject
-     * @param int $targetGroupId
-     * @param int $sendStartTime
-     * @param int $sendEndTime
-     */
     public function __construct(
         int $id = null,
         string $name = null,
@@ -146,129 +128,81 @@ class MailingDetail implements MailingDetailInterface
         $this->sendEndTime = $sendEndTime;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getUrl(): string
     {
         return $this->url;
     }
 
-    /**
-     * @return int
-     */
     public function getTypeId(): int
     {
         return $this->typeId;
     }
 
-    /**
-     * @return int
-     */
     public function getFolderId(): int
     {
         return $this->folderId;
     }
 
-    /**
-     * @return int
-     */
     public function getMandatorId(): int
     {
         return $this->mandatorId;
     }
 
-    /**
-     * @return int
-     */
     public function getTimestamp(): int
     {
         return $this->timestamp;
     }
 
-    /**
-     * @return int
-     */
     public function getRecipients(): int
     {
         return $this->recipients;
     }
 
-    /**
-     * @return bool
-     */
     public function getSent(): bool
     {
         return $this->sent;
     }
 
-    /**
-     * @return string
-     */
     public function getPreviewUrl(): string
     {
         return $this->previewUrl;
     }
 
-    /**
-     * @return string
-     */
     public function getReportUrl(): string
     {
         return $this->reportUrl;
     }
 
-    /**
-     * @return string
-     */
     public function getAdminUrl(): string
     {
         return $this->adminUrl;
     }
 
-    /**
-     * @return string
-     */
     public function getSubject(): string
     {
         return $this->subject;
     }
 
-    /**
-     * @return int
-     */
     public function getTargetGroupId(): int
     {
         return $this->targetGroupId;
     }
 
-    /**
-     * @return int
-     */
     public function getSendStartTime(): int
     {
         return $this->sendStartTime;
     }
 
-    /**
-     * @return int
-     */
     public function getSendEndTime(): int
     {
         return $this->sendEndTime;
