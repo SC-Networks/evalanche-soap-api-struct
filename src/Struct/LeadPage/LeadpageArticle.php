@@ -47,13 +47,13 @@ class LeadpageArticle implements LeadpageArticleInterface
     private $slot;
 
     public function __construct(
-        int $id = null,
-        int $articleId = null,
-        int $targetGroupId = null,
-        int $landingpagePresetId = null,
-        int $mobilePresetId = null,
-        int $sortPos = null,
-        int $slot = null
+        int $id = 0,
+        int $articleId = 0,
+        int $targetGroupId = 0,
+        int $landingpagePresetId = 0,
+        int $mobilePresetId = 0,
+        int $sortPos = 0,
+        int $slot = 0
     ) {
         $this->id = $id;
         $this->articleId = $articleId;

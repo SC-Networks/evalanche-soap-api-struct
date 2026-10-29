@@ -35,10 +35,10 @@ class Product implements ProductInterface
      * Product constructor.
      */
     public function __construct(
-        string $id = null,
-        string $title = null,
-        string $text = null,
-        int $price = null
+        string $id = '',
+        string $title = '',
+        string $text = '',
+        int $price = 0
     ) {
         $this->id = $id;
         $this->title = $title;

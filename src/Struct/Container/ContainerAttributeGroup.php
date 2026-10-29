@@ -26,7 +26,7 @@ class ContainerAttributeGroup implements ContainerAttributeGroupInterface
      */
     private $sortOrder;
 
-    public function __construct(int $id = null, string $name = null, int $sortOrder = null)
+    public function __construct(int $id = 0, string $name = '', int $sortOrder = 0)
     {
         $this->id = $id;
         $this->name = $name;

@@ -22,8 +22,8 @@ class Category implements CategoryInterface
     private $text;
 
     public function __construct(
-        int $id = null,
-        string $text = null
+        int $id = 0,
+        string $text = ''
     ) {
         $this->id = $id;
         $this->text = $text;

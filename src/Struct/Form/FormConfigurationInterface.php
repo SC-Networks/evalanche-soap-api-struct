@@ -58,10 +58,7 @@ interface FormConfigurationInterface extends StructInterface
 
     public function setInquirySendOnChange(string $inquirySendOnChange): FormConfiguration;
 
-    /**
-     * @return string
-     */
-    public function getInquiryRecipientEmails(): ?string;
+    public function getInquiryRecipientEmails(): string;
 
     public function setInquiryRecipientEmails(string $inquiryRecipientEmails): FormConfiguration;
 

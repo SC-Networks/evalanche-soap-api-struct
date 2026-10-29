@@ -13,7 +13,13 @@ class LeadpageSlotItemTest extends GenericSetterGetterTestCase
     
     public function setUp(): void
     {
-        $this->subject = new LeadpageSlotItem();
+        $this->subject = new LeadpageSlotItem(
+            articleTypeId: 0,
+            landingpageArticleTemplateId: 0,
+            webArticleTemplateId: 0,
+            landingpageAllowedArticleTemplateIds: [],
+            webAllowedArticleTemplateIds: [],
+        );
     }
 
     public static function methodDataProvider(): array

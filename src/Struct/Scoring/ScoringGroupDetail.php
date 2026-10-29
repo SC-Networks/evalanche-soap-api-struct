@@ -27,7 +27,7 @@ class ScoringGroupDetail implements ScoringGroupDetailInterface
      */
     private $mandatorId;
 
-    public function __construct(int $id = null, string $name = null, int $mandatorId = null)
+    public function __construct(int $id = 0, string $name = '', int $mandatorId = 0)
     {
         $this->id = $id;
         $this->name = $name;

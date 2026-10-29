@@ -14,7 +14,10 @@ class TemplatesSourcesTest extends GenericSetterGetterTestCase
 
     public function setUp(): void
     {
-        $this->subject = new TemplatesSources();
+        $this->subject = new TemplatesSources(
+            templateWeb: '',
+            templateLandingpage: '',
+        );
     }
 
     public static function methodDataProvider(): array

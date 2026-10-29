@@ -22,7 +22,7 @@ class PoolAttributeOption implements PoolAttributeOptionInterface
      */
     private $value;
 
-    public function __construct(int $id = null, string $value = null)
+    public function __construct(int $id = 0, string $value = '')
     {
         $this->id = $id;
         $this->value = $value;

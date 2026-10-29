@@ -26,11 +26,11 @@ class MailingTemplatesSources implements MailingTemplatesSourcesInterface
     private $templateLandingpage;
 
     public function __construct(
-        string $templateEmail = null,
-        string $templateText = null,
-        string $templateWeb = null,
-        string $templatePdf = null,
-        string $templateLandingpage = null
+        string $templateEmail = '',
+        string $templateText = '',
+        string $templateWeb = '',
+        string $templatePdf = '',
+        string $templateLandingpage = ''
     ) {
         $this->templateEmail = $templateEmail;
         $this->templateText = $templateText;

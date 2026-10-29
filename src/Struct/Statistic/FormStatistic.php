@@ -80,19 +80,19 @@ class FormStatistic implements FormStatisticInterface
     private $mandatoryErrorCount;
 
     public function __construct(
-        int $id = null,
-        string $name = null,
-        string $url = null,
-        int $typeId = null,
-        int $folderId = null,
-        int $mandatorId = null,
-        bool $isAlias = null,
-        int $impressions = null,
-        int $succeeded = null,
-        int $identityErrorCount = null,
-        int $duplicationErrorCount = null,
-        int $validationErrorCount = null,
-        int $mandatoryErrorCount = null
+        int $id = 0,
+        string $name = '',
+        string $url = '',
+        int $typeId = 0,
+        int $folderId = 0,
+        int $mandatorId = 0,
+        bool $isAlias = false,
+        int $impressions = 0,
+        int $succeeded = 0,
+        int $identityErrorCount = 0,
+        int $duplicationErrorCount = 0,
+        int $validationErrorCount = 0,
+        int $mandatoryErrorCount = 0
     ) {
         $this->id = $id;
         $this->name = $name;

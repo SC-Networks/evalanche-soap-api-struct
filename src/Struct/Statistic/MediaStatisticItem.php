@@ -27,7 +27,7 @@ class MediaStatisticItem implements MediaStatisticItemInterface
      */
     private $uniqueClickCount;
 
-    public function __construct(string $name = null, int $clickCount = null, int $uniqueClickCount = null)
+    public function __construct(string $name = '', int $clickCount = 0, int $uniqueClickCount = 0)
     {
         $this->name = $name;
         $this->clickCount = $clickCount;

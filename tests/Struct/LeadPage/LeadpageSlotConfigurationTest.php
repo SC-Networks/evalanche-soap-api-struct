@@ -13,7 +13,9 @@ class LeadpageSlotConfigurationTest extends GenericSetterGetterTestCase
     
     public function setUp(): void
     {
-        $this->subject = new LeadpageSlotConfiguration();
+        $this->subject = new LeadpageSlotConfiguration(
+            items: [],
+        );
     }
 
     public static function methodDataProvider(): array

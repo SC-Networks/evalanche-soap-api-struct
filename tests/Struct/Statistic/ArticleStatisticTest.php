@@ -14,14 +14,14 @@ class ArticleStatisticTest extends StructTestCase
     public function setUp(): void
     {
         $this->subject = new ArticleStatistic(
+            $this->createStub(FormatStatisticItemInterface::class),
+            $this->createStub(FormatStatisticItemInterface::class),
+            $this->createStub(FormatStatisticItemInterface::class),
+            $this->createStub(FormatStatisticItemInterface::class),
+            $this->createStub(FormatStatisticItemInterface::class),
             123,
             34,
             'some name',
-            $this->createStub(FormatStatisticItemInterface::class),
-            $this->createStub(FormatStatisticItemInterface::class),
-            $this->createStub(FormatStatisticItemInterface::class),
-            $this->createStub(FormatStatisticItemInterface::class),
-            $this->createStub(FormatStatisticItemInterface::class),
             [
                 $this->createStub(LinkStatisticItemInterface::class),
                 $this->createStub(LinkStatisticItemInterface::class),

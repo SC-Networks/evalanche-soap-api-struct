@@ -13,7 +13,14 @@ class MailingSlotTest extends GenericSetterGetterTestCase
     
     public function setUp(): void
     {
-        $this->subject = new MailingSlot();
+        $this->subject = new MailingSlot(
+            id: 0,
+            name: '',
+            slotNumber: 0,
+            sortTypeId: 0,
+            sortTypeValue: 0,
+            items: [],
+        );
     }
 
     public static function methodDataProvider(): array

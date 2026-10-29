@@ -66,16 +66,16 @@ class JobResult implements JobResultInterface
      * @param HashMapInterface[] $result
      */
     public function __construct(
-        string $id = null,
-        int $status = null,
-        string $statusDescription = null,
-        string $namespace = null,
-        string $method = null,
-        int $resourceId = null,
-        int $resultChunks = null,
-        array $result = null,
-        int $chunksLeft = null,
-        int $resultSize = null
+        string $id = '',
+        int $status = 0,
+        string $statusDescription = '',
+        string $namespace = '',
+        string $method = '',
+        int $resourceId = 0,
+        int $resultChunks = 0,
+        array $result = [],
+        int $chunksLeft = 0,
+        int $resultSize = 0
     ) {
         $this->id = $id;
         $this->status = $status;

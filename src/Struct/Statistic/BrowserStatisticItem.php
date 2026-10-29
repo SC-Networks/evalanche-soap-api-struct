@@ -27,7 +27,7 @@ class BrowserStatisticItem implements BrowserStatisticItemInterface
      */
     private $count;
 
-    public function __construct(string $description = null, string $version = null, int $count = null)
+    public function __construct(string $description = '', string $version = '', int $count = 0)
     {
         $this->description = $description;
         $this->version = $version;

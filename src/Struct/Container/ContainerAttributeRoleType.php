@@ -21,7 +21,7 @@ class ContainerAttributeRoleType implements ContainerAttributeRoleTypeInterface
      */
     private $name;
 
-    public function __construct(int $id = null, string $name = null)
+    public function __construct(int $id = 0, string $name = '')
     {
         $this->id = $id;
         $this->name = $name;

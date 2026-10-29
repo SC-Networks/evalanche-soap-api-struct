@@ -40,11 +40,11 @@ class AccountingType implements AccountingTypeInterface
      * @param AccountingItemInterface[] $accountingItems
      */
     public function __construct(
-        int $typeId = null,
-        int $amount = null,
-        float $price = null,
-        string $currency = null,
-        array $accountingItems = null
+        int $typeId = 0,
+        int $amount = 0,
+        float $price = 0.0,
+        string $currency = '',
+        array $accountingItems = []
     ) {
         $this->typeId = $typeId;
         $this->amount = $amount;

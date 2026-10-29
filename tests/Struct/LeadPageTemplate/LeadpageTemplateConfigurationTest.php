@@ -12,7 +12,39 @@ class LeadpageTemplateConfigurationTest extends StructTestCase
 
     public function setUp(): void
     {
-        $this->subject = new LeadpageTemplateConfiguration();
+        $this->subject = new LeadpageTemplateConfiguration(
+            macroLibrary: '',
+            inputfield0: '',
+            inputfield1: '',
+            inputfield2: '',
+            inputfield3: '',
+            inputfield4: '',
+            inputfield5: '',
+            inputfield6: '',
+            inputfield7: '',
+            inputfield8: '',
+            inputfield9: '',
+            textarea0: '',
+            textarea1: '',
+            textarea2: '',
+            textarea3: '',
+            textarea4: '',
+            textarea5: '',
+            textarea6: '',
+            textarea7: '',
+            textarea8: '',
+            textarea9: '',
+            htmlarea0: '',
+            htmlarea1: '',
+            htmlarea2: '',
+            htmlarea3: '',
+            htmlarea4: '',
+            htmlarea5: '',
+            htmlarea6: '',
+            htmlarea7: '',
+            htmlarea8: '',
+            htmlarea9: '',
+        );
     }
 
     public function testGetMacroLibraryCanReturnString(): void

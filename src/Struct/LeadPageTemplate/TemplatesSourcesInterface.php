@@ -11,11 +11,11 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface TemplatesSourcesInterface extends StructInterface
 {
-    public function getTemplateWeb(): ?string;
+    public function getTemplateWeb(): string;
 
     public function setTemplateWeb(string $template_web): TemplatesSourcesInterface;
 
-    public function getTemplateLandingpage(): ?string;
+    public function getTemplateLandingpage(): string;
 
     public function setTemplateLandingpage(string $template_landingpage): TemplatesSourcesInterface;
 }

@@ -13,7 +13,10 @@ class LeadpageTemplateAllowedTemplatesTest extends GenericSetterGetterTestCase
 
     public function setUp(): void
     {
-        $this->subject = new LeadpageTemplateAllowedTemplates();
+        $this->subject = new LeadpageTemplateAllowedTemplates(
+            templateType: 0,
+            templateIds: [],
+        );
     }
     
     public static function methodDataProvider(): array

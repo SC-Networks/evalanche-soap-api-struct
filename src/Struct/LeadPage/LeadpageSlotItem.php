@@ -29,11 +29,11 @@ class LeadpageSlotItem implements LeadpageSlotItemInterface
      * @param list<int> $webAllowedArticleTemplateIds
      */
     public function __construct(
-        int $articleTypeId = null,
-        int $landingpageArticleTemplateId = null,
-        int $webArticleTemplateId = null,
-        array $landingpageAllowedArticleTemplateIds = null,
-        array $webAllowedArticleTemplateIds = null
+        int $articleTypeId = 0,
+        int $landingpageArticleTemplateId = 0,
+        int $webArticleTemplateId = 0,
+        array $landingpageAllowedArticleTemplateIds = [],
+        array $webAllowedArticleTemplateIds = []
     ) {
         $this->articleTypeId = $articleTypeId;
         $this->landingpageArticleTemplateId = $landingpageArticleTemplateId;

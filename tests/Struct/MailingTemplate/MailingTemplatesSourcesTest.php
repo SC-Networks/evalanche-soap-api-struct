@@ -14,7 +14,13 @@ class MailingTemplatesSourcesTest extends GenericSetterGetterTestCase
 
     public function setUp(): void
     {
-        $this->subject = new MailingTemplatesSources();
+        $this->subject = new MailingTemplatesSources(
+            templateEmail: '',
+            templateText: '',
+            templateWeb: '',
+            templatePdf: '',
+            templateLandingpage: '',
+        );
     }
     
     public static function methodDataProvider(): array

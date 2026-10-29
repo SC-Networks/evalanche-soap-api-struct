@@ -13,7 +13,10 @@ class ArticleIndividualizationTest extends StructTestCase
 
     protected function setUp(): void
     {
-        $this->subject = new ArticleIndividualization();
+        $this->subject = new ArticleIndividualization(
+            hasFallback: false,
+            individualizationItems: [],
+        );
     }
 
     public function testHasFallbachSetGet(): void

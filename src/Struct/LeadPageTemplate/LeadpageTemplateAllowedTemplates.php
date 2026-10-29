@@ -19,8 +19,8 @@ class LeadpageTemplateAllowedTemplates implements LeadpageTemplateAllowedTemplat
      * @param list<int> $templateIds
      */
     public function __construct(
-        int $templateType = null,
-        array $templateIds = null
+        int $templateType = 0,
+        array $templateIds = []
     ) {
         $this->templateType = $templateType;
         $this->templateIds = $templateIds;

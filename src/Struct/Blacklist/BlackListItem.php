@@ -21,7 +21,7 @@ class BlackListItem implements BlackListItemInterface
      */
     private $description;
 
-    public function __construct(string $email = null, string $description = null)
+    public function __construct(string $email = '', string $description = '')
     {
         $this->email = $email;
         $this->description = $description;

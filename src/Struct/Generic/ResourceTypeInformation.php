@@ -21,7 +21,7 @@ class ResourceTypeInformation implements ResourceTypeInformationInterface
      */
     private $description;
 
-    public function __construct(int $id = null, string $description = null)
+    public function __construct(int $id = 0, string $description = '')
     {
         $this->id = $id;
         $this->description = $description;

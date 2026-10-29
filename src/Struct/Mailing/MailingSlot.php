@@ -28,12 +28,12 @@ class MailingSlot implements MailingSlotInterface
     private $items;
     
     public function __construct(
-        int $id = null,
-        string $name = null,
-        int $slotNumber = null,
-        int $sortTypeId = null,
-        int $sortTypeValue = null,
-        array $items = null
+        int $id = 0,
+        string $name = '',
+        int $slotNumber = 0,
+        int $sortTypeId = 0,
+        int $sortTypeValue = 0,
+        array $items = []
     ) {
         $this->id = $id;
         $this->name = $name;

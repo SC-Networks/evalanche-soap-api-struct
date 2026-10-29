@@ -25,8 +25,10 @@ class Account implements AccountInterface
     /**
      * @param AccountingTypeInterface[] $accountingTypes
      */
-    public function __construct(array $accountingTypes = null, DiscountInterface $discount = null)
-    {
+    public function __construct(
+        DiscountInterface $discount,
+        array $accountingTypes = [],
+    ) {
         $this->accountingTypes = $accountingTypes;
         $this->discount = $discount;
     }

@@ -17,9 +17,9 @@ class WorkflowStateChangeResultError implements WorkflowStateChangeResultErrorIn
     private $param;
     
     public function __construct(
-        string $type = null,
-        string $node = null,
-        string $param = null
+        string $type = '',
+        string $node = '',
+        string $param = ''
     ) {
         $this->type = $type;
         $this->node = $node;

@@ -16,8 +16,8 @@ class WorkflowConfiguration implements WorkflowConfigurationInterface
     private $configuration;
 
     public function __construct(
-        string $configVersion = null,
-        string $configuration = null
+        string $configVersion = '',
+        string $configuration = ''
     ) {
         $this->configVersion = $configVersion;
         $this->configuration = $configuration;

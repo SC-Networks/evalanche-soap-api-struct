@@ -21,7 +21,7 @@ class MailingSubject implements MailingSubjectInterface
      */
     private $subject;
 
-    public function __construct(int $targetGroupId = null, string $subject = null)
+    public function __construct(int $targetGroupId = 0, string $subject = '')
     {
         $this->targetGroupId = $targetGroupId;
         $this->subject = $subject;

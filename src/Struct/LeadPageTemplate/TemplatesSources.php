@@ -9,21 +9,21 @@ namespace Scn\EvalancheSoapStruct\Struct\LeadPageTemplate;
  */
 class TemplatesSources implements TemplatesSourcesInterface
 {
-    /** @var string|null */
+    /** @var string */
     private $templateWeb;
 
-    /** @var string|null */
+    /** @var string */
     private $templateLandingpage;
 
     public function __construct(
-        string $templateWeb = null,
-        string $templateLandingpage = null
+        string $templateWeb = '',
+        string $templateLandingpage = ''
     ) {
         $this->templateWeb = $templateWeb;
         $this->templateLandingpage = $templateLandingpage;
     }
 
-    public function getTemplateWeb(): ?string
+    public function getTemplateWeb(): string
     {
         return $this->templateWeb;
     }
@@ -35,7 +35,7 @@ class TemplatesSources implements TemplatesSourcesInterface
         return $this;
     }
 
-    public function getTemplateLandingpage(): ?string
+    public function getTemplateLandingpage(): string
     {
         return $this->templateLandingpage;
     }

@@ -41,11 +41,11 @@ class ProfileBounceStatus implements ProfileBounceStatusInterface
     private $profileData;
 
     public function __construct(
-        int $profileId = null,
-        int $mailingId = null,
-        int $status = null,
-        int $timestamp = null,
-        HashMapInterface $profileData = null
+        HashMapInterface $profileData,
+        int $profileId = 0,
+        int $mailingId = 0,
+        int $status = 0,
+        int $timestamp = 0,
     ) {
         $this->profileId = $profileId;
         $this->mailingId = $mailingId;
