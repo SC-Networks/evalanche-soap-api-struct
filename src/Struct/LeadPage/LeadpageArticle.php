@@ -46,15 +46,6 @@ class LeadpageArticle implements LeadpageArticleInterface
      */
     private $slot;
 
-    /**
-     * @param int $id
-     * @param int $articleId
-     * @param int $targetGroupId
-     * @param int $landingpagePresetId
-     * @param int $mobilePresetId
-     * @param int $sortPos
-     * @param int $slot
-     */
     public function __construct(
         int $id = null,
         int $articleId = null,
@@ -73,57 +64,36 @@ class LeadpageArticle implements LeadpageArticleInterface
         $this->slot = $slot;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return int
-     */
     public function getArticleId(): int
     {
         return $this->articleId;
     }
 
-    /**
-     * @return int
-     */
     public function getTargetGroupId(): int
     {
         return $this->targetGroupId;
     }
 
-    /**
-     * @return int
-     */
     public function getLandingpagePresetId(): int
     {
         return $this->landingpagePresetId;
     }
 
-    /**
-     * @return int
-     */
     public function getMobilePresetId(): int
     {
         return $this->mobilePresetId;
     }
 
-    /**
-     * @return int
-     */
     public function getSortPos(): int
     {
         return $this->sortPos;
     }
 
-    /**
-     * @return int
-     */
     public function getSlot(): int
     {
         return $this->slot;

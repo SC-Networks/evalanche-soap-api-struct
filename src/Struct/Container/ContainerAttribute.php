@@ -67,19 +67,6 @@ class ContainerAttribute implements ContainerAttributeInterface
      */
     private $allowOptions;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param string $label
-     * @param int $typeId
-     * @param int $groupId
-     * @param string $helpText
-     * @param string $inputHelpText
-     * @param bool $mandatory
-     * @param bool $visible
-     * @param string $replacementVariable
-     * @param bool $allowOptions
-     */
     public function __construct(
         int $id = null,
         string $name = null,
@@ -106,89 +93,56 @@ class ContainerAttribute implements ContainerAttributeInterface
         $this->allowOptions = $allowOptions;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getLabel(): string
     {
         return $this->label;
     }
 
-    /**
-     * @return int
-     */
     public function getTypeId(): int
     {
         return $this->typeId;
     }
 
-    /**
-     * @return int
-     */
     public function getGroupId(): int
     {
         return $this->groupId;
     }
 
-    /**
-     * @return string
-     */
     public function getHelpText(): string
     {
         return $this->helpText;
     }
 
-    /**
-     * @return string
-     */
     public function getInputHelpText(): string
     {
         return $this->inputHelpText;
     }
 
-    /**
-     * @return bool
-     */
     public function getMandatory(): bool
     {
         return $this->mandatory;
     }
 
-    /**
-     * @return bool
-     */
     public function getVisible(): bool
     {
         return $this->visible;
     }
 
-    /**
-     * @return string
-     */
     public function getReplacementVariable(): string
     {
         return $this->replacementVariable;
     }
 
-    /**
-     * @return bool
-     */
     public function getAllowOptions(): bool
     {
         return $this->allowOptions;

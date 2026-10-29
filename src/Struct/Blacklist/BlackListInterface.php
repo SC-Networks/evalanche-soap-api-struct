@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -11,9 +13,6 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface BlackListInterface extends StructInterface
 {
-    /**
-     * @return int
-     */
     public function getMandatorId(): int;
 
     /**

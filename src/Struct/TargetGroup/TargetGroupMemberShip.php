@@ -22,27 +22,17 @@ class TargetGroupMemberShip implements TargetGroupMemberShipInterface
      */
     private $targetGroupId;
 
-    /**
-     * @param int $profileId
-     * @param int $targetGroupId
-     */
     public function __construct(int $profileId = null, int $targetGroupId = null)
     {
         $this->profileId = $profileId;
         $this->targetGroupId = $targetGroupId;
     }
 
-    /**
-     * @return int
-     */
     public function getProfileId(): int
     {
         return $this->profileId;
     }
 
-    /**
-     * @return int
-     */
     public function getTargetGroupId(): int
     {
         return $this->targetGroupId;

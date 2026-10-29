@@ -11,8 +11,8 @@ class MassUpdateResultTest extends StructTestCase
     public function setUp(): void
     {
         $this->subject = new MassUpdateResult(
-            $this->getMockBuilder(HashMapInterface::class)->getMock(),
-            $this->getMockBuilder(HashMapInterface::class)->getMock(),
+            $this->createStub(HashMapInterface::class),
+            $this->createStub(HashMapInterface::class),
             [
                 'some string',
                 'some other string'

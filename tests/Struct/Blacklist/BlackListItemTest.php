@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
 
 use Scn\EvalancheSoapStruct\StructTestCase;

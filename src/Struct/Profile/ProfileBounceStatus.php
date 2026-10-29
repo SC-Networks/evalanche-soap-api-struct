@@ -40,13 +40,6 @@ class ProfileBounceStatus implements ProfileBounceStatusInterface
      */
     private $profileData;
 
-    /**
-     * @param int $profileId
-     * @param int $mailingId
-     * @param int $status
-     * @param int $timestamp
-     * @param HashMapInterface $profileData
-     */
     public function __construct(
         int $profileId = null,
         int $mailingId = null,
@@ -61,41 +54,26 @@ class ProfileBounceStatus implements ProfileBounceStatusInterface
         $this->profileData = $profileData;
     }
 
-    /**
-     * @return int
-     */
     public function getProfileId(): int
     {
         return $this->profileId;
     }
 
-    /**
-     * @return int
-     */
     public function getMailingId(): int
     {
         return $this->mailingId;
     }
 
-    /**
-     * @return int
-     */
     public function getStatus(): int
     {
         return $this->status;
     }
 
-    /**
-     * @return int
-     */
     public function getTimestamp(): int
     {
         return $this->timestamp;
     }
 
-    /**
-     * @return HashMapInterface
-     */
     public function getProfileData(): HashMapInterface
     {
         return $this->profileData;

@@ -17,15 +17,15 @@ class ArticleStatisticTest extends StructTestCase
             123,
             34,
             'some name',
-            $this->getMockBuilder(FormatStatisticItemInterface::class)->getMock(),
-            $this->getMockBuilder(FormatStatisticItemInterface::class)->getMock(),
-            $this->getMockBuilder(FormatStatisticItemInterface::class)->getMock(),
-            $this->getMockBuilder(FormatStatisticItemInterface::class)->getMock(),
-            $this->getMockBuilder(FormatStatisticItemInterface::class)->getMock(),
+            $this->createStub(FormatStatisticItemInterface::class),
+            $this->createStub(FormatStatisticItemInterface::class),
+            $this->createStub(FormatStatisticItemInterface::class),
+            $this->createStub(FormatStatisticItemInterface::class),
+            $this->createStub(FormatStatisticItemInterface::class),
             [
-                $this->getMockBuilder(LinkStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(LinkStatisticItemInterface::class)->getMock(),
-                $this->getMockBuilder(LinkStatisticItemInterface::class)->getMock(),
+                $this->createStub(LinkStatisticItemInterface::class),
+                $this->createStub(LinkStatisticItemInterface::class),
+                $this->createStub(LinkStatisticItemInterface::class),
             ]
         );
     }

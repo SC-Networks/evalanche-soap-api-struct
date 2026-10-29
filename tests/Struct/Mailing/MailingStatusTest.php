@@ -26,9 +26,9 @@ class MailingStatusTest extends StructTestCase
             333,
             'some preview url',
             [
-                $this->getMockBuilder(HashMapInterface::class)->getMock(),
-                $this->getMockBuilder(HashMapInterface::class)->getMock(),
-                $this->getMockBuilder(HashMapInterface::class)->getMock(),
+                $this->createStub(HashMapInterface::class),
+                $this->createStub(HashMapInterface::class),
+                $this->createStub(HashMapInterface::class),
             ]
         );
     }

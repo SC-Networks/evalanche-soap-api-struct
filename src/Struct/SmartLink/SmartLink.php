@@ -27,11 +27,6 @@ class SmartLink implements SmartLinkInterface
      */
     private $trackingUrl;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param string $trackingUrl
-     */
     public function __construct(int $id = null, string $name = null, string $trackingUrl = null)
     {
         $this->id = $id;
@@ -39,25 +34,16 @@ class SmartLink implements SmartLinkInterface
         $this->trackingUrl = $trackingUrl;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getTrackingUrl(): string
     {
         return $this->trackingUrl;

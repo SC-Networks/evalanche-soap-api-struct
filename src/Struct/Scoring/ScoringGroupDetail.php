@@ -27,11 +27,6 @@ class ScoringGroupDetail implements ScoringGroupDetailInterface
      */
     private $mandatorId;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param int $mandatorId
-     */
     public function __construct(int $id = null, string $name = null, int $mandatorId = null)
     {
         $this->id = $id;
@@ -39,25 +34,16 @@ class ScoringGroupDetail implements ScoringGroupDetailInterface
         $this->mandatorId = $mandatorId;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return int
-     */
     public function getMandatorId(): int
     {
         return $this->mandatorId;

@@ -24,8 +24,8 @@ class PoolAttributeTest extends StructTestCase
             'some name',
             'some label',
             [
-                $this->getMockBuilder(PoolAttributeOptionInterface::class)->getMock(),
-                $this->getMockBuilder(PoolAttributeOptionInterface::class)->getMock(),
+                $this->createStub(PoolAttributeOptionInterface::class),
+                $this->createStub(PoolAttributeOptionInterface::class),
             ],
             true,
             true

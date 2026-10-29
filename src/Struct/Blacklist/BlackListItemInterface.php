@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -11,13 +13,7 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface BlackListItemInterface extends StructInterface
 {
-    /**
-     * @return string
-     */
     public function getEmail(): string;
 
-    /**
-     * @return string
-     */
     public function getDescription(): string;
 }

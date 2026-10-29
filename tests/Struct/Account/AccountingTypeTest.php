@@ -24,8 +24,8 @@ class AccountingTypeTest extends StructTestCase
             1.45,
             'EUR',
             [
-                $this->getMockBuilder(AccountingItemInterface::class)->getMock(),
-                $this->getMockBuilder(AccountingItemInterface::class)->getMock(),
+                $this->createStub(AccountingItemInterface::class),
+                $this->createStub(AccountingItemInterface::class),
             ]
         );
     }

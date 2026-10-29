@@ -27,11 +27,6 @@ class MailingImpression implements MailingImpressionInterface
      */
     private $timestamp;
 
-    /**
-     * @param int $id
-     * @param int $profileId
-     * @param int $timestamp
-     */
     public function __construct(int $id = null, int $profileId = null, int $timestamp = null)
     {
         $this->id = $id;
@@ -39,25 +34,16 @@ class MailingImpression implements MailingImpressionInterface
         $this->timestamp = $timestamp;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return int
-     */
     public function getProfileId(): int
     {
         return $this->profileId;
     }
 
-    /**
-     * @return int
-     */
     public function getTimestamp(): int
     {
         return $this->timestamp;

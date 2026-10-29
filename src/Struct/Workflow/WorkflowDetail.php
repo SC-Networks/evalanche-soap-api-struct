@@ -57,17 +57,6 @@ class WorkflowDetail implements WorkflowDetailInterface
      */
     private $profileCount;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param int $dateStart
-     * @param int $dateEnd
-     * @param string $externalId
-     * @param int $folderId
-     * @param string $description
-     * @param int $state
-     * @param int $profileCount
-     */
     public function __construct(
         int $id = null,
         string $name = null,
@@ -90,73 +79,46 @@ class WorkflowDetail implements WorkflowDetailInterface
         $this->profileCount = $profileCount;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return int
-     */
     public function getDateStart(): int
     {
         return $this->dateStart;
     }
 
-    /**
-     * @return int
-     */
     public function getDateEnd(): int
     {
         return $this->dateEnd;
     }
 
-    /**
-     * @return string
-     */
     public function getExternalId(): string
     {
         return $this->externalId;
     }
 
-    /**
-     * @return int
-     */
     public function getFolderId(): int
     {
         return $this->folderId;
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @return int
-     */
     public function getState(): int
     {
         return $this->state;
     }
 
-    /**
-     * @return int
-     */
     public function getProfileCount(): int
     {
         return $this->profileCount;

@@ -41,14 +41,6 @@ class ProfileActivityScore implements ProfileActivityScoreInterface
      */
     private $resourceId;
 
-    /**
-     * @param int $id
-     * @param int $scoringGroupId
-     * @param int $scoringTypeId
-     * @param int $timestamp
-     * @param int $score
-     * @param int $resourceId
-     */
     public function __construct(
         int $id = null,
         int $scoringGroupId = null,
@@ -65,49 +57,31 @@ class ProfileActivityScore implements ProfileActivityScoreInterface
         $this->resourceId = $resourceId;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return int
-     */
     public function getScoringGroupId(): int
     {
         return $this->scoringGroupId;
     }
 
-    /**
-     * @return int
-     */
     public function getScoringTypeId(): int
     {
         return $this->scoringTypeId;
     }
 
-    /**
-     * @return int
-     */
     public function getTimestamp(): int
     {
         return $this->timestamp;
     }
 
-    /**
-     * @return int
-     */
     public function getScore(): int
     {
         return $this->score;
     }
 
-    /**
-     * @return int
-     */
     public function getResourceId(): int
     {
         return $this->resourceId;

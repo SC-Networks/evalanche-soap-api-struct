@@ -2,6 +2,7 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use ReflectionClass;
 use Scn\EvalancheSoapStruct\StructTestCase;
 
 class ResourceInformationTest extends StructTestCase
@@ -21,7 +22,7 @@ class ResourceInformationTest extends StructTestCase
     public function setUp(): void
     {
         $this->subject = new ResourceInformation();
-        $reflection = new \ReflectionClass($this->subject);
+        $reflection = new ReflectionClass($this->subject);
 
         foreach ($reflection->getProperties() as $property) {
             $property->setValue($this->subject, $this->expectedValues[$property->getName()]);

@@ -37,13 +37,6 @@ class LinkStatisticItem implements LinkStatisticItemInterface
      */
     private $uniqueClickCount;
 
-    /**
-     * @param int $id
-     * @param string $url
-     * @param string $name
-     * @param int $clickCount
-     * @param int $uniqueClickCount
-     */
     public function __construct(
         int $id = null,
         string $url = null,
@@ -58,41 +51,26 @@ class LinkStatisticItem implements LinkStatisticItemInterface
         $this->uniqueClickCount = $uniqueClickCount;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getUrl(): string
     {
         return $this->url;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return int
-     */
     public function getClickCount(): int
     {
         return $this->clickCount;
     }
 
-    /**
-     * @return int
-     */
     public function getUniqueClickCount(): int
     {
         return $this->uniqueClickCount;

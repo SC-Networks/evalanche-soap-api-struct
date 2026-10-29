@@ -27,11 +27,6 @@ class Discount implements DiscountInterface
      */
     private $price;
 
-    /**
-     * @param string $description
-     * @param float $percent
-     * @param float $price
-     */
     public function __construct(string $description = null, float $percent = null, float $price = null)
     {
         $this->description = $description;
@@ -39,25 +34,16 @@ class Discount implements DiscountInterface
         $this->price = $price;
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @return float
-     */
     public function getPercent(): float
     {
         return $this->percent;
     }
 
-    /**
-     * @return float
-     */
     public function getPrice(): float
     {
         return $this->price;

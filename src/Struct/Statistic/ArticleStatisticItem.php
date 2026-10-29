@@ -32,12 +32,6 @@ class ArticleStatisticItem implements ArticleStatisticItemInterface
      */
     private $uniqueClickCount;
 
-    /**
-     * @param int $id
-     * @param string $name
-     * @param int $clickCount
-     * @param int $uniqueClickCount
-     */
     public function __construct(
         int $id = null,
         string $name = null,
@@ -50,33 +44,21 @@ class ArticleStatisticItem implements ArticleStatisticItemInterface
         $this->uniqueClickCount = $uniqueClickCount;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return int
-     */
     public function getClickCount(): int
     {
         return $this->clickCount;
     }
 
-    /**
-     * @return int
-     */
     public function getUniqueClickCount(): int
     {
         return $this->uniqueClickCount;

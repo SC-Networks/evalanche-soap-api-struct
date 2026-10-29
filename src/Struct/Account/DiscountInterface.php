@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
@@ -12,18 +13,9 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface DiscountInterface extends StructInterface
 {
-    /**
-     * @return string
-     */
     public function getDescription(): string;
 
-    /**
-     * @return float
-     */
     public function getPercent(): float;
 
-    /**
-     * @return float
-     */
     public function getPrice(): float;
 }

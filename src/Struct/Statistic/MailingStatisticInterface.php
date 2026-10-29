@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -11,64 +13,28 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface MailingStatisticInterface extends StructInterface
 {
-    /**
-     * @return int
-     */
     public function getAddresses(): int;
 
-    /**
-     * @return int
-     */
     public function getRecipients(): int;
 
-    /**
-     * @return int
-     */
     public function getDuplicateCount(): int;
 
-    /**
-     * @return int
-     */
     public function getBlackListedCount(): int;
 
-    /**
-     * @return int
-     */
     public function getRobinsonListedCount(): int;
 
-    /**
-     * @return int
-     */
     public function getHardBounceCount(): int;
 
-    /**
-     * @return int
-     */
     public function getSoftBounceCount(): int;
 
-    /**
-     * @return int
-     */
     public function getUnSubscribeCount(): int;
 
-    /**
-     * @return int
-     */
     public function getImpressionCount(): int;
 
-    /**
-     * @return int
-     */
     public function getUniqueImpressionCount(): int;
 
-    /**
-     * @return int
-     */
     public function getClickCount(): int;
 
-    /**
-     * @return int
-     */
     public function getUniqueClickCount(): int;
 
     /**

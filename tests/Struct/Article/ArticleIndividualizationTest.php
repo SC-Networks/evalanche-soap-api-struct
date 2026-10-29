@@ -18,13 +18,13 @@ class ArticleIndividualizationTest extends StructTestCase
 
     public function testHasFallbachSetGet(): void
     {
-        static::assertFalse(
+        self::assertFalse(
             $this->subject->isHasFallback()
         );
 
         $this->subject->setHasFallback(true);
 
-        static::assertTrue(
+        self::assertTrue(
             $this->subject->isHasFallback()
         );
     }
@@ -33,14 +33,14 @@ class ArticleIndividualizationTest extends StructTestCase
     {
         $items = ['some-item'];
 
-        static::assertSame(
+        self::assertSame(
             [],
             $this->subject->getIndividualizationItems()
         );
 
         $this->subject->setIndividualizationItems($items);
 
-        static::assertSame(
+        self::assertSame(
             $items,
             $this->subject->getIndividualizationItems()
         );

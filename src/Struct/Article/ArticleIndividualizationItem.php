@@ -27,33 +27,21 @@ class ArticleIndividualizationItem implements ArticleIndividualizationItemInterf
         $this->articleId = $articleId;
     }
 
-    /**
-     * @return int
-     */
     public function getTargetgroupId(): int
     {
         return $this->targetgroupId;
     }
 
-    /**
-     * @param int $targetgroupId
-     */
     public function setTargetgroupId(int $targetgroupId): void
     {
         $this->targetgroupId = $targetgroupId;
     }
 
-    /**
-     * @return int
-     */
     public function getArticleId(): int
     {
         return $this->articleId;
     }
 
-    /**
-     * @param int $articleId
-     */
     public function setArticleId(int $articleId): void
     {
         $this->articleId = $articleId;

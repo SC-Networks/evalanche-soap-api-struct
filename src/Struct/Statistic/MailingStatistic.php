@@ -89,18 +89,6 @@ class MailingStatistic implements MailingStatisticInterface
     private $links;
 
     /**
-     * @param int $addresses
-     * @param int $recipients
-     * @param int $duplicateCount
-     * @param int $blackListedCount
-     * @param int $robinsonListedCount
-     * @param int $hardBounceCount
-     * @param int $softBounceCount
-     * @param int $unSubscribeCount
-     * @param int $impressionCount
-     * @param int $uniqueImpressionCount
-     * @param int $clickCount
-     * @param int $uniqueClickCount
      * @param MediaStatisticItemInterface[] $media
      * @param ArticleStatisticItemInterface[] $articles
      * @param LinkStatisticItemInterface[] $links
@@ -139,97 +127,61 @@ class MailingStatistic implements MailingStatisticInterface
         $this->links = $links;
     }
 
-    /**
-     * @return int
-     */
     public function getAddresses(): int
     {
         return $this->addresses;
     }
 
-    /**
-     * @return int
-     */
     public function getRecipients(): int
     {
         return $this->recipients;
     }
 
-    /**
-     * @return int
-     */
     public function getDuplicateCount(): int
     {
         return $this->duplicateCount;
     }
 
-    /**
-     * @return int
-     */
     public function getBlackListedCount(): int
     {
         return $this->blackListedCount;
     }
 
-    /**
-     * @return int
-     */
     public function getRobinsonListedCount(): int
     {
         return $this->robinsonListedCount;
     }
 
-    /**
-     * @return int
-     */
     public function getHardBounceCount(): int
     {
         return $this->hardBounceCount;
     }
 
-    /**
-     * @return int
-     */
     public function getSoftBounceCount(): int
     {
         return $this->softBounceCount;
     }
 
-    /**
-     * @return int
-     */
     public function getUnSubscribeCount(): int
     {
         return $this->unSubscribeCount;
     }
 
-    /**
-     * @return int
-     */
     public function getImpressionCount(): int
     {
         return $this->impressionCount;
     }
 
-    /**
-     * @return int
-     */
     public function getUniqueImpressionCount(): int
     {
         return $this->uniqueImpressionCount;
     }
 
-    /**
-     * @return int
-     */
     public function getClickCount(): int
     {
         return $this->clickCount;
     }
 
-    /**
-     * @return int
-     */
     public function getUniqueClickCount(): int
     {
         return $this->uniqueClickCount;

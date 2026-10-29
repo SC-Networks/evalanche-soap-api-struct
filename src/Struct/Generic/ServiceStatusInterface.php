@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -11,13 +13,7 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface ServiceStatusInterface extends StructInterface
 {
-    /**
-     * @return string
-     */
     public function getStatus(): string;
 
-    /**
-     * @return string
-     */
     public function getRandomMessage(): string;
 }

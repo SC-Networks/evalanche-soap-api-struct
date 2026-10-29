@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
@@ -18,8 +20,6 @@ interface HashMapInterface extends StructInterface
 
     /**
      * @param HashMapItemInterface[] $items
-     *
-     * @return HashMapInterface
      */
     public function setItems(array $items): HashMapInterface;
 }

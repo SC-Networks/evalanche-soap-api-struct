@@ -37,10 +37,6 @@ class AccountingType implements AccountingTypeInterface
     private $accountingItems;
 
     /**
-     * @param int $typeId
-     * @param int $amount
-     * @param float $price
-     * @param string $currency
      * @param AccountingItemInterface[] $accountingItems
      */
     public function __construct(
@@ -57,33 +53,21 @@ class AccountingType implements AccountingTypeInterface
         $this->accountingItems = $accountingItems;
     }
 
-    /**
-     * @return int
-     */
     public function getTypeId(): int
     {
         return $this->typeId;
     }
 
-    /**
-     * @return int
-     */
     public function getAmount(): int
     {
         return $this->amount;
     }
 
-    /**
-     * @return float
-     */
     public function getPrice(): float
     {
         return $this->price;
     }
 
-    /**
-     * @return string
-     */
     public function getCurrency(): string
     {
         return $this->currency;

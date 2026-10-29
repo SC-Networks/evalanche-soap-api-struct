@@ -20,14 +20,14 @@ class ArticleIndividualizationItemTest extends StructTestCase
     {
         $value = 666;
 
-        static::assertSame(
+        self::assertSame(
             0,
             $this->subject->getTargetgroupId()
         );
 
         $this->subject->setTargetgroupId($value);
 
-        static::assertSame(
+        self::assertSame(
             $value,
             $this->subject->getTargetgroupId()
         );
@@ -37,14 +37,14 @@ class ArticleIndividualizationItemTest extends StructTestCase
     {
         $value = 666;
 
-        static::assertSame(
+        self::assertSame(
             0,
             $this->subject->getArticleId()
         );
 
         $this->subject->setArticleId($value);
 
-        static::assertSame(
+        self::assertSame(
             $value,
             $this->subject->getArticleId()
         );

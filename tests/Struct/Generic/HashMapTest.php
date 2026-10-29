@@ -12,8 +12,8 @@ class HashMapTest extends StructTestCase
     {
         $this->subject = new HashMap(
             [
-                $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
-                $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
+                $this->createStub(HashMapItemInterface::class),
+                $this->createStub(HashMapItemInterface::class),
             ]
         );
     }
@@ -26,9 +26,9 @@ class HashMapTest extends StructTestCase
     public function testSetItemsCanSetArrayOfHashMapItem(): void
     {
         $hashMapItems = [
-            $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
-            $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
-            $this->getMockBuilder(HashMapItemInterface::class)->getMock(),
+            $this->createStub(HashMapItemInterface::class),
+            $this->createStub(HashMapItemInterface::class),
+            $this->createStub(HashMapItemInterface::class),
         ];
 
         self::assertContainsOnlyInstancesOf(HashMapItemInterface::class, $this->subject->setItems($hashMapItems)->getItems());

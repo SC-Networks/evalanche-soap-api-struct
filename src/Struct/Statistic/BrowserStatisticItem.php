@@ -27,11 +27,6 @@ class BrowserStatisticItem implements BrowserStatisticItemInterface
      */
     private $count;
 
-    /**
-     * @param string $description
-     * @param string $version
-     * @param int $count
-     */
     public function __construct(string $description = null, string $version = null, int $count = null)
     {
         $this->description = $description;
@@ -39,25 +34,16 @@ class BrowserStatisticItem implements BrowserStatisticItemInterface
         $this->count = $count;
     }
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @return string
-     */
     public function getVersion(): string
     {
         return $this->version;
     }
 
-    /**
-     * @return int
-     */
     public function getCount(): int
     {
         return $this->count;

@@ -74,20 +74,6 @@ class ProfileTrackingHistory implements ProfileTrackingHistoryInterface
      */
     private $referrerDomain;
 
-    /**
-     * @param int $id
-     * @param int $resourceId
-     * @param string $resourceName
-     * @param int $resourceTypeId
-     * @param int $subResourceId
-     * @param string $subResourceName
-     * @param int $subResourceTypeId
-     * @param string $subUrl
-     * @param int $profileId
-     * @param int $type
-     * @param int $timestamp
-     * @param int $referrerDomain
-     */
     public function __construct(
         int $id = null,
         int $resourceId = null,
@@ -116,97 +102,61 @@ class ProfileTrackingHistory implements ProfileTrackingHistoryInterface
         $this->referrerDomain = $referrerDomain;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return int
-     */
     public function getResourceId(): int
     {
         return $this->resourceId;
     }
 
-    /**
-     * @return string
-     */
     public function getResourceName(): string
     {
         return $this->resourceName;
     }
 
-    /**
-     * @return int
-     */
     public function getResourceTypeId(): int
     {
         return $this->resourceTypeId;
     }
 
-    /**
-     * @return int
-     */
     public function getSubResourceId(): int
     {
         return $this->subResourceId;
     }
 
-    /**
-     * @return string
-     */
     public function getSubResourceName(): string
     {
         return $this->subResourceName;
     }
 
-    /**
-     * @return int
-     */
     public function getSubResourceTypeId(): int
     {
         return $this->subResourceTypeId;
     }
 
-    /**
-     * @return string
-     */
     public function getSubUrl(): string
     {
         return $this->subUrl;
     }
 
-    /**
-     * @return int
-     */
     public function getProfileId(): int
     {
         return $this->profileId;
     }
 
-    /**
-     * @return int
-     */
     public function getType(): int
     {
         return $this->type;
     }
 
-    /**
-     * @return int
-     */
     public function getTimestamp(): int
     {
         return $this->timestamp;
     }
 
-    /**
-     * @return string
-     */
     public function getReferrerDomain(): string
     {
         return $this->referrerDomain;

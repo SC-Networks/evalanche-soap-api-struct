@@ -48,13 +48,7 @@ class PoolAttribute implements PoolAttributeInterface
     private $addOptions;
 
     /**
-     * @param int $id
-     * @param int $typeId
-     * @param string $name
-     * @param string $label
      * @param PoolAttributeOptionInterface[] $options
-     * @param bool $hasOptions
-     * @param bool $addOptions
      */
     public function __construct(
         int $id = null,
@@ -74,33 +68,21 @@ class PoolAttribute implements PoolAttributeInterface
         $this->addOptions = $addOptions;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return int
-     */
     public function getTypeId(): int
     {
         return $this->typeId;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getLabel(): string
     {
         return $this->label;
@@ -114,17 +96,11 @@ class PoolAttribute implements PoolAttributeInterface
         return $this->options;
     }
 
-    /**
-     * @return bool
-     */
     public function hasOptions(): bool
     {
         return $this->hasOptions;
     }
 
-    /**
-     * @return bool
-     */
     public function addOptions(): bool
     {
         return $this->addOptions;

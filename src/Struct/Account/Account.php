@@ -24,7 +24,6 @@ class Account implements AccountInterface
 
     /**
      * @param AccountingTypeInterface[] $accountingTypes
-     * @param DiscountInterface $discount
      */
     public function __construct(array $accountingTypes = null, DiscountInterface $discount = null)
     {
@@ -40,9 +39,6 @@ class Account implements AccountInterface
         return $this->accountingTypes;
     }
 
-    /**
-     * @return DiscountInterface
-     */
     public function getDiscount(): DiscountInterface
     {
         return $this->discount;

@@ -27,11 +27,6 @@ class MediaStatisticItem implements MediaStatisticItemInterface
      */
     private $uniqueClickCount;
 
-    /**
-     * @param string $name
-     * @param int $clickCount
-     * @param int $uniqueClickCount
-     */
     public function __construct(string $name = null, int $clickCount = null, int $uniqueClickCount = null)
     {
         $this->name = $name;
@@ -39,25 +34,16 @@ class MediaStatisticItem implements MediaStatisticItemInterface
         $this->uniqueClickCount = $uniqueClickCount;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return int
-     */
     public function getClickCount(): int
     {
         return $this->clickCount;
     }
 
-    /**
-     * @return int
-     */
     public function getUniqueClickCount(): int
     {
         return $this->uniqueClickCount;

@@ -21,19 +21,12 @@ class BlackList implements BlackListInterface
      */
     private $items;
 
-    /**
-     * @param int $mandatorId
-     * @param array $items
-     */
     public function __construct(int $mandatorId = null, array $items = null)
     {
         $this->mandatorId = $mandatorId;
         $this->items = $items;
     }
 
-    /**
-     * @return int
-     */
     public function getMandatorId(): int
     {
         return $this->mandatorId;

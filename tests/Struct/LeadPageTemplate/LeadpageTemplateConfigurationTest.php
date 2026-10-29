@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\LeadPageTemplate;
 
-use Scn\EvalancheSoapStruct\Struct\LeadPage\LeadpageConfiguration;
-use Scn\EvalancheSoapStruct\Struct\LeadPage\LeadpageConfigurationInterface;
 use Scn\EvalancheSoapStruct\StructTestCase;
 
 class LeadpageTemplateConfigurationTest extends StructTestCase
