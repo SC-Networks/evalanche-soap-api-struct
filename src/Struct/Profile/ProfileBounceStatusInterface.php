@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
 
@@ -22,5 +23,8 @@ interface ProfileBounceStatusInterface extends StructInterface
 
     public function getTimestamp(): int;
 
+    /**
+     * @throws StructNotHydratedException
+     */
     public function getProfileData(): HashMapInterface;
 }

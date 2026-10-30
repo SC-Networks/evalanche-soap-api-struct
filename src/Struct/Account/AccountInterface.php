@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
 
 /**
@@ -14,9 +15,12 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
 interface AccountInterface extends StructInterface
 {
     /**
-     * @return AccountingTypeInterface[]
+     * @return list<AccountingTypeInterface>
      */
     public function getAccountingTypes(): array;
 
+    /**
+     * @throws StructNotHydratedException
+     */
     public function getDiscount(): DiscountInterface;
 }

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
+
 /**
  * Represents one account.
  * Contains information about the given discount, as well as a list of AccountingTypes.
@@ -13,29 +15,15 @@ namespace Scn\EvalancheSoapStruct\Struct\Account;
 class Account implements AccountInterface
 {
     /**
-     * @var AccountingTypeInterface[]
-     */
-    private $accountingTypes;
-
-    /**
-     * @var DiscountInterface
-     */
-    private $discount;
-
-    /**
-     * @param AccountingTypeInterface[] $accountingTypes
+     * @param list<AccountingTypeInterface> $accountingTypes
      */
     public function __construct(
-        DiscountInterface $discount,
-        array $accountingTypes = [],
+        private null|DiscountInterface $discount = null,
+        private array $accountingTypes = [],
     ) {
-        $this->accountingTypes = $accountingTypes;
-        $this->discount = $discount;
     }
 
-    /**
-     * @return AccountingTypeInterface[]
-     */
+    /** @inheritDoc */
     public function getAccountingTypes(): array
     {
         return $this->accountingTypes;
@@ -43,6 +31,10 @@ class Account implements AccountInterface
 
     public function getDiscount(): DiscountInterface
     {
+        if (!$this->discount instanceof DiscountInterface) {
+            throw new StructNotHydratedException();
+        }
+
         return $this->discount;
     }
 }

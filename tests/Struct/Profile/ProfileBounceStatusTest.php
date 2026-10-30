@@ -2,7 +2,9 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\MockObject\Stub;
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
 use Scn\EvalancheSoapStruct\StructTestCase;
 
@@ -34,6 +36,14 @@ class ProfileBounceStatusTest extends StructTestCase
             66,
             1_531_381_896,
         );
+    }
+
+    #[Test]
+    public function getProfileDataThrowsIfNotSet(): void
+    {
+        self::expectException(StructNotHydratedException::class);
+
+        (new ProfileBounceStatus())->getProfileData();
     }
 
     public function testGetProfileIdCanReturnInt(): void

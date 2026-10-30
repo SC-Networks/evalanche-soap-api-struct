@@ -2,6 +2,8 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
+use PHPUnit\Framework\Attributes\Test;
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
 use Scn\EvalancheSoapStruct\StructTestCase;
 
 /**
@@ -32,5 +34,13 @@ class AccountTest extends StructTestCase
     public function testGetDiscountCanReturnInstanceOfDiscount(): void
     {
         self::assertInstanceOf(DiscountInterface::class, $this->subject->getDiscount());
+    }
+
+    #[Test]
+    public function getDiscountThrowsIfNotSet(): void
+    {
+        self::expectException(StructNotHydratedException::class);
+
+        (new Account())->getDiscount();
     }
 }

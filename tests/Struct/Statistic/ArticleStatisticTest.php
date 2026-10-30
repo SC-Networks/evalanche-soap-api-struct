@@ -2,6 +2,8 @@
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use PHPUnit\Framework\Attributes\Test;
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
 use Scn\EvalancheSoapStruct\StructTestCase;
 
 class ArticleStatisticTest extends StructTestCase
@@ -28,6 +30,46 @@ class ArticleStatisticTest extends StructTestCase
                 $this->createStub(LinkStatisticItemInterface::class),
             ]
         );
+    }
+
+    #[Test]
+    public function getOverallThrowsIfNotSet(): void
+    {
+        self::expectException(StructNotHydratedException::class);
+
+        (new ArticleStatistic())->getOverall();
+    }
+
+    #[Test]
+    public function getLandingpageThrowsIfNotSet(): void
+    {
+        self::expectException(StructNotHydratedException::class);
+
+        (new ArticleStatistic())->getLandingPage();
+    }
+
+    #[Test]
+    public function getPrintThrowsIfNotSet(): void
+    {
+        self::expectException(StructNotHydratedException::class);
+
+        (new ArticleStatistic())->getPrint();
+    }
+
+    #[Test]
+    public function getVoiceThrowsIfNotSet(): void
+    {
+        self::expectException(StructNotHydratedException::class);
+
+        (new ArticleStatistic())->getVoice();
+    }
+
+    #[Test]
+    public function getSocialSharingThrowsIfNotSet(): void
+    {
+        self::expectException(StructNotHydratedException::class);
+
+        (new ArticleStatistic())->getSocialSharing();
     }
 
     public function testGetIdCanReturnInt(): void

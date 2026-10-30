@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
+
 /**
  * Represents a article statistic. Contains information his name, as well as statistics about articles of all
  * output formats, Landinpage click statistics, PDF and Print click statistics,
@@ -14,73 +16,19 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 class ArticleStatistic implements ArticleStatisticInterface
 {
     /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var int
-     */
-    private $referenceId;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var FormatStatisticItem
-     */
-    private $overall;
-
-    /**
-     * @var FormatStatisticItem
-     */
-    private $landingPage;
-
-    /**
-     * @var FormatStatisticItem
-     */
-    private $print;
-
-    /**
-     * @var FormatStatisticItem
-     */
-    private $voice;
-
-    /**
-     * @var FormatStatisticItem
-     */
-    private $socialSharing;
-
-    /**
-     * @var LinkStatisticItem[]
-     */
-    private $links;
-
-    /**
-     * @param LinkStatisticItemInterface[] $links
+     * @param list<LinkStatisticItemInterface> $links
      */
     public function __construct(
-        FormatStatisticItemInterface $overall,
-        FormatStatisticItemInterface $landingPage,
-        FormatStatisticItemInterface $print,
-        FormatStatisticItemInterface $voice,
-        FormatStatisticItemInterface $socialSharing,
-        int $id = 0,
-        int $referenceId = 0,
-        string $name = '',
-        array $links = []
+        private null|FormatStatisticItemInterface $overall = null,
+        private null|FormatStatisticItemInterface $landingPage = null,
+        private null|FormatStatisticItemInterface $print = null,
+        private null|FormatStatisticItemInterface $voice = null,
+        private null|FormatStatisticItemInterface $socialSharing = null,
+        private int $id = 0,
+        private int $referenceId = 0,
+        private string $name = '',
+        private array $links = []
     ) {
-        $this->id = $id;
-        $this->referenceId = $referenceId;
-        $this->name = $name;
-        $this->overall = $overall;
-        $this->landingPage = $landingPage;
-        $this->print = $print;
-        $this->voice = $voice;
-        $this->socialSharing = $socialSharing;
-        $this->links = $links;
     }
 
     public function getId(): int
@@ -100,26 +48,41 @@ class ArticleStatistic implements ArticleStatisticInterface
 
     public function getOverall(): FormatStatisticItemInterface
     {
+        if (!$this->overall instanceof FormatStatisticItemInterface) {
+            throw new StructNotHydratedException();
+        }
         return $this->overall;
     }
 
     public function getLandingPage(): FormatStatisticItemInterface
     {
+        if (!$this->landingPage instanceof FormatStatisticItemInterface) {
+            throw new StructNotHydratedException();
+        }
         return $this->landingPage;
     }
 
     public function getPrint(): FormatStatisticItemInterface
     {
+        if (!$this->print instanceof FormatStatisticItemInterface) {
+            throw new StructNotHydratedException();
+        }
         return $this->print;
     }
 
     public function getVoice(): FormatStatisticItemInterface
     {
+        if (!$this->voice instanceof FormatStatisticItemInterface) {
+            throw new StructNotHydratedException();
+        }
         return $this->voice;
     }
 
     public function getSocialSharing(): FormatStatisticItemInterface
     {
+        if (!$this->socialSharing instanceof FormatStatisticItemInterface) {
+            throw new StructNotHydratedException();
+        }
         return $this->socialSharing;
     }
 
