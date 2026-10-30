@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Profile;
 
-use Scn\EvalancheSoapStruct\Struct\Generic\HashMap;
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
 use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
 
 /**
@@ -15,43 +15,13 @@ use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
  */
 class ProfileBounceStatus implements ProfileBounceStatusInterface
 {
-    /**
-     * @var int
-     */
-    private $profileId;
-
-    /**
-     * @var int
-     */
-    private $mailingId;
-
-    /**
-     * @var int
-     */
-    private $status;
-
-    /**
-     * @var int
-     */
-    private $timestamp;
-
-    /**
-     * @var HashMap
-     */
-    private $profileData;
-
     public function __construct(
-        HashMapInterface $profileData,
-        int $profileId = 0,
-        int $mailingId = 0,
-        int $status = 0,
-        int $timestamp = 0,
+        private null|HashMapInterface $profileData = null,
+        private int $profileId = 0,
+        private int $mailingId = 0,
+        private int $status = 0,
+        private int $timestamp = 0,
     ) {
-        $this->profileId = $profileId;
-        $this->mailingId = $mailingId;
-        $this->status = $status;
-        $this->timestamp = $timestamp;
-        $this->profileData = $profileData;
     }
 
     public function getProfileId(): int
@@ -76,6 +46,9 @@ class ProfileBounceStatus implements ProfileBounceStatusInterface
 
     public function getProfileData(): HashMapInterface
     {
+        if (!$this->profileData instanceof HashMapInterface) {
+            throw new StructNotHydratedException();
+        }
         return $this->profileData;
     }
 }

@@ -31,14 +31,14 @@ parameters:
 			path: src/Struct/Generic/JobResult.php
 
 		-
-			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Generic\\MassUpdateResult\:\:\$created \(Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMap\) does not accept Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMapInterface\.$#'
-			identifier: assign.propertyType
+			message: '#^Method Scn\\EvalancheSoapStruct\\Struct\\Generic\\MassUpdateResult\:\:getCreated\(\) should return Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMap but returns Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMapInterface\.$#'
+			identifier: return.type
 			count: 1
 			path: src/Struct/Generic/MassUpdateResult.php
 
 		-
-			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Generic\\MassUpdateResult\:\:\$updated \(Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMap\) does not accept Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMapInterface\.$#'
-			identifier: assign.propertyType
+			message: '#^Method Scn\\EvalancheSoapStruct\\Struct\\Generic\\MassUpdateResult\:\:getUpdated\(\) should return Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMap but returns Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMapInterface\.$#'
+			identifier: return.type
 			count: 1
 			path: src/Struct/Generic/MassUpdateResult.php
 
@@ -107,12 +107,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: src/Struct/Pool/PoolAttribute.php
-
-		-
-			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Profile\\ProfileBounceStatus\:\:\$profileData \(Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMap\) does not accept Scn\\EvalancheSoapStruct\\Struct\\Generic\\HashMapInterface\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: src/Struct/Profile/ProfileBounceStatus.php
 
 		-
 			message: '#^Method Scn\\EvalancheSoapStruct\\Struct\\SmartLink\\SmartLinkConfiguration\:\:__construct\(\) has parameter \$poolAttributes with no value type specified in iterable type array\.$#'
@@ -185,42 +179,6 @@ parameters:
 			identifier: missingType.iterableValue
 			count: 1
 			path: src/Struct/SmartLink/SmartLinkConfigurationInterface.php
-
-		-
-			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Statistic\\ArticleStatistic\:\:\$landingPage \(Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItem\) does not accept Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItemInterface\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: src/Struct/Statistic/ArticleStatistic.php
-
-		-
-			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Statistic\\ArticleStatistic\:\:\$links \(array\<Scn\\EvalancheSoapStruct\\Struct\\Statistic\\LinkStatisticItem\>\) does not accept array\<Scn\\EvalancheSoapStruct\\Struct\\Statistic\\LinkStatisticItemInterface\>\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: src/Struct/Statistic/ArticleStatistic.php
-
-		-
-			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Statistic\\ArticleStatistic\:\:\$overall \(Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItem\) does not accept Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItemInterface\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: src/Struct/Statistic/ArticleStatistic.php
-
-		-
-			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Statistic\\ArticleStatistic\:\:\$print \(Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItem\) does not accept Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItemInterface\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: src/Struct/Statistic/ArticleStatistic.php
-
-		-
-			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Statistic\\ArticleStatistic\:\:\$socialSharing \(Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItem\) does not accept Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItemInterface\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: src/Struct/Statistic/ArticleStatistic.php
-
-		-
-			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Statistic\\ArticleStatistic\:\:\$voice \(Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItem\) does not accept Scn\\EvalancheSoapStruct\\Struct\\Statistic\\FormatStatisticItemInterface\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: src/Struct/Statistic/ArticleStatistic.php
 
 		-
 			message: '#^Property Scn\\EvalancheSoapStruct\\Struct\\Statistic\\ClientStatistic\:\:\$browsers \(array\<Scn\\EvalancheSoapStruct\\Struct\\Statistic\\BrowserStatisticItem\>\) does not accept array\<Scn\\EvalancheSoapStruct\\Struct\\Statistic\\BrowserStatisticItemInterface\>\.$#'

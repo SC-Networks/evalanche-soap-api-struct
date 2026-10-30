@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
 use Scn\EvalancheSoapStruct\Struct\StructInterface;
 
 /**
@@ -14,12 +15,12 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
 interface MassUpdateResultInterface extends StructInterface
 {
     /**
-     * @return HashMap
+     * @throws StructNotHydratedException
      */
     public function getUpdated(): HashMapInterface;
 
     /**
-     * @return HashMap
+     * @throws StructNotHydratedException
      */
     public function getCreated(): HashMapInterface;
 

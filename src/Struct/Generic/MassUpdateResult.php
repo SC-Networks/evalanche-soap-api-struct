@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Scn\EvalancheSoapStruct\Struct\Generic;
 
+use Scn\EvalancheSoapStruct\Struct\Exception\StructNotHydratedException;
+
 /**
  * Result of a mass profile update.
  * \<updated> and \<created> are HashMaps:
@@ -14,39 +16,15 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 class MassUpdateResult implements MassUpdateResultInterface
 {
     /**
-     * @var HashMap
-     */
-    private $updated;
-
-    /**
-     * @var HashMap
-     */
-    private $created;
-
-    /**
-     * @var string[]
-     */
-    private $ignored;
-
-    /**
-     * @var int[]
-     */
-    private $error;
-
-    /**
      * @param string[] $ignored
      * @param int[] $error
      */
     public function __construct(
-        HashMapInterface $updated,
-        HashMapInterface $created,
-        array $ignored = [],
-        array $error = []
+        private null|HashMapInterface $updated = null,
+        private null|HashMapInterface $created = null,
+        private array $ignored = [],
+        private array $error = []
     ) {
-        $this->updated = $updated;
-        $this->created = $created;
-        $this->ignored = $ignored;
-        $this->error = $error;
     }
 
     /**
@@ -54,6 +32,9 @@ class MassUpdateResult implements MassUpdateResultInterface
      */
     public function getUpdated(): HashMapInterface
     {
+        if (!$this->updated instanceof HashMapInterface) {
+            throw new StructNotHydratedException();
+        }
         return $this->updated;
     }
 
@@ -62,6 +43,9 @@ class MassUpdateResult implements MassUpdateResultInterface
      */
     public function getCreated(): HashMapInterface
     {
+        if (!$this->created instanceof HashMapInterface) {
+            throw new StructNotHydratedException();
+        }
         return $this->created;
     }
 
