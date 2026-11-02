@@ -12,91 +12,49 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class JobHandle implements JobHandleInterface
 {
-    /**
-     * @var string
-     */
-    private $id;
-
-    /**
-     * @var int
-     */
-    private $status;
-
-    /**
-     * @var string
-     */
-    private $statusDescription;
-
-    /**
-     * @var string
-     */
-    private $namespace;
-
-    /**
-     * @var string
-     */
-    private $method;
-
-    /**
-     * @var int
-     */
-    private $resourceId;
-
-    /**
-     * @var int
-     */
-    private $resultChunks;
-
     public function __construct(
-        string $id = '',
-        int $status = 0,
-        string $statusDescription = '',
-        string $namespace = '',
-        string $method = '',
-        int $resourceId = 0,
-        int $resultChunks = 0
+        private null|string $id = null,
+        private null|int $status = null,
+        private null|string $statusDescription = null,
+        private null|string $namespace = null,
+        private null|string $method = null,
+        private null|int $resourceId = null,
+        private null|int $resultChunks = null
     ) {
-        $this->id = $id;
-        $this->status = $status;
-        $this->statusDescription = $statusDescription;
-        $this->namespace = $namespace;
-        $this->method = $method;
-        $this->resourceId = $resourceId;
-        $this->resultChunks = $resultChunks;
     }
 
     public function getId(): string
     {
-        return $this->id;
+        return (string) $this->id;
     }
 
     public function getStatus(): int
     {
-        return $this->status;
+        return (int) $this->status;
     }
 
     public function getStatusDescription(): string
     {
-        return $this->statusDescription;
+        return (string) $this->statusDescription;
     }
 
     public function getNamespace(): string
     {
-        return $this->namespace;
+        return (string) $this->namespace;
     }
 
     public function getMethod(): string
     {
-        return $this->method;
+        return (string) $this->method;
     }
 
     public function getResourceId(): int
     {
-        return $this->resourceId;
+        return (int) $this->resourceId;
     }
 
     public function getResultChunks(): int
     {
-        return $this->resultChunks;
+        return (int) $this->resultChunks;
     }
 }

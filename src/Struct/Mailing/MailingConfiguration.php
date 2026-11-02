@@ -13,292 +13,292 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 class MailingConfiguration implements MailingConfigurationInterface
 {
     /**
-     * @var string
+     * @var null|string
      */
     protected $externalTrackingCode;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $campaignId;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $externalXmlUrl;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $salutationFemale;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $salutationMale;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $salutationCompany;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $salutationFamily;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $salutationOther;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $salutationDivers;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $senderEmail;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $senderName;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $replyName;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $replyEmail;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $grantUrl;
 
-    /** @var string */
+    /** @var null|string */
     protected $grantTrackingUrl;
 
-    /** @var string */
+    /** @var null|string */
     protected $revokeTrackingUrl;
 
-    /** @var string */
+    /** @var null|string */
     protected $revokeConfirmationUrl;
 
-    /** @var bool */
+    /** @var null|bool */
     protected $revokeConfirmationActive;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $revokeUrl;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield0;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield1;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield2;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield3;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield4;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield5;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield6;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield7;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield8;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inputfield9;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea0;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea1;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea2;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea3;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea4;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea5;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea6;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea7;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea8;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $textarea9;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea0;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea1;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea2;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea3;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea4;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea5;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea6;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea7;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea8;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $htmlarea9;
 
     public function __construct(
-        string $externalTrackingCode = '',
-        string $campaignId = '',
-        string $externalXmlUrl = '',
-        string $salutationFemale = '',
-        string $salutationMale = '',
-        string $salutationCompany = '',
-        string $salutationFamily = '',
-        string $salutationOther = '',
-        string $salutationDivers = '',
-        string $senderEmail = '',
-        string $senderName = '',
-        string $replyName = '',
-        string $replyEmail = '',
-        string $grantUrl = '',
-        string $revokeUrl = '',
-        string $inputfield0 = '',
-        string $inputfield1 = '',
-        string $inputfield2 = '',
-        string $inputfield3 = '',
-        string $inputfield4 = '',
-        string $inputfield5 = '',
-        string $inputfield6 = '',
-        string $inputfield7 = '',
-        string $inputfield8 = '',
-        string $inputfield9 = '',
-        string $textarea0 = '',
-        string $textarea1 = '',
-        string $textarea2 = '',
-        string $textarea3 = '',
-        string $textarea4 = '',
-        string $textarea5 = '',
-        string $textarea6 = '',
-        string $textarea7 = '',
-        string $textarea8 = '',
-        string $textarea9 = '',
-        string $htmlarea0 = '',
-        string $htmlarea1 = '',
-        string $htmlarea2 = '',
-        string $htmlarea3 = '',
-        string $htmlarea4 = '',
-        string $htmlarea5 = '',
-        string $htmlarea6 = '',
-        string $htmlarea7 = '',
-        string $htmlarea8 = '',
-        string $htmlarea9 = '',
-        string $revokeTrackingUrl = '',
-        string $grantTrackingUrl = '',
-        string $revokeConfirmationUrl = '',
-        bool $revokeConfirmationActive = false
+        null|string $externalTrackingCode = null,
+        null|string $campaignId = null,
+        null|string $externalXmlUrl = null,
+        null|string $salutationFemale = null,
+        null|string $salutationMale = null,
+        null|string $salutationCompany = null,
+        null|string $salutationFamily = null,
+        null|string $salutationOther = null,
+        null|string $salutationDivers = null,
+        null|string $senderEmail = null,
+        null|string $senderName = null,
+        null|string $replyName = null,
+        null|string $replyEmail = null,
+        null|string $grantUrl = null,
+        null|string $revokeUrl = null,
+        null|string $inputfield0 = null,
+        null|string $inputfield1 = null,
+        null|string $inputfield2 = null,
+        null|string $inputfield3 = null,
+        null|string $inputfield4 = null,
+        null|string $inputfield5 = null,
+        null|string $inputfield6 = null,
+        null|string $inputfield7 = null,
+        null|string $inputfield8 = null,
+        null|string $inputfield9 = null,
+        null|string $textarea0 = null,
+        null|string $textarea1 = null,
+        null|string $textarea2 = null,
+        null|string $textarea3 = null,
+        null|string $textarea4 = null,
+        null|string $textarea5 = null,
+        null|string $textarea6 = null,
+        null|string $textarea7 = null,
+        null|string $textarea8 = null,
+        null|string $textarea9 = null,
+        null|string $htmlarea0 = null,
+        null|string $htmlarea1 = null,
+        null|string $htmlarea2 = null,
+        null|string $htmlarea3 = null,
+        null|string $htmlarea4 = null,
+        null|string $htmlarea5 = null,
+        null|string $htmlarea6 = null,
+        null|string $htmlarea7 = null,
+        null|string $htmlarea8 = null,
+        null|string $htmlarea9 = null,
+        null|string $revokeTrackingUrl = null,
+        null|string $grantTrackingUrl = null,
+        null|string $revokeConfirmationUrl = null,
+        null|bool $revokeConfirmationActive = null
     ) {
         $this->externalTrackingCode = $externalTrackingCode;
         $this->campaignId = $campaignId;
@@ -353,7 +353,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getExternalTrackingCode(): string
     {
-        return $this->externalTrackingCode;
+        return (string) $this->externalTrackingCode;
     }
 
     public function setExternalTrackingCode(string $externalTrackingCode): MailingConfiguration
@@ -364,7 +364,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getCampaignId(): string
     {
-        return $this->campaignId;
+        return (string) $this->campaignId;
     }
 
     public function setCampaignId(string $campaignId): MailingConfiguration
@@ -375,7 +375,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getExternalXmlUrl(): string
     {
-        return $this->externalXmlUrl;
+        return (string) $this->externalXmlUrl;
     }
 
     public function setExternalXmlUrl(string $externalXmlUrl): MailingConfiguration
@@ -386,7 +386,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getSalutationFemale(): string
     {
-        return $this->salutationFemale;
+        return (string) $this->salutationFemale;
     }
 
     public function setSalutationFemale(string $salutationFemale): MailingConfiguration
@@ -397,7 +397,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getSalutationMale(): string
     {
-        return $this->salutationMale;
+        return (string) $this->salutationMale;
     }
 
     public function setSalutationMale(string $salutationMale): MailingConfiguration
@@ -408,7 +408,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getSalutationCompany(): string
     {
-        return $this->salutationCompany;
+        return (string) $this->salutationCompany;
     }
 
     public function setSalutationCompany(string $salutationCompany): MailingConfiguration
@@ -419,7 +419,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getSalutationFamily(): string
     {
-        return $this->salutationFamily;
+        return (string) $this->salutationFamily;
     }
 
     public function setSalutationFamily(string $salutationFamily): MailingConfiguration
@@ -430,7 +430,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getSalutationOther(): string
     {
-        return $this->salutationOther;
+        return (string) $this->salutationOther;
     }
 
     public function setSalutationOther(string $salutationOther): MailingConfiguration
@@ -441,7 +441,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getSalutationDivers(): string
     {
-        return $this->salutationOther;
+        return (string) $this->salutationOther;
     }
 
     public function setSalutationDivers(string $salutationOther): MailingConfiguration
@@ -452,7 +452,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getSenderEmail(): string
     {
-        return $this->senderEmail;
+        return (string) $this->senderEmail;
     }
 
     public function setSenderEmail(string $senderEmail): MailingConfiguration
@@ -463,7 +463,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getSenderName(): string
     {
-        return $this->senderName;
+        return (string) $this->senderName;
     }
 
     public function setSenderName(string $senderName): MailingConfiguration
@@ -474,7 +474,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getReplyName(): string
     {
-        return $this->replyName;
+        return (string) $this->replyName;
     }
 
     public function setReplyName(string $replyName): MailingConfiguration
@@ -485,7 +485,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getReplyEmail(): string
     {
-        return $this->replyEmail;
+        return (string) $this->replyEmail;
     }
 
     public function setReplyEmail(string $replyEmail): MailingConfiguration
@@ -496,7 +496,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getGrantUrl(): string
     {
-        return $this->grantUrl;
+        return (string) $this->grantUrl;
     }
 
     public function setGrantUrl(string $grantUrl): MailingConfiguration
@@ -507,7 +507,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getRevokeUrl(): string
     {
-        return $this->revokeUrl;
+        return (string) $this->revokeUrl;
     }
 
     public function setRevokeUrl(string $revokeUrl): MailingConfiguration
@@ -518,7 +518,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getGrantTrackingUrl(): string
     {
-        return $this->grantTrackingUrl;
+        return (string) $this->grantTrackingUrl;
     }
 
     public function setGrantTrackingUrl(string $grantTrackingUrl): MailingConfiguration
@@ -529,7 +529,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getRevokeTrackingUrl(): string
     {
-        return $this->revokeTrackingUrl;
+        return (string) $this->revokeTrackingUrl;
     }
 
     public function setRevokeTrackingUrl(string $revokeTrackingUrl): MailingConfiguration
@@ -540,7 +540,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getRevokeConfirmationUrl(): string
     {
-        return $this->revokeConfirmationUrl;
+        return (string) $this->revokeConfirmationUrl;
     }
 
     public function setRevokeConfirmationUrl(string $revokeConfirmationUrl): MailingConfiguration
@@ -551,7 +551,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getRevokeConfirmationActive(): bool
     {
-        return $this->revokeConfirmationActive;
+        return (bool) $this->revokeConfirmationActive;
     }
 
     public function setRevokeConfirmationActive(bool $revokeConfirmationActive): MailingConfiguration
@@ -562,7 +562,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield0(): string
     {
-        return $this->inputfield0;
+        return (string) $this->inputfield0;
     }
 
     public function setInputfield0(string $inputfield0): MailingConfiguration
@@ -573,7 +573,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield1(): string
     {
-        return $this->inputfield1;
+        return (string) $this->inputfield1;
     }
 
     public function setInputfield1(string $inputfield1): MailingConfiguration
@@ -584,7 +584,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield2(): string
     {
-        return $this->inputfield2;
+        return (string) $this->inputfield2;
     }
 
     public function setInputfield2(string $inputfield2): MailingConfiguration
@@ -595,7 +595,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield3(): string
     {
-        return $this->inputfield3;
+        return (string) $this->inputfield3;
     }
 
     public function setInputfield3(string $inputfield3): MailingConfiguration
@@ -606,7 +606,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield4(): string
     {
-        return $this->inputfield4;
+        return (string) $this->inputfield4;
     }
 
     public function setInputfield4(string $inputfield4): MailingConfiguration
@@ -617,7 +617,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield5(): string
     {
-        return $this->inputfield5;
+        return (string) $this->inputfield5;
     }
 
     public function setInputfield5(string $inputfield5): MailingConfiguration
@@ -628,7 +628,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield6(): string
     {
-        return $this->inputfield6;
+        return (string) $this->inputfield6;
     }
 
     public function setInputfield6(string $inputfield6): MailingConfiguration
@@ -639,7 +639,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield7(): string
     {
-        return $this->inputfield7;
+        return (string) $this->inputfield7;
     }
 
     public function setInputfield7(string $inputfield7): MailingConfiguration
@@ -650,7 +650,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield8(): string
     {
-        return $this->inputfield8;
+        return (string) $this->inputfield8;
     }
 
     public function setInputfield8(string $inputfield8): MailingConfiguration
@@ -661,7 +661,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getInputfield9(): string
     {
-        return $this->inputfield9;
+        return (string) $this->inputfield9;
     }
 
     public function setInputfield9(string $inputfield9): MailingConfiguration
@@ -672,7 +672,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea0(): string
     {
-        return $this->textarea0;
+        return (string) $this->textarea0;
     }
 
     public function setTextarea0(string $textarea0): MailingConfiguration
@@ -683,7 +683,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea1(): string
     {
-        return $this->textarea1;
+        return (string) $this->textarea1;
     }
 
     public function setTextarea1(string $textarea1): MailingConfiguration
@@ -694,7 +694,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea2(): string
     {
-        return $this->textarea2;
+        return (string) $this->textarea2;
     }
 
     public function setTextarea2(string $textarea2): MailingConfiguration
@@ -705,7 +705,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea3(): string
     {
-        return $this->textarea3;
+        return (string) $this->textarea3;
     }
 
     public function setTextarea3(string $textarea3): MailingConfiguration
@@ -716,7 +716,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea4(): string
     {
-        return $this->textarea4;
+        return (string) $this->textarea4;
     }
 
     public function setTextarea4(string $textarea4): MailingConfiguration
@@ -727,7 +727,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea5(): string
     {
-        return $this->textarea5;
+        return (string) $this->textarea5;
     }
 
     public function setTextarea5(string $textarea5): MailingConfiguration
@@ -738,7 +738,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea6(): string
     {
-        return $this->textarea6;
+        return (string) $this->textarea6;
     }
 
     public function setTextarea6(string $textarea6): MailingConfiguration
@@ -749,7 +749,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea7(): string
     {
-        return $this->textarea7;
+        return (string) $this->textarea7;
     }
 
     public function setTextarea7(string $textarea7): MailingConfiguration
@@ -760,7 +760,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea8(): string
     {
-        return $this->textarea8;
+        return (string) $this->textarea8;
     }
 
     public function setTextarea8(string $textarea8): MailingConfiguration
@@ -771,7 +771,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getTextarea9(): string
     {
-        return $this->textarea9;
+        return (string) $this->textarea9;
     }
 
     public function setTextarea9(string $textarea9): MailingConfiguration
@@ -782,7 +782,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea0(): string
     {
-        return $this->htmlarea0;
+        return (string) $this->htmlarea0;
     }
 
     public function setHtmlarea0(string $htmlarea0): MailingConfiguration
@@ -793,7 +793,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea1(): string
     {
-        return $this->htmlarea1;
+        return (string) $this->htmlarea1;
     }
 
     public function setHtmlarea1(string $htmlarea1): MailingConfiguration
@@ -804,7 +804,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea2(): string
     {
-        return $this->htmlarea2;
+        return (string) $this->htmlarea2;
     }
 
     public function setHtmlarea2(string $htmlarea2): MailingConfiguration
@@ -815,7 +815,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea3(): string
     {
-        return $this->htmlarea3;
+        return (string) $this->htmlarea3;
     }
 
     public function setHtmlarea3(string $htmlarea3): MailingConfiguration
@@ -826,7 +826,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea4(): string
     {
-        return $this->htmlarea4;
+        return (string) $this->htmlarea4;
     }
 
     public function setHtmlarea4(string $htmlarea4): MailingConfiguration
@@ -837,7 +837,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea5(): string
     {
-        return $this->htmlarea5;
+        return (string) $this->htmlarea5;
     }
 
     public function setHtmlarea5(string $htmlarea5): MailingConfiguration
@@ -848,7 +848,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea6(): string
     {
-        return $this->htmlarea6;
+        return (string) $this->htmlarea6;
     }
 
     public function setHtmlarea6(string $htmlarea6): MailingConfiguration
@@ -859,7 +859,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea7(): string
     {
-        return $this->htmlarea7;
+        return (string) $this->htmlarea7;
     }
 
     public function setHtmlarea7(string $htmlarea7): MailingConfiguration
@@ -870,7 +870,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea8(): string
     {
-        return $this->htmlarea8;
+        return (string) $this->htmlarea8;
     }
 
     public function setHtmlarea8(string $htmlarea8): MailingConfiguration
@@ -881,7 +881,7 @@ class MailingConfiguration implements MailingConfigurationInterface
 
     public function getHtmlarea9(): string
     {
-        return $this->htmlarea9;
+        return (string) $this->htmlarea9;
     }
 
     public function setHtmlarea9(string $htmlarea9): MailingConfiguration

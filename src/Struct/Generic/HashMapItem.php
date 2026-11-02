@@ -11,30 +11,20 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class HashMapItem implements HashMapItemInterface
 {
-    /**
-     * @var string
-     */
-    private $key;
-
-    /**
-     * @var string
-     */
-    private $value;
-
-    public function __construct(string $key = '', string $value = '')
-    {
-        $this->key = $key;
-        $this->value = $value;
+    public function __construct(
+        private null|string $key = null,
+        private null|string $value = null
+    ) {
     }
 
     public function getKey(): string
     {
-        return $this->key;
+        return (string) $this->key;
     }
 
     public function getValue(): string
     {
-        return $this->value;
+        return (string) $this->value;
     }
 
     public function setValue(string $value): HashMapItemInterface

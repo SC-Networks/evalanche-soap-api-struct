@@ -21,6 +21,7 @@ interface SmartLinkConfigurationInterface extends StructInterface
 
     public function getRestrictionTargetGroupId(): int;
 
+    /** @return array<int, int> */
     public function getRestrictionUserAgents(): array;
 
     public function getMilestoneId(): int;
@@ -31,7 +32,13 @@ interface SmartLinkConfigurationInterface extends StructInterface
 
     public function getActivateTracking(): bool;
 
+    /**
+     * @return list<SmartLinkScoringConfigurationInterface>
+     */
     public function getScoringConfigs(): array;
 
+    /**
+     * @return list<SmartLinkPoolConfigurationInterface>
+     */
     public function getPoolAttributes(): array;
 }

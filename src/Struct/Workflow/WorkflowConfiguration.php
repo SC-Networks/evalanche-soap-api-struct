@@ -9,27 +9,21 @@ namespace Scn\EvalancheSoapStruct\Struct\Workflow;
  */
 class WorkflowConfiguration implements WorkflowConfigurationInterface
 {
-    /** @var string The current config version id */
-    private $configVersion;
-    
-    /** @var string The configuration as json encoded string */
-    private $configuration;
-
     public function __construct(
-        string $configVersion = '',
-        string $configuration = ''
+        /** @var null|string The current config version id */
+        private null|string $configVersion = null,
+        /** @var null|string The configuration as json encoded string */
+        private null|string $configuration = null
     ) {
-        $this->configVersion = $configVersion;
-        $this->configuration = $configuration;
     }
     
     public function getConfigVersion(): string
     {
-        return $this->configVersion;
+        return (string) $this->configVersion;
     }
     
     public function getConfiguration(): string
     {
-        return $this->configuration;
+        return (string) $this->configuration;
     }
 }

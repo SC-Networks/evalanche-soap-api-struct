@@ -13,115 +13,55 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 class JobResult implements JobResultInterface
 {
     /**
-     * @var string
-     */
-    private $id;
-
-    /**
-     * @var int
-     */
-    private $status;
-
-    /**
-     * @var string
-     */
-    private $statusDescription;
-
-    /**
-     * @var string
-     */
-    private $namespace;
-
-    /**
-     * @var string
-     */
-    private $method;
-
-    /**
-     * @var int
-     */
-    private $resourceId;
-
-    /**
-     * @var int
-     */
-    private $resultChunks;
-
-    /**
-     * @var HashMap[]
-     */
-    private $result;
-
-    /**
-     * @var int
-     */
-    private $chunksLeft;
-
-    /**
-     * @var int
-     */
-    private $resultSize;
-
-    /**
      * @param HashMapInterface[] $result
      */
     public function __construct(
-        string $id = '',
-        int $status = 0,
-        string $statusDescription = '',
-        string $namespace = '',
-        string $method = '',
-        int $resourceId = 0,
-        int $resultChunks = 0,
-        array $result = [],
-        int $chunksLeft = 0,
-        int $resultSize = 0
+        private null|string $id = null,
+        private null|int $status = null,
+        private null|string $statusDescription = null,
+        private null|string $namespace = null,
+        private null|string $method = null,
+        private null|int $resourceId = null,
+        private null|int $resultChunks = null,
+        private array $result = [],
+        private null|int $chunksLeft = null,
+        private null|int $resultSize = null
     ) {
-        $this->id = $id;
-        $this->status = $status;
-        $this->statusDescription = $statusDescription;
-        $this->namespace = $namespace;
-        $this->method = $method;
-        $this->resourceId = $resourceId;
-        $this->resultChunks = $resultChunks;
-        $this->result = $result;
-        $this->chunksLeft = $chunksLeft;
-        $this->resultSize = $resultSize;
     }
 
     public function getId(): string
     {
-        return $this->id;
+        return (string) $this->id;
     }
 
     public function getStatus(): int
     {
-        return $this->status;
+        return (int) $this->status;
     }
 
     public function getStatusDescription(): string
     {
-        return $this->statusDescription;
+        return (string) $this->statusDescription;
     }
 
     public function getNamespace(): string
     {
-        return $this->namespace;
+        return (string) $this->namespace;
     }
 
     public function getMethod(): string
     {
-        return $this->method;
+        return (string) $this->method;
     }
 
     public function getResourceId(): int
     {
-        return $this->resourceId;
+        return (int) $this->resourceId;
     }
 
     public function getResultChunks(): int
     {
-        return $this->resultChunks;
+        return (int) $this->resultChunks;
     }
 
     /**
@@ -134,11 +74,11 @@ class JobResult implements JobResultInterface
 
     public function getChunksLeft(): int
     {
-        return $this->chunksLeft;
+        return (int) $this->chunksLeft;
     }
 
     public function getResultSize(): int
     {
-        return $this->resultSize;
+        return (int) $this->resultSize;
     }
 }

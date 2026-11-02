@@ -8,20 +8,15 @@ use PHPUnit\Framework\TestCase;
 
 class ContentGenerationVariableTest extends TestCase
 {
-    /** @var string */
-    private $name = 'some-name';
+    private string $name = 'some-name';
 
-    /** @var string */
-    private $label = 'some-label';
+    private string $label = 'some-label';
 
-    /** @var string */
-    private $default_value = 'some-default-value';
+    private string $default_value = 'some-default-value';
 
-    /** @var string */
-    private $help_text = 'some-help-text';
+    private string $help_text = 'some-help-text';
 
-    /** @var ContentGenerationVariable */
-    private $subject;
+    private ContentGenerationVariable $subject;
 
     protected function setUp(): void
     {

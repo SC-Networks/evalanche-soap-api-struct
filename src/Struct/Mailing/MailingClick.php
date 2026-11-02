@@ -12,79 +12,43 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingClick implements MailingClickInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var int
-     */
-    private $profileId;
-
-    /**
-     * @var int
-     */
-    private $timestamp;
-
-    /**
-     * @var int
-     */
-    private $linkId;
-
-    /**
-     * @var int
-     */
-    private $linkTypeId;
-
-    /**
-     * @var int
-     */
-    private $parentId;
-
     public function __construct(
-        int $id = 0,
-        int $profileId = 0,
-        int $timestamp = 0,
-        int $linkId = 0,
-        int $linkTypeId = 0,
-        int $parentId = 0
+        private null|int $id = null,
+        private null|int $profileId = null,
+        private null|int $timestamp = null,
+        private null|int $linkId = null,
+        private null|int $linkTypeId = null,
+        private null|int $parentId = null
     ) {
-        $this->id = $id;
-        $this->profileId = $profileId;
-        $this->timestamp = $timestamp;
-        $this->linkId = $linkId;
-        $this->linkTypeId = $linkTypeId;
-        $this->parentId = $parentId;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getProfileId(): int
     {
-        return $this->profileId;
+        return (int) $this->profileId;
     }
 
     public function getTimestamp(): int
     {
-        return $this->timestamp;
+        return (int) $this->timestamp;
     }
 
     public function getLinkId(): int
     {
-        return $this->linkId;
+        return (int) $this->linkId;
     }
 
     public function getLinkTypeId(): int
     {
-        return $this->linkTypeId;
+        return (int) $this->linkTypeId;
     }
 
     public function getParentId(): int
     {
-        return $this->parentId;
+        return (int) $this->parentId;
     }
 }

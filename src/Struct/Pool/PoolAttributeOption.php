@@ -12,29 +12,19 @@ namespace Scn\EvalancheSoapStruct\Struct\Pool;
  */
 class PoolAttributeOption implements PoolAttributeOptionInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $value;
-
-    public function __construct(int $id = 0, string $value = '')
-    {
-        $this->id = $id;
-        $this->value = $value;
+    public function __construct(
+        private null|int $id = null,
+        private null|string $value = null
+    ) {
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getValue(): string
     {
-        return $this->value;
+        return (string) $this->value;
     }
 }

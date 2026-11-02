@@ -13,110 +13,53 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class FormStatistic implements FormStatisticInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var string
-     */
-    private $url;
-
-    /**
-     * @var int
-     */
-    private $typeId;
-
-    /**
-     * @var int
-     */
-    private $folderId;
-
-    /**
-     * @var int
-     */
-    private $mandatorId;
-
-    /**
-     *
-     * @var bool Is this a form alias
-     */
-    private $isAlias;
-
-    /**
-     * @var int Sum of impressions
-     */
-    private $impressions;
-
-    /**
-     * @var int Sum of succeeded form submissions
-     */
-    private $succeeded;
-
-    /**
-     * @var int Sum of identity errors
-     */
-    private $identityErrorCount;
-
-    /**
-     * @var int Sum of duplication errors
-     */
-    private $duplicationErrorCount;
-
-    /**
-     * @var int Sum of of validation errors
-     */
-    private $validationErrorCount;
-
-    /**
-     * @var int Sum of errors becaus of not filled mandatory fields
-     */
-    private $mandatoryErrorCount;
-
     public function __construct(
-        int $id = 0,
-        string $name = '',
-        string $url = '',
-        int $typeId = 0,
-        int $folderId = 0,
-        int $mandatorId = 0,
-        bool $isAlias = false,
-        int $impressions = 0,
-        int $succeeded = 0,
-        int $identityErrorCount = 0,
-        int $duplicationErrorCount = 0,
-        int $validationErrorCount = 0,
-        int $mandatoryErrorCount = 0
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|string $url = null,
+        private null|int $typeId = null,
+        private null|int $folderId = null,
+        private null|int $mandatorId = null,
+        /**
+         *
+         * @var null|bool Is this a form alias
+         */
+        private null|bool $isAlias = null,
+        /**
+         * @var null|int Sum of impressions
+         */
+        private null|int $impressions = null,
+        /**
+         * @var null|int Sum of succeeded form submissions
+         */
+        private null|int $succeeded = null,
+        /**
+         * @var null|int Sum of identity errors
+         */
+        private null|int $identityErrorCount = null,
+        /**
+         * @var null|int Sum of duplication errors
+         */
+        private null|int $duplicationErrorCount = null,
+        /**
+         * @var null|int Sum of of validation errors
+         */
+        private null|int $validationErrorCount = null,
+        /**
+         * @var null|int Sum of errors becaus of not filled mandatory fields
+         */
+        private null|int $mandatoryErrorCount = null
     ) {
-        $this->id = $id;
-        $this->name = $name;
-        $this->url = $url;
-        $this->typeId = $typeId;
-        $this->folderId = $folderId;
-        $this->mandatorId = $mandatorId;
-        $this->isAlias = $isAlias;
-        $this->impressions = $impressions;
-        $this->succeeded = $succeeded;
-        $this->identityErrorCount = $identityErrorCount;
-        $this->duplicationErrorCount = $duplicationErrorCount;
-        $this->validationErrorCount = $validationErrorCount;
-        $this->mandatoryErrorCount = $mandatoryErrorCount;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     /**
@@ -157,36 +100,36 @@ class FormStatistic implements FormStatisticInterface
 
     public function getIsAlias(): bool
     {
-        return $this->isAlias;
+        return (bool) $this->isAlias;
     }
 
     public function getImpressions(): int
     {
-        return $this->impressions;
+        return (int) $this->impressions;
     }
 
     public function getSucceeded(): int
     {
-        return $this->succeeded;
+        return (int) $this->succeeded;
     }
 
     public function getIdentityErrorCount(): int
     {
-        return $this->identityErrorCount;
+        return (int) $this->identityErrorCount;
     }
 
     public function getDuplicationErrorCount(): int
     {
-        return $this->duplicationErrorCount;
+        return (int) $this->duplicationErrorCount;
     }
 
     public function getValidationErrorCount(): int
     {
-        return $this->validationErrorCount;
+        return (int) $this->validationErrorCount;
     }
 
     public function getMandatoryErrorCount(): int
     {
-        return $this->mandatoryErrorCount;
+        return (int) $this->mandatoryErrorCount;
     }
 }

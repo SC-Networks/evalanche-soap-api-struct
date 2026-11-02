@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class MediaStatisticItemTest extends StructTestCase
 {
-    /**
-     * @var MediaStatisticItem
-     */
-    private $subject;
+    private MediaStatisticItem $subject;
 
     public function setUp(): void
     {

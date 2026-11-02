@@ -9,26 +9,18 @@ namespace Scn\EvalancheSoapStruct\Struct\LeadPageTemplate;
  */
 class LeadpageTemplateAllowedTemplates implements LeadpageTemplateAllowedTemplatesInterface
 {
-    /** @var int */
-    private $templateType;
-
-    /** @var list<int> */
-    private $templateIds;
-
     /**
      * @param list<int> $templateIds
      */
     public function __construct(
-        int $templateType = 0,
-        array $templateIds = []
+        private null|int $templateType = null,
+        private array $templateIds = []
     ) {
-        $this->templateType = $templateType;
-        $this->templateIds = $templateIds;
     }
 
     public function getTemplateType(): int
     {
-        return $this->templateType;
+        return (int) $this->templateType;
     }
 
     public function setTemplateType(int $templateType): LeadpageTemplateAllowedTemplatesInterface

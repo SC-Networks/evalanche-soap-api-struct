@@ -11,51 +11,31 @@ namespace Scn\EvalancheSoapStruct\Struct\Container;
  */
 class ContainerAttributeOption implements ContainerAttributeOptionInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var string
-     */
-    private $label;
-
-    /**
-     * @var int
-     */
-    private $order;
-
-    public function __construct(int $id = 0, string $name = '', string $label = '', int $order = 0)
-    {
-        $this->id = $id;
-        $this->name = $name;
-        $this->label = $label;
-        $this->order = $order;
+    public function __construct(
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|string $label = null,
+        private null|int $order = null
+    ) {
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getLabel(): string
     {
-        return $this->label;
+        return (string) $this->label;
     }
 
     public function getOrder(): int
     {
-        return $this->order;
+        return (int) $this->order;
     }
 }

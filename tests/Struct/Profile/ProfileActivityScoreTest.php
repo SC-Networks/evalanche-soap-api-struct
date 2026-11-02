@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class ProfileActivityScoreTest extends StructTestCase
 {
-    /**
-     * @var ProfileActivityScore
-     */
-    private $subject;
+    private ProfileActivityScore $subject;
 
     public function setUp(): void
     {

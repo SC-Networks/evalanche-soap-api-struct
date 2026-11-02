@@ -13,138 +13,138 @@ namespace Scn\EvalancheSoapStruct\Struct\Form;
 class FormConfiguration implements FormConfigurationInterface
 {
     /**
-     * @var string
+     * @var null|string
      */
     protected $uniqueEntryCriteriaId;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $blockDuplicates;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $doNotResetUnsubscription;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $permissionMode;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $enablePostAddressValidation;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $successUrl;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $emailingId;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $emailingTargetgroupId;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $newsletterBccRecipientEmail;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inquiryEmailingId;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inquirySendOnChange;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $inquiryRecipientEmails;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $formLanguage;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $enableAutomatedEntryProtection;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $reCaptchaActivated;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $isMobileOptimized;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $isAutoSubmitForm;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $validationFormId;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $autoFormActionActivated;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $formApiState;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $formApiCorsDomains;
 
     /**
-     * @var string
+     * @var null|string
      */
     protected $externalTrackingcode;
 
     public function __construct(
-        string $uniqueEntryCriteriaId = '',
-        string $blockDuplicates = '',
-        string $doNotResetUnsubscription = '',
-        string $permissionMode = '',
-        string $enablePostAddressValidation = '',
-        string $successUrl = '',
-        string $emailingId = '',
-        string $emailingTargetgroupId = '',
-        string $newsletterBccRecipientEmail = '',
-        string $inquiryEmailingId = '',
-        string $inquirySendOnChange = '',
-        string $inquiryRecipientEmails = '',
-        string $formLanguage = '',
-        string $enableAutomatedEntryProtection = '',
-        string $reCaptchaActivated = '',
-        string $isMobileOptimized = '',
-        string $isAutoSubmitForm = '',
-        string $validationFormId = '',
-        string $autoFormActionActivated = '',
-        string $formApiState = '',
-        string $formApiCorsDomains = '',
-        string $externalTrackingcode = ''
+        null|string $uniqueEntryCriteriaId = null,
+        null|string $blockDuplicates = null,
+        null|string $doNotResetUnsubscription = null,
+        null|string $permissionMode = null,
+        null|string $enablePostAddressValidation = null,
+        null|string $successUrl = null,
+        null|string $emailingId = null,
+        null|string $emailingTargetgroupId = null,
+        null|string $newsletterBccRecipientEmail = null,
+        null|string $inquiryEmailingId = null,
+        null|string $inquirySendOnChange = null,
+        null|string $inquiryRecipientEmails = null,
+        null|string $formLanguage = null,
+        null|string $enableAutomatedEntryProtection = null,
+        null|string $reCaptchaActivated = null,
+        null|string $isMobileOptimized = null,
+        null|string $isAutoSubmitForm = null,
+        null|string $validationFormId = null,
+        null|string $autoFormActionActivated = null,
+        null|string $formApiState = null,
+        null|string $formApiCorsDomains = null,
+        null|string $externalTrackingcode = null
     ) {
         $this->uniqueEntryCriteriaId = $uniqueEntryCriteriaId;
         $this->blockDuplicates = $blockDuplicates;
@@ -172,7 +172,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getUniqueEntryCriteriaId(): string
     {
-        return $this->uniqueEntryCriteriaId;
+        return (string) $this->uniqueEntryCriteriaId;
     }
 
     public function setUniqueEntryCriteriaId(string $uniqueEntryCriteriaId): FormConfiguration
@@ -183,7 +183,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getBlockDuplicates(): string
     {
-        return $this->blockDuplicates;
+        return (string) $this->blockDuplicates;
     }
 
     public function setBlockDuplicates(string $blockDuplicates): FormConfiguration
@@ -194,7 +194,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getDoNotResetUnsubscription(): string
     {
-        return $this->doNotResetUnsubscription;
+        return (string) $this->doNotResetUnsubscription;
     }
 
     public function setDoNotResetUnsubscription(string $doNotResetUnsubscription): FormConfiguration
@@ -205,7 +205,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getPermissionMode(): string
     {
-        return $this->permissionMode;
+        return (string) $this->permissionMode;
     }
 
     public function setPermissionMode(string $permissionMode): FormConfiguration
@@ -216,7 +216,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getEnablePostAddressValidation(): string
     {
-        return $this->enablePostAddressValidation;
+        return (string) $this->enablePostAddressValidation;
     }
 
     public function setEnablePostAddressValidation(string $enablePostAddressValidation): FormConfiguration
@@ -227,7 +227,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getSuccessUrl(): string
     {
-        return $this->successUrl;
+        return (string) $this->successUrl;
     }
 
     public function setSuccessUrl(string $successUrl): FormConfiguration
@@ -238,7 +238,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getEmailingId(): string
     {
-        return $this->emailingId;
+        return (string) $this->emailingId;
     }
 
     public function setEmailingId(string $emailingId): FormConfiguration
@@ -249,7 +249,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getEmailingTargetgroupId(): string
     {
-        return $this->emailingTargetgroupId;
+        return (string) $this->emailingTargetgroupId;
     }
 
     public function setEmailingTargetgroupId(string $emailingTargetgroupId): FormConfiguration
@@ -260,7 +260,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getNewsletterBccRecipientEmail(): string
     {
-        return $this->newsletterBccRecipientEmail;
+        return (string) $this->newsletterBccRecipientEmail;
     }
 
     public function setNewsletterBccRecipientEmail(string $newsletterBccRecipientEmail): FormConfiguration
@@ -271,7 +271,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getInquiryEmailingId(): string
     {
-        return $this->inquiryEmailingId;
+        return (string) $this->inquiryEmailingId;
     }
 
     public function setInquiryEmailingId(string $inquiryEmailingId): FormConfiguration
@@ -282,7 +282,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getInquirySendOnChange(): string
     {
-        return $this->inquirySendOnChange;
+        return (string) $this->inquirySendOnChange;
     }
 
     public function setInquirySendOnChange(string $inquirySendOnChange): FormConfiguration
@@ -293,7 +293,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getInquiryRecipientEmails(): string
     {
-        return $this->inquiryRecipientEmails;
+        return (string) $this->inquiryRecipientEmails;
     }
 
     public function setInquiryRecipientEmails(string $inquiryRecipientEmails): FormConfiguration
@@ -304,7 +304,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getFormLanguage(): string
     {
-        return $this->formLanguage;
+        return (string) $this->formLanguage;
     }
 
     public function setFormLanguage(string $formLanguage): FormConfiguration
@@ -315,7 +315,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getEnableAutomatedEntryProtection(): string
     {
-        return $this->enableAutomatedEntryProtection;
+        return (string) $this->enableAutomatedEntryProtection;
     }
 
     public function setEnableAutomatedEntryProtection(string $enableAutomatedEntryProtection): FormConfiguration
@@ -326,7 +326,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getReCaptchaActivated(): string
     {
-        return $this->reCaptchaActivated;
+        return (string) $this->reCaptchaActivated;
     }
 
     public function setReCaptchaActivated(string $reCaptchaActivated): FormConfiguration
@@ -337,7 +337,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getIsMobileOptimized(): string
     {
-        return $this->isMobileOptimized;
+        return (string) $this->isMobileOptimized;
     }
 
     public function setIsMobileOptimized(string $isMobileOptimized): FormConfiguration
@@ -348,7 +348,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getIsAutoSubmitForm(): string
     {
-        return $this->isAutoSubmitForm;
+        return (string) $this->isAutoSubmitForm;
     }
 
     public function setIsAutoSubmitForm(string $isAutoSubmitForm): FormConfiguration
@@ -359,7 +359,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getValidationFormId(): string
     {
-        return $this->validationFormId;
+        return (string) $this->validationFormId;
     }
 
     public function setValidationFormId(string $validationFormId): FormConfiguration
@@ -370,7 +370,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getAutoFormActionActivated(): string
     {
-        return $this->autoFormActionActivated;
+        return (string) $this->autoFormActionActivated;
     }
 
     public function setAutoFormActionActivated(string $autoFormActionActivated): FormConfiguration
@@ -381,7 +381,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getFormApiState(): string
     {
-        return $this->formApiState;
+        return (string) $this->formApiState;
     }
 
     public function setFormApiState(string $formApiState): FormConfiguration
@@ -392,7 +392,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getFormApiCorsDomains(): string
     {
-        return $this->formApiCorsDomains;
+        return (string) $this->formApiCorsDomains;
     }
 
     public function setFormApiCorsDomains(string $formApiCorsDomains): FormConfiguration
@@ -403,7 +403,7 @@ class FormConfiguration implements FormConfigurationInterface
 
     public function getExternalTrackingcode(): string
     {
-        return $this->externalTrackingcode;
+        return (string) $this->externalTrackingcode;
     }
 
     public function setExternalTrackingcode(string $externalTrackingcode): FormConfiguration

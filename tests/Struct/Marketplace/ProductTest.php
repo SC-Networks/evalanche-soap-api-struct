@@ -8,10 +8,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
 
 class ProductTest extends StructTestCase
 {
-    /**
-     * @var Product
-     */
-    private $subject;
+    private Product $subject;
 
     public function setUp(): void
     {

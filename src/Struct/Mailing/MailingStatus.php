@@ -14,77 +14,41 @@ use Scn\EvalancheSoapStruct\Struct\Generic\HashMapInterface;
 class MailingStatus implements MailingStatusInterface
 {
     /**
-     * @var int
-     */
-    private $profileId;
-
-    /**
-     * @var int
-     */
-    private $newsletterId;
-
-    /**
-     * @var int
-     */
-    private $lastStatusChange;
-
-    /**
-     * @var int
-     */
-    private $status;
-
-    /**
-     * @var string
-     */
-    private $previewUrl;
-
-    /**
-     * @var HashMapInterface[]
-     */
-    private $profileData;
-
-    /**
      * @param HashMapInterface[] $profileData
      */
     public function __construct(
-        int $profileId = 0,
-        int $newsletterId = 0,
-        int $lastStatusChange = 0,
-        int $status = 0,
-        string $previewUrl = '',
-        array $profileData = []
+        private null|int $profileId = null,
+        private null|int $newsletterId = null,
+        private null|int $lastStatusChange = null,
+        private null|int $status = null,
+        private null|string $previewUrl = null,
+        private array $profileData = []
     ) {
-        $this->profileId = $profileId;
-        $this->newsletterId = $newsletterId;
-        $this->lastStatusChange = $lastStatusChange;
-        $this->status = $status;
-        $this->previewUrl = $previewUrl;
-        $this->profileData = $profileData;
     }
 
     public function getProfileId(): int
     {
-        return $this->profileId;
+        return (int) $this->profileId;
     }
 
     public function getNewsletterId(): int
     {
-        return $this->newsletterId;
+        return (int) $this->newsletterId;
     }
 
     public function getLastStatusChange(): int
     {
-        return $this->lastStatusChange;
+        return (int) $this->lastStatusChange;
     }
 
     public function getStatus(): int
     {
-        return $this->status;
+        return (int) $this->status;
     }
 
     public function getPreviewUrl(): string
     {
-        return $this->previewUrl;
+        return (string) $this->previewUrl;
     }
 
     /**

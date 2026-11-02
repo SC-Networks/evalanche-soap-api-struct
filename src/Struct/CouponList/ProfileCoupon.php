@@ -12,22 +12,22 @@ class ProfileCoupon implements ProfileCouponInterface
     /** @var int internal id (readonly) */
     public $id = 0;
 
-    /** @var string The actual coupon code */
+    /** @var null|string The actual coupon code */
     public $code;
 
-    /** @var int The associated profile id */
+    /** @var null|int The associated profile id */
     public $profileId;
 
-    /** @var int The creation date */
+    /** @var null|int The creation date */
     public $creationDate;
 
     /** @var int The expiration date (readonly) */
     public $validTo = 0;
 
     public function __construct(
-        string $code = '',
-        int $profileId = 0,
-        int $creationDate = 0
+        null|string $code = null,
+        null|int $profileId = null,
+        null|int $creationDate = null
     ) {
         $this->code = $code;
         $this->profileId = $profileId;
@@ -41,7 +41,7 @@ class ProfileCoupon implements ProfileCouponInterface
 
     public function getCode(): string
     {
-        return $this->code;
+        return (string) $this->code;
     }
 
     public function setCode(string $code): ProfileCouponInterface
@@ -53,7 +53,7 @@ class ProfileCoupon implements ProfileCouponInterface
 
     public function getProfileId(): int
     {
-        return $this->profileId;
+        return (int) $this->profileId;
     }
 
     public function setProfileId(int $profileId): ProfileCouponInterface
@@ -65,7 +65,7 @@ class ProfileCoupon implements ProfileCouponInterface
 
     public function getCreationDate(): int
     {
-        return $this->creationDate;
+        return (int) $this->creationDate;
     }
 
     public function setCreationDate(int $creationDate): ProfileCouponInterface

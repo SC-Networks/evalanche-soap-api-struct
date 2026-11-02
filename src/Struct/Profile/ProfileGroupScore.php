@@ -12,67 +12,37 @@ namespace Scn\EvalancheSoapStruct\Struct\Profile;
  */
 class ProfileGroupScore implements ProfileGroupScoreInterface
 {
-    /**
-     * @var int
-     */
-    private $profileId;
-
-    /**
-     * @var int
-     */
-    private $groupId;
-
-    /**
-     * @var string
-     */
-    private $groupName;
-
-    /**
-     * @var int
-     */
-    private $activityScore;
-
-    /**
-     * @var int
-     */
-    private $profileScore;
-
     public function __construct(
-        int $profileId = 0,
-        int $groupId = 0,
-        string $groupName = '',
-        int $activityScore = 0,
-        int $profileScore = 0
+        private null|int $profileId = null,
+        private null|int $groupId = null,
+        private null|string $groupName = null,
+        private null|int $activityScore = null,
+        private null|int $profileScore = null
     ) {
-        $this->profileId = $profileId;
-        $this->groupId = $groupId;
-        $this->groupName = $groupName;
-        $this->activityScore = $activityScore;
-        $this->profileScore = $profileScore;
     }
 
     public function getProfileId(): int
     {
-        return $this->profileId;
+        return (int) $this->profileId;
     }
 
     public function getGroupId(): int
     {
-        return $this->groupId;
+        return (int) $this->groupId;
     }
 
     public function getGroupName(): string
     {
-        return $this->groupName;
+        return (string) $this->groupName;
     }
 
     public function getActivityScore(): int
     {
-        return $this->activityScore;
+        return (int) $this->activityScore;
     }
 
     public function getProfileScore(): int
     {
-        return $this->profileScore;
+        return (int) $this->profileScore;
     }
 }

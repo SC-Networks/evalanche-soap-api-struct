@@ -11,10 +11,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class ClientStatisticTest extends StructTestCase
 {
-    /**
-     * @var ClientStatistic
-     */
-    private $subject;
+    private ClientStatistic $subject;
 
     public function setUp(): void
     {

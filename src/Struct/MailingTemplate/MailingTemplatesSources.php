@@ -10,38 +10,18 @@ namespace Scn\EvalancheSoapStruct\Struct\MailingTemplate;
 class MailingTemplatesSources implements MailingTemplatesSourcesInterface
 {
 
-    /** @var string */
-    private $templateEmail;
-
-    /** @var string */
-    private $templateText;
-
-    /** @var string */
-    private $templateWeb;
-
-    /** @var string */
-    private $templatePdf;
-
-    /** @var string */
-    private $templateLandingpage;
-
     public function __construct(
-        string $templateEmail = '',
-        string $templateText = '',
-        string $templateWeb = '',
-        string $templatePdf = '',
-        string $templateLandingpage = ''
+        private null|string $templateEmail = null,
+        private null|string $templateText = null,
+        private null|string $templateWeb = null,
+        private null|string $templatePdf = null,
+        private null|string $templateLandingpage = null
     ) {
-        $this->templateEmail = $templateEmail;
-        $this->templateText = $templateText;
-        $this->templateWeb = $templateWeb;
-        $this->templatePdf = $templatePdf;
-        $this->templateLandingpage = $templateLandingpage;
     }
 
     public function getTemplateEmail(): string
     {
-        return $this->templateEmail;
+        return (string) $this->templateEmail;
     }
 
     public function setTemplateEmail(string $templateEmail): MailingTemplatesSourcesInterface
@@ -53,7 +33,7 @@ class MailingTemplatesSources implements MailingTemplatesSourcesInterface
 
     public function getTemplateText(): string
     {
-        return $this->templateText;
+        return (string) $this->templateText;
     }
 
     public function setTemplateText(string $templateText): MailingTemplatesSourcesInterface
@@ -65,7 +45,7 @@ class MailingTemplatesSources implements MailingTemplatesSourcesInterface
 
     public function getTemplateWeb(): string
     {
-        return $this->templateWeb;
+        return (string) $this->templateWeb;
     }
 
     public function setTemplateWeb(string $templateWeb): MailingTemplatesSourcesInterface
@@ -77,7 +57,7 @@ class MailingTemplatesSources implements MailingTemplatesSourcesInterface
 
     public function getTemplatePdf(): string
     {
-        return $this->templatePdf;
+        return (string) $this->templatePdf;
     }
 
     public function setTemplatePdf(string $templatePdf): MailingTemplatesSourcesInterface
@@ -89,7 +69,7 @@ class MailingTemplatesSources implements MailingTemplatesSourcesInterface
 
     public function getTemplateLandingpage(): string
     {
-        return $this->templateLandingpage;
+        return (string) $this->templateLandingpage;
     }
 
     public function setTemplateLandingpage(string $templateLandingpage): MailingTemplatesSourcesInterface

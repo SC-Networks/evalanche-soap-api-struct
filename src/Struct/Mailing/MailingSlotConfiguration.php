@@ -6,13 +6,10 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
 
 class MailingSlotConfiguration implements MailingSlotConfigurationInterface
 {
-    /** @var MailingSlotInterface[] */
-    private $items;
-
     public function __construct(
-        array $items = []
+        /** @var MailingSlotInterface[] */
+        private array $items = []
     ) {
-        $this->items = $items;
     }
 
     /**

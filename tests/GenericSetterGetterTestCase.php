@@ -18,12 +18,12 @@ abstract class GenericSetterGetterTestCase extends StructTestCase
         
         $subject = $this->getSubject();
 
-        call_user_func_array([$subject, 'set'.$method], [$value]);
+        call_user_func_array([$subject, 'set' . $method], [$value]);
 
-        self::assertSame($value, call_user_func_array([$subject, 'get'.$method], []));
+        self::assertSame($value, call_user_func_array([$subject, 'get' . $method], []));
     }
     
-    private function getTestData(string $testDataType)
+    private function getTestData(string $testDataType): array|int|string
     {
         return match ($testDataType) {
             'int' => 666,

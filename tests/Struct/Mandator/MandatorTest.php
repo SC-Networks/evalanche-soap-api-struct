@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class MandatorTest extends StructTestCase
 {
-    /**
-     * @var Mandator
-     */
-    private $subject;
+    private Mandator $subject;
 
     public function setUp(): void
     {

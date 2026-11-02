@@ -13,7 +13,7 @@ use Scn\EvalancheSoapStruct\Struct\StructInterface;
  */
 interface UserInterface extends StructInterface
 {
-    const SCRAMBLED_PASS = '*SCRAMBLED*';
+    public const string SCRAMBLED_PASS = '*SCRAMBLED*';
 
     public function getId(): int;
 
@@ -51,8 +51,14 @@ interface UserInterface extends StructInterface
 
     public function setSecurityGuidelineId(int $securityGuidelineId): User;
 
+    /**
+     * @return list<int>
+     */
     public function getRoleIds(): array;
 
+    /**
+     * @param list<int> $roleIds
+     */
     public function setRoleIds(array $roleIds): User;
 
     public function getDisabled(): bool;

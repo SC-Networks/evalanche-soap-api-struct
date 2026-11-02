@@ -8,8 +8,7 @@ use Scn\EvalancheSoapStruct\GenericSetterGetterTestCase;
 
 class LeadpageTemplateAllowedTemplatesTest extends GenericSetterGetterTestCase
 {
-    /** @var LeadpageTemplateAllowedTemplates|null */
-    private $subject;
+    private LeadpageTemplateAllowedTemplates $subject;
 
     public function setUp(): void
     {
@@ -27,7 +26,7 @@ class LeadpageTemplateAllowedTemplatesTest extends GenericSetterGetterTestCase
         ];
     }
 
-    protected function getSubject()
+    protected function getSubject(): LeadpageTemplateAllowedTemplates
     {
         return $this->subject;
     }

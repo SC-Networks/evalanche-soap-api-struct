@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class PoolAttributeOptionTest extends StructTestCase
 {
-    /**
-     * @var PoolAttributeOption
-     */
-    private $subject;
+    private PoolAttributeOption $subject;
 
     public function setUp(): void
     {

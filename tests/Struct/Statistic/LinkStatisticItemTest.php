@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class LinkStatisticItemTest extends StructTestCase
 {
-    /**
-     * @var LinkStatisticItem
-     */
-    private $subject;
+    private LinkStatisticItem $subject;
 
     public function setUp(): void
     {

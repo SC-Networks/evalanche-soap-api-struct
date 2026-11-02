@@ -6,16 +6,12 @@ namespace Scn\EvalancheSoapStruct\Struct\LeadPage;
 
 class LeadpageSlotConfiguration implements LeadpageSlotConfigurationInterface
 {
-    /** @var list<LeadpageSlotInterface> */
-    private $items;
-
     /**
      * @param list<LeadpageSlotInterface> $items
      */
     public function __construct(
-        array $items = []
+        private array $items = []
     ) {
-        $this->items = $items;
     }
 
     /**

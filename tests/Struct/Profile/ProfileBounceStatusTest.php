@@ -15,10 +15,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class ProfileBounceStatusTest extends StructTestCase
 {
-    /**
-     * @var ProfileBounceStatus
-     */
-    private $subject;
+    private ProfileBounceStatus $subject;
 
     /**
      * @var Stub&HashMapInterface

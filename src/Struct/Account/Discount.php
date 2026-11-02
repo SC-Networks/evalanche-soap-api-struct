@@ -12,40 +12,25 @@ namespace Scn\EvalancheSoapStruct\Struct\Account;
  */
 class Discount implements DiscountInterface
 {
-    /**
-     * @var string
-     */
-    private $description;
-
-    /**
-     * @var float
-     */
-    private $percent;
-
-    /**
-     * @var float
-     */
-    private $price;
-
-    public function __construct(string $description = '', float $percent = 0.0, float $price = 0.0)
-    {
-        $this->description = $description;
-        $this->percent = $percent;
-        $this->price = $price;
+    public function __construct(
+        private null|string $description = null,
+        private null|float $percent = null,
+        private null|float $price = null
+    ) {
     }
 
     public function getDescription(): string
     {
-        return $this->description;
+        return (string) $this->description;
     }
 
     public function getPercent(): float
     {
-        return $this->percent;
+        return (float) $this->percent;
     }
 
     public function getPrice(): float
     {
-        return $this->price;
+        return (float) $this->price;
     }
 }

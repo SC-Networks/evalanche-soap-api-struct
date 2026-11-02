@@ -12,29 +12,19 @@ namespace Scn\EvalancheSoapStruct\Struct\TargetGroup;
  */
 class TargetGroupDetail implements TargetGroupDetailInterface
 {
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var int
-     */
-    private $profileCount;
-
-    public function __construct(string $name = '', int $profileCount = 0)
-    {
-        $this->name = $name;
-        $this->profileCount = $profileCount;
+    public function __construct(
+        private null|string $name = null,
+        private null|int $profileCount = null
+    ) {
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getProfileCount(): int
     {
-        return $this->profileCount;
+        return (int) $this->profileCount;
     }
 }

@@ -11,25 +11,18 @@ namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
  */
 class BlackList implements BlackListInterface
 {
-    /**
-     * @var int
-     */
-    private $mandatorId;
-
-    /**
-     * @var BlackListItemInterface[]
-     */
-    private $items;
-
-    public function __construct(int $mandatorId = 0, array $items = [])
-    {
-        $this->mandatorId = $mandatorId;
-        $this->items = $items;
+    public function __construct(
+        private null|int $mandatorId = null,
+        /**
+         * @var BlackListItemInterface[]
+         */
+        private array $items = []
+    ) {
     }
 
     public function getMandatorId(): int
     {
-        return $this->mandatorId;
+        return (int) $this->mandatorId;
     }
 
     /**

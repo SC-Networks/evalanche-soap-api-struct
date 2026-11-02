@@ -12,40 +12,25 @@ namespace Scn\EvalancheSoapStruct\Struct\Scoring;
  */
 class ScoringGroupDetail implements ScoringGroupDetailInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var int
-     */
-    private $mandatorId;
-
-    public function __construct(int $id = 0, string $name = '', int $mandatorId = 0)
-    {
-        $this->id = $id;
-        $this->name = $name;
-        $this->mandatorId = $mandatorId;
+    public function __construct(
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|int $mandatorId = null
+    ) {
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getMandatorId(): int
     {
-        return $this->mandatorId;
+        return (int) $this->mandatorId;
     }
 }

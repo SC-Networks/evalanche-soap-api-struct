@@ -12,40 +12,25 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class MediaStatisticItem implements MediaStatisticItemInterface
 {
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var int
-     */
-    private $clickCount;
-
-    /**
-     * @var int
-     */
-    private $uniqueClickCount;
-
-    public function __construct(string $name = '', int $clickCount = 0, int $uniqueClickCount = 0)
-    {
-        $this->name = $name;
-        $this->clickCount = $clickCount;
-        $this->uniqueClickCount = $uniqueClickCount;
+    public function __construct(
+        private null|string $name = null,
+        private null|int $clickCount = null,
+        private null|int $uniqueClickCount = null
+    ) {
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getClickCount(): int
     {
-        return $this->clickCount;
+        return (int) $this->clickCount;
     }
 
     public function getUniqueClickCount(): int
     {
-        return $this->uniqueClickCount;
+        return (int) $this->uniqueClickCount;
     }
 }

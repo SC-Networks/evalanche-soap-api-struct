@@ -10,23 +10,16 @@ namespace Scn\EvalancheSoapStruct\Struct\MailingTemplate;
 class MailingTemplateAllowedTemplates implements MailingTemplateAllowedTemplatesInterface
 {
 
-    /** @var int */
-    private $templateType;
-
-    /** @var int[] */
-    private $templateIds;
-
     public function __construct(
-        int $templateType = 0,
-        array $templateIds = []
+        private null|int $templateType = null,
+        /** @var int[] */
+        private array $templateIds = []
     ) {
-        $this->templateType = $templateType;
-        $this->templateIds = $templateIds;
     }
 
     public function getTemplateType(): int
     {
-        return $this->templateType;
+        return (int) $this->templateType;
     }
 
     public function setTemplateType(int $templateType): MailingTemplateAllowedTemplatesInterface

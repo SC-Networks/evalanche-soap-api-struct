@@ -8,10 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class LeadpageArticleTest extends TestCase
 {
-    /**
-     * @var LeadpageArticle
-     */
-    private $subject;
+    private LeadpageArticle $subject;
 
     public function setUp(): void
     {

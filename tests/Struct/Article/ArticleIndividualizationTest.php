@@ -8,8 +8,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
 
 class ArticleIndividualizationTest extends StructTestCase
 {
-    /** @var ArticleIndividualization */
-    private $subject;
+    private ArticleIndividualization $subject;
 
     protected function setUp(): void
     {

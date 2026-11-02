@@ -9,22 +9,13 @@ namespace Scn\EvalancheSoapStruct\Struct\Article;
  */
 class ArticleIndividualization implements ArticleIndividualizationInterface
 {
-    /**
-     * @var bool
-     */
-    private $hasFallback;
-
-    /**
-     * @var array<ArticleIndividualizationItemInterface>
-     */
-    private $individualizationItems;
-
     public function __construct(
-        bool $hasFallback = false,
-        array $individualizationItems = []
+        private null|bool $hasFallback = null,
+        /**
+         * @var array<ArticleIndividualizationItemInterface>
+         */
+        private array $individualizationItems = []
     ) {
-        $this->hasFallback = $hasFallback;
-        $this->individualizationItems = $individualizationItems;
     }
 
     /**
@@ -32,7 +23,7 @@ class ArticleIndividualization implements ArticleIndividualizationInterface
      */
     public function isHasFallback(): bool
     {
-        return $this->hasFallback;
+        return (bool) $this->hasFallback;
     }
 
     /**

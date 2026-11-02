@@ -12,40 +12,25 @@ namespace Scn\EvalancheSoapStruct\Struct\SmartLink;
  */
 class SmartLink implements SmartLinkInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var string
-     */
-    private $trackingUrl;
-
-    public function __construct(int $id = 0, string $name = '', string $trackingUrl = '')
-    {
-        $this->id = $id;
-        $this->name = $name;
-        $this->trackingUrl = $trackingUrl;
+    public function __construct(
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|string $trackingUrl = null
+    ) {
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getTrackingUrl(): string
     {
-        return $this->trackingUrl;
+        return (string) $this->trackingUrl;
     }
 }

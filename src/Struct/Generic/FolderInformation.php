@@ -11,40 +11,25 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class FolderInformation implements FolderInformationInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var int
-     */
-    private $parentId;
-
-    public function __construct(int $id = 0, string $name = '', int $parentId = 0)
-    {
-        $this->id = $id;
-        $this->name = $name;
-        $this->parentId = $parentId;
+    public function __construct(
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|int $parentId = null
+    ) {
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getParentId(): int
     {
-        return $this->parentId;
+        return (int) $this->parentId;
     }
 }

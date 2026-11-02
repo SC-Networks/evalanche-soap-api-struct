@@ -11,10 +11,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class BlackListTest extends StructTestCase
 {
-    /**
-     * @var BlackList
-     */
-    private $subject;
+    private BlackList $subject;
 
     public function setUp(): void
     {

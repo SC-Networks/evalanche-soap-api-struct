@@ -9,131 +9,131 @@ namespace Scn\EvalancheSoapStruct\Struct\LeadPageTemplate;
  */
 class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInterface
 {
-    /** @var string */
+    /** @var null|string */
     protected $macroLibrary;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield0;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield1;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield2;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield3;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield4;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield5;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield6;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield7;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield8;
 
-    /** @var string */
+    /** @var null|string */
     protected $inputfield9;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea0;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea1;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea2;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea3;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea4;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea5;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea6;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea7;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea8;
 
-    /** @var string */
+    /** @var null|string */
     protected $textarea9;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea0;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea1;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea2;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea3;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea4;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea5;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea6;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea7;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea8;
 
-    /** @var string */
+    /** @var null|string */
     protected $htmlarea9;
 
     public function __construct(
-        string $macroLibrary = '',
-        string $inputfield0 = '',
-        string $inputfield1 = '',
-        string $inputfield2 = '',
-        string $inputfield3 = '',
-        string $inputfield4 = '',
-        string $inputfield5 = '',
-        string $inputfield6 = '',
-        string $inputfield7 = '',
-        string $inputfield8 = '',
-        string $inputfield9 = '',
-        string $textarea0 = '',
-        string $textarea1 = '',
-        string $textarea2 = '',
-        string $textarea3 = '',
-        string $textarea4 = '',
-        string $textarea5 = '',
-        string $textarea6 = '',
-        string $textarea7 = '',
-        string $textarea8 = '',
-        string $textarea9 = '',
-        string $htmlarea0 = '',
-        string $htmlarea1 = '',
-        string $htmlarea2 = '',
-        string $htmlarea3 = '',
-        string $htmlarea4 = '',
-        string $htmlarea5 = '',
-        string $htmlarea6 = '',
-        string $htmlarea7 = '',
-        string $htmlarea8 = '',
-        string $htmlarea9 = '',
+        null|string $macroLibrary = null,
+        null|string $inputfield0 = null,
+        null|string $inputfield1 = null,
+        null|string $inputfield2 = null,
+        null|string $inputfield3 = null,
+        null|string $inputfield4 = null,
+        null|string $inputfield5 = null,
+        null|string $inputfield6 = null,
+        null|string $inputfield7 = null,
+        null|string $inputfield8 = null,
+        null|string $inputfield9 = null,
+        null|string $textarea0 = null,
+        null|string $textarea1 = null,
+        null|string $textarea2 = null,
+        null|string $textarea3 = null,
+        null|string $textarea4 = null,
+        null|string $textarea5 = null,
+        null|string $textarea6 = null,
+        null|string $textarea7 = null,
+        null|string $textarea8 = null,
+        null|string $textarea9 = null,
+        null|string $htmlarea0 = null,
+        null|string $htmlarea1 = null,
+        null|string $htmlarea2 = null,
+        null|string $htmlarea3 = null,
+        null|string $htmlarea4 = null,
+        null|string $htmlarea5 = null,
+        null|string $htmlarea6 = null,
+        null|string $htmlarea7 = null,
+        null|string $htmlarea8 = null,
+        null|string $htmlarea9 = null,
     ) {
         $this->macroLibrary = $macroLibrary;
         $this->inputfield0 = $inputfield0;
@@ -170,7 +170,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getMacroLibrary(): string
     {
-        return $this->macroLibrary;
+        return (string) $this->macroLibrary;
     }
 
     public function setMacroLibrary(string $macroLibrary): LeadpageTemplateConfiguration
@@ -181,7 +181,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield0(): string
     {
-        return $this->inputfield0;
+        return (string) $this->inputfield0;
     }
 
     public function setInputfield0(string $inputfield0): LeadpageTemplateConfiguration
@@ -192,7 +192,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield1(): string
     {
-        return $this->inputfield1;
+        return (string) $this->inputfield1;
     }
 
     public function setInputfield1(string $inputfield1): LeadpageTemplateConfiguration
@@ -203,7 +203,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield2(): string
     {
-        return $this->inputfield2;
+        return (string) $this->inputfield2;
     }
 
     public function setInputfield2(string $inputfield2): LeadpageTemplateConfiguration
@@ -214,7 +214,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield3(): string
     {
-        return $this->inputfield3;
+        return (string) $this->inputfield3;
     }
 
     public function setInputfield3(string $inputfield3): LeadpageTemplateConfiguration
@@ -225,7 +225,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield4(): string
     {
-        return $this->inputfield4;
+        return (string) $this->inputfield4;
     }
 
     public function setInputfield4(string $inputfield4): LeadpageTemplateConfiguration
@@ -236,7 +236,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield5(): string
     {
-        return $this->inputfield5;
+        return (string) $this->inputfield5;
     }
 
     public function setInputfield5(string $inputfield5): LeadpageTemplateConfiguration
@@ -247,7 +247,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield6(): string
     {
-        return $this->inputfield6;
+        return (string) $this->inputfield6;
     }
 
     public function setInputfield6(string $inputfield6): LeadpageTemplateConfiguration
@@ -258,7 +258,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield7(): string
     {
-        return $this->inputfield7;
+        return (string) $this->inputfield7;
     }
 
     public function setInputfield7(string $inputfield7): LeadpageTemplateConfiguration
@@ -269,7 +269,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield8(): string
     {
-        return $this->inputfield8;
+        return (string) $this->inputfield8;
     }
 
     public function setInputfield8(string $inputfield8): LeadpageTemplateConfiguration
@@ -280,7 +280,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getInputfield9(): string
     {
-        return $this->inputfield9;
+        return (string) $this->inputfield9;
     }
 
     public function setInputfield9(string $inputfield9): LeadpageTemplateConfiguration
@@ -291,7 +291,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea0(): string
     {
-        return $this->textarea0;
+        return (string) $this->textarea0;
     }
 
     public function setTextarea0(string $textarea0): LeadpageTemplateConfiguration
@@ -302,7 +302,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea1(): string
     {
-        return $this->textarea1;
+        return (string) $this->textarea1;
     }
 
     public function setTextarea1(string $textarea1): LeadpageTemplateConfiguration
@@ -313,7 +313,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea2(): string
     {
-        return $this->textarea2;
+        return (string) $this->textarea2;
     }
 
     public function setTextarea2(string $textarea2): LeadpageTemplateConfiguration
@@ -324,7 +324,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea3(): string
     {
-        return $this->textarea3;
+        return (string) $this->textarea3;
     }
 
     public function setTextarea3(string $textarea3): LeadpageTemplateConfiguration
@@ -335,7 +335,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea4(): string
     {
-        return $this->textarea4;
+        return (string) $this->textarea4;
     }
 
     public function setTextarea4(string $textarea4): LeadpageTemplateConfiguration
@@ -346,7 +346,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea5(): string
     {
-        return $this->textarea5;
+        return (string) $this->textarea5;
     }
 
     public function setTextarea5(string $textarea5): LeadpageTemplateConfiguration
@@ -357,7 +357,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea6(): string
     {
-        return $this->textarea6;
+        return (string) $this->textarea6;
     }
 
     public function setTextarea6(string $textarea6): LeadpageTemplateConfiguration
@@ -368,7 +368,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea7(): string
     {
-        return $this->textarea7;
+        return (string) $this->textarea7;
     }
 
     public function setTextarea7(string $textarea7): LeadpageTemplateConfiguration
@@ -379,7 +379,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea8(): string
     {
-        return $this->textarea8;
+        return (string) $this->textarea8;
     }
 
     public function setTextarea8(string $textarea8): LeadpageTemplateConfiguration
@@ -390,7 +390,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getTextarea9(): string
     {
-        return $this->textarea9;
+        return (string) $this->textarea9;
     }
 
     public function setTextarea9(string $textarea9): LeadpageTemplateConfiguration
@@ -401,7 +401,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea0(): string
     {
-        return $this->htmlarea0;
+        return (string) $this->htmlarea0;
     }
 
     public function setHtmlarea0(string $htmlarea0): LeadpageTemplateConfiguration
@@ -412,7 +412,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea1(): string
     {
-        return $this->htmlarea1;
+        return (string) $this->htmlarea1;
     }
 
     public function setHtmlarea1(string $htmlarea1): LeadpageTemplateConfiguration
@@ -423,7 +423,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea2(): string
     {
-        return $this->htmlarea2;
+        return (string) $this->htmlarea2;
     }
 
     public function setHtmlarea2(string $htmlarea2): LeadpageTemplateConfiguration
@@ -434,7 +434,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea3(): string
     {
-        return $this->htmlarea3;
+        return (string) $this->htmlarea3;
     }
 
     public function setHtmlarea3(string $htmlarea3): LeadpageTemplateConfiguration
@@ -445,7 +445,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea4(): string
     {
-        return $this->htmlarea4;
+        return (string) $this->htmlarea4;
     }
 
     public function setHtmlarea4(string $htmlarea4): LeadpageTemplateConfiguration
@@ -456,7 +456,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea5(): string
     {
-        return $this->htmlarea5;
+        return (string) $this->htmlarea5;
     }
 
     public function setHtmlarea5(string $htmlarea5): LeadpageTemplateConfiguration
@@ -467,7 +467,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea6(): string
     {
-        return $this->htmlarea6;
+        return (string) $this->htmlarea6;
     }
 
     public function setHtmlarea6(string $htmlarea6): LeadpageTemplateConfiguration
@@ -478,7 +478,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea7(): string
     {
-        return $this->htmlarea7;
+        return (string) $this->htmlarea7;
     }
 
     public function setHtmlarea7(string $htmlarea7): LeadpageTemplateConfiguration
@@ -489,7 +489,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea8(): string
     {
-        return $this->htmlarea8;
+        return (string) $this->htmlarea8;
     }
 
     public function setHtmlarea8(string $htmlarea8): LeadpageTemplateConfiguration
@@ -500,7 +500,7 @@ class LeadpageTemplateConfiguration implements LeadpageTemplateConfigurationInte
 
     public function getHtmlarea9(): string
     {
-        return $this->htmlarea9;
+        return (string) $this->htmlarea9;
     }
 
     public function setHtmlarea9(string $htmlarea9): LeadpageTemplateConfiguration

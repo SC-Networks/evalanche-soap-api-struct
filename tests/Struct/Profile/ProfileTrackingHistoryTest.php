@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class ProfileTrackingHistoryTest extends StructTestCase
 {
-    /**
-     * @var ProfileTrackingHistory
-     */
-    private $subject;
+    private ProfileTrackingHistory $subject;
 
     public function setUp(): void
     {
