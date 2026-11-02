@@ -11,67 +11,37 @@ namespace Scn\EvalancheSoapStruct\Struct\SmartLink;
  */
 class SmartLinkPoolConfiguration implements SmartLinkPoolConfigurationInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var int
-     */
-    private $poolId;
-
-    /**
-     * @var int
-     */
-    private $poolAttributeId;
-
-    /**
-     * @var string
-     */
-    private $value;
-
-    /**
-     * @var bool
-     */
-    private $isMerge;
-
     public function __construct(
-        int $id = 0,
-        int $poolId = 0,
-        int $poolAttributeId = 0,
-        string $value = '',
-        bool $isMerge = false
+        private null|int $id = null,
+        private null|int $poolId = null,
+        private null|int $poolAttributeId = null,
+        private null|string $value = null,
+        private null|bool $isMerge = null
     ) {
-        $this->id = $id;
-        $this->poolId = $poolId;
-        $this->poolAttributeId = $poolAttributeId;
-        $this->value = $value;
-        $this->isMerge = $isMerge;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getPoolId(): int
     {
-        return $this->poolId;
+        return (int) $this->poolId;
     }
 
     public function getPoolAttributeId(): int
     {
-        return $this->poolAttributeId;
+        return (int) $this->poolAttributeId;
     }
 
     public function getValue(): string
     {
-        return $this->value;
+        return (string) $this->value;
     }
 
     public function getIsMerge(): bool
     {
-        return $this->isMerge;
+        return (bool) $this->isMerge;
     }
 }

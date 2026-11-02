@@ -9,27 +9,15 @@ namespace Scn\EvalancheSoapStruct\Struct\Article;
  */
 class ArticleIndividualizationItem implements ArticleIndividualizationItemInterface
 {
-    /**
-     * @var int
-     */
-    private $targetgroupId;
-
-    /**
-     * @var int
-     */
-    private $articleId;
-
     public function __construct(
-        int $targetgroupId = 0,
-        int $articleId = 0
+        private null|int $targetgroupId = null,
+        private null|int $articleId = null
     ) {
-        $this->targetgroupId = $targetgroupId;
-        $this->articleId = $articleId;
     }
 
     public function getTargetgroupId(): int
     {
-        return $this->targetgroupId;
+        return (int) $this->targetgroupId;
     }
 
     public function setTargetgroupId(int $targetgroupId): void
@@ -39,7 +27,7 @@ class ArticleIndividualizationItem implements ArticleIndividualizationItemInterf
 
     public function getArticleId(): int
     {
-        return $this->articleId;
+        return (int) $this->articleId;
     }
 
     public function setArticleId(int $articleId): void

@@ -11,29 +11,19 @@ namespace Scn\EvalancheSoapStruct\Struct\Blacklist;
  */
 class BlackListItem implements BlackListItemInterface
 {
-    /**
-     * @var string
-     */
-    private $email;
-
-    /**
-     * @var string
-     */
-    private $description;
-
-    public function __construct(string $email = '', string $description = '')
-    {
-        $this->email = $email;
-        $this->description = $description;
+    public function __construct(
+        private null|string $email = null,
+        private null|string $description = null
+    ) {
     }
 
     public function getEmail(): string
     {
-        return $this->email;
+        return (string) $this->email;
     }
 
     public function getDescription(): string
     {
-        return $this->description;
+        return (string) $this->description;
     }
 }

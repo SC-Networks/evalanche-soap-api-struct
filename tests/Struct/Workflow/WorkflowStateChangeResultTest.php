@@ -8,14 +8,12 @@ use Scn\EvalancheSoapStruct\StructTestCase;
 
 class WorkflowStateChangeResultTest extends StructTestCase
 {
-    /** @var bool */
-    private $stateChangeSuccessful = true;
+    private bool $stateChangeSuccessful = true;
 
     /** @var string[] */
-    private $errorList = ['some-list'];
+    private array $errorList = ['some-list'];
     
-    /** @var WorkflowStateChangeResult */
-    private $subject;
+    private WorkflowStateChangeResult $subject;
 
     public function setUp(): void
     {

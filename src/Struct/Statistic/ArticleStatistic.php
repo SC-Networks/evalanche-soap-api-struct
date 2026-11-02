@@ -24,26 +24,26 @@ class ArticleStatistic implements ArticleStatisticInterface
         private null|FormatStatisticItemInterface $print = null,
         private null|FormatStatisticItemInterface $voice = null,
         private null|FormatStatisticItemInterface $socialSharing = null,
-        private int $id = 0,
-        private int $referenceId = 0,
-        private string $name = '',
+        private null|int $id = null,
+        private null|int $referenceId = null,
+        private null|string $name = null,
         private array $links = []
     ) {
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getReferenceId(): int
     {
-        return $this->referenceId;
+        return (int) $this->referenceId;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getOverall(): FormatStatisticItemInterface

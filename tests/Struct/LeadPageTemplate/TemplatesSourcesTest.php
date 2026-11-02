@@ -9,8 +9,7 @@ use Scn\EvalancheSoapStruct\GenericSetterGetterTestCase;
 class TemplatesSourcesTest extends GenericSetterGetterTestCase
 {
 
-    /** @var TemplatesSources|null */
-    private $subject;
+    private TemplatesSources $subject;
 
     public function setUp(): void
     {
@@ -28,7 +27,7 @@ class TemplatesSourcesTest extends GenericSetterGetterTestCase
         ];
     }
 
-    protected function getSubject()
+    protected function getSubject(): TemplatesSources
     {
         return $this->subject;
     }

@@ -12,40 +12,25 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class BrowserStatisticItem implements BrowserStatisticItemInterface
 {
-    /**
-     * @var string
-     */
-    private $description;
-
-    /**
-     * @var string
-     */
-    private $version;
-
-    /**
-     * @var int
-     */
-    private $count;
-
-    public function __construct(string $description = '', string $version = '', int $count = 0)
-    {
-        $this->description = $description;
-        $this->version = $version;
-        $this->count = $count;
+    public function __construct(
+        private null|string $description = null,
+        private null|string $version = null,
+        private null|int $count = null
+    ) {
     }
 
     public function getDescription(): string
     {
-        return $this->description;
+        return (string) $this->description;
     }
 
     public function getVersion(): string
     {
-        return $this->version;
+        return (string) $this->version;
     }
 
     public function getCount(): int
     {
-        return $this->count;
+        return (int) $this->count;
     }
 }

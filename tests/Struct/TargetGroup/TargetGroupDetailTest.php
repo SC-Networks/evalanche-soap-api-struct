@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class TargetGroupDetailTest extends StructTestCase
 {
-    /**
-     * @var TargetGroupDetail
-     */
-    private $subject;
+    private TargetGroupDetail $subject;
 
     public function setUp(): void
     {

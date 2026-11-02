@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Workflow;
 
 /**
@@ -7,37 +9,25 @@ namespace Scn\EvalancheSoapStruct\Struct\Workflow;
  */
 class WorkflowConfigVersion implements WorkflowConfigVersionInterface
 {
-    /** @var string */
-    private $configVersion;
-    
-    /** @var int */
-    private $createDate;
-    
-    /** @var bool */
-    private $latest;
-    
     public function __construct(
-        string $configVersion = '',
-        int $createDate = 0,
-        bool $latest = false
+        private null|string $configVersion = null,
+        private null|int $createDate = null,
+        private null|bool $latest = null
     ) {
-        $this->configVersion = $configVersion;
-        $this->createDate = $createDate;
-        $this->latest = $latest;
     }
     
     public function getConfigVersion(): string
     {
-        return $this->configVersion;
+        return (string) $this->configVersion;
     }
     
     public function getCreateDate(): int
     {
-        return $this->createDate;
+        return (int) $this->createDate;
     }
     
     public function getLatest(): bool
     {
-        return $this->latest;
+        return (bool) $this->latest;
     }
 }

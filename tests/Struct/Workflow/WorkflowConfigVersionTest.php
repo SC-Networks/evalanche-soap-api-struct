@@ -8,17 +8,13 @@ use Scn\EvalancheSoapStruct\StructTestCase;
 
 class WorkflowConfigVersionTest extends StructTestCase
 {
-    /** @var string */
-    private $configVersion = 'some-config-version';
+    private string $configVersion = 'some-config-version';
     
-    /** @var int */
-    private $createDate = 1_234_567;
+    private int $createDate = 1_234_567;
     
-    /** @var bool */
-    private $latest = true;
+    private bool $latest = true;
     
-    /** @var WorkflowConfigVersion */
-    private $subject;
+    private WorkflowConfigVersion $subject;
 
     public function setUp(): void
     {

@@ -14,151 +14,79 @@ namespace Scn\EvalancheSoapStruct\Struct\Profile;
 class ProfileTrackingHistory implements ProfileTrackingHistoryInterface
 {
 
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var int
-     */
-    private $resourceId;
-
-    /**
-     * @var string
-     */
-    private $resourceName;
-
-    /**
-     * @var int
-     */
-    private $resourceTypeId;
-
-    /**
-     * @var int
-     */
-    private $subResourceId;
-
-    /**
-     * @var string
-     */
-    private $subResourceName;
-
-    /**
-     * @var int
-     */
-    private $subResourceTypeId;
-
-    /**
-     * @var string
-     */
-    private $subUrl;
-
-    /**
-     * @var int
-     */
-    private $profileId;
-
-    /**
-     * @var int
-     */
-    private $type;
-
-    /**
-     * @var int
-     */
-    private $timestamp;
-
-    /**
-     * @var string
-     */
-    private $referrerDomain;
-
     public function __construct(
-        int $id = 0,
-        int $resourceId = 0,
-        string $resourceName = '',
-        int $resourceTypeId = 0,
-        int $subResourceId = 0,
-        string $subResourceName = '',
-        int $subResourceTypeId = 0,
-        string $subUrl = '',
-        int $profileId = 0,
-        int $type = 0,
-        int $timestamp = 0,
-        string $referrerDomain = ''
+        private null|int $id = null,
+        private null|int $resourceId = null,
+        private null|string $resourceName = null,
+        private null|int $resourceTypeId = null,
+        private null|int $subResourceId = null,
+        private null|string $subResourceName = null,
+        private null|int $subResourceTypeId = null,
+        private null|string $subUrl = null,
+        private null|int $profileId = null,
+        private null|int $type = null,
+        private null|int $timestamp = null,
+        private null|string $referrerDomain = null
     ) {
-        $this->id = $id;
-        $this->resourceId = $resourceId;
-        $this->resourceName = $resourceName;
-        $this->resourceTypeId = $resourceTypeId;
-        $this->subResourceId = $subResourceId;
-        $this->subResourceName = $subResourceName;
-        $this->subResourceTypeId = $subResourceTypeId;
-        $this->subUrl = $subUrl;
-        $this->profileId = $profileId;
-        $this->type = $type;
-        $this->timestamp = $timestamp;
-        $this->referrerDomain = $referrerDomain;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getResourceId(): int
     {
-        return $this->resourceId;
+        return (int) $this->resourceId;
     }
 
     public function getResourceName(): string
     {
-        return $this->resourceName;
+        return (string) $this->resourceName;
     }
 
     public function getResourceTypeId(): int
     {
-        return $this->resourceTypeId;
+        return (int) $this->resourceTypeId;
     }
 
     public function getSubResourceId(): int
     {
-        return $this->subResourceId;
+        return (int) $this->subResourceId;
     }
 
     public function getSubResourceName(): string
     {
-        return $this->subResourceName;
+        return (string) $this->subResourceName;
     }
 
     public function getSubResourceTypeId(): int
     {
-        return $this->subResourceTypeId;
+        return (int) $this->subResourceTypeId;
     }
 
     public function getSubUrl(): string
     {
-        return $this->subUrl;
+        return (string) $this->subUrl;
     }
 
     public function getProfileId(): int
     {
-        return $this->profileId;
+        return (int) $this->profileId;
     }
 
     public function getType(): int
     {
-        return $this->type;
+        return (int) $this->type;
     }
 
     public function getTimestamp(): int
     {
-        return $this->timestamp;
+        return (int) $this->timestamp;
     }
 
     public function getReferrerDomain(): string
     {
-        return $this->referrerDomain;
+        return (string) $this->referrerDomain;
     }
 }

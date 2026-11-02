@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class AccountingItemTest extends StructTestCase
 {
-    /**
-     * @var AccountingItem
-     */
-    private $subject;
+    private AccountingItem $subject;
 
     public function setUp(): void
     {

@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class BrowserStatisticItemTest extends StructTestCase
 {
-    /**
-     * @var BrowserStatisticItem
-     */
-    private $subject;
+    private BrowserStatisticItem $subject;
 
     public function setUp(): void
     {

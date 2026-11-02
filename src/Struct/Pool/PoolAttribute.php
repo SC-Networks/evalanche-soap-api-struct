@@ -13,84 +13,40 @@ namespace Scn\EvalancheSoapStruct\Struct\Pool;
 class PoolAttribute implements PoolAttributeInterface
 {
     /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var int
-     */
-    private $typeId;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var string
-     */
-    private $label;
-
-    /**
-     * @var PoolAttributeOption[]
-     */
-    private $options;
-
-    /**
-     * @var bool
-     */
-    private $hasOptions;
-
-    /**
-     * @var bool
-     */
-    private $addOptions;
-
-    /**
-     * @param PoolAttributeOptionInterface[] $options
+     * @param list<PoolAttributeOptionInterface> $options
      */
     public function __construct(
-        int $id = 0,
-        int $typeId = 0,
-        string $name = '',
-        string $label = '',
-        array $options = [],
-        bool $hasOptions = false,
-        bool $addOptions = false
+        private null|int $id = null,
+        private null|int $typeId = null,
+        private null|string $name = null,
+        private null|string $label = null,
+        private array $options = [],
+        private null|bool $hasOptions = null,
+        private null|bool $addOptions = null
     ) {
-        $this->id = $id;
-        $this->typeId = $typeId;
-        $this->name = $name;
-        $this->label = $label;
-        $this->options = $options;
-        $this->hasOptions = $hasOptions;
-        $this->addOptions = $addOptions;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getTypeId(): int
     {
-        return $this->typeId;
+        return (int) $this->typeId;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getLabel(): string
     {
-        return $this->label;
+        return (string) $this->label;
     }
 
-    /**
-     * @return PoolAttributeOption[]
-     */
+    /** @inheritDoc */
     public function getOptions(): array
     {
         return $this->options;
@@ -98,11 +54,11 @@ class PoolAttribute implements PoolAttributeInterface
 
     public function hasOptions(): bool
     {
-        return $this->hasOptions;
+        return (bool) $this->hasOptions;
     }
 
     public function addOptions(): bool
     {
-        return $this->addOptions;
+        return (bool) $this->addOptions;
     }
 }

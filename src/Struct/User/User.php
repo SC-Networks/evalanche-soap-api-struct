@@ -14,99 +14,27 @@ namespace Scn\EvalancheSoapStruct\Struct\User;
 class User implements UserInterface
 {
     /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var int
-     */
-    private $mandatorId;
-
-    /**
-     * @var string
-     */
-    private $username;
-
-    /**
-     * @var string
-     */
-    private $email;
-
-    /**
-     * @var int
-     */
-    private $salutation;
-
-    /**
-     * @var string
-     */
-    private $firstName;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var string
-     */
-    private $description;
-
-    /**
-     * @var int
-     */
-    private $securityGuidelineId;
-
-    /**
-     * @var int[]
-     */
-    private $roleIds;
-
-    /**
-     * @var bool
-     */
-    private $disabled;
-
-    /**
-     * @var string
-     */
-    private $password;
-
-    /**
-     * @param int[] $roleIds
+     * @param list<int> $roleIds
      */
     public function __construct(
-        int $id = 0,
-        int $mandatorId = 0,
-        string $username = '',
-        string $email = '',
-        int $salutation = 0,
-        string $firstName = '',
-        string $name = '',
-        string $description = '',
-        int $securityGuidelineId = 0,
-        array $roleIds = [],
-        bool $disabled = false,
-        string $password = UserInterface::SCRAMBLED_PASS,
+        private null|int $id = null,
+        private null|int $mandatorId = null,
+        private null|string $username = null,
+        private null|string $email = null,
+        private null|int $salutation = null,
+        private null|string $firstName = null,
+        private null|string $name = null,
+        private null|string $description = null,
+        private null|int $securityGuidelineId = null,
+        private array $roleIds = [],
+        private null|bool $disabled = null,
+        private null|string $password = null
     ) {
-        $this->id = $id;
-        $this->mandatorId = $mandatorId;
-        $this->username = $username;
-        $this->email = $email;
-        $this->salutation = $salutation;
-        $this->name = $name;
-        $this->description = $description;
-        $this->securityGuidelineId = $securityGuidelineId;
-        $this->roleIds = $roleIds;
-        $this->disabled = $disabled;
-        $this->password = $password;
-        $this->firstName = $firstName;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function setId(int $id): User
@@ -117,7 +45,7 @@ class User implements UserInterface
 
     public function getMandatorId(): int
     {
-        return $this->mandatorId;
+        return (int) $this->mandatorId;
     }
 
     public function setMandatorId(int $mandatorId): User
@@ -128,7 +56,7 @@ class User implements UserInterface
 
     public function getUsername(): string
     {
-        return $this->username;
+        return (string) $this->username;
     }
 
     public function setUsername(string $username): User
@@ -139,7 +67,7 @@ class User implements UserInterface
 
     public function getEmail(): string
     {
-        return $this->email;
+        return (string) $this->email;
     }
 
     public function setEmail(string $email): User
@@ -150,7 +78,7 @@ class User implements UserInterface
 
     public function getSalutation(): int
     {
-        return $this->salutation;
+        return (int) $this->salutation;
     }
 
     public function setSalutation(int $salutation): User
@@ -161,7 +89,7 @@ class User implements UserInterface
 
     public function getFirstName(): string
     {
-        return $this->firstName;
+        return (string) $this->firstName;
     }
 
     public function setFirstName(string $firstName): User
@@ -172,7 +100,7 @@ class User implements UserInterface
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function setName(string $name): User
@@ -183,7 +111,7 @@ class User implements UserInterface
 
     public function getDescription(): string
     {
-        return $this->description;
+        return (string) $this->description;
     }
 
     public function setDescription(string $description): User
@@ -194,7 +122,7 @@ class User implements UserInterface
 
     public function getSecurityGuidelineId(): int
     {
-        return $this->securityGuidelineId;
+        return (int) $this->securityGuidelineId;
     }
 
     public function setSecurityGuidelineId(int $securityGuidelineId): User
@@ -203,11 +131,13 @@ class User implements UserInterface
         return $this;
     }
 
+    /** @inheritDoc */
     public function getRoleIds(): array
     {
         return $this->roleIds;
     }
 
+    /** @inheritDoc */
     public function setRoleIds(array $roleIds): User
     {
         $this->roleIds = $roleIds;
@@ -216,7 +146,7 @@ class User implements UserInterface
 
     public function getDisabled(): bool
     {
-        return $this->disabled;
+        return (bool) $this->disabled;
     }
 
     public function setDisabled(bool $disabled): User
@@ -227,7 +157,7 @@ class User implements UserInterface
 
     public function getPassword(): string
     {
-        return $this->password;
+        return $this->password ?? UserInterface::SCRAMBLED_PASS;
     }
 
     public function setPassword(string $password): User

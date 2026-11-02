@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class SmartLinkScoringConfigurationTest extends StructTestCase
 {
-    /**
-     * @var SmartLinkScoringConfiguration
-     */
-    private $subject;
+    private SmartLinkScoringConfiguration $subject;
 
     public function setUp(): void
     {

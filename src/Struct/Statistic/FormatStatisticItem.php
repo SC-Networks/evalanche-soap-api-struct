@@ -13,79 +13,43 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class FormatStatisticItem implements FormatStatisticItemInterface
 {
-    /**
-     * @var int
-     */
-    private $clickCount;
-
-    /**
-     * @var int
-     */
-    private $uniqueClickCount;
-
-    /**
-     * @var float
-     */
-    private $clickRate;
-
-    /**
-     * @var float
-     */
-    private $clickRateRelative;
-
-    /**
-     * @var float
-     */
-    private $multipleClickRate;
-
-    /**
-     * @var float
-     */
-    private $multipleClickRateRelative;
-
     public function __construct(
-        int $clickCount = 0,
-        int $uniqueClickCount = 0,
-        float $clickRate = 0.0,
-        float $clickRateRelative = 0.0,
-        float $multipleClickRate = 0.0,
-        float $multipleClickRateRelative = 0.0
+        private null|int $clickCount = null,
+        private null|int $uniqueClickCount = null,
+        private null|float $clickRate = null,
+        private null|float $clickRateRelative = null,
+        private null|float $multipleClickRate = null,
+        private null|float $multipleClickRateRelative = null
     ) {
-        $this->clickCount = $clickCount;
-        $this->uniqueClickCount = $uniqueClickCount;
-        $this->clickRate = $clickRate;
-        $this->clickRateRelative = $clickRateRelative;
-        $this->multipleClickRate = $multipleClickRate;
-        $this->multipleClickRateRelative = $multipleClickRateRelative;
     }
 
     public function getClickCount(): int
     {
-        return $this->clickCount;
+        return (int) $this->clickCount;
     }
 
     public function getUniqueClickCount(): int
     {
-        return $this->uniqueClickCount;
+        return (int) $this->uniqueClickCount;
     }
 
     public function getClickRate(): float
     {
-        return $this->clickRate;
+        return (float) $this->clickRate;
     }
 
     public function getClickRateRelative(): float
     {
-        return $this->clickRateRelative;
+        return (float) $this->clickRateRelative;
     }
 
     public function getMultipleClickRate(): float
     {
-        return $this->multipleClickRate;
+        return (float) $this->multipleClickRate;
     }
 
     public function getMultipleClickRateRelative(): float
     {
-        return $this->multipleClickRateRelative;
+        return (float) $this->multipleClickRateRelative;
     }
 }

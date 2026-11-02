@@ -22,7 +22,7 @@ interface PoolAttributeInterface extends StructInterface
     public function getLabel(): string;
 
     /**
-     * @return PoolAttributeOptionInterface[]
+     * @return list<PoolAttributeOptionInterface>
      */
     public function getOptions(): array;
 

@@ -12,29 +12,19 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class MailClientStatisticItem implements MailClientStatisticItemInterface
 {
-    /**
-     * @var string
-     */
-    private $description;
-
-    /**
-     * @var int
-     */
-    private $count;
-
-    public function __construct(string $description = '', int $count = 0)
-    {
-        $this->description = $description;
-        $this->count = $count;
+    public function __construct(
+        private null|string $description = null,
+        private null|int $count = null
+    ) {
     }
 
     public function getDescription(): string
     {
-        return $this->description;
+        return (string) $this->description;
     }
 
     public function getCount(): int
     {
-        return $this->count;
+        return (int) $this->count;
     }
 }

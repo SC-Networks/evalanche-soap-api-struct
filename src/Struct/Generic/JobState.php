@@ -11,40 +11,28 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class JobState implements JobStateInterface
 {
-    /** @var string */
-    private $id;
-
-    /** @var int */
-    private $status;
-
-    /** @var string */
-    private $statusDescription;
-
     public function __construct(
-        string $id = '',
-        int $status = 0,
-        string $statusDescription = '',
+        private null|string $id = null,
+        private null|int $status = null,
+        private null|string $statusDescription = null
     ) {
-        $this->id = $id;
-        $this->status = $status;
-        $this->statusDescription = $statusDescription;
     }
 
     /** @inheritDoc */
     public function getId(): string
     {
-        return $this->id;
+        return (string) $this->id;
     }
 
     /** @inheritDoc */
     public function getStatus(): int
     {
-        return $this->status;
+        return (int) $this->status;
     }
 
     /** @inheritDoc */
     public function getStatusDescription(): string
     {
-        return $this->statusDescription;
+        return (string) $this->statusDescription;
     }
 }

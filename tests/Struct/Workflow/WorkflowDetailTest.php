@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class WorkflowDetailTest extends StructTestCase
 {
-    /**
-     * @var WorkflowDetail
-     */
-    private $subject;
+    private WorkflowDetail $subject;
 
     public function setUp(): void
     {

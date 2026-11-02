@@ -12,139 +12,73 @@ namespace Scn\EvalancheSoapStruct\Struct\Container;
  */
 class ContainerAttribute implements ContainerAttributeInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var string
-     */
-    private $label;
-
-    /**
-     * @var int
-     */
-    private $typeId;
-
-    /**
-     * @var int
-     */
-    private $groupId;
-
-    /**
-     * @var string
-     */
-    private $helpText;
-
-    /**
-     * @var string
-     */
-    private $inputHelpText;
-
-    /**
-     * @var bool
-     */
-    private $mandatory;
-
-    /**
-     * @var bool
-     */
-    private $visible;
-
-    /**
-     * @var string
-     */
-    private $replacementVariable;
-
-    /**
-     * @var bool
-     */
-    private $allowOptions;
-
     public function __construct(
-        int $id = 0,
-        string $name = '',
-        string $label = '',
-        int $typeId = 0,
-        int $groupId = 0,
-        string $helpText = '',
-        string $inputHelpText = '',
-        bool $mandatory = false,
-        bool $visible = false,
-        string $replacementVariable = '',
-        bool $allowOptions = false
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|string $label = null,
+        private null|int $typeId = null,
+        private null|int $groupId = null,
+        private null|string $helpText = null,
+        private null|string $inputHelpText = null,
+        private null|bool $mandatory = null,
+        private null|bool $visible = null,
+        private null|string $replacementVariable = null,
+        private null|bool $allowOptions = null
     ) {
-        $this->id = $id;
-        $this->name = $name;
-        $this->label = $label;
-        $this->typeId = $typeId;
-        $this->groupId = $groupId;
-        $this->helpText = $helpText;
-        $this->inputHelpText = $inputHelpText;
-        $this->mandatory = $mandatory;
-        $this->visible = $visible;
-        $this->replacementVariable = $replacementVariable;
-        $this->allowOptions = $allowOptions;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getLabel(): string
     {
-        return $this->label;
+        return (string) $this->label;
     }
 
     public function getTypeId(): int
     {
-        return $this->typeId;
+        return (int) $this->typeId;
     }
 
     public function getGroupId(): int
     {
-        return $this->groupId;
+        return (int) $this->groupId;
     }
 
     public function getHelpText(): string
     {
-        return $this->helpText;
+        return (string) $this->helpText;
     }
 
     public function getInputHelpText(): string
     {
-        return $this->inputHelpText;
+        return (string) $this->inputHelpText;
     }
 
     public function getMandatory(): bool
     {
-        return $this->mandatory;
+        return (bool) $this->mandatory;
     }
 
     public function getVisible(): bool
     {
-        return $this->visible;
+        return (bool) $this->visible;
     }
 
     public function getReplacementVariable(): string
     {
-        return $this->replacementVariable;
+        return (string) $this->replacementVariable;
     }
 
     public function getAllowOptions(): bool
     {
-        return $this->allowOptions;
+        return (bool) $this->allowOptions;
     }
 }

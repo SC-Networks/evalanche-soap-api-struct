@@ -11,29 +11,19 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
  */
 class ServiceStatus implements ServiceStatusInterface
 {
-    /**
-     * @var string
-     */
-    private $status;
-
-    /**
-     * @var string
-     */
-    private $randomMessage;
-
-    public function __construct(string $status = '', string $randomMessage = '')
-    {
-        $this->status = $status;
-        $this->randomMessage = $randomMessage;
+    public function __construct(
+        private null|string $status = null,
+        private null|string $randomMessage = null
+    ) {
     }
 
     public function getStatus(): string
     {
-        return $this->status;
+        return (string) $this->status;
     }
 
     public function getRandomMessage(): string
     {
-        return $this->randomMessage;
+        return (string) $this->randomMessage;
     }
 }

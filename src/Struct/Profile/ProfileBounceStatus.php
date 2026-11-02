@@ -17,31 +17,31 @@ class ProfileBounceStatus implements ProfileBounceStatusInterface
 {
     public function __construct(
         private null|HashMapInterface $profileData = null,
-        private int $profileId = 0,
-        private int $mailingId = 0,
-        private int $status = 0,
-        private int $timestamp = 0,
+        private null|int $profileId = null,
+        private null|int $mailingId = null,
+        private null|int $status = null,
+        private null|int $timestamp = null,
     ) {
     }
 
     public function getProfileId(): int
     {
-        return $this->profileId;
+        return (int) $this->profileId;
     }
 
     public function getMailingId(): int
     {
-        return $this->mailingId;
+        return (int) $this->mailingId;
     }
 
     public function getStatus(): int
     {
-        return $this->status;
+        return (int) $this->status;
     }
 
     public function getTimestamp(): int
     {
-        return $this->timestamp;
+        return (int) $this->timestamp;
     }
 
     public function getProfileData(): HashMapInterface

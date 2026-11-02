@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class MailingImpressionTest extends StructTestCase
 {
-    /**
-     * @var MailingImpression
-     */
-    private $subject;
+    private MailingImpression $subject;
 
     public function setUp(): void
     {

@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class ContainerAttributeRoleTypeTest extends StructTestCase
 {
-    /**
-     * @var ContainerAttributeRoleType
-     */
-    private $subject;
+    private ContainerAttributeRoleType $subject;
 
     public function setUp(): void
     {

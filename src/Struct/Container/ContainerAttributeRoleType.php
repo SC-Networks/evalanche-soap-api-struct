@@ -11,29 +11,19 @@ namespace Scn\EvalancheSoapStruct\Struct\Container;
  */
 class ContainerAttributeRoleType implements ContainerAttributeRoleTypeInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    public function __construct(int $id = 0, string $name = '')
-    {
-        $this->id = $id;
-        $this->name = $name;
+    public function __construct(
+        private null|int $id = null,
+        private null|string $name = null
+    ) {
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 }

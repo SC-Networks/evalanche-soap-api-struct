@@ -15,16 +15,7 @@ use Scn\EvalancheSoapStruct\Struct\Generic\HashMapItem;
  */
 final class StructFactory implements StructFactoryInterface
 {
-    /**
-     * Creates a Instance of HashMap
-     *
-     * [
-     *  'field_name' => 'field_value',
-     *  'field_name_next' => 'field_value_next',
-     * ]
-     *
-     * Field names can be found in your pool configuration.
-     */
+    /** @inheritDoc */
     public static function createHashMap(array $items): HashMapInterface
     {
         $hashMapItems = [];

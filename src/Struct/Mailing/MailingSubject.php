@@ -11,29 +11,19 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingSubject implements MailingSubjectInterface
 {
-    /**
-     * @var int
-     */
-    private $targetGroupId;
-
-    /**
-     * @var string
-     */
-    private $subject;
-
-    public function __construct(int $targetGroupId = 0, string $subject = '')
-    {
-        $this->targetGroupId = $targetGroupId;
-        $this->subject = $subject;
+    public function __construct(
+        private null|int $targetGroupId = null,
+        private null|string $subject = null
+    ) {
     }
 
     public function getTargetGroupId(): int
     {
-        return $this->targetGroupId;
+        return (int) $this->targetGroupId;
     }
 
     public function getSubject(): string
     {
-        return $this->subject;
+        return (string) $this->subject;
     }
 }

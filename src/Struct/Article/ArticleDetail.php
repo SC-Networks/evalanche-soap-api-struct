@@ -11,91 +11,49 @@ namespace Scn\EvalancheSoapStruct\Struct\Article;
  */
 class ArticleDetail implements ArticleDetailInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var string
-     */
-    private $url;
-
-    /**
-     * @var int
-     */
-    private $typeId;
-
-    /**
-     * @var int
-     */
-    private $folderId;
-
-    /**
-     * @var int
-     */
-    private $mandatorId;
-
-    /**
-     * @var int
-     */
-    private $articleTypeId;
-
     public function __construct(
-        int $id = 0,
-        string $name = '',
-        string $url = '',
-        int $typeId = 0,
-        int $folderId = 0,
-        int $mandatorId = 0,
-        int $articleTypeId = 0
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|string $url = null,
+        private null|int $typeId = null,
+        private null|int $folderId = null,
+        private null|int $mandatorId = null,
+        private null|int $articleTypeId = null
     ) {
-        $this->id = $id;
-        $this->name = $name;
-        $this->url = $url;
-        $this->typeId = $typeId;
-        $this->folderId = $folderId;
-        $this->mandatorId = $mandatorId;
-        $this->articleTypeId = $articleTypeId;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getUrl(): string
     {
-        return $this->url;
+        return (string) $this->url;
     }
 
     public function getTypeId(): int
     {
-        return $this->typeId;
+        return (int) $this->typeId;
     }
 
     public function getFolderId(): int
     {
-        return $this->folderId;
+        return (int) $this->folderId;
     }
 
     public function getMandatorId(): int
     {
-        return $this->mandatorId;
+        return (int) $this->mandatorId;
     }
 
     public function getArticleTypeId(): int
     {
-        return $this->articleTypeId;
+        return (int) $this->articleTypeId;
     }
 }

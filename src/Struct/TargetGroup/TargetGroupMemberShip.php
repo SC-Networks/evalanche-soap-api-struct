@@ -12,29 +12,19 @@ namespace Scn\EvalancheSoapStruct\Struct\TargetGroup;
  */
 class TargetGroupMemberShip implements TargetGroupMemberShipInterface
 {
-    /**
-     * @var int
-     */
-    private $profileId;
-
-    /**
-     * @var int
-     */
-    private $targetGroupId;
-
-    public function __construct(int $profileId = 0, int $targetGroupId = 0)
-    {
-        $this->profileId = $profileId;
-        $this->targetGroupId = $targetGroupId;
+    public function __construct(
+        private null|int $profileId = null,
+        private null|int $targetGroupId = null
+    ) {
     }
 
     public function getProfileId(): int
     {
-        return $this->profileId;
+        return (int) $this->profileId;
     }
 
     public function getTargetGroupId(): int
     {
-        return $this->targetGroupId;
+        return (int) $this->targetGroupId;
     }
 }

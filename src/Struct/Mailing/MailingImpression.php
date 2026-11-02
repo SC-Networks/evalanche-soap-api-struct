@@ -12,40 +12,25 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingImpression implements MailingImpressionInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var int
-     */
-    private $profileId;
-
-    /**
-     * @var int
-     */
-    private $timestamp;
-
-    public function __construct(int $id = 0, int $profileId = 0, int $timestamp = 0)
-    {
-        $this->id = $id;
-        $this->profileId = $profileId;
-        $this->timestamp = $timestamp;
+    public function __construct(
+        private null|int $id = null,
+        private null|int $profileId = null,
+        private null|int $timestamp = null
+    ) {
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getProfileId(): int
     {
-        return $this->profileId;
+        return (int) $this->profileId;
     }
 
     public function getTimestamp(): int
     {
-        return $this->timestamp;
+        return (int) $this->timestamp;
     }
 }

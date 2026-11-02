@@ -12,115 +12,61 @@ namespace Scn\EvalancheSoapStruct\Struct\Workflow;
  */
 class WorkflowDetail implements WorkflowDetailInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var int
-     */
-    private $dateStart;
-
-    /**
-     * @var int
-     */
-    private $dateEnd;
-
-    /**
-     * @var string
-     */
-    private $externalId;
-
-    /**
-     * @var int
-     */
-    private $folderId;
-
-    /**
-     * @var string
-     */
-    private $description;
-
-    /**
-     * @var int
-     */
-    private $state;
-
-    /**
-     * @var int
-     */
-    private $profileCount;
-
     public function __construct(
-        int $id = 0,
-        string $name = '',
-        int $dateStart = 0,
-        int $dateEnd = 0,
-        string $externalId = '',
-        int $folderId = 0,
-        string $description = '',
-        int $state = 0,
-        int $profileCount = 0
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|int $dateStart = null,
+        private null|int $dateEnd = null,
+        private null|string $externalId = null,
+        private null|int $folderId = null,
+        private null|string $description = null,
+        private null|int $state = null,
+        private null|int $profileCount = null
     ) {
-        $this->id = $id;
-        $this->name = $name;
-        $this->dateStart = $dateStart;
-        $this->dateEnd = $dateEnd;
-        $this->externalId = $externalId;
-        $this->folderId = $folderId;
-        $this->description = $description;
-        $this->state = $state;
-        $this->profileCount = $profileCount;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getDateStart(): int
     {
-        return $this->dateStart;
+        return (int) $this->dateStart;
     }
 
     public function getDateEnd(): int
     {
-        return $this->dateEnd;
+        return (int) $this->dateEnd;
     }
 
     public function getExternalId(): string
     {
-        return $this->externalId;
+        return (string) $this->externalId;
     }
 
     public function getFolderId(): int
     {
-        return $this->folderId;
+        return (int) $this->folderId;
     }
 
     public function getDescription(): string
     {
-        return $this->description;
+        return (string) $this->description;
     }
 
     public function getState(): int
     {
-        return $this->state;
+        return (int) $this->state;
     }
 
     public function getProfileCount(): int
     {
-        return $this->profileCount;
+        return (int) $this->profileCount;
     }
 }

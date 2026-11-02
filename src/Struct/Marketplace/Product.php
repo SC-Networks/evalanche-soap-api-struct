@@ -12,57 +12,33 @@ namespace Scn\EvalancheSoapStruct\Struct\Marketplace;
 class Product implements ProductInterface
 {
     /**
-     * @var string
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $title;
-
-    /**
-     * @var string
-     */
-    private $text;
-
-    /**
-     * @var int
-     */
-    private $price;
-
-    /**
      * Product constructor.
      */
     public function __construct(
-        string $id = '',
-        string $title = '',
-        string $text = '',
-        int $price = 0
+        private null|string $id = null,
+        private null|string $title = null,
+        private null|string $text = null,
+        private null|int $price = null
     ) {
-        $this->id = $id;
-        $this->title = $title;
-        $this->text = $text;
-        $this->price = $price;
     }
 
     public function getId(): string
     {
-        return $this->id;
+        return (string) $this->id;
     }
 
     public function getTitle(): string
     {
-        return $this->title;
+        return (string) $this->title;
     }
 
     public function getText(): string
     {
-        return $this->text;
+        return (string) $this->text;
     }
 
     public function getPrice(): int
     {
-        return $this->price;
+        return (int) $this->price;
     }
 }

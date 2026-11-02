@@ -10,9 +10,5 @@ interface MailingTemplateConfigurationInterface extends MailingConfigurationInte
 {
     public function getContainerType(): string;
 
-    /**
-     *
-     * @return $this
-     */
     public function setContainerType(string $containerType): MailingTemplateConfiguration;
 }

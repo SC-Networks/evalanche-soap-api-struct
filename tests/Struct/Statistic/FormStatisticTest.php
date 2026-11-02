@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class FormStatisticTest extends StructTestCase
 {
-    /**
-     * @var FormStatistic
-     */
-    private $subject;
+    private FormStatistic $subject;
 
     public function setUp(): void
     {

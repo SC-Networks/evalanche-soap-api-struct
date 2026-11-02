@@ -8,8 +8,7 @@ use Scn\EvalancheSoapStruct\GenericSetterGetterTestCase;
 
 class LeadpageSlotTest extends GenericSetterGetterTestCase
 {
-    /** @var LeadpageSlot|null */
-    private $subject;
+    private LeadpageSlot $subject;
     
     public function setUp(): void
     {
@@ -35,7 +34,7 @@ class LeadpageSlotTest extends GenericSetterGetterTestCase
         ];
     }
 
-    protected function getSubject()
+    protected function getSubject(): LeadpageSlot
     {
         return $this->subject;
     }

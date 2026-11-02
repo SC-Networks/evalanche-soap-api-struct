@@ -8,8 +8,7 @@ use Scn\EvalancheSoapStruct\GenericSetterGetterTestCase;
 
 class MailingSlotTest extends GenericSetterGetterTestCase
 {
-    /** @var MailingSlot|null */
-    private $subject;
+    private MailingSlot $subject;
     
     public function setUp(): void
     {
@@ -35,7 +34,7 @@ class MailingSlotTest extends GenericSetterGetterTestCase
         ];
     }
 
-    protected function getSubject()
+    protected function getSubject(): MailingSlot
     {
         return $this->subject;
     }

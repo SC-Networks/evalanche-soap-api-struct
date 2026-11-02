@@ -12,16 +12,11 @@ namespace Scn\EvalancheSoapStruct\Struct\Generic;
 class HashMap implements HashMapInterface
 {
     /**
-     * @var HashMapItemInterface[]
-     */
-    private $items;
-
-    /**
      * @param HashMapItemInterface[] $items
      */
-    public function __construct(array $items = [])
-    {
-        $this->items = $items;
+    public function __construct(
+        private array $items = []
+    ) {
     }
 
     /**

@@ -11,79 +11,43 @@ namespace Scn\EvalancheSoapStruct\Struct\SmartLink;
  */
 class SmartLinkScoringConfiguration implements SmartLinkScoringConfigurationInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var int
-     */
-    private $value;
-
-    /**
-     * @var int
-     */
-    private $multipleScoreTimeThreshold;
-
-    /**
-     * @var int
-     */
-    private $scoringGroupId;
-
-    /**
-     * @var int
-     */
-    private $type;
-
     public function __construct(
-        int $id = 0,
-        string $name = '',
-        int $value = 0,
-        int $multipleScoreTimeThreshold = 0,
-        int $scoringGroupId = 0,
-        int $type = 0
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|int $value = null,
+        private null|int $multipleScoreTimeThreshold = null,
+        private null|int $scoringGroupId = null,
+        private null|int $type = null
     ) {
-        $this->id = $id;
-        $this->name = $name;
-        $this->value = $value;
-        $this->multipleScoreTimeThreshold = $multipleScoreTimeThreshold;
-        $this->scoringGroupId = $scoringGroupId;
-        $this->type = $type;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getValue(): int
     {
-        return $this->value;
+        return (int) $this->value;
     }
 
     public function getMultipleScoreTimeThreshold(): int
     {
-        return $this->multipleScoreTimeThreshold;
+        return (int) $this->multipleScoreTimeThreshold;
     }
 
     public function getScoringGroupId(): int
     {
-        return $this->scoringGroupId;
+        return (int) $this->scoringGroupId;
     }
 
     public function getType(): int
     {
-        return $this->type;
+        return (int) $this->type;
     }
 }

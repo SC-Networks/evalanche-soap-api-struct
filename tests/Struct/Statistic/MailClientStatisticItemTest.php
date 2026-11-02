@@ -8,10 +8,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
 
 class MailClientStatisticItemTest extends StructTestCase
 {
-    /**
-     * @var MailClientStatisticItem
-     */
-    private $subject;
+    private MailClientStatisticItem $subject;
 
     public function setUp(): void
     {

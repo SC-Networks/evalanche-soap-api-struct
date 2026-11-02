@@ -13,10 +13,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
  */
 class ProfileGroupScoreTest extends StructTestCase
 {
-    /**
-     * @var ProfileGroupScore
-     */
-    private $subject;
+    private ProfileGroupScore $subject;
 
     public function setUp(): void
     {

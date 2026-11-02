@@ -8,10 +8,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
 
 class CategoryTest extends StructTestCase
 {
-    /**
-     * @var Category
-     */
-    private $subject;
+    private Category $subject;
 
     public function setUp(): void
     {

@@ -9,42 +9,22 @@ namespace Scn\EvalancheSoapStruct\Struct\LeadPage;
  */
 class LeadpageSlotItem implements LeadpageSlotItemInterface
 {
-    /** @var int */
-    private $articleTypeId;
-
-    /** @var int */
-    private $landingpageArticleTemplateId;
-
-    /** @var int */
-    private $webArticleTemplateId;
-
-    /** @var list<int> */
-    private $landingpageAllowedArticleTemplateIds;
-
-    /** @var list<int> */
-    private $webAllowedArticleTemplateIds;
-
     /**
      * @param list<int> $landingpageAllowedArticleTemplateIds
      * @param list<int> $webAllowedArticleTemplateIds
      */
     public function __construct(
-        int $articleTypeId = 0,
-        int $landingpageArticleTemplateId = 0,
-        int $webArticleTemplateId = 0,
-        array $landingpageAllowedArticleTemplateIds = [],
-        array $webAllowedArticleTemplateIds = []
+        private null|int $articleTypeId = null,
+        private null|int $landingpageArticleTemplateId = null,
+        private null|int $webArticleTemplateId = null,
+        private array $landingpageAllowedArticleTemplateIds = [],
+        private array $webAllowedArticleTemplateIds = []
     ) {
-        $this->articleTypeId = $articleTypeId;
-        $this->landingpageArticleTemplateId = $landingpageArticleTemplateId;
-        $this->webArticleTemplateId = $webArticleTemplateId;
-        $this->landingpageAllowedArticleTemplateIds = $landingpageAllowedArticleTemplateIds;
-        $this->webAllowedArticleTemplateIds = $webAllowedArticleTemplateIds;
     }
 
     public function getArticleTypeId(): int
     {
-        return $this->articleTypeId;
+        return (int) $this->articleTypeId;
     }
 
     public function setArticleTypeId(int $articleTypeId): LeadpageSlotItemInterface
@@ -55,7 +35,7 @@ class LeadpageSlotItem implements LeadpageSlotItemInterface
 
     public function getLandingpageArticleTemplateId(): int
     {
-        return $this->landingpageArticleTemplateId;
+        return (int) $this->landingpageArticleTemplateId;
     }
 
     public function setLandingpageArticleTemplateId(int $landingpageArticleTemplateId): LeadpageSlotItemInterface
@@ -66,7 +46,7 @@ class LeadpageSlotItem implements LeadpageSlotItemInterface
 
     public function getWebArticleTemplateId(): int
     {
-        return $this->webArticleTemplateId;
+        return (int) $this->webArticleTemplateId;
     }
 
     public function setWebArticleTemplateId(int $webArticleTemplateId): LeadpageSlotItemInterface

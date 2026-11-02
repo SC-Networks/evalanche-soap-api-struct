@@ -1,17 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Workflow;
 
 use Scn\EvalancheSoapStruct\StructTestCase;
 
 class WorkflowConfigurationTest extends StructTestCase
 {
-    private $configVersion = 'some-config-version';
+    private string $configVersion = 'some-config-version';
     
-    private $configuration = 'some-configuration';
+    private string $configuration = 'some-configuration';
     
-    /** @var WorkflowConfiguration */
-    private $subject;
+    private WorkflowConfiguration $subject;
     
     public function setUp(): void
     {

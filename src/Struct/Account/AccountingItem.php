@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Account;
 
 /**
@@ -10,55 +12,31 @@ namespace Scn\EvalancheSoapStruct\Struct\Account;
  */
 class AccountingItem implements AccountingItemInterface
 {
-    /**
-     * @var string
-     */
-    private $description;
-
-    /**
-     * @var int
-     */
-    private $mandatorId;
-
-    /**
-     * @var string
-     */
-    private $accountingDate;
-
-    /**
-     * @var int
-     */
-    private $chargeCount;
-
     public function __construct(
-        string $description = '',
-        int $mandatorId = 0,
-        string $accountingDate = '',
-        int $chargeCount = 0
+        private null|string $description = null,
+        private null|int $mandatorId = null,
+        private null|string $accountingDate = null,
+        private null|int $chargeCount = null
     ) {
-        $this->description = $description;
-        $this->mandatorId = $mandatorId;
-        $this->accountingDate = $accountingDate;
-        $this->chargeCount = $chargeCount;
     }
 
     public function getDescription(): string
     {
-        return $this->description;
+        return (string) $this->description;
     }
 
     public function getMandatorId(): int
     {
-        return $this->mandatorId;
+        return (int) $this->mandatorId;
     }
 
     public function getAccountingDate(): string
     {
-        return $this->accountingDate;
+        return (string) $this->accountingDate;
     }
 
     public function getChargeCount(): int
     {
-        return $this->chargeCount;
+        return (int) $this->chargeCount;
     }
 }

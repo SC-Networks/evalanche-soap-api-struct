@@ -27,9 +27,6 @@ class MassUpdateResult implements MassUpdateResultInterface
     ) {
     }
 
-    /**
-     * @return HashMap
-     */
     public function getUpdated(): HashMapInterface
     {
         if (!$this->updated instanceof HashMapInterface) {
@@ -38,9 +35,6 @@ class MassUpdateResult implements MassUpdateResultInterface
         return $this->updated;
     }
 
-    /**
-     * @return HashMap
-     */
     public function getCreated(): HashMapInterface
     {
         if (!$this->created instanceof HashMapInterface) {

@@ -9,10 +9,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
 
 class MailingTemplateConfigurationTest extends StructTestCase
 {
-    /**
-     * @var MailingTemplateConfiguration
-     */
-    private $subject;
+    private MailingTemplateConfiguration $subject;
 
     public function setUp(): void
     {

@@ -8,10 +8,7 @@ use Scn\EvalancheSoapStruct\StructTestCase;
 
 class FormConfigurationTest extends StructTestCase
 {
-    /**
-     * @var FormConfiguration
-     */
-    private $subject;
+    private FormConfiguration $subject;
 
     public function setUp(): void
     {

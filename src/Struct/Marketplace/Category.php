@@ -11,31 +11,19 @@ namespace Scn\EvalancheSoapStruct\Struct\Marketplace;
  */
 class Category implements CategoryInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $text;
-
     public function __construct(
-        int $id = 0,
-        string $text = ''
+        private null|int $id = null,
+        private null|string $text = null
     ) {
-        $this->id = $id;
-        $this->text = $text;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getText(): string
     {
-        return $this->text;
+        return (string) $this->text;
     }
 }

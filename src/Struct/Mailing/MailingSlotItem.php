@@ -9,63 +9,27 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingSlotItem implements MailingSlotItemInterface
 {
-    /** @var int */
-    private $articleTypeId;
-
-    /** @var int */
-    private $emailArticleTemplateId;
-
-    /** @var int */
-    private $textArticleTemplateId;
-
-    /** @var int */
-    private $landingpageArticleTemplateId;
-
-    /** @var int */
-    private $pdfArticleTemplateId;
-
-    /** @var int */
-    private $webArticleTemplateId;
-
-    /** @var int[] */
-    private $emailAllowedArticleTemplateIds;
-
-    /** @var int[] */
-    private $textAllowedArticleTemplateIds;
-
-    /** @var int[] */
-    private $landingpageAllowedArticleTemplateIds;
-
-    /** @var int[] */
-    private $webAllowedArticleTemplateIds;
-
     public function __construct(
-        int $articleTypeId = 0,
-        int $emailArticleTemplateId = 0,
-        int $textArticleTemplateId = 0,
-        int $landingpageArticleTemplateId = 0,
-        int $pdfArticleTemplateId = 0,
-        int $webArticleTemplateId = 0,
-        array $emailAllowedArticleTemplateIds = [],
-        array $textAllowedArticleTemplateIds = [],
-        array $landingpageAllowedArticleTemplateIds = [],
-        array $webAllowedArticleTemplateIds = []
+        private null|int $articleTypeId = null,
+        private null|int $emailArticleTemplateId = null,
+        private null|int $textArticleTemplateId = null,
+        private null|int $landingpageArticleTemplateId = null,
+        private null|int $pdfArticleTemplateId = null,
+        private null|int $webArticleTemplateId = null,
+        /** @var int[] */
+        private array $emailAllowedArticleTemplateIds = [],
+        /** @var int[] */
+        private array $textAllowedArticleTemplateIds = [],
+        /** @var int[] */
+        private array $landingpageAllowedArticleTemplateIds = [],
+        /** @var int[] */
+        private array $webAllowedArticleTemplateIds = []
     ) {
-        $this->articleTypeId = $articleTypeId;
-        $this->emailArticleTemplateId = $emailArticleTemplateId;
-        $this->textArticleTemplateId = $textArticleTemplateId;
-        $this->landingpageArticleTemplateId = $landingpageArticleTemplateId;
-        $this->pdfArticleTemplateId = $pdfArticleTemplateId;
-        $this->webArticleTemplateId = $webArticleTemplateId;
-        $this->emailAllowedArticleTemplateIds = $emailAllowedArticleTemplateIds;
-        $this->textAllowedArticleTemplateIds = $textAllowedArticleTemplateIds;
-        $this->landingpageAllowedArticleTemplateIds = $landingpageAllowedArticleTemplateIds;
-        $this->webAllowedArticleTemplateIds = $webAllowedArticleTemplateIds;
     }
 
     public function getArticleTypeId(): int
     {
-        return $this->articleTypeId;
+        return (int) $this->articleTypeId;
     }
 
     public function setArticleTypeId(int $articleTypeId): MailingSlotItemInterface
@@ -76,7 +40,7 @@ class MailingSlotItem implements MailingSlotItemInterface
 
     public function getEmailArticleTemplateId(): int
     {
-        return $this->emailArticleTemplateId;
+        return (int) $this->emailArticleTemplateId;
     }
 
     public function setEmailArticleTemplateId(int $emailArticleTemplateId): MailingSlotItemInterface
@@ -87,7 +51,7 @@ class MailingSlotItem implements MailingSlotItemInterface
 
     public function getTextArticleTemplateId(): int
     {
-        return $this->textArticleTemplateId;
+        return (int) $this->textArticleTemplateId;
     }
 
     public function setTextArticleTemplateId(int $textArticleTemplateId): MailingSlotItemInterface
@@ -98,7 +62,7 @@ class MailingSlotItem implements MailingSlotItemInterface
 
     public function getLandingpageArticleTemplateId(): int
     {
-        return $this->landingpageArticleTemplateId;
+        return (int) $this->landingpageArticleTemplateId;
     }
 
     public function setLandingpageArticleTemplateId(int $landingpageArticleTemplateId): MailingSlotItemInterface
@@ -109,7 +73,7 @@ class MailingSlotItem implements MailingSlotItemInterface
 
     public function getPdfArticleTemplateId(): int
     {
-        return $this->pdfArticleTemplateId;
+        return (int) $this->pdfArticleTemplateId;
     }
 
     public function setPdfArticleTemplateId(int $pdfArticleTemplateId): MailingSlotItemInterface
@@ -120,7 +84,7 @@ class MailingSlotItem implements MailingSlotItemInterface
 
     public function getWebArticleTemplateId(): int
     {
-        return $this->webArticleTemplateId;
+        return (int) $this->webArticleTemplateId;
     }
 
     public function setWebArticleTemplateId(int $webArticleTemplateId): MailingSlotItemInterface

@@ -32,9 +32,12 @@ interface MailingSlotInterface extends StructInterface
     public function setSortTypeValue(int $sortTypeValue): MailingSlotInterface;
 
     /**
-     * @return MailingSlotItemInterface[]
+     * @return list<MailingSlotItemInterface>
      */
     public function getItems(): array;
 
+    /**
+     * @param list<MailingSlotItemInterface> $items
+     */
     public function setItems(array $items): MailingSlotInterface;
 }

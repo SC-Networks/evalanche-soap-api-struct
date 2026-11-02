@@ -9,43 +9,22 @@ namespace Scn\EvalancheSoapStruct\Struct\Mailing;
  */
 class MailingSlot implements MailingSlotInterface
 {
-    /** @var int */
-    private $id;
-    
-    /** @var string */
-    private $name;
-    
-    /** @var int */
-    private $slotNumber;
-    
-    /** @var int */
-    private $sortTypeId;
-    
-    /** @var int */
-    private $sortTypeValue;
-    
-    /** @var MailingSlotItemInterface[] */
-    private $items;
-    
+    /**
+     * @param list<MailingSlotItemInterface> $items
+     */
     public function __construct(
-        int $id = 0,
-        string $name = '',
-        int $slotNumber = 0,
-        int $sortTypeId = 0,
-        int $sortTypeValue = 0,
-        array $items = []
+        private null|int $id = null,
+        private null|string $name = null,
+        private null|int $slotNumber = null,
+        private null|int $sortTypeId = null,
+        private null|int $sortTypeValue = null,
+        private array $items = []
     ) {
-        $this->id = $id;
-        $this->name = $name;
-        $this->slotNumber = $slotNumber;
-        $this->sortTypeId = $sortTypeId;
-        $this->sortTypeValue = $sortTypeValue;
-        $this->items = $items;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function setId(int $id): MailingSlotInterface
@@ -56,7 +35,7 @@ class MailingSlot implements MailingSlotInterface
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function setName(string $name): MailingSlotInterface
@@ -67,7 +46,7 @@ class MailingSlot implements MailingSlotInterface
 
     public function getSlotNumber(): int
     {
-        return $this->slotNumber;
+        return (int) $this->slotNumber;
     }
 
     public function setSlotNumber(int $slotNumber): MailingSlotInterface
@@ -78,7 +57,7 @@ class MailingSlot implements MailingSlotInterface
 
     public function getSortTypeId(): int
     {
-        return $this->sortTypeId;
+        return (int) $this->sortTypeId;
     }
 
     public function setSortTypeId(int $sortTypeId): MailingSlotInterface
@@ -89,7 +68,7 @@ class MailingSlot implements MailingSlotInterface
 
     public function getSortTypeValue(): int
     {
-        return $this->sortTypeValue;
+        return (int) $this->sortTypeValue;
     }
 
     public function setSortTypeValue(int $sortTypeValue): MailingSlotInterface
@@ -98,14 +77,13 @@ class MailingSlot implements MailingSlotInterface
         return $this;
     }
 
-    /**
-     * @return MailingSlotItemInterface[]
-     */
+    /** @inheritDoc */
     public function getItems(): array
     {
         return $this->items;
     }
 
+    /** @inheritDoc */
     public function setItems(array $items): MailingSlotInterface
     {
         $this->items = $items;

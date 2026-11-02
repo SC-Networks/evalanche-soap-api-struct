@@ -8,8 +8,7 @@ use Scn\EvalancheSoapStruct\GenericSetterGetterTestCase;
 
 class ProfileCouponTest extends GenericSetterGetterTestCase
 {
-    /** @var ProfileCoupon|null */
-    private $subject;
+    private ProfileCoupon $subject;
 
     public function setUp(): void
     {
@@ -29,7 +28,7 @@ class ProfileCouponTest extends GenericSetterGetterTestCase
         ];
     }
 
-    protected function getSubject()
+    protected function getSubject(): ProfileCoupon
     {
         return $this->subject;
     }

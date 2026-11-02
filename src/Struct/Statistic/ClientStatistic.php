@@ -13,30 +13,15 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
 class ClientStatistic implements ClientStatisticInterface
 {
     /**
-     * @var MailClientStatisticItem[]
-     */
-    private $clients;
-
-    /**
-     * @var BrowserStatisticItem[]
-     */
-    private $browsers;
-
-    /**
-     * @var DeviceStatisticItem[]
-     */
-    private $devices;
-
-    /**
      * @param MailClientStatisticItemInterface[] $clients
      * @param BrowserStatisticItemInterface[] $browsers
      * @param DeviceStatisticItemInterface[] $devices
      */
-    public function __construct(array $clients = [], array $browsers = [], array $devices = [])
-    {
-        $this->clients = $clients;
-        $this->browsers = $browsers;
-        $this->devices = $devices;
+    public function __construct(
+        private array $clients = [],
+        private array $browsers = [],
+        private array $devices = []
+    ) {
     }
 
     /**

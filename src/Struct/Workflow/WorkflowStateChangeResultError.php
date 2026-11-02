@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Scn\EvalancheSoapStruct\Struct\Workflow;
 
 /**
@@ -7,37 +9,25 @@ namespace Scn\EvalancheSoapStruct\Struct\Workflow;
  */
 class WorkflowStateChangeResultError implements WorkflowStateChangeResultErrorInterface
 {
-    /** @var string */
-    private $type;
-
-    /** @var string */
-    private $node;
-
-    /** @var string */
-    private $param;
-    
     public function __construct(
-        string $type = '',
-        string $node = '',
-        string $param = ''
+        private null|string $type = null,
+        private null|string $node = null,
+        private null|string $param = null
     ) {
-        $this->type = $type;
-        $this->node = $node;
-        $this->param = $param;
     }
     
     public function getType(): string
     {
-        return $this->type;
+        return (string) $this->type;
     }
     
     public function getNode(): string
     {
-        return $this->node;
+        return (string) $this->node;
     }
     
     public function getParam(): string
     {
-        return $this->param;
+        return (string) $this->param;
     }
 }

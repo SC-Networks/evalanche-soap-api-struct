@@ -12,67 +12,37 @@ namespace Scn\EvalancheSoapStruct\Struct\Statistic;
  */
 class LinkStatisticItem implements LinkStatisticItemInterface
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $url;
-
-    /**
-     * @var string
-     */
-    private $name;
-
-    /**
-     * @var int
-     */
-    private $clickCount;
-
-    /**
-     * @var int
-     */
-    private $uniqueClickCount;
-
     public function __construct(
-        int $id = 0,
-        string $url = '',
-        string $name = '',
-        int $clickCount = 0,
-        int $uniqueClickCount = 0
+        private null|int $id = null,
+        private null|string $url = null,
+        private null|string $name = null,
+        private null|int $clickCount = null,
+        private null|int $uniqueClickCount = null
     ) {
-        $this->id = $id;
-        $this->url = $url;
-        $this->name = $name;
-        $this->clickCount = $clickCount;
-        $this->uniqueClickCount = $uniqueClickCount;
     }
 
     public function getId(): int
     {
-        return $this->id;
+        return (int) $this->id;
     }
 
     public function getUrl(): string
     {
-        return $this->url;
+        return (string) $this->url;
     }
 
     public function getName(): string
     {
-        return $this->name;
+        return (string) $this->name;
     }
 
     public function getClickCount(): int
     {
-        return $this->clickCount;
+        return (int) $this->clickCount;
     }
 
     public function getUniqueClickCount(): int
     {
-        return $this->uniqueClickCount;
+        return (int) $this->uniqueClickCount;
     }
 }
